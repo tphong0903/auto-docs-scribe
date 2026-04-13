@@ -1,0 +1,1732 @@
+[
+  {
+    "dtcCode": "P0010",
+    "title": "P0010 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "description": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "refs": [
+          "Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải (1A-19)"
+        ],
+        "okAction": "Chuyển sang Bước 2.\nNếu phát hiện DTC P0010 và P2088, hãy chuyển sang Bước 2.\nNếu phát hiện DTC P2089, hãy chuyển sang Bước 4.",
+        "failAction": "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” (Trang 1A-19)."
+      },
+      {
+        "id": 2,
+        "title": "Kiểm tra mạch cấp nguồn OCV",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 3.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 3,
+        "title": "Kiểm tra mạch điều khiển OCV",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 5.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 4,
+        "title": "Kiểm tra mạch điều khiển OCV",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 5.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 5,
+        "title": "Kiểm tra OCV",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "Kết quả kiểm tra có ỔN không? Chuyển sang Bước 6 (1C-13)",
+          "Thay thế OCV (1C-13)"
+        ],
+        "okAction": "Chuyển sang Bước 6.",
+        "failAction": "Thay thế OCV. (Trang 1C-13)"
+      },
+      {
+        "id": 6,
+        "title": "Đồng thời khắc phục sự cố của (những) DTC khác",
+        "description": "Có phát hiện (các) DTC nào đồng thời không?",
+        "refs": ["Thay ECM và kiểm tra lại DTC (1C-2)"],
+        "okAction": "Chuyển sang khắc phục sự cố DTC liên quan.",
+        "failAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P0011",
+    "title": "P0011 – Khắc phục sự cố",
+    "condition": "P0011: Vị trí trục cam \"A\" ở thời điểm đánh lửa quá sớm hoặc lỗi hoạt động hệ thống (Bank 1)\nCMP đo được không đạt CMP mục tiêu trong thời gian quy\nđịnh.\n(lô-gic phát hiện 3 D/C)",
+    "faultArea": "OCV và/hoặc mạch của nó\nCảm biến CKP và vòng răng tạo xung\nRô-to tín hiệu và cảm biến CMP\nĐường đi của nhớt OCV\nBộ chấp hành VVT\nThời điểm đóng mở xu-páp\nECM",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0010",
+    "title": "P0010 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "description": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "refs": [
+          "Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải (1A-19)"
+        ],
+        "okAction": "Chuyển sang Bước 2.",
+        "failAction": "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát\nkhí thải” (Trang 1A-19)."
+      },
+      {
+        "id": 2,
+        "title": "Kiểm tra DTC",
+        "description": "Có (các) DTC nào ngoài P0011 không?",
+        "refs": [],
+        "okAction": "Chuyển sang khắc phục sự cố DTC thích hợp.",
+        "failAction": "Chuyển sang Bước 3."
+      },
+      {
+        "id": 3,
+        "title": "Kiểm tra mạch cấp nguồn và mạch điều khiển OCV",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": ["A1 (1A-51)"],
+        "okAction": "Chuyển sang Bước 4.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 4,
+        "title": "Kiểm tra áp suất nhớt",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": ["Kết quả kiểm tra có ỔN không? Chuyển sang Bước 5 (1E-3)"],
+        "okAction": "Chuyển sang Bước 5.",
+        "failAction": "Sửa chữa hoặc thay thế các bộ phận bị lỗi."
+      },
+      {
+        "id": 5,
+        "title": "Kiểm tra bằng mắt mạch nhớt OCV",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": ["Kiểm ra rò rỉ áp suất nhớt từ mạch nhớt OCV (1D-16)"],
+        "okAction": "Chuyển sang Bước 6.",
+        "failAction": "Sửa chữa hoặc thay thế các bộ phận bị lỗi."
+      },
+      {
+        "id": 6,
+        "title": "Kiểm tra cảm biến CKP và vòng răng tạo xung",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "Cảm biến CKP:  Vòng răng tạo xung: (Trang 1D-78) Kết quả kiểm tra có ỔN không? Chuyển sang Bước 7 (1C-10)"
+        ],
+        "okAction": "Chuyển sang Bước 7.",
+        "failAction": "Sửa chữa hoặc thay thế các bộ phận bị lỗi."
+      },
+      {
+        "id": 7,
+        "title": "Kiểm tra rô-to tín hiệu và cảm biến CMP",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "Cảm biến CMP:  Rô-to tín hiệu: (Trang 1D-23) Kết quả kiểm tra có ỔN không? Chuyển sang Bước 8 (1C-9)"
+        ],
+        "okAction": "Chuyển sang Bước 8.",
+        "failAction": "Sửa chữa hoặc thay thế các bộ phận bị lỗi."
+      },
+      {
+        "id": 8,
+        "title": "Kiểm tra OCV",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "Kết quả kiểm tra có ỔN không? Chuyển sang Bước 9 (1C-13)",
+          "Thay thế OCV (1D-37)"
+        ],
+        "okAction": "Chuyển sang Bước 9.",
+        "failAction": "Thay thế OCV. (Trang 1D-37)"
+      },
+      {
+        "id": 9,
+        "title": "Kiểm tra bộ chấp hành VVT",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "Kết quả kiểm tra có ỔN không? Chuyển sang Bước 10 (1D-23)",
+          "Thay thế bộ chấp hành VVT (1D-18)"
+        ],
+        "okAction": "Chuyển sang Bước 10.",
+        "failAction": "Thay thế bộ chấp hành VVT. (Trang 1D-18)"
+      },
+      {
+        "id": 10,
+        "title": "Kiểm tra thời điểm đóng mở xu-páp",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "Kết quả kiểm tra có ỔN không? Thay ECM và kiểm tra lại DTC (1D-41)",
+          "Lắp lại một cách chính xác những bộ phận liên quan tới xích cam, hoặc thay thế những bộ phận bị hỏng hóc (1C-2)"
+        ],
+        "okAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "failAction": "Lắp lại một cách chính xác những bộ phận liên quan tới xích cam, hoặc thay thế những bộ phận\nbị hỏng hóc."
+      }
+    ]
+  },
+  {
+    "dtcCode": "P0016",
+    "title": "P0016 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0010",
+    "title": "P0010 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0335",
+    "title": "P0335 – Khắc phục sự cố",
+    "condition": "P0335: Mạch cảm biến vị trí trục khuỷu “A”\nTín hiệu cảm biến CKP không được nhập vào trong khi tín hiệu cảm biến CMP\nđang được nhập vào. (lô-gic phát hiện 3 D/C)",
+    "faultArea": "Cảm biến CKP và/hoặc mạch của nó\nVòng răng tạo xung\nECM",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0340",
+    "title": "P0340 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "description": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "refs": [
+          "Mô tả hệ thống điều khiển động cơ và kiểm soát khí thải (1A-4)"
+        ],
+        "okAction": "Chuyển sang Bước 2.",
+        "failAction": "Chuyển sang “Mô tả hệ thống điều khiển động cơ và kiểm soát khí thải”\n(Trang 1A-4)."
+      },
+      {
+        "id": 2,
+        "title": "Kiểm tra cảm biến CMP và mạch của nó",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 3.",
+        "failAction": "Sửa chữa hoặc thay các bộ phận bị lỗi."
+      },
+      {
+        "id": 3,
+        "title": "Kiểm tra cảm biến CKP và mạch của nó",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": ["DTC P0335/ P0336 (1A-79)"],
+        "okAction": "Chuyển sang Bước 4.",
+        "failAction": "Sửa chữa hoặc thay các bộ phận bị lỗi."
+      },
+      {
+        "id": 4,
+        "title": "Kiểm tra hệ thống cơ cấu phân phối khí của động cơ",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "Kiểm tra các mục sau (1D-35)",
+          "Xích cam, bộ căng xích cam và bộ điều chỉnh căng xích cam:  Bộ chấp hành VVT: (Trang 1D-23) Kết quả kiểm tra có ỔN không? Chuyển sang Bước 5 (1D-44)"
+        ],
+        "okAction": "Chuyển sang Bước 5.",
+        "failAction": "Sửa chữa hoặc thay các bộ phận bị lỗi."
+      },
+      {
+        "id": 5,
+        "title": "Đồng thời khắc phục sự cố của (những) DTC khác",
+        "description": "Có phát hiện (các) DTC khác không?",
+        "refs": ["Thay ECM và kiểm tra lại DTC (1C-2)"],
+        "okAction": "Chuyển sang khắc phục sự cố DTC liên quan.",
+        "failAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P0030",
+    "title": "P0030 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "description": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "refs": [
+          "Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải (1A-19)"
+        ],
+        "okAction": "Nếu phát hiện DTC P0030 và P0031, hãy chuyển sang Bước 2.\nNếu phát hiện DTC\nP0032, hãy chuyển sang Bước 4.",
+        "failAction": "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” (Trang 1A-19)."
+      },
+      {
+        "id": 2,
+        "title": "Kiểm tra mạch cấp nguồn cảm biến số 1 - HO2S-1",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "OFF (2S-1)",
+          "Kiểm tra xem kết nối cực tới giắc cắm HOcó chính xác không (2S-1)"
+        ],
+        "okAction": "Chuyển sang Bước 3.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị lỗi."
+      },
+      {
+        "id": 3,
+        "title": "Kiểm tra mạch điều khiển sấy cảm biến số 1 - HO2S-1",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": ["OFF (2S-1)", "A4 (2S-1)"],
+        "okAction": "Chuyển sang Bước 5.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị lỗi."
+      },
+      {
+        "id": 4,
+        "title": "Kiểm tra mạch điều khiển sấy cảm biến số 1 - HO2S-1",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": ["OFF (2S-1)", "C01 (2S-1)"],
+        "okAction": "Chuyển sang Bước 5.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị lỗi."
+      },
+      {
+        "id": 5,
+        "title": "Kiểm tra cảm biến HO2S-1",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "Kiểm tra cảm biến HO1) Kiểm tra cảm biến HO (2S-1)",
+          "Kết quả kiểm tra có ỔN không? Thay ECM và kiểm tra lại DTC (1C-9)",
+          "Thay thế HO2S-1 (1C-2)",
+          "Trang 1C-2) Thay thế HO2S-1 (1C-9)"
+        ],
+        "okAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "failAction": "Thay thế HO2S-1.\n(Trang 1C-9)"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P0036",
+    "title": "P0036 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "description": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "refs": [
+          "Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải (1A-19)"
+        ],
+        "okAction": "Nếu phát hiện DTC P0036 và P0037, hãy chuyển sang Bước 2.\nNếu phát hiện DTC P0038, hãy chuyển sang Bước 4.",
+        "failAction": "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” (Trang 1A-19)."
+      },
+      {
+        "id": 2,
+        "title": "Kiểm tra mạch cấp nguồn cảm biến số 2 - HO2S-2",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "OFF (2S-2)",
+          "Kiểm tra xem kết nối cực tới giắc cắm HOcó chính xác không (2S-2)"
+        ],
+        "okAction": "Chuyển sang Bước 3.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị lỗi."
+      },
+      {
+        "id": 3,
+        "title": "Kiểm tra mạch điều khiển sấy cảm biến số 2 - HO2S-2",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": ["OFF (2S-2)", "B4 (2S-2)"],
+        "okAction": "Chuyển sang Bước 5.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị lỗi."
+      },
+      {
+        "id": 4,
+        "title": "Kiểm tra mạch điều khiển sấy cảm biến số 2 - HO2S-2",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": ["OFF (2S-2)", "C01 (2S-2)"],
+        "okAction": "Chuyển sang Bước 5.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị lỗi."
+      },
+      {
+        "id": 5,
+        "title": "Kiểm tra HO2S-2",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "Kiểm tra HO1) Kiểm tra cảm biến HO (2S-2)",
+          "Kết quả kiểm tra có ỔN không? Thay ECM và kiểm tra lại DTC (1C-9)",
+          "Thay thế HO2S-2 (1C-2)",
+          "Trang 1C-2) Thay thế HO2S-2 (1C-9)"
+        ],
+        "okAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "failAction": "Thay thế HO2S-2.\n(Trang 1C-9)"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P0107",
+    "title": "P0107 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0112",
+    "title": "P0112 – Khắc phục sự cố",
+    "condition": "P0112: Mạch cảm biến nhiệt độ khí nạp 1 thấp (Bank 1)\nĐiện áp đầu ra mạch tín hiệu cảm biến IAT thấp hơn 0,04 V trong 10 giây. (lô-gic phát hiện 3 D/C)",
+    "faultArea": "Cảm biến IAT và/hoặc mạch của nó\nECM",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0116",
+    "title": "P0116 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "description": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "refs": [
+          "Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải (1A-19)"
+        ],
+        "okAction": "Chuyển sang Bước 2.",
+        "failAction": "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát\nkhí thải” (Trang 1A-19)."
+      },
+      {
+        "id": 2,
+        "title": "Kiểm tra mạch tín hiệu cảm biến IAT và mạch nối đất",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 3.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 3,
+        "title": "Kiểm tra cảm biến IAT",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "Kết quả kiểm tra có ỔN không? Thay ECM và kiểm tra lại DTC (1C-12)",
+          "Thay thế cảm biến IAT (1C-2)",
+          "Trang 1C-2) Thay thế cảm biến IAT (1C-12)"
+        ],
+        "okAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "failAction": "Thay thế cảm biến IAT.\n(Trang 1C-12)"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P0117",
+    "title": "P0117 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0117",
+    "title": "P0117 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0118",
+    "title": "P0118 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0112",
+    "title": "P0112 – Khắc phục sự cố",
+    "condition": "P0112: Mạch cảm biến nhiệt độ khí nạp 1 thấp (Bank 1)\nĐiện áp đầu ra mạch tín hiệu cảm biến IAT thấp hơn 0,04 V trong 10 giây. (lô-gic phát hiện 3 D/C)",
+    "faultArea": "Cảm biến IAT và/hoặc mạch của nó\nECM",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "description": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "refs": [
+          "Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải (1A-19)"
+        ],
+        "okAction": "Chuyển sang Bước 2.",
+        "failAction": "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát\nkhí thải” (Trang 1A-19)."
+      },
+      {
+        "id": 2,
+        "title": "Kiểm tra mạch tín hiệu cảm biến ECT và mạch nối đất",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 3.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 3,
+        "title": "Kiểm tra cảm biến ECT",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "Kết quả kiểm tra có ỔN không? Thay ECM và kiểm tra lại DTC (1C-8)",
+          "Thay thế cảm biến ECT (1C-2)",
+          "Trang 1C-2) Thay thế cảm biến ECT (1C-8)"
+        ],
+        "okAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "failAction": "Thay thế cảm biến ECT.\n(Trang 1C-8)"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P0122",
+    "title": "P0122 – Khắc phục sự cố",
+    "condition": "P0122: Mạch công tắc / cảm biến vị trí bàn đạp / bướm ga “A” thấp\nĐiện áp đầu ra mạch tín hiệu (chính) cảm biến TP thấp hơn 0,2 V. (lô-gic phát hiện 1 D/C)",
+    "faultArea": "Cảm biến TP (chính) và/hoặc mạch của nó\nECM",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0122",
+    "title": "P0122 – Khắc phục sự cố",
+    "condition": "P0122: Mạch công tắc / cảm biến vị trí bàn đạp / bướm ga “A” thấp\nĐiện áp đầu ra mạch tín hiệu (chính) cảm biến TP thấp hơn 0,2 V. (lô-gic phát hiện 1 D/C)",
+    "faultArea": "Cảm biến TP (chính) và/hoặc mạch của nó\nECM",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0123",
+    "title": "P0123 – Khắc phục sự cố",
+    "condition": "P0123: Mạch công tắc / cảm biến vị trí bàn đạp / bướm ga “A” cao\nĐiện áp đầu ra mạch tín hiệu (chính) cảm biến TP cao hơn 4,8 V. (lô-gic phát hiện 1 D/C)",
+    "faultArea": "Cảm biến TP (chính) và/hoặc mạch của nó\nECM",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0123",
+    "title": "P0123 – Khắc phục sự cố",
+    "condition": "P0123: Mạch công tắc / cảm biến vị trí bàn đạp / bướm ga “A” cao\nĐiện áp đầu ra mạch tín hiệu (chính) cảm biến TP cao hơn 4,8 V. (lô-gic phát hiện 1 D/C)",
+    "faultArea": "Cảm biến TP (chính) và/hoặc mạch của nó\nECM",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0131",
+    "title": "P0131 – Khắc phục sự cố",
+    "condition": "P0131: Điện áp mạch cảm biến O2 thấp (Bank 1 Cảm biến 1) Điện áp đầu ra mạch HO2S-1 thấp hơn 0,06 V trong vòng 25 giây, ngay cả khi điện áp đầu ra mạch HO2S-2 cao hơn 0,6 V.\n(lô-gic phát hiện 3 D/C)",
+    "faultArea": "HO2S-1 và/hoặc mạch của nó\nECM",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0030",
+    "title": "P0030 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0116",
+    "title": "P0116 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0137",
+    "title": "P0137 – Khắc phục sự cố",
+    "condition": "P0137: Điện áp mạch cảm biến O2 thấp (Bank 1 Cảm biến 2)\nĐiện áp đầu ra mạch HO2S-2 cao hơn 0,06 V trong 25 giây sau khi làm nóng. (lô-gic phát hiện 3 D/C)",
+    "faultArea": "HO2S-2 và/hoặc mạch của nó\nCảm biến HO2S-2 và/hoặc mạch của nó\nHệ thống xả\nHệ thống nạp khí\nHệ thống nhiên liệu\nECM",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0201",
+    "title": "P0201 – Khắc phục sự cố",
+    "condition": "P0201: Mạch kim phun nhiên liệu/Hở mạch - Xi-lanh 1\nKim phun nhiên liệu số 1 và/hoặc mạch của kim phun bị hở khi động cơ hoạt\nđộng.\n(lô-gic phát hiện 3 D/C)",
+    "faultArea": "Kim phun nhiên liệu và/hoặc mạch của nó\nECM",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0134",
+    "title": "P0134 – Khắc phục sự cố",
+    "condition": "P0134: Phát hiện mạch cảm biến O2 không hoạt động (Bank 1 Cảm biến 1) Điện áp đầu ra mạch HO2S-1 vẫn nằm trong khoảng 0,42 và 0,5 V trong 25 giây.\n(lô-gic phát hiện 3 D/C)",
+    "faultArea": "HO2S-1 và/hoặc mạch của nó\nCảm biến HO2S-1\nHệ thống nạp khí\nHệ thống xả\nECM",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0030",
+    "title": "P0030 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0201",
+    "title": "P0201 – Khắc phục sự cố",
+    "condition": "P0201: Mạch kim phun nhiên liệu/Hở mạch - Xi-lanh 1\nKim phun nhiên liệu số 1 và/hoặc mạch của kim phun bị hở khi động cơ hoạt\nđộng.\n(lô-gic phát hiện 3 D/C)",
+    "faultArea": "Kim phun nhiên liệu và/hoặc mạch của nó\nECM",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "description": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "refs": [
+          "Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải (1A-19)"
+        ],
+        "okAction": "Chuyển sang Bước 2.",
+        "failAction": "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát\nkhí thải” (Trang 1A-19)."
+      },
+      {
+        "id": 2,
+        "title": "Kiểm tra DTC",
+        "description": "Có (những) DTC nào ngoài P0134 không?",
+        "refs": [],
+        "okAction": "Chuyển sang khắc phục sự cố DTC liên quan.",
+        "failAction": "Chuyển sang Bước 3."
+      },
+      {
+        "id": 3,
+        "title": "Kiểm tra hệ thống xả và hệ thống nạp khí",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 4.",
+        "failAction": "Sửa chữa hoặc thay các bộ phận bị lỗi."
+      },
+      {
+        "id": 4,
+        "title": "Kiểm tra mạch tín hiệu HO2S-1",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": ["A2 (2S-1)"],
+        "okAction": "Chuyển sang Bước 5.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 5,
+        "title": "Kiểm tra lại cảm biến HO2S-1",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "Kiểm tra lại cảm biến HOKiểm tra cảm biến HO (2S-1)",
+          "Quy trình xác nhận DTC (1C-9)",
+          "Thay thế HO (2S-1)",
+          "Thay thế HO2S-1 (1C-9)"
+        ],
+        "okAction": "Chuyển sang Bước 6.",
+        "failAction": "Thay thế HO2S-1.\n(Trang 1C-9)"
+      },
+      {
+        "id": 6,
+        "title": "Kiểm tra lại DTC",
+        "description": "Vẫn phát hiện DTC P0134?",
+        "refs": [
+          "Kiểm tra lại DTC Thay thế HO (2S-1)",
+          "Quy trình xác nhận DTC (1C-9)",
+          "Kết thúc (1C-2)"
+        ],
+        "okAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "failAction": "Kết thúc."
+      }
+    ]
+  },
+  {
+    "dtcCode": "P0137",
+    "title": "P0137 – Khắc phục sự cố",
+    "condition": "P0137: Điện áp mạch cảm biến O2 thấp (Bank 1 Cảm biến 2)\nĐiện áp đầu ra mạch HO2S-2 cao hơn 0,06 V trong 25 giây sau khi làm nóng. (lô-gic phát hiện 3 D/C)",
+    "faultArea": "HO2S-2 và/hoặc mạch của nó\nCảm biến HO2S-2 và/hoặc mạch của nó\nHệ thống xả\nHệ thống nạp khí\nHệ thống nhiên liệu\nECM",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0036",
+    "title": "P0036 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "description": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "refs": [
+          "Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải (1A-19)"
+        ],
+        "okAction": "Chuyển sang Bước 2.",
+        "failAction": "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát\nkhí thải” (Trang 1A-19)."
+      },
+      {
+        "id": 2,
+        "title": "Kiểm tra DTC",
+        "description": "Có (những) DTC nào ngoài P0137, P0138 và P0140 không?",
+        "refs": [],
+        "okAction": "Chuyển sang khắc phục sự cố DTC liên quan.",
+        "failAction": "Chuyển sang Bước 3."
+      },
+      {
+        "id": 3,
+        "title": "Kiểm tra mạch tín hiệu và mạch nối đất HO2S-2",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": ["OFF (2S-2)", "C01 (2S-2)", "B2 (2S-2)"],
+        "okAction": "Chuyển sang Bước 4.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị lỗi."
+      },
+      {
+        "id": 4,
+        "title": "Kiểm tra hệ thống xả và hệ thống nạp khí",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 5.",
+        "failAction": "Sửa chữa hoặc thay các bộ phận bị lỗi."
+      },
+      {
+        "id": 5,
+        "title": "Kiểm tra mạch cảm biến HO2S-2",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": ["DTC P0036/P0037/P0038 (2S-2)"],
+        "okAction": "Chuyển sang Bước 6.",
+        "failAction": "Sửa chữa hoặc thay các bộ phận bị lỗi."
+      },
+      {
+        "id": 6,
+        "title": "Kiểm tra kim phun nhiên liệu và/hoặc mạch của nó",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "Kiểm tra các kim phun nhiên liệu (1G-6)",
+          "Kết quả kiểm tra có ỔN không? Chuyển sang Bước 7 (1G-21)"
+        ],
+        "okAction": "Chuyển sang Bước 7.",
+        "failAction": "(Các) kim phun nhiên liệu hoặc mạch của nó bị lỗi."
+      },
+      {
+        "id": 7,
+        "title": "Kiểm tra lại DTC",
+        "description": "Có vẫn phát hiện DTC P0137, P0138 hay P0140 không?",
+        "refs": [
+          "Kiểm tra lại DTC Thay thế HO (2S-2)",
+          "Quy trình xác nhận DTC (1C-9)",
+          "Kết thúc (1C-2)"
+        ],
+        "okAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "failAction": "Kết thúc."
+      }
+    ]
+  },
+  {
+    "dtcCode": "P0201",
+    "title": "P0201 – Khắc phục sự cố",
+    "condition": "P0201: Mạch kim phun nhiên liệu/Hở mạch - Xi-lanh 1\nKim phun nhiên liệu số 1 và/hoặc mạch của kim phun bị hở khi động cơ hoạt\nđộng.\n(lô-gic phát hiện 3 D/C)",
+    "faultArea": "Kim phun nhiên liệu và/hoặc mạch của nó\nECM",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm",
+        "description": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm",
+        "refs": [],
+        "okAction": "Nếu phát hiện DTC",
+        "failAction": "Chuyển sang “Kiểm tra"
+      },
+      {
+        "id": 2,
+        "title": "Kiểm tra mạch cấp nguồn kim phun nhiên liệu",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 3.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 3,
+        "title": "Kiểm tra mạch điều khiển kim phun nhiên liệu",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 4.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 4,
+        "title": "Kiểm tra kim phun nhiên liệu",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "Kết quả kiểm tra có ỔN không? Thay ECM và kiểm tra lại DTC (1G-21)",
+          "Thay thế kim phun nhiên liệu liên quan tới DTC (1C-2)",
+          "Trang 1C-2) Thay thế kim phun nhiên liệu liên quan tới DTC (1G-19)"
+        ],
+        "okAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "failAction": "Thay thế kim phun nhiên liệu liên quan tới DTC. (Trang 1G-19)"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P0222",
+    "title": "P0222 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0222",
+    "title": "P0222 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0223",
+    "title": "P0223 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0223",
+    "title": "P0223 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "description": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "refs": [
+          "Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải (1A-19)"
+        ],
+        "okAction": "Chuyển sang Bước 2.",
+        "failAction": "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát\nkhí thải” (Trang 1A-19)."
+      },
+      {
+        "id": 2,
+        "title": "Kiểm tra mạch cấp nguồn cảm biến TP",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 4.",
+        "failAction": "Chuyển sang Bước 3."
+      },
+      {
+        "id": 3,
+        "title": "Kiểm tra mạch nối đất cảm biến TP",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "B1 (1C-2)",
+          "Nếu vẫn phát hiện DTC này, hãy thay thế ECM và kiểm tra lại DTC (1C-2)"
+        ],
+        "okAction": "Sửa mạch “B4”.\nNếu vẫn phát hiện DTC này, hãy thay thế ECM và kiểm tra lại DTC.\n(Trang 1C-2)",
+        "failAction": "Sửa mạch “B1”.\nNếu vẫn phát hiện DTC này, hãy thay thế ECM và kiểm tra lại DTC.\n(Trang 1C-2)"
+      },
+      {
+        "id": 4,
+        "title": "Kiểm tra mạch tín hiệu (phụ) cảm biến TP",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 5.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 5,
+        "title": "Kiểm tra cảm biến TP",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "Kiểm tra hoạt động cảm biến TP (1C-3)",
+          "Thay thế bộ thân bướm ga điện (1C-2)"
+        ],
+        "okAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "failAction": "Thay thế bộ thân bướm ga điện. (Trang 1D- 12)"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P0327",
+    "title": "P0327 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "description": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "refs": [
+          "Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải (1A-19)"
+        ],
+        "okAction": "Chuyển sang Bước 2.",
+        "failAction": "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát\nkhí thải” (Trang 1A-19)."
+      },
+      {
+        "id": 2,
+        "title": "Kiểm tra mạch tín hiệu cảm biến kích nổ",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 3.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 3,
+        "title": "Kiểm tra cảm biến kích nổ",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": ["Kết quả kiểm tra có ỔN không? Chuyển sang Bước 4 (1C-11)"],
+        "okAction": "Chuyển sang Bước 4.",
+        "failAction": "Hãy thay thế cảm biến kích nổ. (Trang 1C- 11)"
+      },
+      {
+        "id": 4,
+        "title": "Đồng thời khắc phục sự cố của (những) DTC khác",
+        "description": "Có phát hiện (các) DTC khác không?",
+        "refs": ["Thay ECM và kiểm tra lại DTC (1C-2)"],
+        "okAction": "Chuyển sang khắc phục sự cố DTC liên quan.",
+        "failAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P0335",
+    "title": "P0335 – Khắc phục sự cố",
+    "condition": "P0335: Mạch cảm biến vị trí trục khuỷu “A”\nTín hiệu cảm biến CKP không được nhập vào trong khi tín hiệu cảm biến CMP\nđang được nhập vào. (lô-gic phát hiện 3 D/C)",
+    "faultArea": "Cảm biến CKP và/hoặc mạch của nó\nVòng răng tạo xung\nECM",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0340",
+    "title": "P0340 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "description": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "refs": [
+          "Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải (1A-19)"
+        ],
+        "okAction": "Chuyển sang Bước 2.",
+        "failAction": "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát\nkhí thải” (Trang 1A-19)."
+      },
+      {
+        "id": 2,
+        "title": "Kiểm tra mạch cấp nguồn cảm biến CKP",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 4.",
+        "failAction": "Chuyển sang Bước 3."
+      },
+      {
+        "id": 3,
+        "title": "Kiểm tra mạch nối đất cảm biến CKP",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Sửa mạch “B3”.",
+        "failAction": "Sửa mạch “B1”."
+      },
+      {
+        "id": 4,
+        "title": "Kiểm tra mạch tín hiệu cảm biến CKP",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 5.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 5,
+        "title": "Kiểm tra cảm biến CKP và vòng răng tạo xung",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "Cảm biến CKP:  Vòng răng tạo xung: (Trang 1D-78) Kết quả kiểm tra có ỔN không? Thay ECM và kiểm tra lại DTC (1C-10)",
+          "Sửa chữa hoặc thay thế các bộ phận bị lỗi (1C-2)"
+        ],
+        "okAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "failAction": "Sửa chữa hoặc thay thế các bộ phận bị lỗi."
+      }
+    ]
+  },
+  {
+    "dtcCode": "P0340",
+    "title": "P0340 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "description": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "refs": [
+          "Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải (1A-19)"
+        ],
+        "okAction": "Chuyển sang Bước 2.",
+        "failAction": "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát\nkhí thải” (Trang 1A-19)."
+      },
+      {
+        "id": 2,
+        "title": "Kiểm tra mạch cấp nguồn cảm biến CMP",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 4.",
+        "failAction": "Chuyển sang Bước 3."
+      },
+      {
+        "id": 3,
+        "title": "Kiểm tra mạch nối đất cảm biến CMP",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Sửa mạch “A3”.",
+        "failAction": "Sửa mạch “A1”."
+      },
+      {
+        "id": 4,
+        "title": "Kiểm tra mạch tín hiệu cảm biến CMP",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 5.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 5,
+        "title": "Kiểm tra rô-to tín hiệu và cảm biến CMP",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "Cảm biến CMP:  Rô-to tín hiệu: (Trang 1D-23) Kết quả kiểm tra có ỔN không? Thay ECM và kiểm tra lại DTC (1C-9)",
+          "Sửa chữa hoặc thay thế các bộ phận bị lỗi (1C-2)"
+        ],
+        "okAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "failAction": "Sửa chữa hoặc thay thế các bộ phận bị lỗi."
+      }
+    ]
+  },
+  {
+    "dtcCode": "P0351",
+    "title": "P0351 – Khắc phục sự cố",
+    "condition": "P0351: Mạch sơ cấp/thứ cấp bô-bin “A”\nCụm bô-bin số 1 và/hoặc mạch bô-bin hở khi động cơ đang hoạt động. (lô-gic phát hiện 3 D/C)",
+    "faultArea": "Cụm bô-bin và/hoặc mạch của nó\nECM",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm",
+        "description": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm",
+        "refs": [],
+        "okAction": "Nếu phát hiện DTC",
+        "failAction": "Chuyển sang “Kiểm tra"
+      },
+      {
+        "id": 2,
+        "title": "Kiểm tra mạch cấp nguồn cụm bô-bin",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 4.",
+        "failAction": "Chuyển sang Bước 3."
+      },
+      {
+        "id": 3,
+        "title": "Kiểm tra mạch nối đất cụm bô-bin",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Sửa chữa hoặc thay thế mạch “A3”, “B3”, “C3”\nhoặc “D3”.",
+        "failAction": "Sửa chữa hoặc thay thế mạch “A1”, “B1”, “C1”\nhoặc “D1”."
+      },
+      {
+        "id": 4,
+        "title": "Kiểm tra mạch điều khiển cụm bô-bin",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 6.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 5,
+        "title": "Kiểm tra mạch điều khiển cụm bô-bin",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 6.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 6,
+        "title": "Kiểm tra lại DTC",
+        "description": "Vẫn phát hiện DTC tương tự?",
+        "refs": [
+          "Xóa DTC (1H-6)",
+          "OFF (1A-23)",
+          "Vẫn phát hiện DTC tương tự? Thay ECM và kiểm tra lại DTC (1A-22)",
+          "Kết thúc (1C-2)"
+        ],
+        "okAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "failAction": "Kết thúc."
+      }
+    ]
+  },
+  {
+    "dtcCode": "P0443",
+    "title": "P0443 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "description": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "refs": [
+          "Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải (1A-19)"
+        ],
+        "okAction": "Nếu phát hiện DTC P0443 và P0458, hãy chuyển sang Bước 2.\nNếu phát hiện DTC P0459, hãy chuyển sang Bước 4.",
+        "failAction": "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” (Trang 1A-19)."
+      },
+      {
+        "id": 2,
+        "title": "Kiểm tra mạch cấp nguồn bộ van xả bộ hấp thụ hơi xăng EVAP",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 3.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 3,
+        "title": "Kiểm tra mạch điều khiển bộ van xả bộ hấp thụ hơi xăng EVAP",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 5.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 4,
+        "title": "Kiểm tra mạch điều khiển bộ van xả bộ hấp thụ hơi xăng EVAP",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 5.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 5,
+        "title": "Kiểm tra bộ van xả bộ hấp thụ hơi xăng EVAP",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "Kết quả kiểm tra có ỔN không? Thay ECM và kiểm tra lại DTC (1B-4)",
+          "Thay bộ van xả bộ hấp thụ hơi xăng EVAP (1C-2)",
+          "Trang 1C-2) Thay bộ van xả bộ hấp thụ hơi xăng EVAP (1B-3)"
+        ],
+        "okAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "failAction": "Thay bộ van xả bộ hấp thụ hơi xăng EVAP.\n(Trang 1B-3)"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P0480",
+    "title": "P0480 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "description": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "refs": [
+          "Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải (1A-19)"
+        ],
+        "okAction": "Chuyển sang Bước 2.",
+        "failAction": "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát\nkhí thải” (Trang 1A-19)."
+      },
+      {
+        "id": 2,
+        "title": "Kiểm tra rơ-le quạt làm mát két nước số 1",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Nếu phát hiện DTC P0480, hãy chuyển sang Bước 3.\nNếu phát hiện DTC P0692, hãy chuyển sang Bước 5.",
+        "failAction": "Thay rơ-le quạt làm mát két nước số 1."
+      },
+      {
+        "id": 3,
+        "title": "Kiểm tra mạch cấp nguồn rơ-le quạt làm mát két nước số 1 (phía cuộn dây)",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 4.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 4,
+        "title": "Kiểm tra mạch điều khiển rơ-le quạt làm mát két nước số 1",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": ["Sửa chữa hoặc thay thế bộ dây điện bị hỏng (1C-2)"],
+        "okAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 5,
+        "title": "Kiểm tra mạch điều khiển rơ-le quạt làm mát két nước số 1",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": ["Sửa chữa hoặc thay thế bộ dây điện bị hỏng (1C-2)"],
+        "okAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      }
+    ]
+  },
+  {
+    "dtcCode": "P0481",
+    "title": "P0481 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0480",
+    "title": "P0480 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "description": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "refs": [
+          "Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải (1A-19)"
+        ],
+        "okAction": "Chuyển sang Bước 2.",
+        "failAction": "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát\nkhí thải” (Trang 1A-19)."
+      },
+      {
+        "id": 2,
+        "title": "Kiểm tra rơ-le quạt làm mát két nước số 2 và số 3",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "Kết quả kiểm tra có ỔN không? Nếu phát hiện DTC P0481, hãy chuyển sang Bước 3 (1F-15)"
+        ],
+        "okAction": "Nếu phát hiện DTC P0481, hãy chuyển sang Bước 3.\nNếu phát hiện DTC P0694, hãy chuyển sang Bước 5.",
+        "failAction": "Thay rơ-le quạt làm mát két nước số 2 và/hoặc số 3."
+      },
+      {
+        "id": 3,
+        "title": "Kiểm tra mạch cấp nguồn rơ-le quạt làm mát két nước số 2 và 3 (phía cuộn dây)",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 4.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 4,
+        "title": "Kiểm tra mạch điều khiển rơ-le quạt làm mát két nước số 2 và số 3",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": ["Sửa chữa hoặc thay thế bộ dây điện bị hỏng (1C-2)"],
+        "okAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 5,
+        "title": "Kiểm tra mạch điều khiển rơ-le quạt làm mát két nước số 2 và số 3",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": ["Sửa chữa hoặc thay thế bộ dây điện bị hỏng (1C-2)"],
+        "okAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      }
+    ]
+  },
+  {
+    "dtcCode": "P0500",
+    "title": "P0500 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "description": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "refs": [
+          "Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải (1A-19)"
+        ],
+        "okAction": "Chuyển sang Bước 2.",
+        "failAction": "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát\nkhí thải” (Trang 1A-19)."
+      },
+      {
+        "id": 2,
+        "title": "Kiểm tra điện áp bộ cấp nguồn VSS",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 5.",
+        "failAction": "Chuyển sang Bước 3."
+      },
+      {
+        "id": 3,
+        "title": "Kiểm tra mạch nối đất VSS",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Sửa chữa hoặc thay thế mạch “A3”.",
+        "failAction": "Chuyển sang Bước 4."
+      },
+      {
+        "id": 4,
+        "title": "Kiểm tra mạch cấp nguồn VSS",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": ["A1 (1C-2)"],
+        "okAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "failAction": "Sửa chữa hoặc thay thế mạch “A1”."
+      },
+      {
+        "id": 5,
+        "title": "Kiểm tra mạch tín hiệu VSS",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 6.",
+        "failAction": "Sửa hoặc thay thế mạch “A2”."
+      },
+      {
+        "id": 6,
+        "title": "Kiểm tra VSS và vòng cảm biến tốc độ",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "Kiểm tra VSS và vòng cảm biến tốc độ Kiểm tra các mục sau: VSS:  Vòng cảm biến tốc độ: (Trang 5B-9) Kết quả kiểm tra có ỔN không? Thay ECM và kiểm tra lại DTC (1C-13)",
+          "Sửa chữa hoặc thay các bộ phận bị lỗi (1C-2)"
+        ],
+        "okAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "failAction": "Sửa chữa hoặc thay các bộ phận bị lỗi."
+      }
+    ]
+  },
+  {
+    "dtcCode": "P0504",
+    "title": "P0504 – Khắc phục sự cố",
+    "condition": "P0504: Tương quan công tắc phanh “A”/“B”\nTín hiệu công tắc đèn phanh sẽ không BẬT hoặc TẮT trong thời gian lâu hơn quy định.\n(lô-gic phát hiện 1 D/C)",
+    "faultArea": "Công tắc đèn phanh và/hoặc mạch điện của nó\nECM",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "description": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "refs": [
+          "Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải (1A-19)"
+        ],
+        "okAction": "Chuyển sang Bước 2.",
+        "failAction": "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát\nkhí thải” (Trang 1A-19)."
+      },
+      {
+        "id": 2,
+        "title": "Kiểm tra mạch cấp nguồn công tắc đèn phanh",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 4.",
+        "failAction": "Chuyển sang Bước 3."
+      },
+      {
+        "id": 3,
+        "title": "Kiểm tra mạch nối đất công tắc đèn phanh",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Sửa chữa hoặc thay thế mạch “B1”.",
+        "failAction": "Kiểm tra để đảm bảo cầu chì đèn phanh “STOP” không bị nổ. Nếu kết quả kiểm tra đã ỔN, hãy sửa hoặc thay\nthế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 4,
+        "title": "Kiểm tra mạch tín hiệu công tắc đèn phanh",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 5.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 5,
+        "title": "Kiểm tra công tắc đèn phanh",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "Kết quả kiểm tra có ỔN không? Thay ECM và kiểm tra lại DTC (4A-13)",
+          "Thay công tắc đèn phanh (1C-2)",
+          "Trang 1C-2) Thay công tắc đèn phanh (4A-13)"
+        ],
+        "okAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "failAction": "Thay công tắc đèn phanh. (Trang 4A-13)"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P0530",
+    "title": "P0530 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "description": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "refs": [
+          "Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải (1A-19)"
+        ],
+        "okAction": "Chuyển sang Bước 2.",
+        "failAction": "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát\nkhí thải” (Trang 1A-19)."
+      },
+      {
+        "id": 2,
+        "title": "Kiểm tra mạch cấp nguồn cảm biến áp suất môi chất làm lạnh A/C",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 4.",
+        "failAction": "Chuyển sang Bước 3."
+      },
+      {
+        "id": 3,
+        "title": "Kiểm tra mạch nối đất cảm biến áp suất môi chất làm lạnh A/C",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "A1 (1C-2)",
+          "Nếu vẫn phát hiện DTC này, hãy thay thế ECM và kiểm tra lại DTC (1C-2)"
+        ],
+        "okAction": "Sửa mạch “A3”.\nNếu vẫn phát hiện DTC này, hãy thay thế ECM và kiểm tra lại DTC.\n(Trang 1C-2)",
+        "failAction": "Sửa mạch “A1”.\nNếu vẫn phát hiện DTC này, hãy thay thế ECM và kiểm tra lại DTC.\n(Trang 1C-2)"
+      },
+      {
+        "id": 4,
+        "title": "Kiểm tra mạch tín hiệu cảm biến áp suất môi chất làm lạnh A/C",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [],
+        "okAction": "Chuyển sang Bước 5.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 5,
+        "title": "Kiểm tra cảm biến áp suất môi chất làm lạnh A/C",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "Kết quả kiểm tra có ỔN không? Thay ECM và kiểm tra lại DTC (7B-47)",
+          "Thay cảm biến áp suất môi chất làm lạnh A/C (1C-2)",
+          "Trang 1C-2) Thay cảm biến áp suất môi chất làm lạnh A/C (7B-47)"
+        ],
+        "okAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "failAction": "Thay cảm biến áp suất môi chất làm lạnh A/C.\n(Trang 7B-47)"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P0560",
+    "title": "P0560 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0560",
+    "title": "P0560 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0562",
+    "title": "P0562 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0602",
+    "title": "P0602 – Khắc phục sự cố",
+    "condition": "P0602: Lỗi lập trình cụm điều khiển\nHỏng hóc bên trong ECM (lỗi lập trình dữ liệu). (lô-gic phát hiện 1 D/C)",
+    "faultArea": "Lỗi lập trình của ECM\nMạch cấp nguồn và/hoặc mạch nối đất ECM\nECM",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0602",
+    "title": "P0602 – Khắc phục sự cố",
+    "condition": "P0602: Lỗi lập trình cụm điều khiển\nHỏng hóc bên trong ECM (lỗi lập trình dữ liệu). (lô-gic phát hiện 1 D/C)",
+    "faultArea": "Lỗi lập trình của ECM\nMạch cấp nguồn và/hoặc mạch nối đất ECM\nECM",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Kiểm tra lại DTC",
+        "description": "Vẫn phát hiện DTC P0602?",
+        "refs": ["OFF (1A-23)"],
+        "okAction": "Chuyển sang Bước 2.",
+        "failAction": "Hỏng hóc gián đoạn.\nKiểm tra hỏng hóc gián\nđoạn. (Trang 00-11)"
+      },
+      {
+        "id": 2,
+        "title": "Kiểm tra lập trình lại ECM",
+        "description": "Lập trình lại ECM có được tiến hành không?",
+        "refs": [],
+        "okAction": "Tiến hành lập trình chính xác lại ECM một\nlần nữa.",
+        "failAction": "Chuyển sang Bước 3."
+      },
+      {
+        "id": 3,
+        "title": "Kiểm tra mạch nguồn và mạch nối đất ECM",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "Kết quả kiểm tra có ỔN không? Thay ECM và kiểm tra lại DTC (1A-130)",
+          "Sửa chữa hoặc thay thế bộ dây điện bị hỏng (1C-2)"
+        ],
+        "okAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      }
+    ]
+  },
+  {
+    "dtcCode": "P0606",
+    "title": "P0606 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0335",
+    "title": "P0335 – Khắc phục sự cố",
+    "condition": "P0335: Mạch cảm biến vị trí trục khuỷu “A”\nTín hiệu cảm biến CKP không được nhập vào trong khi tín hiệu cảm biến CMP\nđang được nhập vào. (lô-gic phát hiện 3 D/C)",
+    "faultArea": "Cảm biến CKP và/hoặc mạch của nó\nVòng răng tạo xung\nECM",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Kiểm tra lại DTC",
+        "description": "Vẫn phát hiện DTC P0606?",
+        "refs": ["OFF (1A-23)"],
+        "okAction": "Chuyển sang Bước 2.",
+        "failAction": "Kiểm tra hỏng hóc gián\nđoạn. (Trang 00-11)"
+      },
+      {
+        "id": 2,
+        "title": "Kiểm tra mạch nguồn và mạch nối đất ECM",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": ["Kết quả kiểm tra có ỔN không? Chuyển sang Bước 3 (1A-130)"],
+        "okAction": "Chuyển sang Bước 3.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 3,
+        "title": "Kiểm tra lại DTC",
+        "description": "Vẫn phát hiện DTC P0606?",
+        "refs": [
+          "Kiểm tra lại DTC Thay thế HO (2S-2)",
+          "Quy trình xác nhận DTC (1C-9)",
+          "Kết thúc (1C-2)"
+        ],
+        "okAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "failAction": "Kết thúc."
+      }
+    ]
+  },
+  {
+    "dtcCode": "P0607",
+    "title": "P0607 – Khắc phục sự cố",
+    "condition": "P0607: Hoạt động cụm điều khiển\nPhát hiện hỏng hóc bên trong ECM.\n(lô-gic phát hiện 1 D/C hoặc lô-gic phát hiện 3 D/C nhưng MIL không sáng đèn)",
+    "faultArea": "Mạch cấp nguồn và/hoặc mạch nối đất ECM\nECM",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0645",
+    "title": "P0645 – Khắc phục sự cố",
+    "condition": "P0645: Mạch điều khiển rơ-le ly hợp A/C\nMạch điều khiển rơ-le máy nén A/C bị hở.\n(lô-gic phát hiện 3 D/C nhưng MIL không sáng đèn)",
+    "faultArea": "Rơ-le máy nén A/C và/hoặc mạch của nó\nECM",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0117",
+    "title": "P0117 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0530",
+    "title": "P0530 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "description": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "refs": [
+          "Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải (1A-19)"
+        ],
+        "okAction": "Chuyển sang Bước 2.",
+        "failAction": "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát\nkhí thải” (Trang 1A-19)."
+      },
+      {
+        "id": 2,
+        "title": "Kiểm tra rơ-le máy nén A/C",
+        "description": "Kiểm tra rơ-le máy nén A/C",
+        "refs": [],
+        "okAction": "Nếu phát hiện DTC",
+        "failAction": "Hãy thay thế rơ-le máy"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P2100",
+    "title": "P2100 – Khắc phục sự cố",
+    "condition": "P2100: Mạch mô-tơ điều khiển bộ chấp hành bướm ga “A”/Hở mạch\nPhát hiện hỏng hóc bộ chấp hành bướm ga và/hoặc mạch bộ chấp hành (hở, ngắn mạch với bộ cấp nguồn hoặc ngắn mạch với đất).\n(lô-gic phát hiện 1 D/C)",
+    "faultArea": "Bộ chấp hành bướm ga và/hoặc mạch của nó\nECM",
+    "steps": []
+  },
+  {
+    "dtcCode": "P2101",
+    "title": "P2101 – Khắc phục sự cố",
+    "condition": "P2101: Phạm vi mạch/hoạt động mô tơ điều khiển bộ chấp hành bướm ga \"A\"\nNếu gặp bất kỳ điều kiện nào sau đây.\nChênh lệch giữa vị trí van bướm ga đo được và vị trí van bướm ga mục tiêu lớn hơn giá trị quy định.\nHệ số sử dụng tín hiệu bộ chấp hành bướm ga nằm ngoài phạm vi quy định trong khoảng thời g",
+    "faultArea": "Bộ chấp hành bướm ga và/hoặc mạch của nó\nBộ thân bướm ga điện\nECM",
+    "steps": []
+  },
+  {
+    "dtcCode": "P2101",
+    "title": "P2101 – Khắc phục sự cố",
+    "condition": "P2101: Phạm vi mạch/hoạt động mô tơ điều khiển bộ chấp hành bướm ga \"A\"\nNếu gặp bất kỳ điều kiện nào sau đây.\nChênh lệch giữa vị trí van bướm ga đo được và vị trí van bướm ga mục tiêu lớn hơn giá trị quy định.\nHệ số sử dụng tín hiệu bộ chấp hành bướm ga nằm ngoài phạm vi quy định trong khoảng thời g",
+    "faultArea": "Bộ chấp hành bướm ga và/hoặc mạch của nó\nBộ thân bướm ga điện\nECM",
+    "steps": []
+  },
+  {
+    "dtcCode": "P2119",
+    "title": "P2119 – Khắc phục sự cố",
+    "condition": "P2119: Phạm vi/hoạt động thân bướm ga điều khiển bộ chấp hành bướm ga\nNếu gặp bất kỳ điều kiện nào sau đây.\nThời gian để van bướm ga quay lại từ vị trí mở một phần tới vị trí thiết lập mặc định lâu hơn thời gian quy định trong suốt quá trình kiểm tra lò xo hồi vị sau khi xoay công tắc máy về vị trí ",
+    "faultArea": "Bộ chấp hành bướm ga và/hoặc mạch của nó\nBộ thân bướm ga điện\nECM",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "description": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "refs": [
+          "Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải (1A-19)"
+        ],
+        "okAction": "Chuyển sang Bước 2.",
+        "failAction": "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát\nkhí thải” (Trang 1A-19)."
+      },
+      {
+        "id": 2,
+        "title": "Kiểm tra lại DTC",
+        "description": "Vẫn phát hiện DTC P2101/P2119?",
+        "refs": ["Kiểm tra lại DTC (1C-5)"],
+        "okAction": "Chuyển sang Bước 3.",
+        "failAction": "Kết thúc."
+      },
+      {
+        "id": 3,
+        "title": "Kiểm tra mạch điều khiển bộ chấp hành bướm ga",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": ["DTC P2100 (1A-103)"],
+        "okAction": "Chuyển sang Bước 4.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 4,
+        "title": "Kiểm tra bộ thân bướm ga điện",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": ["Thay thế bộ thân bướm ga điện (1C-2)"],
+        "okAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "failAction": "Thay thế bộ thân bướm ga điện. (Trang 1D- 12)"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P2122",
+    "title": "P2122 – Khắc phục sự cố",
+    "condition": "P2122: Mạch công tắc / cảm biến vị trí bàn đạp / bướm ga “D” thấp\nĐiện áp đầu ra mạch tín hiệu (chính) cảm biến APP thấp hơn 0,4 V. (lô-gic phát hiện 1 D/C)",
+    "faultArea": "Cảm biến APP (chính) và/hoặc mạch của nó\nECM",
+    "steps": []
+  },
+  {
+    "dtcCode": "P2127",
+    "title": "P2127 – Khắc phục sự cố",
+    "condition": "P2127: Mạch công tắc / cảm biến vị trí bàn đạp / bướm ga “E” thấp\nĐiện áp đầu ra mạch tín hiệu (phụ) cảm biến APP thấp hơn 0,2 V. (lô-gic phát hiện 1 D/C)",
+    "faultArea": "Cảm biến APP (phụ) và/hoặc mạch của nó\nECM",
+    "steps": []
+  },
+  {
+    "dtcCode": "P2135",
+    "title": "P2135 – Khắc phục sự cố",
+    "condition": "P2135: Tương quan điện áp công tắc / cảm biến vị trí bàn đạp / bướm ga “A”/“B”\nChênh lệch giữa điện áp tín hiệu (chính) cảm biến TP và\nđiện áp tín hiệu (phụ) cảm biến TP cao hơn giá trị quy định. (lô-gic phát hiện 1 D/C)",
+    "faultArea": "Cảm biến TP và/hoặc mạch của nó\nBộ thân bướm ga điện\nECM",
+    "steps": []
+  },
+  {
+    "dtcCode": "P0122",
+    "title": "P0122 – Khắc phục sự cố",
+    "condition": "P0122: Mạch công tắc / cảm biến vị trí bàn đạp / bướm ga “A” thấp\nĐiện áp đầu ra mạch tín hiệu (chính) cảm biến TP thấp hơn 0,2 V. (lô-gic phát hiện 1 D/C)",
+    "faultArea": "Cảm biến TP (chính) và/hoặc mạch của nó\nECM",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "description": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "refs": [
+          "Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải (1A-19)"
+        ],
+        "okAction": "Chuyển sang Bước 2.",
+        "failAction": "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát\nkhí thải” (Trang 1A-19)."
+      },
+      {
+        "id": 2,
+        "title": "Kiểm tra bộ dây điện",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": ["B1 (1A-64)", "B3 (1A-76)"],
+        "okAction": "Chuyển sang Bước 3.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 3,
+        "title": "Kiểm tra cảm biến TP",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "Kiểm tra hoạt động cảm biến TP (1C-3)",
+          "Thay thế bộ thân bướm ga điện (1C-2)"
+        ],
+        "okAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "failAction": "Thay thế bộ thân bướm ga điện. (Trang 1D- 12)"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P2138",
+    "title": "P2138 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": []
+  },
+  {
+    "dtcCode": "P2122",
+    "title": "P2122 – Khắc phục sự cố",
+    "condition": "P2122: Mạch công tắc / cảm biến vị trí bàn đạp / bướm ga “D” thấp\nĐiện áp đầu ra mạch tín hiệu (chính) cảm biến APP thấp hơn 0,4 V. (lô-gic phát hiện 1 D/C)",
+    "faultArea": "Cảm biến APP (chính) và/hoặc mạch của nó\nECM",
+    "steps": []
+  },
+  {
+    "dtcCode": "P2176",
+    "title": "P2176 – Khắc phục sự cố",
+    "condition": "P2176: Hệ thống điều khiển bộ chấp hành bướm ga - Vị trí cầm chừng không rõ\nNếu gặp bất kỳ điều kiện nào sau đây.\nĐiện áp tín hiệu (chính) cảm biến TP hoặc tín hiệu (phụ) cảm biến TP tại vị trí mặc định nằm ngoài phạm vi quy định trong thời gian quy định.\nHiệu chuẩn hệ thống điều khiển bướm ga điện ",
+    "faultArea": "Cảm biến TP và/hoặc mạch của nó\nBộ thân bướm ga điện\nECM",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "description": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "refs": [
+          "Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải (1A-19)"
+        ],
+        "okAction": "Chuyển sang Bước 2.",
+        "failAction": "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát\nkhí thải” (Trang 1A-19)."
+      },
+      {
+        "id": 2,
+        "title": "Hiệu chuẩn hệ thống điều khiển bướm ga điện",
+        "description": "Vẫn phát hiện DTC P2176?",
+        "refs": ["Kiểm tra lại DTC (1C-5)"],
+        "okAction": "Chuyển sang Bước 3.",
+        "failAction": "Kết thúc."
+      },
+      {
+        "id": 3,
+        "title": "Kiểm tra bộ dây điện",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": ["B1 (1A-64)", "B3 (1A-76)"],
+        "okAction": "Chuyển sang Bước 4.",
+        "failAction": "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      },
+      {
+        "id": 4,
+        "title": "Kiểm tra cảm biến TP",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "Kiểm tra hoạt động cảm biến TP (1C-3)",
+          "Thay thế bộ thân bướm ga điện (1C-2)"
+        ],
+        "okAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "failAction": "Thay thế bộ thân bướm ga điện. (Trang 1D- 12)"
+      }
+    ]
+  },
+  {
+    "dtcCode": "P2226",
+    "title": "P2226 – Khắc phục sự cố",
+    "condition": "",
+    "faultArea": "",
+    "steps": [
+      {
+        "id": 1,
+        "title": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "description": "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "refs": [
+          "Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải (1A-19)"
+        ],
+        "okAction": "Chuyển sang Bước 2.",
+        "failAction": "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát\nkhí thải” (Trang 1A-19)."
+      },
+      {
+        "id": 2,
+        "title": "Kiểm tra mạch cấp nguồn và mạch nối đất ECM",
+        "description": "Kết quả kiểm tra có ỔN không?",
+        "refs": [
+          "Kết quả kiểm tra có ỔN không? Thay ECM và kiểm tra lại DTC (1A-130)",
+          "Sửa chữa mạch cấp nguồn và mạch nối đất ECM (1C-2)"
+        ],
+        "okAction": "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "failAction": "Sửa chữa mạch cấp nguồn và mạch nối đất ECM."
+      }
+    ]
+  }
+]
