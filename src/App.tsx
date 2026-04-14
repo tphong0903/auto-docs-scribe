@@ -17,6 +17,7 @@ import AdminSettings from "./pages/admin/AdminSettings.tsx";
 import DiagnosticViewer from "./components/admin/DiagnosticViewer.tsx";
 import DTCDisplay from "@/components/admin/DTCDisplay.tsx";
 import DTCCreator from "./components/admin/DTCCreator.tsx";
+import Viewer from "./components/admin/Viewer.tsx";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -35,6 +36,7 @@ const App = () => (
           <Route path="/admin" element={<AdminLayout />}>
             <Route index element={<AdminDashboard />} />
             <Route path="articles" element={<AdminArticles />} />
+            <Route path="viewer" element={<Viewer />} />
             <Route path="articles/new" element={<AdminArticleEditor />} />
             <Route path="articles/:id/edit" element={<AdminArticleEditor />} />
             <Route path="categories" element={<AdminCategories />} />
