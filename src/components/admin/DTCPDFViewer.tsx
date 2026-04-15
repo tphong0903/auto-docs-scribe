@@ -4,9 +4,7 @@ import { Loader, ChevronLeft, ChevronRight, RotateCw } from "lucide-react";
 import "react-pdf/dist/Page/AnnotationLayer.css";
 import "react-pdf/dist/Page/TextLayer.css";
 
-// Khởi tạo worker cho react-pdf
 pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
-
 interface DTCPDFViewerProps {
   folder: string;
 }

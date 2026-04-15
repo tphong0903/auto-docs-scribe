@@ -21,7 +21,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
-
+const API_URL = import.meta.env.VITE_API_URL || "";
 export interface DTCItem {
   code: string;
   name: string;
@@ -50,7 +50,6 @@ const DTCViewer: React.FC = () => {
     foundDTCs: DTCItem[];
   } | null>(null);
 
-  const API_URL = "";
 
   useEffect(() => {
     fetchDTCList();
