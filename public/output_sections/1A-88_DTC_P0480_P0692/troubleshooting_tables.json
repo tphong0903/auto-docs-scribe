@@ -1,0 +1,39 @@
+[
+  {
+    "page": 135,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” (Trang 1A-19)."
+      ],
+      [
+        "2",
+        "Kiểm tra rơ-le quạt làm mát két nước số 1\n1) Kiểm tra rơ-le quạt làm mát két nước số 1. (Trang 1F-\n15)\nKết quả kiểm tra có ỔN không?",
+        "• Nếu phát hiện DTC\nP0480, hãy chuyển\nsang Bước 3.\n• Nếu phát hiện DTC\nP0692, hãy chuyển\nsang Bước 5.",
+        "Thay rơ-le quạt làm mát\nkét nước số 1."
+      ],
+      [
+        "3",
+        "Kiểm tra mạch cấp nguồn rơ-le quạt làm mát két nước\nsố 1 (phía cuộn dây)\n1) Với công tắc máy ở vị trí “OFF”, tháo rơ-le quạt làm mát\nkét nước số 1.\n2) Kiểm tra xem kết nối cực tới giắc cắm rơ-le quạt làm mát\nkét nước số 1 có chính xác không.\n3) Nếu kết nối ỔN, hãy xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra để đảm bảo điện áp giữa “A1” và dây nối đất\nbằng điện áp bình điện.\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 4.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "4",
+        "Kiểm tra mạch điều khiển rơ-le quạt làm mát két nước\nsố 1\n1) Với công tắc máy ở vị trí “OFF”, rút giắc cắm “C01” và “E01” khỏi ECM.\n2) Kiểm tra xem kết nối cực tới các giắc cắm “C01” và “E01” đã đúng chưa.\n3) Nếu các kết nối đều ỔN, hãy kiểm tra những điểm sau.\n• Điện trở mạch “B1”: dưới 1 Ω\n• Điện trở giữa mạch “B1” và dây nối đất: vô cực\n• Điện trở giữa cực mạch “B1” và cực khác tại giắc cắm\nrơ-le quạt làm mát két nước số 1: vô cực\nKết quả kiểm tra có ỔN không?",
+        "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "5",
+        "Kiểm tra mạch điều khiển rơ-le quạt làm mát két nước\nsố 1\n1) Với công tắc máy ở vị trí “OFF”, rút giắc cắm “C01” và “E01” khỏi ECM và tháo rơ-le quạt làm mát két nước số 1.\n2) Kiểm tra xem kết nối cực tới giắc cắm “C01” và “E01” và giắc cắm rơ-le quạt làm mát két nước số 1 có chính xác\nkhông.\n3) Nếu các kết nối đều ỔN, hãy kiểm tra điểm sau.\n• Điện áp của mạch “B1”: xấp xỉ 0 V (Khi công tắc máy ở vị trí “ON”)\nKết quả kiểm tra có ỔN không?",
+        "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ]
+    ]
+  }
+]

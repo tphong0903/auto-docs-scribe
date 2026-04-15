@@ -1,0 +1,9 @@
+{
+  "name": "Kiểm tra cảm biến kích nổ trên xe",
+  "refs": [
+    "1C-10",
+    "1C-11",
+    "1D-13",
+    "1F-13"
+  ]
+}

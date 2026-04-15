@@ -1,0 +1,33 @@
+[
+  {
+    "page": 125,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” (Trang 1A-19)."
+      ],
+      [
+        "2",
+        "Kiểm tra mạch tín hiệu cảm biến kích nổ\n1) Với công tắc máy ở vị trí “OFF”, rút giắc cắm “C01” và “E01” của giắc cắm ECM và giắc cắm cảm biến kích nổ.\n2) Kiểm tra xem kết nối cực tới giắc cắm “C01” và “E01” và giắc cắm cảm biến kích nổ có chính xác không.\n3) Nếu các kết nối đều ỔN, hãy kiểm tra những điểm sau.\n• Điện trở của mạch “A1” và “B1”: dưới 1 Ω\n• Điện trở giữa từng mạch “A1” và “B1” và dây nối đất:\nvô cực\n• Điện trở giữa cực mạch “A1” và cực mạch “B1” tại\ngiắc cắm cảm biến kích nổ: vô cực\n• Điện áp các mạch “A1” và “B1”: xấp xỉ 0 V (khi công\ntắc máy ở vị trí “ON”)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 3.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "3",
+        "Kiểm tra cảm biến kích nổ\n1) Kiểm tra cảm biến kích nổ. (Trang 1C-11)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 4.",
+        "Hãy thay thế cảm biến\nkích nổ. (Trang 1C-\n11)"
+      ],
+      [
+        "4",
+        "Đồng thời khắc phục sự cố của (những) DTC khác\nCó phát hiện (các) DTC khác không?",
+        "Chuyển sang khắc phục\nsự cố DTC liên quan.",
+        "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)"
+      ]
+    ]
+  }
+]

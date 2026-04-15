@@ -1,0 +1,39 @@
+[
+  {
+    "page": 133,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "• Nếu phát hiện DTC\nP0443 và P0458, hãy\nchuyển sang Bước 2.\n• Nếu phát hiện DTC\nP0459, hãy chuyển\nsang Bước 4.",
+        "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” (Trang 1A-19)."
+      ],
+      [
+        "2",
+        "Kiểm tra mạch cấp nguồn bộ van xả bộ hấp thụ hơi\nxăng EVAP\n1) Với công tắc máy ở vị trí “OFF”, rút giắc cắm bộ van xả bộ hấp thụ hơi xăng EVAP.\n2) Kiểm tra xem kết nối cực tới giắc cắm bộ van xả bộ hấp\nthụ hơi xăng EVAP có chính xác không.\n3) Nếu kết nối ỔN, hãy xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra để đảm bảo điện áp giữa “A1” và dây nối đất\nbằng điện áp bình điện.\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 3.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "3",
+        "Kiểm tra mạch điều khiển bộ van xả bộ hấp thụ hơi xăng\nEVAP\n1) Với công tắc máy ở vị trí “OFF”, rút giắc cắm “C01” và “E01” của ECM.\n2) Kiểm tra xem kết nối cực tới các giắc cắm “C01” và “E01” đã đúng chưa.\n3) Nếu các kết nối đều ỔN, hãy kiểm tra những điểm sau.\n• Điện trở mạch “B1”: dưới 1 Ω\n• Điện trở giữa mạch “B1” và dây nối đất: vô cực\n• Điện trở giữa cực mạch “A1” và cực mạch “B1” tại\ngiắc cắm bộ van xả bộ hấp thụ hơi xăng EVAP: vô\ncực\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 5.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "4",
+        "Kiểm tra mạch điều khiển bộ van xả bộ hấp thụ hơi xăng\nEVAP\n1) Với công tắc máy ở vị trí “OFF”, rút giắc cắm “C01” và “E01” của ECM và giắc cắm bộ van xả bộ hấp thụ hơi\nxăng EVAP.\n2) Kiểm tra xem kết nối cực tới giắc cắm “C01” và “E01” và giắc cắm bộ van xả bộ hấp thụ hơi xăng EVAP có chính\nxác không.\n3) Nếu các kết nối đều ỔN, hãy kiểm tra điểm sau.\n• Điện áp của mạch “B1”: xấp xỉ 0 V (Khi công tắc máy ở vị trí “ON”)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 5.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "5",
+        "Kiểm tra bộ van xả bộ hấp thụ hơi xăng EVAP\n1) Kiểm tra điện trở bộ van xả bộ hấp thụ hơi xăng EVAP. (Trang 1B-4)\nKết quả kiểm tra có ỔN không?",
+        "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "Thay bộ van xả bộ hấp\nthụ hơi xăng EVAP. (Trang 1B-3)"
+      ]
+    ]
+  }
+]

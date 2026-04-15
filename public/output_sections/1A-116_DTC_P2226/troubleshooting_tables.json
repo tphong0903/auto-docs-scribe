@@ -1,0 +1,21 @@
+[
+  {
+    "page": 162,
+    "table_index": 2,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” (Trang 1A-19)."
+      ],
+      [
+        "2",
+        "Kiểm tra mạch cấp nguồn và mạch nối đất ECM\n1) Kiểm tra mạch cấp nguồn và mạch nối đất ECM. (Trang 1A-130)\nKết quả kiểm tra có ỔN không?",
+        "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "Sửa chữa mạch cấp\nnguồn và mạch nối đất\nECM."
+      ]
+    ]
+  }
+]

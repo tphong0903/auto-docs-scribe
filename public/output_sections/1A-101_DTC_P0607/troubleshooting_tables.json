@@ -1,0 +1,21 @@
+[
+  {
+    "page": 147,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra lại DTC\n1) Xóa DTC. (Trang 1A-23)\n2) Xoay công tắc máy về vị trí “OFF”.\n3) Thực hiện “Quy trình xác nhận DTC”, và kiểm tra DTC.\nVẫn phát hiện DTC P0607?",
+        "Chuyển sang Bước 2.",
+        "Kiểm tra hỏng hóc gián\nđoạn. (Trang 00-11)"
+      ],
+      [
+        "2",
+        "Kiểm tra mạch cấp nguồn và mạch nối đất ECM\n1) Kiểm tra mạch cấp nguồn và mạch nối đất ECM. (Trang 1A-130)\nKết quả kiểm tra có ỔN không?",
+        "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ]
+    ]
+  }
+]

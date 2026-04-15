@@ -1,0 +1,27 @@
+[
+  {
+    "page": 160,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” (Trang 1A-19)."
+      ],
+      [
+        "2",
+        "Kiểm tra bộ dây điện\n1) Kiểm tra những điểm sau.\n• Mạch “A1”, “A2” và “A3”: Tham khảo Bước 3 - 5 trong\n“DTC P2122/P2123” (Trang 1A-107).\n• Mạch “B1”, “B2” và “B3”: Tham khảo Bước 3 - 5 trong\n“DTC P2127/P2128” (Trang 1A-109).\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 3.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "3",
+        "Kiểm tra cảm biến APP\n1) Kiểm tra hoạt động cảm biến APP. (Trang 1C-5)\nKết quả kiểm tra có ỔN không?",
+        "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "Thay bộ bàn đạp ga\n(tích hợp cảm biến\nAPP). (Trang 1C-6)"
+      ]
+    ]
+  }
+]

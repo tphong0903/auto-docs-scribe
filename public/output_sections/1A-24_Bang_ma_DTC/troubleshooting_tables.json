@@ -1,0 +1,103 @@
+[
+  {
+    "page": 74,
+    "table_index": 0,
+    "data": [
+      [
+        "DTC",
+        "Tên DTC",
+        "Điều kiện phát hiện lỗi DTC",
+        "Lô-gic phát\nhiện DTC",
+        "MIL"
+      ],
+      [
+        "P0694 (Trang\n1A-90)",
+        "Mạch điều khiển quạt 2 cao",
+        "Mạch điều khiển rơ-le quạt làm mát két\nnước số 2 và/hoặc số 3 ngắn mạch với bộ cấp nguồn.",
+        "3 D/C",
+        "Tắt"
+      ],
+      [
+        "P1610",
+        "Mã ID và/hoặc mật khẩu hệ\nthống chống trộm chưa\nđược đăng ký",
+        "Tham khảo bảng mã DTC sau đây. (Trang 10C-6)",
+        "1 D/C",
+        "Tắt"
+      ],
+      ["P1611", "Mật khẩu không khớp", null, "1 D/C", "Tắt"],
+      ["P1622", "Lỗi đọc/viết bộ nhớ\nEEPROM", null, "1 D/C", "Tắt"],
+      [
+        "P1642",
+        "Lỗi giao tiếp đường truyền\nhệ thống chống trộm",
+        null,
+        "1 D/C",
+        "Tắt"
+      ],
+      ["P1644", "ID hệ thống chống trộm\nkhông khớp", null, "1 D/C", "Tắt"],
+      ["P1646", "Không đúng mã ID", null, "1 D/C", "Tắt"],
+      [
+        "P2088 (Trang\n1A-51)",
+        "Mạch điều khiển bộ chấp\nhành vị trí trục cam “A” thấp\n(Bank 1)",
+        "Mạch điều khiển OCV ngắn mạch với\nđất.",
+        "3 D/C",
+        "Đèn sáng"
+      ],
+      [
+        "P2089 (Trang\n1A-51)",
+        "Mạch điều khiển bộ chấp\nhành vị trí trục cam “A” cao\n(Bank 1)",
+        "Mạch điều khiển OCV ngắn mạch với bộ cấp nguồn.",
+        "3 D/C",
+        "Đèn sáng"
+      ],
+      [
+        "P2100 (Trang\n1A-103)",
+        "Mạch mô-tơ điều khiển bộ\nchấp hành bướm ga “A”/Hở\nmạch",
+        "Phát hiện hỏng hóc bộ chấp hành\nbướm ga và/hoặc mạch bộ chấp hành\n(hở, ngắn mạch với bộ cấp nguồn hoặc\nngắn mạch với đất).",
+        "1 D/C",
+        "Đèn sáng"
+      ],
+      [
+        "P2101 (Trang\n1A-105)",
+        "Phạm vi mạch/hoạt động mô\ntơ điều khiển bộ chấp hành\nbướm ga \"A\"",
+        "Nếu gặp bất kỳ điều kiện nào sau đây.\n• Chênh lệch giữa vị trí van bướm ga\nđo được và vị trí van bướm ga mục\ntiêu lớn hơn giá trị quy định.\n• Hệ số sử dụng tín hiệu bộ chấp hành\nbướm ga nằm ngoài phạm vi quy\nđịnh trong khoảng thời gian quy định.",
+        "1 D/C",
+        "Đèn sáng"
+      ],
+      [
+        "P2119 (Trang\n1A-105)",
+        "Phạm vi/hoạt động thân\nbướm ga điều khiển bộ chấp\nhành bướm ga",
+        "Nếu gặp bất kỳ điều kiện nào sau đây.\n• Thời gian để van bướm ga quay lại\ntừ vị trí mở một phần tới vị trí thiết lập\nmặc định lâu hơn thời gian quy định\ntrong suốt quá trình kiểm tra lò xo hồi\nvị sau khi xoay công tắc máy về vị trí\n“OFF”.\n• Vị trí bướm ga mặc định đo được\nnằm ngoài phạm vi quy định.",
+        "1 D/C",
+        "Đèn sáng"
+      ],
+      [
+        "P2122 (Trang\n1A-107)",
+        "Mạch công tắc / cảm biến vị trí bàn đạp / bướm ga “D”\nthấp",
+        "Điện áp đầu ra mạch tín hiệu (chính)\ncảm biến APP thấp hơn 0,4 V.",
+        "1 D/C",
+        "Đèn sáng"
+      ],
+      [
+        "P2123 (Trang\n1A-107)",
+        "Mạch công tắc / cảm biến vị trí bàn đạp / bướm ga “D”\ncao",
+        "Điện áp đầu ra mạch tín hiệu (chính)\ncảm biến APP cao hơn 4,8 V.",
+        "1 D/C",
+        "Đèn sáng"
+      ],
+      [
+        "P2127 (Trang\n1A-109)",
+        "Mạch công tắc / cảm biến vị trí bàn đạp / bướm ga “E”\nthấp",
+        "Điện áp đầu ra mạch tín hiệu (phụ) cảm\nbiến APP thấp hơn 0,2 V.",
+        "1 D/C",
+        "Đèn sáng"
+      ],
+      [
+        "P2128 (Trang\n1A-109)",
+        "Mạch công tắc / cảm biến vị trí bàn đạp / bướm ga “E”\ncao",
+        "Điện áp đầu ra mạch tín hiệu (phụ) cảm\nbiến APP cao hơn 2,4 V.",
+        "1 D/C",
+        "Đèn sáng"
+      ]
+    ]
+  }
+]

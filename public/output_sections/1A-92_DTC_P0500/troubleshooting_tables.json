@@ -1,0 +1,45 @@
+[
+  {
+    "page": 139,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” (Trang 1A-19)."
+      ],
+      [
+        "2",
+        "Kiểm tra điện áp bộ cấp nguồn VSS\n1) Với công tắc máy ở vị trí “OFF”, rút giắc cắm VSS.\n2) Kiểm tra xem kết nối cực tới giắc cắm VSS có chính xác\nkhông.\n3) Nếu kết nối ỔN, hãy xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra để đảm bảo điện áp giữa “A1” và “A3” xấp xỉ 5 V.\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 5.",
+        "Chuyển sang Bước 3."
+      ],
+      [
+        "3",
+        "Kiểm tra mạch nối đất VSS\n1) Kiểm tra để đảm bảo điện áp giữa “A1” và dây nối đất xấp xỉ 5 V.\nKết quả kiểm tra có ỔN không?",
+        "Sửa chữa hoặc thay thế\nmạch “A3”.",
+        "Chuyển sang Bước 4."
+      ],
+      [
+        "4",
+        "Kiểm tra mạch cấp nguồn VSS\n1) Với công tắc máy ở vị trí “OFF”, rút giắc cắm “C01” và “E01” khỏi ECM.\n2) Nếu các kết nối đều ỔN, hãy kiểm tra những điểm sau.\n• Điện trở mạch “A1”: dưới 1 Ω\n• Điện trở giữa mạch “A1” và dây nối đất: vô cực\n• Điện trở giữa cực mạch “A1” và cực khác ở giắc cắm\nVSS: vô cực\n• Điện áp của mạch “A1”: 0 - 1 V (Khi công tắc máy ở vị trí “ON”)\nKết quả kiểm tra có ỔN không?",
+        "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "Sửa chữa hoặc thay thế\nmạch “A1”."
+      ],
+      [
+        "5",
+        "Kiểm tra mạch tín hiệu VSS\n1) Với công tắc máy ở vị trí “OFF”, rút giắc cắm “C01” và “E01” khỏi ECM.\n2) Kiểm tra xem kết nối cực tới các giắc cắm “C01” và “E01” đã đúng chưa.\n3) Nếu các kết nối đều ỔN, hãy kiểm tra những điểm sau.\n• Điện trở mạch “A2”: dưới 1 Ω\n• Điện trở giữa mạch “A2” và dây nối đất: vô cực\n• Điện trở giữa cực mạch “A2” và cực khác tại giắc cắm\nVSS: vô cực\n• Điện áp của mạch “A2”: 0 - 1 V (Khi công tắc máy ở vị trí “ON”)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 6.",
+        "Sửa hoặc thay thế\nmạch “A2”."
+      ],
+      [
+        "6",
+        "Kiểm tra VSS và vòng cảm biến tốc độ\n1) Kiểm tra các mục sau:\n• VSS: (Trang 1C-13)\n• Vòng cảm biến tốc độ: (Trang 5B-9)\nKết quả kiểm tra có ỔN không?",
+        "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "Sửa chữa hoặc thay\ncác bộ phận bị lỗi."
+      ]
+    ]
+  }
+]

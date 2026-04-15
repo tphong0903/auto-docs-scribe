@@ -1,0 +1,57 @@
+[
+  {
+    "page": 164,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” (Trang 1A-19)."
+      ],
+      [
+        "2",
+        "Kiểm tra mạch giao tiếp LIN máy phát điện\n1) Với công tắc máy ở vị trí “OFF”, rút giắc cắm “C01” và “E01” của giắc cắm ECM và giắc cắm máy phát điện.\n2) Kiểm tra xem kết nối cực tới giắc cắm “C01” và “E01” và giắc cắm máy phát điện có chính xác không.\n3) Nếu các kết nối đều ỔN, hãy kiểm tra những điểm sau.\n• Điện trở mạch “A1”: dưới 1 Ω\n• Điện trở giữa mạch “A1” và dây nối đất: vô cực\n• Điện trở giữa cực mạch “A1” và cực khác ở giắc cắm\nECM: vô cực\n• Điện áp mạch “A1”: xấp xỉ 0 V (Khi công tắc máy ở vị trí “ON”)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 3.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "3",
+        "Kiểm tra lại DTC\n1) Thay thế cụm stato. (Trang 1J-11)\n2) Thực hiện “Quy trình xác nhận DTC”, và kiểm tra DTC.\nVẫn phát hiện DTC U2001?",
+        "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "Kết thúc."
+      ]
+    ]
+  },
+  {
+    "page": 164,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "U2021: Dữ liệu LIN từ ECM đến máy phát điện không\nhợp lệ\nDữ liệu truyền từ ECM đến máy phát điện thông qua LIN\nbị lỗi.\n(lô-gic phát hiện 1 D/C nhưng MIL không sáng đèn)",
+        "• Mạch cấp nguồn và/hoặc mạch nối đất ECM\n• ECM"
+      ]
+    ]
+  },
+  {
+    "page": 164,
+    "table_index": 2,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra lại DTC\n1) Xóa DTC. (Trang 1A-23)\n2) Xoay công tắc máy về vị trí “OFF”.\n3) Thực hiện “Quy trình xác nhận DTC”, và kiểm tra DTC.\nVẫn phát hiện DTC P2021?",
+        "Chuyển sang Bước 2.",
+        "Kiểm tra hỏng hóc gián\nđoạn. (Trang 00-11)"
+      ],
+      [
+        "2",
+        "Kiểm tra mạch cấp nguồn và mạch nối đất ECM\n1) Kiểm tra mạch cấp nguồn và mạch nối đất ECM. (Trang 1A-130)\nKết quả kiểm tra có ỔN không?",
+        "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "Sửa chữa mạch cấp\nnguồn và mạch nối đất\nECM."
+      ]
+    ]
+  }
+]

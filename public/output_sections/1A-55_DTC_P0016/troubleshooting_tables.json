@@ -1,0 +1,40 @@
+[
+  {
+    "page": 101,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Mô tả hệ thống điều khiển động cơ và kiểm soát khí thải” (Trang 1A-4)."
+      ],
+      [
+        "2",
+        "Kiểm tra cảm biến CMP và mạch của nó\n1) Kiểm tra cảm biến CMP, rô-to tín hiệu và mạch liên quan đến DTC theo Bước 2 – 5 trong “DTC P0340” (Trang 1A-81).\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 3.",
+        "Sửa chữa hoặc thay các bộ phận bị lỗi."
+      ],
+      [
+        "3",
+        "Kiểm tra cảm biến CKP và mạch của nó\n1) Kiểm tra cảm biến CKP, vòng răng tạo xung và mạch liên quan đến DTC theo Bước 2 – 5 trong “DTC P0335/P0336” (Trang 1A-79).\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 4.",
+        "Sửa chữa hoặc thay các bộ phận bị lỗi."
+      ],
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "4",
+        "Kiểm tra hệ thống cơ cấu phân phối khí của động cơ\n1) Tháo nắp xích cam. (Trang 1D-35)\n2) Kiểm tra các mục sau.\n• Xích cam, bộ căng xích cam và bộ điều chỉnh căng xích cam: (Trang 1D-44)\n• Bộ chấp hành VVT: (Trang 1D-23)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 5.",
+        "Sửa chữa hoặc thay các bộ phận bị lỗi."
+      ],
+      [
+        "5",
+        "Đồng thời khắc phục sự cố của (những) DTC khác\nCó phát hiện (các) DTC khác không?",
+        "Chuyển sang khắc phục sự cố DTC liên quan.",
+        "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)"
+      ]
+    ]
+  }
+]

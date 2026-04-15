@@ -1,0 +1,45 @@
+[
+  {
+    "page": 116,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” (Trang 1A-19)."
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\nCó (những) DTC nào ngoài P0134 không?",
+        "Chuyển sang khắc phục\nsự cố DTC liên quan.",
+        "Chuyển sang Bước 3."
+      ],
+      [
+        "3",
+        "Kiểm tra hệ thống xả và hệ thống nạp khí\n1) Kiểm tra xem hệ thống xả và hệ thống nạp khí có bị tắc\nhay rò rỉ không.\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 4.",
+        "Sửa chữa hoặc thay\ncác bộ phận bị lỗi."
+      ],
+      [
+        "4",
+        "Kiểm tra mạch tín hiệu HO2S-1\n1) Kiểm tra các mạch “A2” và “A3” theo Bước 3 trong “DTC\nP0131/P0132” (Trang 1A-66).\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 5.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "5",
+        "Kiểm tra lại cảm biến HO2S-1\n1) Kiểm tra cảm biến HO2S-1. (Trang 1C-9)\n2) Thực hiện “Quy trình xác nhận DTC”, và kiểm tra DTC.\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 6.",
+        "Thay thế HO2S-1. (Trang 1C-9)"
+      ],
+      [
+        "6",
+        "Kiểm tra lại DTC\n1) Thay thế HO2S-1. (Trang 1C-9)\n2) Thực hiện “Quy trình xác nhận DTC”, và kiểm tra DTC.\nVẫn phát hiện DTC P0134?",
+        "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "Kết thúc."
+      ]
+    ]
+  }
+]

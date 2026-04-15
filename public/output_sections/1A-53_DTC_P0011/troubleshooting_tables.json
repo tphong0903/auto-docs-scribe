@@ -1,0 +1,69 @@
+[
+  {
+    "page": 100,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” (Trang 1A-19)."
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\n1) Kiểm tra DTC. Có (các) DTC nào ngoài P0011 không?",
+        "Chuyển sang khắc phục sự cố DTC thích hợp.",
+        "Chuyển sang Bước 3."
+      ],
+      [
+        "3",
+        "Kiểm tra mạch cấp nguồn và mạch điều khiển OCV\n1) Kiểm tra các mạch “A1” và “B1” theo Bước 2 - 3 trong “DTC P0010/P2088/P2089” (Trang 1A-51).\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 4.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "4",
+        "Kiểm tra áp suất nhớt\n1) Kiểm tra áp suất nhớt. (Trang 1E-3)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 5.",
+        "Sửa chữa hoặc thay thế các bộ phận bị lỗi."
+      ],
+      [
+        "5",
+        "Kiểm tra bằng mắt mạch nhớt OCV\n1) Tháo nắp giàn cò. (Trang 1D-16)\n2) Kiểm ra rò rỉ áp suất nhớt từ mạch nhớt OCV.\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 6.",
+        "Sửa chữa hoặc thay thế các bộ phận bị lỗi."
+      ],
+      [
+        "6",
+        "Kiểm tra cảm biến CKP và vòng răng tạo xung\n1) Kiểm tra cảm biến CKP và vòng răng tạo xung.\n• Cảm biến CKP: (Trang 1C-10)\n• Vòng răng tạo xung: (Trang 1D-78)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 7.",
+        "Sửa chữa hoặc thay thế các bộ phận bị lỗi."
+      ],
+      [
+        "7",
+        "Kiểm tra rô-to tín hiệu và cảm biến CMP\n1) Kiểm tra rô-to tín hiệu và cảm biến CMP.\n• Cảm biến CMP: (Trang 1C-9)\n• Rô-to tín hiệu: (Trang 1D-23)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 8.",
+        "Sửa chữa hoặc thay thế các bộ phận bị lỗi."
+      ],
+      [
+        "8",
+        "Kiểm tra OCV\n1) Kiểm tra OCV. (Trang 1C-13)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 9.",
+        "Thay thế OCV. (Trang 1D-37)"
+      ],
+      [
+        "9",
+        "Kiểm tra bộ chấp hành VVT\n1) Kiểm tra bộ chấp hành VVT. (Trang 1D-23)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 10.",
+        "Thay thế bộ chấp hành VVT. (Trang 1D-18)"
+      ],
+      [
+        "10",
+        "Kiểm tra thời điểm đóng mở xu-páp\n1) Kiểm tra những bộ phận liên quan tới xích cam và tình trạng lắp đặt của chúng. (Trang 1D-41)\nKết quả kiểm tra có ỔN không?",
+        "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "Lắp lại một cách chính xác những bộ phận liên quan tới xích cam, hoặc thay thế những bộ phận bị hỏng hóc."
+      ]
+    ]
+  }
+]

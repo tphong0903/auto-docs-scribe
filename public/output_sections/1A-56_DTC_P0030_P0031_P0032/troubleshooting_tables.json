@@ -1,0 +1,39 @@
+[
+  {
+    "page": 103,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "• Nếu phát hiện DTC P0030 và P0031, hãy chuyển sang Bước 2.\n• Nếu phát hiện DTC P0032, hãy chuyển sang Bước 4.",
+        "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” (Trang 1A-19)."
+      ],
+      [
+        "2",
+        "Kiểm tra mạch cấp nguồn cảm biến số 1 - HO2S-1\n1) Với công tắc máy ở vị trí “OFF”, rút giắc cắm HO2S-1.\n2) Kiểm tra xem kết nối cực tới giắc cắm HO2S-1 có chính xác không.\n3) Nếu kết nối ỔN, hãy xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra để đảm bảo điện áp giữa mạch “A1” và dây nối đất bằng điện áp bình điện. Kết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 3.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị lỗi."
+      ],
+      [
+        "3",
+        "Kiểm tra mạch điều khiển sấy cảm biến số 1 - HO2S-1\n1) Với công tắc máy ở vị trí “OFF”, rút giắc cắm “C01” và “E01” khỏi ECM.\n2) Kiểm tra xem kết nối cực tới các giắc cắm “C01” và “E01” đã đúng chưa.\n3) Nếu các kết nối đều ỔN, hãy kiểm tra những điểm sau.\n• Điện trở mạch “A4”: dưới 1 Ω\n• Điện trở giữa mạch “A4” và dây nối đất: vô cực\n• Điện trở giữa cực mạch “A4” và cực khác tại giắc cắm HO2S-1: vô cực\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 5.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị lỗi."
+      ],
+      [
+        "4",
+        "Kiểm tra mạch điều khiển sấy cảm biến số 1 - HO2S-1\n1) Với công tắc máy ở vị trí “OFF”, rút giắc cắm “C01” và “E01” khỏi ECM và giắc cắm HO2S-1.\n2) Kiểm tra xem kết nối cực tới giắc cắm “C01” và “E01” và giắc cắm HO2S-1 có chính xác không.\n3) Nếu các kết nối đều ỔN, hãy kiểm tra điểm sau.\n• Điện áp mạch “A4”: khoảng 0 V (khi công tắc máy ở vị trí “ON”)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 5.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị lỗi."
+      ],
+      [
+        "5",
+        "Kiểm tra cảm biến HO2S-1\n1) Kiểm tra cảm biến HO2S-1. (Trang 1C-9)\nKết quả kiểm tra có ỔN không?",
+        "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "Thay thế HO2S-1. (Trang 1C-9)"
+      ]
+    ]
+  }
+]

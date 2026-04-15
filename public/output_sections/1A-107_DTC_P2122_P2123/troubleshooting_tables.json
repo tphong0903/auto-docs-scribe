@@ -1,0 +1,45 @@
+[
+  {
+    "page": 155,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” (Trang 1A-19)."
+      ],
+      [
+        "2",
+        "Kiểm tra cơ cấu gắn bộ bàn đạp ga (tích hợp cảm biến\nAPP)\n1) Kiểm tra để đảm bảo bộ bàn đạp ga (tích hợp cảm biến\nAPP) được gắn đúng vào thân xe (ví dụ: không bị mắc\nvào tấm thảm sàn, v.v.).\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 3.",
+        "Lắp lại chính xác bộ bàn\nđạp ga (tích hợp cảm\nbiến APP). (Trang 1C-\n6)"
+      ],
+      [
+        "3",
+        "Kiểm tra mạch cấp nguồn (chính) cảm biến APP\n1) Với công tắc máy ở vị trí “OFF”, rút giắc cắm cảm biến\nAPP.\n2) Kiểm tra xem kết nối cực tới giắc cắm cảm biến APP có chính xác không.\n3) Nếu kết nối ỔN, hãy xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra để đảm bảo điện áp giữa “A1” và “A3” xấp xỉ 5 V.\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 5.",
+        "Chuyển sang Bước 4."
+      ],
+      [
+        "4",
+        "Kiểm tra mạch nối đất (chính) cảm biến APP\n1) Kiểm tra để đảm bảo điện áp giữa “A1” và dây nối đất xấp xỉ 5 V.\nKết quả kiểm tra có ỔN không?",
+        "Sửa mạch “A3”.\nNếu vẫn phát hiện DTC này, hãy thay thế ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "Sửa mạch “A1”.\nNếu vẫn phát hiện DTC này, hãy thay thế ECM và kiểm tra lại DTC. (Trang 1C-2)"
+      ],
+      [
+        "5",
+        "Kiểm tra mạch tín hiệu (chính) cảm biến APP\n1) Với công tắc máy ở vị trí “OFF”, rút giắc cắm “C01” và “E01” khỏi ECM.\n2) Kiểm tra xem kết nối cực tới các giắc cắm “C01” và “E01” đã đúng chưa.\n3) Nếu các kết nối đều ỔN, hãy kiểm tra những điểm sau.\n• Điện trở mạch “A2”: dưới 1 Ω\n• Điện trở giữa mạch “A2” và dây nối đất: vô cực\n• Điện trở giữa cực mạch “A2” và cực khác tại giắc cắm cảm biến APP: vô cực\n• Điện áp mạch “A2”: xấp xỉ 0 V (Khi công tắc máy ở vị trí “ON”)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 6.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "6",
+        "Kiểm tra cảm biến APP\n1) Kiểm tra cảm biến APP. (Trang 1C-5)\nKết quả kiểm tra có ỔN không?",
+        "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "Thay bộ bàn đạp ga\n(tích hợp cảm biến\nAPP). (Trang 1C-6)"
+      ]
+    ]
+  }
+]

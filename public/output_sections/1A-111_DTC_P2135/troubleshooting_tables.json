@@ -1,0 +1,27 @@
+[
+  {
+    "page": 159,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” (Trang 1A-19)."
+      ],
+      [
+        "2",
+        "Kiểm tra bộ dây điện\n1) Kiểm tra những điểm sau.\n• Mạch “B1”, “B2” và “B4”: Tham khảo Bước 2 - 4 trong\n“DTC P0122/P0123” (Trang 1A-64).\n• Mạch “B3”: Tham khảo Bước 4 trong “DTC P0222/\nP0223” (Trang 1A-76).\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 3.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "3",
+        "Kiểm tra cảm biến TP\n1) Kiểm tra hoạt động của cảm biến TP tham khảo “Kiểm\ntra hoạt động cảm biến TP” trong “Kiểm tra bộ thân\nbướm ga điện trên xe” trong Phần 1C (Trang 1C-3).\nKết quả kiểm tra có ỔN không?",
+        "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "Thay thế bộ thân bướm\nga điện. (Trang 1D-\n12)"
+      ]
+    ]
+  }
+]

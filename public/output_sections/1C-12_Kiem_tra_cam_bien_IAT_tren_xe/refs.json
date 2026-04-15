@@ -1,0 +1,8 @@
+{
+  "name": "Kiểm tra cảm biến IAT trên xe",
+  "refs": [
+    "10B-44",
+    "1A-119",
+    "1C-12"
+  ]
+}

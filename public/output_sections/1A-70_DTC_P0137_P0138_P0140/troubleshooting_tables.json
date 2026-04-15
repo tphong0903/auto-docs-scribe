@@ -1,0 +1,51 @@
+[
+  {
+    "page": 118,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” (Trang 1A-19)."
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\nCó (những) DTC nào ngoài P0137, P0138 và P0140 không?",
+        "Chuyển sang khắc phục\nsự cố DTC liên quan.",
+        "Chuyển sang Bước 3."
+      ],
+      [
+        "3",
+        "Kiểm tra mạch tín hiệu và mạch nối đất HO2S-2\n1) Với công tắc máy ở vị trí “OFF”, rút giắc cắm “C01” và “E01” của giắc cắm ECM và giắc cắm HO2S-2.\n2) Kiểm tra xem kết nối cực tới giắc cắm “C01” và “E01” và giắc cắm HO2S-2 có chính xác không.\n3) Nếu các kết nối đều ỔN, hãy kiểm tra những điểm sau.\n• Điện trở các mạch “B2” và “B3”: dưới 1 Ω\n• Điện trở giữa từng mạch “B2” và “B3” và dây nối đất:\nvô cực\n• Điện trở giữa cực mạch \"B2\" và cực khác tại giắc cắm\nHO2S-2: vô cực\n• Điện trở giữa cực mạch \"B3\" và cực khác tại giắc cắm\nHO2S-2: vô cực\n• Điện áp các mạch “B2” và “B3”: xấp xỉ 0 V (khi công\ntắc máy ở vị trí “ON”)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 4.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị lỗi."
+      ],
+      [
+        "4",
+        "Kiểm tra hệ thống xả và hệ thống nạp khí\n1) Kiểm tra xem hệ thống xả và hệ thống nạp khí có bị tắc\nhay rò rỉ không.\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 5.",
+        "Sửa chữa hoặc thay\ncác bộ phận bị lỗi."
+      ],
+      [
+        "5",
+        "Kiểm tra mạch cảm biến HO2S-2\n1) Kiểm tra mạch cảm biến HO2S-2 theo Bước 2 và 3 trong\n“DTC P0036/P0037/P0038” (Trang 1A-58).\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 6.",
+        "Sửa chữa hoặc thay\ncác bộ phận bị lỗi."
+      ],
+      [
+        "6",
+        "Kiểm tra kim phun nhiên liệu và/hoặc mạch của nó\n1) Kiểm tra mạch kim phun nhiên liệu. (Trang 1G-6)\n2) Kiểm tra các kim phun nhiên liệu. (Trang 1G-21)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 7.",
+        "(Các) kim phun nhiên\nliệu hoặc mạch của nó\nbị lỗi."
+      ],
+      [
+        "7",
+        "Kiểm tra lại DTC\n1) Thay thế HO2S-2. (Trang 1C-9)\n2) Thực hiện “Quy trình xác nhận DTC”, và kiểm tra DTC.\nCó vẫn phát hiện DTC P0137, P0138 hay P0140 không?",
+        "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "Kết thúc."
+      ]
+    ]
+  }
+]

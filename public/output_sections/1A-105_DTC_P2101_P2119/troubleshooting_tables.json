@@ -1,0 +1,33 @@
+[
+  {
+    "page": 153,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” (Trang 1A-19)."
+      ],
+      [
+        "2",
+        "Kiểm tra lại DTC\n1) Xóa DTC.\n2) Thực hiện hiệu chuẩn hệ thống điều khiển bướm ga\nđiện. (Trang 1C-5)\n3) Kiểm tra lại DTC.\nVẫn phát hiện DTC P2101/P2119?",
+        "Chuyển sang Bước 3.",
+        "Kết thúc."
+      ],
+      [
+        "3",
+        "Kiểm tra mạch điều khiển bộ chấp hành bướm ga\n1) Hãy kiểm tra mạch điều khiển bộ chấp hành bướm ga\ntheo Bước 2 trong “DTC P2100” (Trang 1A-103).\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 4.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "4",
+        "Kiểm tra bộ thân bướm ga điện\n1) Kiểm tra hoạt động bộ thân bướm ga điện. (Trang 1C-\n3)\nKết quả kiểm tra có ỔN không?",
+        "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "Thay thế bộ thân bướm\nga điện. (Trang 1D-\n12)"
+      ]
+    ]
+  }
+]

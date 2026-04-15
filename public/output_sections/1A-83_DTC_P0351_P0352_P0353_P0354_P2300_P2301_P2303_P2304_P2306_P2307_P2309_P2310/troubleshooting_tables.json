@@ -1,0 +1,45 @@
+[
+  {
+    "page": 130,
+    "table_index": 8,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã tiến hành “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” chưa?",
+        "• Nếu phát hiện DTC\nP0351, P0352,\nP0353, P0354,\nP2300, P2303,\nP2306 và P2309, hãy\nchuyển sang Bước 2.\n• Nếu phát hiện DTC\nP2301, P2304,\nP2307 và P2310, hãy\nchuyển sang Bước 5.",
+        "Chuyển sang “Kiểm tra hệ thống điều khiển động cơ và kiểm soát khí thải” (Trang 1A-19)."
+      ],
+      [
+        "2",
+        "Kiểm tra mạch cấp nguồn cụm bô-bin\n1) Khi công tắc máy ở vị trí “OFF”, rút giắc cắm khỏi cụm\nbô-bin liên quan tới DTC.\n2) Kiểm tra xem kết nối cực tới giắc cắm cụm bô-bin có chính xác không.\n3) Nếu kết nối ỔN, hãy xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra để đảm bảo điện áp giữa “A1” và “A3”, “B1” và “B3”,\n“C1” và “C3” hoặc “D1” và “D3” bằng điện áp bình điện.\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 4.",
+        "Chuyển sang Bước 3."
+      ],
+      [
+        "3",
+        "Kiểm tra mạch nối đất cụm bô-bin\n1) Kiểm tra để đảm bảo điện áp giữa “A1”, “B1”, “C1” hay\n“D1” và dây nối đất bằng điện áp bình điện.\nKết quả kiểm tra có ỔN không?",
+        "Sửa chữa hoặc thay thế\nmạch “A3”, “B3”, “C3”\nhoặc “D3”.",
+        "Sửa chữa hoặc thay thế\nmạch “A1”, “B1”, “C1”\nhoặc “D1”."
+      ],
+      [
+        "4",
+        "Kiểm tra mạch điều khiển cụm bô-bin\n1) Với công tắc máy ở vị trí “OFF”, rút giắc cắm “C01” và “E01” khỏi ECM.\n2) Kiểm tra xem các kết nối cực tới giắc cắm “C01” và “E01” có chính xác không.\n3) Nếu các kết nối đều ỔN, hãy kiểm tra những điểm sau.\n• Điện trở các mạch “A2”, “B2”, “C2” hoặc “D2”: dưới 1 Ω\n• Điện trở giữa từng mạch “A2”, “B2”, “C2” hoặc “D2” và\ndây nối đất: vô cực\n• Điện trở giữa cực mạch “A2” và cực khác tại giắc cắm\nbô-bin: vô cực\n• Điện trở giữa cực mạch “B2” và cực khác tại giắc cắm\nbô-bin: vô cực\n• Điện trở giữa cực mạch “C2” và cực khác tại giắc cắm\nbô-bin: vô cực\n• Điện trở giữa cực mạch “D2” và cực khác tại giắc cắm\nbô-bin: vô cực\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 6.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "5",
+        "Kiểm tra mạch điều khiển cụm bô-bin\n1) Với công tắc máy ở vị trí “OFF”, rút giắc cắm “C01” và “E01” khỏi ECM và giắc cắm cụm bô-bin liên quan tới\nDTC.\n2) Kiểm tra xem kết nối cực tới giắc cắm “C01” và “E01” và giắc cắm cụm bô-bin liên quan tới DTC có chính xác\nkhông.\n3) Nếu các kết nối đều ỔN, hãy kiểm tra điểm sau.\n• Điện áp các mạch “A2”, “B2”, “C2” hoặc “D2”: khoảng\n0 V (khi công tắc máy ở vị trí “ON”)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 6.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "6",
+        "Kiểm tra lại DTC\n1) Thay thế cụm bô-bin liên quan tới DTC bằng cụm bô-bin\nchuẩn. (Trang 1H-6)\n2) Xóa DTC. (Trang 1A-23)\n3) Xoay công tắc máy về vị trí “OFF”.\n4) Thực hiện “Quy trình xác nhận DTC”, và kiểm tra DTC. (Trang 1A-22)\nVẫn phát hiện DTC tương tự?",
+        "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "Kết thúc."
+      ]
+    ]
+  }
+]

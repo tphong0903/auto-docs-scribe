@@ -1,0 +1,9 @@
+{
+  "name": "Kiểm tra cảm biến ECT trên xe",
+  "refs": [
+    "1A-119",
+    "1C-8",
+    "1F-11",
+    "1F-12"
+  ]
+}
