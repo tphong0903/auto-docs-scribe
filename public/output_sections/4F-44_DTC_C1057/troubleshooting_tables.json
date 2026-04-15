@@ -1,0 +1,68 @@
+[
+  {
+    "page": 624,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống ESP®” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống ESP®” (Trang\n4F-11)."
+      ],
+      [
+        "2",
+        "Kiểm tra mạch cấp nguồn van solenoid và mạch nối đất\ncụm điều khiển ESP®\n1) Kiểm tra mạch cấp nguồn và mạch nối đất van solenoid. (Trang 4F-50)\nKết quả kiểm tra có ỔN không?",
+        "Thay bộ thủy lực / cụm\nchi tiết điều khiển ESP\nvà kiểm tra lại DTC. (Trang 4F-56)",
+        "Sửa chữa hoặc thay thế\n® bộ dây điện bị hỏng."
+      ]
+    ]
+  },
+  {
+    "page": 624,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1057: Điện áp bộ cấp nguồn\n• Điện áp bộ cấp nguồn cụm điều khiển ESP® cao hơn\ngiá trị quy định.\n• Điện áp bộ cấp nguồn cụm điều khiển ESP® thấp hơn\ngiá trị quy định.",
+        "• Mạch cấp nguồn cụm điều khiển ESP®\n• Mạch nối đất cụm điều khiển ESP®\n• Hệ thống sạc\n• Cụm điều khiển ESP®"
+      ]
+    ]
+  },
+  {
+    "page": 625,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống ESP®” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống ESP®” (Trang\n4F-11)."
+      ],
+      [
+        "2",
+        "Kiểm tra mạch cấp nguồn và mạch nối đất cụm điều\nkhiển ESP®\n1) Kiểm tra mạch cấp nguồn và mạch nối đất cụm điều\nkhiển ESP®. (Trang 4F-50)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 3.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "3",
+        "Kiểm tra điện áp bộ cấp nguồn cụm điều khiển ESP®\n1) Đo điện áp bình điện với động cơ chạy ở tốc độ 3.000\nvòng/phút.\nĐiện áp trong khoảng từ 10 V đến 15 V?",
+        "Thay bộ thủy lực / cụm\nchi tiết điều khiển ESP®\nvà kiểm tra lại DTC. (Trang 4F-56)",
+        "Kiểm tra hệ thống sạc. (Trang 1J-5)"
+      ]
+    ]
+  },
+  {
+    "page": 625,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1061: Hoạt động mạch mô-tơ bơm\n• Điện áp bộ cấp nguồn mô-tơ bơm nằm ngoài phạm vi quy định.\n• Khi mô-tơ bơm kích hoạt, phát hiện mô-tơ bơm trục trặc.\n• Bộ cấp nguồn từ CPU đến mô-tơ bơm và dữ liệu giám sát rơ-le mô-tơ\nbơm không thống nhất.",
+        "• Mạch cấp nguồn (mô-tơ bơm) cụm\nđiều khiển ESP®\n• Mạch nối đất cụm điều khiển ESP®\n• Cụm điều khiển ESP®"
+      ]
+    ]
+  }
+]

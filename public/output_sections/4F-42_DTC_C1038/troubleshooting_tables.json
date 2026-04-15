@@ -1,0 +1,83 @@
+[
+  {
+    "page": 622,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1038: Cảm biến góc lái phát hiện lỗi cảm biến tốc độ\nCảm biến góc lái (model không trang bị hệ thống điều khiển đèn\npha/cos tự động) hoặc công tắc đèn và công tắc xi nhan (model có\ntrang bị hệ thống điều khiển đèn pha/cos tự động) phát hiện dữ liệu\nCAN không hợp lệ từ cụm điều khiển ESP®.",
+        "• Mạch giao tiếp CAN\n• Công tắc đèn và công tắc xi nhan\n• Cảm biến góc lái\n• Cụm điều khiển ESP®"
+      ]
+    ]
+  },
+  {
+    "page": 622,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống ESP®” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống ESP®” (Trang\n4F-11)."
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\n1) Tiến hành “Kiểm tra DTC” (Trang 4F-15).\nCó phát hiện (các) DTC nào khác ngoài mã C1038 không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 3."
+      ],
+      [
+        "3",
+        "Kiểm tra mạch giao tiếp CAN\n1) Đối với model không trang bị hệ thống điều khiển đèn\npha/cos tự động, kiểm tra mạch giao tiếp CAN giữa cụm\nđiều khiển ESP® và cảm biến góc lái, tham khảo “Khắc\nphục sự cố đường truyền bị ngắt” trong Phần 10H (Trang 10H-23).\n2) Đối với model có trang bị hệ thống điều khiển đèn\npha/cos tự động, kiểm tra mạch giao tiếp CAN giữa cụm\nđiều khiển ESP® và công tắc đèn và công tắc xi nhan,\ntham khảo “Khắc phục sự cố đường truyền bị ngắt”\ntrong Phần 10H (Trang 10H-23).\nKết quả kiểm tra có ỔN không?",
+        "Thay cảm biến góc lái\n(model không trang bị\nhệ thống điều khiển đèn\npha/cos tự động) hoặc\ncông tắc đèn và công\ntắc xi nhan (model có\ntrang bị hệ thống điều\nkhiển đèn pha/cos tự\nđộng) và kiểm tra lại DTC. Nếu vẫn phát hiện\nDTC C1038, thay bộ\nthủy lực / cụm chi tiết\nđiều khiển ESP® và\nkiểm tra lại DTC.\n• Cảm biến góc lái: (Trang 4F-60)\n• Công tắc đèn và công\ntắc xi nhan: (Trang\n9B-21)\n• Bộ thủy lực / cụm chi\ntiết điều khiển ESP®: (Trang 4F-56)",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ]
+    ]
+  },
+  {
+    "page": 623,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1039: Lỗi bên trong bộ cảm biến xoay quanh trục\nđứng/cảm biến G\nPhát hiện lỗi bên trong cảm biến xoay quanh trục đứng/\ncảm biến G.",
+        "• Mạch cấp nguồn cụm điều khiển ESP®\n• Mạch nối đất cụm điều khiển ESP®\n• Cụm điều khiển ESP®"
+      ],
+      [
+        "C1071: Lỗi bên trong cụm điều khiển ESP®\nPhát hiện lỗi bên trong cụm điều khiển ESP®.",
+        null
+      ]
+    ]
+  },
+  {
+    "page": 623,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống ESP®” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống ESP®” (Trang\n4F-11)."
+      ],
+      [
+        "2",
+        "Kiểm tra mạch cấp nguồn và mạch nối đất cụm điều\nkhiển ESP®\n1) Kiểm tra mạch cấp nguồn và mạch nối đất cụm điều\nkhiển ESP®. (Trang 4F-50)\nKết quả kiểm tra có ỔN không?",
+        "Thay bộ thủy lực / cụm\nchi tiết điều khiển ESP®\nvà kiểm tra lại DTC. (Trang 4F-56)",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ]
+    ]
+  },
+  {
+    "page": 623,
+    "table_index": 2,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1041/C1045/C1051/C1055: Tương quan mạch van solenoid nạp phía trước\nbên phải/phía trước bên trái/phía sau bên phải/phía sau bên trái\nC1042/C1046/C1052/C1056: Tương quan mạch van solenoid xả phía trước\nbên phải/phía trước bên trái/phía sau bên phải/phía sau bên trái\nC1043/C1044: Tương quan mạch van solenoid cắt thủy lực số 1 / số 2\nSự cố điện van solenoid.",
+        "• Mạch cấp nguồn cụm điều\nkhiển ESP®\n• Mạch nối đất cụm điều khiển\nESP®\n• Cụm điều khiển ESP®"
+      ]
+    ]
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "page": 562,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "5",
+        "Kiểm tra cảm biến tốc độ bánh xe\n1) Kiểm tra cảm biến tốc độ bánh xe thích hợp. (Trang\n4E-46)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 6.",
+        "Vệ sinh, sửa chữa hoặc\nthay cảm biến tốc độ\nbánh xe.\n• Cảm biến tốc độ\nbánh trước: (Trang\n4E-41)\n• Cảm biến tốc độ\nbánh sau: (Trang\n4E-42)"
+      ],
+      [
+        "6",
+        "Kiểm tra bộ đếm xung cảm biến tốc độ bánh xe\n1) Kiểm tra bộ đếm xung cảm biến tốc độ bánh xe thích\nhợp. (Trang 4E-46)\nKết quả kiểm tra có ỔN không?",
+        "Thay bộ thủy lực / cụm\nchi tiết điều khiển ABS\nvà kiểm tra lại DTC. (Trang 4E-38)",
+        "Vệ sinh, sửa chữa hoặc\nthay bộ đếm xung cảm\nbiến tốc độ bánh xe.\n• Bộ đếm xung cảm\nbiến tốc độ bánh\ntrước: (Trang 4E-\n46)\n• Bộ đếm xung cảm\nbiến tốc độ bánh sau: (Trang 4E-46)"
+      ]
+    ]
+  },
+  {
+    "page": 562,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1041/C1045/C1051/C1055: Tương quan mạch van solenoid nạp\nphía trước bên phải/phía trước bên trái/phía sau bên phải/phía sau\nbên trái\nC1042/C1046/C1052/C1056: Tương quan mạch van solenoid xả phía\ntrước bên phải/phía trước bên trái/phía sau bên phải/phía sau bên\ntrái\nDữ liệu đầu ra solenoid và dữ liệu theo dõi solenoid không đồng nhất.",
+        "• Mạch cấp nguồn cụm điều khiển ABS\n• Mạch nối đất cụm điều khiển ABS\n• Cụm điều khiển ABS"
+      ],
+      [
+        "C1063: Hoạt động mạch điều khiển cấp nguồn van solenoid\n• Tín hiệu đầu ra rơ-le cấp nguồn van solenoid “ON” mặc dù tín hiệu\nđầu ra được theo dõi “OFF”.\n• Tín hiệu đầu ra rơ-le cấp nguồn van solenoid “OFF” mặc dù tín hiệu\nđầu ra được theo dõi “ON”.",
+        null
+      ]
+    ]
+  },
+  {
+    "page": 563,
+    "table_index": 2,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra ABS” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nABS” (Trang 4E-10)."
+      ],
+      [
+        "2",
+        "Kiểm tra mạch cấp nguồn van solenoid và mạch nối đất\ncụm điều khiển ABS\n1) Kiểm tra mạch cấp nguồn và mạch nối đất van solenoid. (Trang 4E-34)\nKết quả kiểm tra có ỔN không?",
+        "Thay bộ thủy lực / cụm\nchi tiết điều khiển ABS\nvà kiểm tra lại DTC. (Trang 4E-38)",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ]
+    ]
+  },
+  {
+    "page": 563,
+    "table_index": 3,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1057: Điện áp bộ cấp nguồn\n• Điện áp bộ cấp nguồn cụm điều khiển ABS cao hơn giá\ntrị quy định.\n• Điện áp bộ cấp nguồn cụm điều khiển ABS thấp hơn\ngiá trị quy định.",
+        "• Mạch cấp nguồn cụm điều khiển ABS\n• Mạch nối đất cụm điều khiển ABS\n• Hệ thống sạc\n• Cụm điều khiển ABS"
+      ]
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "page": 619,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1034: Lỗi bộ cấp nguồn bộ cảm biến xoay quanh\ntrục đứng/cảm biến G\nĐiện áp bộ cấp nguồn của bộ cảm biến xoay quanh trục\nđứng/cảm biến G quá thấp khi công tắc máy ON.",
+        "• Mạch cấp nguồn cụm điều khiển ESP®\n• Mạch nối đất cụm điều khiển ESP®\n• Cụm điều khiển ESP®"
+      ]
+    ]
+  },
+  {
+    "page": 619,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống ESP®” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống ESP®” (Trang\n4F-11)."
+      ],
+      [
+        "2",
+        "Kiểm tra mạch cấp nguồn và mạch nối đất cụm điều\nkhiển ESP®\n1) Kiểm tra mạch cấp nguồn và mạch nối đất cụm điều\nkhiển ESP®. (Trang 4F-50)\nKết quả kiểm tra có ỔN không?",
+        "Thay bộ thủy lực / cụm\nchi tiết điều khiển ESP®\nvà kiểm tra lại DTC.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ]
+    ]
+  },
+  {
+    "page": 619,
+    "table_index": 2,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1037: Điện áp bộ cấp nguồn cảm biến góc lái\nĐiện áp bộ cấp nguồn cảm biến góc lái nằm ngoài phạm\nvi quy định.",
+        "• Mạch cấp nguồn cảm biến góc lái\n• Mạch nối đất cảm biến góc lái\n• Cảm biến góc lái\n• Cụm điều khiển ESP®\n• Mạch giao tiếp CAN"
+      ]
+    ]
+  }
+]

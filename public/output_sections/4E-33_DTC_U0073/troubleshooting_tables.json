@@ -1,0 +1,44 @@
+[
+  {
+    "page": 567,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1091: Dữ liệu CAN không hợp lệ từ ECM\nPhát hiện DTC liên quan đến ECM.",
+        "• Mạch giao tiếp CAN\n• Hệ thống điều khiển động cơ\n• ECM\n• Cụm điều khiển ABS"
+      ]
+    ]
+  },
+  {
+    "page": 567,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra ABS” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nABS” (Trang 4E-10)."
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\n1) Tiến hành “Kiểm tra DTC” (Trang 4E-14).\nCó (các) DTC nào khác ngoài C1091 không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 3."
+      ],
+      [
+        "3",
+        "Kiểm tra DTC cho ECM\n1) Kiểm tra ECM để tìm DTC. (Trang 1A-22)\nCó phát hiện thấy DTC U0073 hoặc U0121 không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 4."
+      ],
+      [
+        "4",
+        "Kiểm tra mạch giao tiếp CAN\n1) Kiểm tra mạch giao tiếp CAN giữa ECM và cụm điều\nkhiển ABS, tham khảo “Khắc phục sự cố đường truyền\nbị ngắt” trong Phần 10H (Trang 10H-23).\nKết quả kiểm tra có ỔN không?",
+        "Thay ECM và kiểm tra lại DTC. Nếu vẫn phát\nhiện DTC C1091, hãy thay bộ thủy lực / cụm\nchi tiết điều khiển ABS\nvà kiểm tra lại DTC.\n• ECM: (Trang 1C-2)\n• Bộ thuỷ lực / cụm chi\ntiết điều khiển ABS: (Trang 4E-38)",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ]
+    ]
+  }
+]

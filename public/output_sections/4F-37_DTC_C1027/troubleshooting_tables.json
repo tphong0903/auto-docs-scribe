@@ -1,0 +1,80 @@
+[
+  {
+    "page": 617,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1027: Lỗi mạch công tắc ngắt hệ thống ESP®\nCông tắc ngắt hệ thống ESP® ở vị trí “ON” lâu hơn thời gian quy\nđịnh.",
+        "• Công tắc ngắt hệ thống ESP®\n• Mạch công tắc ngắt hệ thống ESP®\n• Cụm điều khiển ESP®"
+      ]
+    ]
+  },
+  {
+    "page": 618,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống ESP®” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống ESP®” (Trang\n4F-11)."
+      ],
+      [
+        "2",
+        "Kiểm tra công tắc ngắt hệ thống ESP®\n1) Kiểm tra để đảm bảo công tắc máy đang ở vị trí “OFF”.\n2) Kiểm tra công tắc ngắt hệ thống ESP®. (Trang 4F-61)\n3) Kiểm tra từng cực của công tắc ngắt hệ thống ESP®\nxem có kết nối chính khác không.\n4) Nếu các kết nối ỔN, hãy kiểm tra công tắc ngắt hệ thống\nESP®. (Trang 4F-61)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 3.",
+        "Thay công tắc ngắt hệ\nthống ESP®."
+      ],
+      [
+        "3",
+        "Kiểm tra mạch công tắc ngắt hệ thống ESP®\n1) Rút giắc cắm “E09”.\n2) Kiểm tra xem kết nối với giắc cắm “E09” có chính xác\nkhông.\n3) Nếu các kết nối ỔN, kiểm tra để đảm bảo điện trở giữa\nmạch “A1” và dây nối đất là vô cực.\nKết quả kiểm tra có ỔN không?",
+        "Thay bộ thủy lực / cụm\nchi tiết điều khiển ESP®\nvà kiểm tra lại DTC. (Trang 4F-56)",
+        "Sửa chữa hoặc thay thế\nmạch “A1”."
+      ]
+    ]
+  },
+  {
+    "page": 618,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1028: Điện áp mạch cảm biến áp suất xi-lanh chính\nTín hiệu cảm biến áp suất xi-lanh phanh chính nằm ngoài phạm vi quy\nđịnh.",
+        "• Hệ thống phanh\n• Cụm điều khiển ESP®"
+      ]
+    ]
+  },
+  {
+    "page": 618,
+    "table_index": 2,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống ESP®” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống ESP®” (Trang\n4F-11)."
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\n1) Tiến hành “Kiểm tra DTC” (Trang 4F-15).\nCó phát hiện DTC C1057 không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 3."
+      ],
+      [
+        "3",
+        "Kiểm tra cảm biến áp suất xi-lanh phanh chính\n1) Kiểm tra cảm biến áp suất xi-lanh phanh chính. (Trang\n4F-58)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 4.",
+        "Thay bộ thủy lực / cụm\nchi tiết điều khiển ESP®\nvà kiểm tra lại DTC. (Trang 4F-56)"
+      ],
+      [
+        "4",
+        "Kiểm tra hệ thống phanh\n1) Kiểm tra những điểm sau.\n• Rò rỉ dầu phanh hay khí ở hệ thống phanh thuỷ lực.\n• Khoảng trống quá lớn giữa bố phanh tới đĩa phanh.\nKết quả kiểm tra có ỔN không?",
+        "Thay bộ thủy lực / cụm\nchi tiết điều khiển ESP®\nvà kiểm tra lại DTC. (Trang 4F-56)",
+        "Sửa chữa, thay thế\nhoặc điều chỉnh hệ\nthống phanh."
+      ]
+    ]
+  }
+]

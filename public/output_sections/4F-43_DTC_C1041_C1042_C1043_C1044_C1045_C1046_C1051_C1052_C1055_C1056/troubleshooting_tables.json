@@ -1,0 +1,77 @@
+[
+  {
+    "page": 623,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1039: Lỗi bên trong bộ cảm biến xoay quanh trục\nđứng/cảm biến G\nPhát hiện lỗi bên trong cảm biến xoay quanh trục đứng/\ncảm biến G.",
+        "• Mạch cấp nguồn cụm điều khiển ESP®\n• Mạch nối đất cụm điều khiển ESP®\n• Cụm điều khiển ESP®"
+      ],
+      [
+        "C1071: Lỗi bên trong cụm điều khiển ESP®\nPhát hiện lỗi bên trong cụm điều khiển ESP®.",
+        null
+      ]
+    ]
+  },
+  {
+    "page": 623,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống ESP®” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống ESP®” (Trang\n4F-11)."
+      ],
+      [
+        "2",
+        "Kiểm tra mạch cấp nguồn và mạch nối đất cụm điều\nkhiển ESP®\n1) Kiểm tra mạch cấp nguồn và mạch nối đất cụm điều\nkhiển ESP®. (Trang 4F-50)\nKết quả kiểm tra có ỔN không?",
+        "Thay bộ thủy lực / cụm\nchi tiết điều khiển ESP®\nvà kiểm tra lại DTC. (Trang 4F-56)",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ]
+    ]
+  },
+  {
+    "page": 623,
+    "table_index": 2,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1041/C1045/C1051/C1055: Tương quan mạch van solenoid nạp phía trước\nbên phải/phía trước bên trái/phía sau bên phải/phía sau bên trái\nC1042/C1046/C1052/C1056: Tương quan mạch van solenoid xả phía trước\nbên phải/phía trước bên trái/phía sau bên phải/phía sau bên trái\nC1043/C1044: Tương quan mạch van solenoid cắt thủy lực số 1 / số 2\nSự cố điện van solenoid.",
+        "• Mạch cấp nguồn cụm điều\nkhiển ESP®\n• Mạch nối đất cụm điều khiển\nESP®\n• Cụm điều khiển ESP®"
+      ]
+    ]
+  },
+  {
+    "page": 624,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống ESP®” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống ESP®” (Trang\n4F-11)."
+      ],
+      [
+        "2",
+        "Kiểm tra mạch cấp nguồn van solenoid và mạch nối đất\ncụm điều khiển ESP®\n1) Kiểm tra mạch cấp nguồn và mạch nối đất van solenoid. (Trang 4F-50)\nKết quả kiểm tra có ỔN không?",
+        "Thay bộ thủy lực / cụm\nchi tiết điều khiển ESP\nvà kiểm tra lại DTC. (Trang 4F-56)",
+        "Sửa chữa hoặc thay thế\n® bộ dây điện bị hỏng."
+      ]
+    ]
+  },
+  {
+    "page": 624,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1057: Điện áp bộ cấp nguồn\n• Điện áp bộ cấp nguồn cụm điều khiển ESP® cao hơn\ngiá trị quy định.\n• Điện áp bộ cấp nguồn cụm điều khiển ESP® thấp hơn\ngiá trị quy định.",
+        "• Mạch cấp nguồn cụm điều khiển ESP®\n• Mạch nối đất cụm điều khiển ESP®\n• Hệ thống sạc\n• Cụm điều khiển ESP®"
+      ]
+    ]
+  }
+]

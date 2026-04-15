@@ -1,0 +1,82 @@
+[
+  {
+    "page": 560,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1021/C1025/C1031/C1035: Điện áp mạch cảm biến tốc độ bánh xe\nphía trước bên phải / phía trước bên trái / phía sau bên phải / phía\nsau bên trái\nTín hiệu cảm biến tốc độ bánh xe nằm ngoài phạm vi quy định.",
+        "• Cảm biến tốc độ bánh xe\n• Mạch cảm biến tốc độ bánh xe\n• Bộ đếm xung cảm biến tốc độ bánh xe\n• Cụm điều khiển ABS"
+      ],
+      [
+        "C1022/C1026/C1032/C1036: Hoạt động truyền nhận tín hiệu của bộ\nđếm xung hoặc cảm biến tốc độ bánh xe phía trước bên phải / phía\ntrước bên trái / phía sau bên phải / phía sau bên trái\nLiên tục phát hiện tín hiệu cảm biến tốc độ bánh xe bất thường.",
+        null
+      ]
+    ]
+  },
+  {
+    "page": 561,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra ABS” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nABS” (Trang 4E-10)."
+      ],
+      [
+        "2",
+        "Kiểm tra áp suất lốp\n1) Kiểm tra xem áp suất lốp có ở giá trị quy định không.\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 3.",
+        "Điều chỉnh áp suất lốp\nhoặc thay lốp và kiểm\ntra lại DTC."
+      ],
+      [
+        "3",
+        "Kiểm tra mạch cấp nguồn và mạch tín hiệu cảm biến tốc\nđộ bánh xe\n1) Xoay công tắc máy về vị trí “OFF”.\n2) Rút giắc cắm “E09” và từng giắc cắm cảm biến tốc độ\nbánh xe.\n3) Kiểm tra xem kết nối cực tới giắc cắm “E09” và từng\ngiắc cắm cảm biến tốc độ bánh xe có chính xác không.\n4) Nếu các kết nối đều ỔN, hãy kiểm tra những điểm sau.\n• Điện trở của các mạch “A1”, “A2”, “B1”, “B2”, “C1”,\n“C2”, “D1” và “D2”: dưới 1 Ω\n• Điện trở giữa từng mạch “A1”, “A2”, “B1”, “B2”, “C1”,\n“C2”, “D1” và “D2” và dây nối đất: vô cực\n• Điện trở giữa mỗi cực của mạch “A1” - “A2”, “B1” -\n“B2”, “C1” - “C2” and “D1” - “D2” và mỗi cực của giắc\ncắm “E09”: vô cực\n• Điện áp của các mạch “A1”, “A2”, “B1”, “B2”, “C1”,\n“C2”, “D1” và “D2”: khoảng 0 V (Khi công tắc máy ở vị trí “ON”)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 4.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "4",
+        "Kiểm tra tín hiệu cảm biến tốc độ bánh xe\n1) Kiểm tra điện áp và dạng sóng đầu ra của cảm biến tốc\nđộ bánh xe thích hợp. (Trang 4E-39)\nKết quả kiểm tra có ỔN không?",
+        "Thay bộ thủy lực / cụm\nchi tiết điều khiển ABS\nvà kiểm tra lại DTC. (Trang 4E-38)",
+        "Chuyển sang Bước 5."
+      ]
+    ]
+  },
+  {
+    "page": 562,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "5",
+        "Kiểm tra cảm biến tốc độ bánh xe\n1) Kiểm tra cảm biến tốc độ bánh xe thích hợp. (Trang\n4E-46)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 6.",
+        "Vệ sinh, sửa chữa hoặc\nthay cảm biến tốc độ\nbánh xe.\n• Cảm biến tốc độ\nbánh trước: (Trang\n4E-41)\n• Cảm biến tốc độ\nbánh sau: (Trang\n4E-42)"
+      ],
+      [
+        "6",
+        "Kiểm tra bộ đếm xung cảm biến tốc độ bánh xe\n1) Kiểm tra bộ đếm xung cảm biến tốc độ bánh xe thích\nhợp. (Trang 4E-46)\nKết quả kiểm tra có ỔN không?",
+        "Thay bộ thủy lực / cụm\nchi tiết điều khiển ABS\nvà kiểm tra lại DTC. (Trang 4E-38)",
+        "Vệ sinh, sửa chữa hoặc\nthay bộ đếm xung cảm\nbiến tốc độ bánh xe.\n• Bộ đếm xung cảm\nbiến tốc độ bánh\ntrước: (Trang 4E-\n46)\n• Bộ đếm xung cảm\nbiến tốc độ bánh sau: (Trang 4E-46)"
+      ]
+    ]
+  },
+  {
+    "page": 562,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1041/C1045/C1051/C1055: Tương quan mạch van solenoid nạp\nphía trước bên phải/phía trước bên trái/phía sau bên phải/phía sau\nbên trái\nC1042/C1046/C1052/C1056: Tương quan mạch van solenoid xả phía\ntrước bên phải/phía trước bên trái/phía sau bên phải/phía sau bên\ntrái\nDữ liệu đầu ra solenoid và dữ liệu theo dõi solenoid không đồng nhất.",
+        "• Mạch cấp nguồn cụm điều khiển ABS\n• Mạch nối đất cụm điều khiển ABS\n• Cụm điều khiển ABS"
+      ],
+      [
+        "C1063: Hoạt động mạch điều khiển cấp nguồn van solenoid\n• Tín hiệu đầu ra rơ-le cấp nguồn van solenoid “ON” mặc dù tín hiệu\nđầu ra được theo dõi “OFF”.\n• Tín hiệu đầu ra rơ-le cấp nguồn van solenoid “OFF” mặc dù tín hiệu\nđầu ra được theo dõi “ON”.",
+        null
+      ]
+    ]
+  }
+]

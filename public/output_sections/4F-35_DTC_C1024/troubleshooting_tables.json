@@ -1,0 +1,89 @@
+[
+  {
+    "page": 615,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1023: Hoạt động mạch cảm biến xoay quanh trục đứng\n• Tín hiệu cảm biến xoay quanh trục đứng nằm ngoài phạm vi quy định.\n• Mặc dù xe đang dừng, tín hiệu cảm biến xoay quanh trục đứng vẫn\nlớn hơn giá trị quy định.",
+        "Cụm điều khiển ESP®"
+      ],
+      [
+        "C1068: Hoạt động mạch cảm biến G\n• CPU trong bộ cảm biến xoay quanh trục đứng/cảm biến G phát hiện\nlỗi bên trong.\n• Tín hiệu cảm biến G nằm ngoài phạm vi quy định và phát hiện đóng\nbăng cảm biến.",
+        null
+      ]
+    ]
+  },
+  {
+    "page": 615,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống ESP®” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống ESP®” (Trang\n4F-11)."
+      ],
+      [
+        "2",
+        "Kiểm tra mạch cấp nguồn và mạch nối đất cụm điều\nkhiển ESP®\n1) Kiểm tra mạch cấp nguồn và mạch nối đất cụm điều\nkhiển ESP®. (Trang 4F-50)\nKết quả kiểm tra có ỔN không?",
+        "Thay bộ thủy lực / cụm\nchi tiết điều khiển ESP®\nvà kiểm tra lại DTC. (Trang 4F-56)",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ]
+    ]
+  },
+  {
+    "page": 615,
+    "table_index": 2,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1024: Hoạt động mạch cảm biến góc lái\n• CPU trong cảm biến góc lái (model không trang bị hệ thống\nđiều khiển đèn pha/cos tự động) hoặc công tắc đèn và công\ntắc xi nhan (model có trang bị hệ thống điều khiển đèn pha/\ncos tự động) phát hiện lỗi bên trong.\n• Tín hiệu cảm biến góc lái nằm ngoài phạm vi quy định.\n• Tín hiệu cảm biến góc lái không thay đổi dù xe rẽ phải hay rẽ\ntrái.",
+        "• Công tắc đèn và công tắc xi nhan\n• Cụm điều khiển ESP®\n• Cảm biến góc lái"
+      ]
+    ]
+  },
+  {
+    "page": 616,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống ESP®” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống ESP®” (Trang\n4F-11)."
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\n1) Tiến hành “Kiểm tra DTC” (Trang 4F-15).\nCó phát hiện mã DTC U0073 và/hoặc U0126 không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 3."
+      ],
+      [
+        "3",
+        "Có phát hiện cả hai mã DTC C1024 và C1075 không?",
+        "Thay cảm biến góc lái\n(model không trang bị\nhệ thống điều khiển đèn\npha/cos tự động) hoặc\ncông tắc đèn và công\ntắc xi nhan (model có\ntrang bị hệ thống điều\nkhiển đèn pha/cos tự\nđộng).\n• Model không trang bị\nhệ thống điều khiển\nđèn pha/cos tự động: (Trang 4F-60)\n• Model có trang bị hệ\nthống điều khiển đèn\npha/cos tự động: (Trang 9B-21)",
+        "Chuyển sang Bước 4."
+      ],
+      [
+        "4",
+        "Kiểm tra cảm biến góc lái trên xe\n1) Kiểm tra cảm biến góc lái. (Trang 4F-59)\nKết quả kiểm tra có ỔN không?",
+        "Thay bộ thủy lực / cụm\nchi tiết điều khiển ESP®\nvà kiểm tra lại DTC. (Trang 4F-56)",
+        "Thay cảm biến góc lái\n(model không trang bị\nhệ thống điều khiển đèn\npha/cos tự động) hoặc\ncông tắc đèn và công\ntắc xi nhan (model có\ntrang bị hệ thống điều\nkhiển đèn pha/cos tự\nđộng).\n• Model không trang bị\nhệ thống điều khiển\nđèn pha/cos tự động: (Trang 4F-60)\n• Model có trang bị hệ\nthống điều khiển đèn\npha/cos tự động: (Trang 9B-21)"
+      ]
+    ]
+  },
+  {
+    "page": 617,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1027: Lỗi mạch công tắc ngắt hệ thống ESP®\nCông tắc ngắt hệ thống ESP® ở vị trí “ON” lâu hơn thời gian quy\nđịnh.",
+        "• Công tắc ngắt hệ thống ESP®\n• Mạch công tắc ngắt hệ thống ESP®\n• Cụm điều khiển ESP®"
+      ]
+    ]
+  }
+]

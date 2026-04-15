@@ -1,0 +1,7 @@
+{
+  "name": "Kiểm tra mạch cấp nguồn và mạch nối đất cụm điều khiển ESP®",
+  "refs": [
+    "10H-13",
+    "10H-23"
+  ]
+}

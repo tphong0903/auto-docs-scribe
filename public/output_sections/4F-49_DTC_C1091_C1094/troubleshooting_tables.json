@@ -1,0 +1,79 @@
+[
+  {
+    "page": 629,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống ESP®” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống ESP®” (Trang\n4F-11)."
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\n1) Tiến hành “Kiểm tra DTC” (Trang 4F-15).\nCó phát hiện (những) DTC nào khác ngoài C1090 không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 3."
+      ],
+      [
+        "3",
+        "Kiểm tra DTC cho ECM\n1) Kiểm tra ECM để tìm DTC. (Trang 1A-22)\nCó phát hiện thấy DTC U0073 hoặc U0121 không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 4."
+      ],
+      [
+        "4",
+        "Kiểm tra mạch giao tiếp CAN\n1) Kiểm tra mạch giao tiếp CAN giữa ECM và cụm điều\nkhiển ESP® tham khảo “Khắc phục sự cố đường truyền\nbị ngắt” trong Phần 10H (Trang 10H-23).\nKết quả kiểm tra có ỔN không?",
+        "Thay bộ thủy lực / cụm\nchi tiết điều khiển ESP®\nvà kiểm tra lại DTC. (Trang 4F-56)",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ]
+    ]
+  },
+  {
+    "page": 629,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1091: Dữ liệu CAN không hợp lệ từ ECM\nPhát hiện DTC liên quan đến ECM.",
+        "• Mạch giao tiếp CAN\n• Hệ thống điều khiển động cơ\n• ECM\n• Cụm điều khiển ESP®"
+      ],
+      [
+        "C1094: Trạng thái từ chối yêu cầu mô-men xoắn\nCụm điều khiển ESP® nhận dữ liệu CAN không hợp lệ từ\nECM (về điều khiển mô-men xoắn động cơ).",
+        null
+      ]
+    ]
+  },
+  {
+    "page": 629,
+    "table_index": 2,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống ESP®” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống ESP®” (Trang\n4F-11)."
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\n1) Tiến hành “Kiểm tra DTC” (Trang 4F-15).\nCó phát hiện (những) DTC nào khác ngoài C1091 hoặc\nC1094 không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 3."
+      ],
+      [
+        "3",
+        "Kiểm tra DTC cho ECM\n1) Kiểm tra ECM để tìm DTC. (Trang 1A-22)\nCó phát hiện thấy DTC U0073 hoặc U0121 không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 4."
+      ],
+      [
+        "4",
+        "Kiểm tra mạch giao tiếp CAN\n1) Kiểm tra mạch giao tiếp CAN giữa ECM và cụm điều\nkhiển ESP® tham khảo “Khắc phục sự cố đường truyền\nbị ngắt” trong Phần 10H (Trang 10H-23).\nKết quả kiểm tra có ỔN không?",
+        "Thay ECM và kiểm tra lại DTC. Nếu vẫn phát\nhiện DTC C1091 hoặc\nC1094, thay bộ thủy lực\n/ cụm chi tiết điều khiển\nESP® và kiểm tra lại DTC.\n• ECM: (Trang 1C-2)\n• Bộ thủy lực / cụm chi\ntiết điều khiển ESP®: (Trang 4F-56)",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ]
+    ]
+  }
+]

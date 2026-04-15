@@ -1,0 +1,141 @@
+[
+  {
+    "page": 619,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1034: Lỗi bộ cấp nguồn bộ cảm biến xoay quanh\ntrục đứng/cảm biến G\nĐiện áp bộ cấp nguồn của bộ cảm biến xoay quanh trục\nđứng/cảm biến G quá thấp khi công tắc máy ON.",
+        "• Mạch cấp nguồn cụm điều khiển ESP®\n• Mạch nối đất cụm điều khiển ESP®\n• Cụm điều khiển ESP®"
+      ]
+    ]
+  },
+  {
+    "page": 619,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống ESP®” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống ESP®” (Trang\n4F-11)."
+      ],
+      [
+        "2",
+        "Kiểm tra mạch cấp nguồn và mạch nối đất cụm điều\nkhiển ESP®\n1) Kiểm tra mạch cấp nguồn và mạch nối đất cụm điều\nkhiển ESP®. (Trang 4F-50)\nKết quả kiểm tra có ỔN không?",
+        "Thay bộ thủy lực / cụm\nchi tiết điều khiển ESP®\nvà kiểm tra lại DTC.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ]
+    ]
+  },
+  {
+    "page": 619,
+    "table_index": 2,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1037: Điện áp bộ cấp nguồn cảm biến góc lái\nĐiện áp bộ cấp nguồn cảm biến góc lái nằm ngoài phạm\nvi quy định.",
+        "• Mạch cấp nguồn cảm biến góc lái\n• Mạch nối đất cảm biến góc lái\n• Cảm biến góc lái\n• Cụm điều khiển ESP®\n• Mạch giao tiếp CAN"
+      ]
+    ]
+  },
+  {
+    "page": 620,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống ESP®” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống ESP®” (Trang\n4F-11)."
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\n1) Tiến hành “Kiểm tra DTC” (Trang 4F-15).\nCó phát hiện (những) DTC nào ngoài C1037 và C1038\nkhông?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 3."
+      ],
+      [
+        "3",
+        "Kiểm tra DTC cho BCM\n1) Kiểm tra BCM để tìm DTC. (Trang 10B-12)\nCó phát hiện DTC U0073, U0121 và/hoặc U108B không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 4."
+      ],
+      [
+        "4",
+        "Kiểm tra cầu chì\n1) Kiểm tra cầu chì sau.\n• Model không trang bị hệ thống điều khiển đèn pha/cos\ntự động: Cầu chì “ABS”\n• Model có trang bị hệ thống điều khiển đèn pha/cos tự\nđộng: Cầu chì “DOME2” và cầu chì “IG1 SIG”\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 5.",
+        "Thay cầu chì và kiểm tra\nsự ngắn mạch với đất."
+      ],
+      [
+        "5",
+        "Kiểm tra mạch cấp nguồn cảm biến góc lái (model không\ntrang bị hệ thống điều khiển đèn pha/cos tự động) hoặc\nmạch cấp nguồn công tắc đèn và công tắc xi nhan\n(model có trang bị hệ thống điều khiển đèn pha/cos tự\nđộng)\n1) Kiểm tra để đảm bảo công tắc máy đang ở vị trí “OFF”.\n2) Rút giắc cắm sau.\n• Model không trang bị hệ thống điều khiển đèn\npha/cos tự động: giắc cắm cảm biến góc lái.\n• Model có trang bị hệ thống điều khiển đèn pha/cos tự\nđộng: giắc cắm công tắc đèn và công tắc xi nhan.\n3) Rút giắc cắm “E09”.\n4) Kiểm tra xem kết nối cực tới giắc cắm sau đây có chính\nxác không.\n• Model không trang bị hệ thống điều khiển đèn pha/cos\ntự động: giắc cắm cảm biến góc lái\n• Model có trang bị hệ thống điều khiển đèn pha/cos tự\nđộng: giắc cắm công tắc đèn và công tắc xi nhan\n5) Nếu kết nối ỔN, hãy xoay công tắc máy về vị trí “ON”.\n6) Đối với model không trang bị hệ thống điều khiển đèn\npha/cos tự động, đo điện áp giữa mạch “A1” và dây nối đất.\n7) Đối với model có trang bị hệ thống điều khiển đèn pha/cos\ntự động, đo điện áp giữa mạch “A2” và dây nối đất.\nKết quả kiểm tra có ỔN không?",
+        "• Model không trang bị\nhệ thống điều khiển\nđèn pha/cos tự động:\nBước 7.\n• Model có trang bị hệ\nthống điều khiển đèn\npha/cos tự động:\nBước 6.",
+        "Sửa chữa hoặc thay\nmạch cấp nguồn cảm\nbiến góc lái (model\nkhông trang bị hệ thống\nđiều khiển đèn pha/cos\ntự động) hoặc mạch cấp\nnguồn công tắc đèn và\ncông tắc xi nhan (model\ncó trang bị hệ thống\nđiều khiển đèn pha/cos\ntự động)."
+      ]
+    ]
+  },
+  {
+    "page": 621,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "6",
+        "Kiểm tra mạch cấp nguồn công tắc đèn và công tắc xi\nnhan (model có trang bị hệ thống điều khiển đèn pha/cos\ntự động)\n1) Xoay công tắc máy về vị trí “ON”.\n2) Đo điện áp giữa mạch “A3” và dây nối đất.\nKết quả kiểm tra có ỔN không?",
+        "Bước 7.",
+        "Sửa chữa hoặc thay\nmạch cấp nguồn công\ntắc đèn và công tắc xi\nnhan."
+      ],
+      [
+        "7",
+        "Kiểm tra mạch nối đất cảm biến góc lái (model không\ntrang bị hệ thống điều khiển đèn pha/cos tự động) hoặc\nmạch nối đất công tắc đèn và công tắc xi nhan (model\ncó trang bị hệ thống điều khiển đèn pha/cos tự động)\n1) Đối với model không trang bị hệ thống điều khiển đèn\npha/cos tự động, đo điện trở giữa mạch “B1” và dây nối\nđất.\n2) Đối với model có trang bị hệ thống điều khiển đèn\npha/cos tự động, đo điện trở giữa mạch “B2” và dây nối\nđất.\nĐiện trở có nhỏ hơn 1 Ω không?",
+        "Bước 8.",
+        "Sửa chữa hoặc thay\nmạch nối đất cảm biến\ngóc lái (model không\ntrang bị hệ thống điều\nkhiển đèn pha/cos tự\nđộng) hoặc mạch nối\nđất công tắc đèn và\ncông tắc xi nhan (model\ncó trang bị hệ thống\nđiều khiển đèn pha/cos\ntự động)."
+      ],
+      [
+        "8",
+        "Kiểm tra cảm biến góc lái\n1) Nối giắc cắm sau.\n• Model không trang bị hệ thống điều khiển đèn pha/cos\ntự động: giắc cắm cảm biến góc lái.\n• Model có trang bị hệ thống điều khiển đèn pha/cos tự\nđộng: giắc cắm công tắc đèn và công tắc xi nhan.\n2) Kiểm tra cảm biến góc lái. (Trang 4F-59)\nKết quả kiểm tra có ỔN không?",
+        "Thay bộ thủy lực / cụm\nchi tiết điều khiển ESP®\nvà kiểm tra lại DTC. (Trang 4F-56)",
+        "Thay cảm biến góc lái\n(model không trang bị\nhệ thống điều khiển đèn\npha/cos tự động) hoặc\ncông tắc đèn và công\ntắc xi nhan (model có\ntrang bị hệ thống điều\nkhiển đèn pha/cos tự\nđộng).\n• Model không trang bị\nhệ thống điều khiển\nđèn pha/cos tự động: (Trang 4F-60)\n• Model có trang bị hệ\nthống điều khiển đèn\npha/cos tự động: (Trang 9B-21)"
+      ]
+    ]
+  },
+  {
+    "page": 622,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1038: Cảm biến góc lái phát hiện lỗi cảm biến tốc độ\nCảm biến góc lái (model không trang bị hệ thống điều khiển đèn\npha/cos tự động) hoặc công tắc đèn và công tắc xi nhan (model có\ntrang bị hệ thống điều khiển đèn pha/cos tự động) phát hiện dữ liệu\nCAN không hợp lệ từ cụm điều khiển ESP®.",
+        "• Mạch giao tiếp CAN\n• Công tắc đèn và công tắc xi nhan\n• Cảm biến góc lái\n• Cụm điều khiển ESP®"
+      ]
+    ]
+  },
+  {
+    "page": 622,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống ESP®” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống ESP®” (Trang\n4F-11)."
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\n1) Tiến hành “Kiểm tra DTC” (Trang 4F-15).\nCó phát hiện (các) DTC nào khác ngoài mã C1038 không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 3."
+      ],
+      [
+        "3",
+        "Kiểm tra mạch giao tiếp CAN\n1) Đối với model không trang bị hệ thống điều khiển đèn\npha/cos tự động, kiểm tra mạch giao tiếp CAN giữa cụm\nđiều khiển ESP® và cảm biến góc lái, tham khảo “Khắc\nphục sự cố đường truyền bị ngắt” trong Phần 10H (Trang 10H-23).\n2) Đối với model có trang bị hệ thống điều khiển đèn\npha/cos tự động, kiểm tra mạch giao tiếp CAN giữa cụm\nđiều khiển ESP® và công tắc đèn và công tắc xi nhan,\ntham khảo “Khắc phục sự cố đường truyền bị ngắt”\ntrong Phần 10H (Trang 10H-23).\nKết quả kiểm tra có ỔN không?",
+        "Thay cảm biến góc lái\n(model không trang bị\nhệ thống điều khiển đèn\npha/cos tự động) hoặc\ncông tắc đèn và công\ntắc xi nhan (model có\ntrang bị hệ thống điều\nkhiển đèn pha/cos tự\nđộng) và kiểm tra lại DTC. Nếu vẫn phát hiện\nDTC C1038, thay bộ\nthủy lực / cụm chi tiết\nđiều khiển ESP® và\nkiểm tra lại DTC.\n• Cảm biến góc lái: (Trang 4F-60)\n• Công tắc đèn và công\ntắc xi nhan: (Trang\n9B-21)\n• Bộ thủy lực / cụm chi\ntiết điều khiển ESP®: (Trang 4F-56)",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ]
+    ]
+  }
+]

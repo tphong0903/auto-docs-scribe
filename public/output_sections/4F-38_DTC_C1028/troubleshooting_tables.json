@@ -1,0 +1,110 @@
+[
+  {
+    "page": 618,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống ESP®” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống ESP®” (Trang\n4F-11)."
+      ],
+      [
+        "2",
+        "Kiểm tra công tắc ngắt hệ thống ESP®\n1) Kiểm tra để đảm bảo công tắc máy đang ở vị trí “OFF”.\n2) Kiểm tra công tắc ngắt hệ thống ESP®. (Trang 4F-61)\n3) Kiểm tra từng cực của công tắc ngắt hệ thống ESP®\nxem có kết nối chính khác không.\n4) Nếu các kết nối ỔN, hãy kiểm tra công tắc ngắt hệ thống\nESP®. (Trang 4F-61)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 3.",
+        "Thay công tắc ngắt hệ\nthống ESP®."
+      ],
+      [
+        "3",
+        "Kiểm tra mạch công tắc ngắt hệ thống ESP®\n1) Rút giắc cắm “E09”.\n2) Kiểm tra xem kết nối với giắc cắm “E09” có chính xác\nkhông.\n3) Nếu các kết nối ỔN, kiểm tra để đảm bảo điện trở giữa\nmạch “A1” và dây nối đất là vô cực.\nKết quả kiểm tra có ỔN không?",
+        "Thay bộ thủy lực / cụm\nchi tiết điều khiển ESP®\nvà kiểm tra lại DTC. (Trang 4F-56)",
+        "Sửa chữa hoặc thay thế\nmạch “A1”."
+      ]
+    ]
+  },
+  {
+    "page": 618,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1028: Điện áp mạch cảm biến áp suất xi-lanh chính\nTín hiệu cảm biến áp suất xi-lanh phanh chính nằm ngoài phạm vi quy\nđịnh.",
+        "• Hệ thống phanh\n• Cụm điều khiển ESP®"
+      ]
+    ]
+  },
+  {
+    "page": 618,
+    "table_index": 2,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống ESP®” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống ESP®” (Trang\n4F-11)."
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\n1) Tiến hành “Kiểm tra DTC” (Trang 4F-15).\nCó phát hiện DTC C1057 không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 3."
+      ],
+      [
+        "3",
+        "Kiểm tra cảm biến áp suất xi-lanh phanh chính\n1) Kiểm tra cảm biến áp suất xi-lanh phanh chính. (Trang\n4F-58)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 4.",
+        "Thay bộ thủy lực / cụm\nchi tiết điều khiển ESP®\nvà kiểm tra lại DTC. (Trang 4F-56)"
+      ],
+      [
+        "4",
+        "Kiểm tra hệ thống phanh\n1) Kiểm tra những điểm sau.\n• Rò rỉ dầu phanh hay khí ở hệ thống phanh thuỷ lực.\n• Khoảng trống quá lớn giữa bố phanh tới đĩa phanh.\nKết quả kiểm tra có ỔN không?",
+        "Thay bộ thủy lực / cụm\nchi tiết điều khiển ESP®\nvà kiểm tra lại DTC. (Trang 4F-56)",
+        "Sửa chữa, thay thế\nhoặc điều chỉnh hệ\nthống phanh."
+      ]
+    ]
+  },
+  {
+    "page": 619,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1034: Lỗi bộ cấp nguồn bộ cảm biến xoay quanh\ntrục đứng/cảm biến G\nĐiện áp bộ cấp nguồn của bộ cảm biến xoay quanh trục\nđứng/cảm biến G quá thấp khi công tắc máy ON.",
+        "• Mạch cấp nguồn cụm điều khiển ESP®\n• Mạch nối đất cụm điều khiển ESP®\n• Cụm điều khiển ESP®"
+      ]
+    ]
+  },
+  {
+    "page": 619,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống ESP®” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống ESP®” (Trang\n4F-11)."
+      ],
+      [
+        "2",
+        "Kiểm tra mạch cấp nguồn và mạch nối đất cụm điều\nkhiển ESP®\n1) Kiểm tra mạch cấp nguồn và mạch nối đất cụm điều\nkhiển ESP®. (Trang 4F-50)\nKết quả kiểm tra có ỔN không?",
+        "Thay bộ thủy lực / cụm\nchi tiết điều khiển ESP®\nvà kiểm tra lại DTC.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ]
+    ]
+  },
+  {
+    "page": 619,
+    "table_index": 2,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1037: Điện áp bộ cấp nguồn cảm biến góc lái\nĐiện áp bộ cấp nguồn cảm biến góc lái nằm ngoài phạm\nvi quy định.",
+        "• Mạch cấp nguồn cảm biến góc lái\n• Mạch nối đất cảm biến góc lái\n• Cảm biến góc lái\n• Cụm điều khiển ESP®\n• Mạch giao tiếp CAN"
+      ]
+    ]
+  }
+]

@@ -1,0 +1,380 @@
+[
+  {
+    "page": 598,
+    "table_index": 0,
+    "data": [
+      [
+        "DTC",
+        "Tên DTC",
+        "Điều kiện phát hiện lỗi DTC",
+        "Đèn cảnh\nbáo hệ\nthống\nABS",
+        "Đèn\ncảnh\nbáo hệ\nthống\nphanh",
+        "Đèn\ncảnh\nbáo\nESP®"
+      ],
+      [
+        "C1031 (Trang 4F-\n32)",
+        "Điện áp mạch cảm biến tốc\nđộ bánh sau bên phải",
+        "Tín hiệu cảm biến tốc độ bánh xe nằm\nngoài phạm vi quy định.",
+        "Đèn sáng",
+        "Đèn sáng",
+        "Đèn sáng"
+      ],
+      [
+        "C1032 (Trang 4F-\n32)",
+        "Hoạt động truyền nhận tín\nhiệu của bộ đếm xung hoặc\ncảm biến tốc độ bánh sau\nbên phải",
+        "Liên tục phát hiện tín hiệu cảm biến tốc độ\nbánh xe bất thường.",
+        "Đèn sáng",
+        "Đèn sáng",
+        "Đèn sáng"
+      ],
+      [
+        "C1034 (Trang 4F-\n39)",
+        "Lỗi bộ cấp nguồn bộ cảm\nbiến xoay quanh trục đứng/\ncảm biến G",
+        "Điện áp bộ cấp nguồn của bộ cảm biến\nxoay quanh trục đứng/cảm biến G quá\nthấp khi công tắc máy ON.",
+        "Đèn sáng",
+        "OFF",
+        "Đèn sáng"
+      ],
+      [
+        "C1035 (Trang 4F-\n32)",
+        "Điện áp mạch cảm biến tốc\nđộ bánh sau bên trái",
+        "Tín hiệu cảm biến tốc độ bánh xe nằm\nngoài phạm vi quy định.",
+        "Đèn sáng",
+        "Đèn sáng",
+        "Đèn sáng"
+      ],
+      [
+        "C1036 (Trang 4F-\n32)",
+        "Hoạt động truyền nhận tín\nhiệu của bộ đếm xung hoặc\ncảm biến tốc độ bánh sau\nbên trái",
+        "Liên tục phát hiện tín hiệu cảm biến tốc độ\nbánh xe bất thường.",
+        "Đèn sáng",
+        "Đèn sáng",
+        "Đèn sáng"
+      ],
+      [
+        "C1037 (Trang 4F-\n39)",
+        "Điện áp bộ cấp nguồn cảm\nbiến góc lái",
+        "Điện áp bộ cấp nguồn cảm biến góc lái\nnằm ngoài phạm vi quy định.",
+        "OFF",
+        "OFF",
+        "Đèn sáng"
+      ],
+      [
+        "C1038 (Trang 4F-\n42)",
+        "Cảm biến góc lái phát hiện\nlỗi cảm biến tốc độ",
+        "Cảm biến góc lái (model không trang bị\nhệ thống điều khiển đèn pha/cos tự động)\nhoặc công tắc đèn và công tắc xi nhan\n(model có trang bị hệ thống điều khiển\nđèn pha/cos tự động) phát hiện dữ liệu\nCAN không hợp lệ từ cụm điều khiển\nESP®.",
+        "OFF",
+        "OFF",
+        "Đèn sáng"
+      ],
+      [
+        "C1039 (Trang 4F-\n43)",
+        "Lỗi bên trong bộ cảm biến\nxoay quanh trục đứng/cảm\nbiến G",
+        "Phát hiện lỗi bên trong cảm biến xoay\nquanh trục đứng/cảm biến G.",
+        "Đèn sáng",
+        "OFF",
+        "Đèn sáng"
+      ],
+      [
+        "C1041 (Trang 4F-\n43)",
+        "Tương quan mạch van\nsolenoid nạp phía trước bên\nphải",
+        "Sự cố điện van solenoid.",
+        "Đèn sáng",
+        "Đèn sáng",
+        "Đèn sáng"
+      ],
+      [
+        "C1042 (Trang 4F-\n43)",
+        "Tương quan mạch van\nsolenoid xả phía trước bên\nphải",
+        "Sự cố điện van solenoid.",
+        "Đèn sáng",
+        "Đèn sáng",
+        "Đèn sáng"
+      ],
+      [
+        "C1043 (Trang 4F-\n43)",
+        "Tương quan mạch van\nsolenoid cắt thủy lực số 1",
+        "Sự cố điện van solenoid.",
+        "Đèn sáng",
+        "Đèn sáng",
+        "Đèn sáng"
+      ],
+      [
+        "C1044 (Trang 4F-\n43)",
+        "Tương quan mạch van\nsolenoid cắt thủy lực số 2",
+        "Sự cố điện van solenoid.",
+        "Đèn sáng",
+        "Đèn sáng",
+        "Đèn sáng"
+      ],
+      [
+        "C1045 (Trang 4F-\n43)",
+        "Tương quan mạch van\nsolenoid nạp phía trước bên\ntrái",
+        "Sự cố điện van solenoid.",
+        "Đèn sáng",
+        "Đèn sáng",
+        "Đèn sáng"
+      ],
+      [
+        "C1046 (Trang 4F-\n43)",
+        "Tương quan mạch van\nsolenoid xả phía trước bên\ntrái",
+        "Sự cố điện van solenoid.",
+        "Đèn sáng",
+        "Đèn sáng",
+        "Đèn sáng"
+      ],
+      [
+        "C1051 (Trang 4F-\n43)",
+        "Tương quan mạch van\nsolenoid nạp phía sau bên\nphải",
+        "Sự cố điện van solenoid.",
+        "Đèn sáng",
+        "Đèn sáng",
+        "Đèn sáng"
+      ]
+    ]
+  },
+  {
+    "page": 599,
+    "table_index": 0,
+    "data": [
+      [
+        "DTC",
+        "Tên DTC",
+        "Điều kiện phát hiện lỗi DTC",
+        "Đèn cảnh\nbáo hệ\nthống\nABS",
+        "Đèn\ncảnh\nbáo hệ\nthống\nphanh",
+        "Đèn\ncảnh\nbáo\nESP®"
+      ],
+      [
+        "C1052 (Trang 4F-\n43)",
+        "Tương quan mạch van\nsolenoid xả phía sau bên\nphải",
+        "Sự cố điện van solenoid.",
+        "Đèn sáng",
+        "Đèn sáng",
+        "Đèn sáng"
+      ],
+      [
+        "C1055 (Trang 4F-\n43)",
+        "Tương quan mạch van\nsolenoid nạp phía sau bên\ntrái",
+        "Sự cố điện van solenoid.",
+        "Đèn sáng",
+        "Đèn sáng",
+        "Đèn sáng"
+      ],
+      [
+        "C1056 (Trang 4F-\n43)",
+        "Tương quan mạch van\nsolenoid xả phía sau bên trái",
+        "Sự cố điện van solenoid.",
+        "Đèn sáng",
+        "Đèn sáng",
+        "Đèn sáng"
+      ],
+      [
+        "C1057 (Trang 4F-\n44)",
+        "Điện áp bộ cấp nguồn",
+        "Điện áp bộ cấp nguồn cụm điều khiển\nESP® cao hơn giá trị quy định.",
+        "Đèn sáng",
+        "Đèn sáng",
+        "Đèn sáng"
+      ],
+      [
+        null,
+        null,
+        "Điện áp bộ cấp nguồn cụm điều khiển\nESP® thấp hơn giá trị quy định.",
+        null,
+        null,
+        null
+      ],
+      [
+        "C1061 (Trang 4F-\n45)",
+        "Hoạt động mạch mô-tơ bơm",
+        "Điện áp bộ cấp nguồn mô-tơ bơm nằm\nngoài phạm vi quy định.",
+        "Đèn sáng",
+        "Đèn sáng",
+        "Đèn sáng"
+      ],
+      [
+        null,
+        null,
+        "Khi mô-tơ bơm kích hoạt, phát hiện mô-tơ\nbơm trục trặc.",
+        null,
+        null,
+        null
+      ],
+      [
+        null,
+        null,
+        "Bộ cấp nguồn từ CPU đến mô-tơ bơm và\ndữ liệu giám sát rơ-le mô-tơ bơm không\nthống nhất.",
+        null,
+        null,
+        null
+      ],
+      [
+        "C1063 (Trang 4F-\n46)",
+        "Hoạt động mạch điều khiển\ncấp nguồn van solenoid",
+        "Tín hiệu đầu ra rơ-le cấp nguồn van\nsolenoid “ON” mặc dù tín hiệu đầu ra\nđược theo dõi “OFF”.",
+        "Đèn sáng",
+        "Đèn sáng",
+        "Đèn sáng"
+      ],
+      [
+        null,
+        null,
+        "Tín hiệu đầu ra rơ-le cấp nguồn van\nsolenoid “OFF” mặc dù tín hiệu đầu ra\nđược theo dõi “ON”.",
+        null,
+        null,
+        null
+      ],
+      [
+        "C1068 (Trang 4F-\n35)",
+        "Hoạt động mạch cảm biến G",
+        "CPU trong bộ cảm biến xoay quanh trục\nđứng/cảm biến G phát hiện lỗi bên trong.",
+        "Đèn sáng",
+        "OFF",
+        "Đèn sáng"
+      ],
+      [
+        null,
+        null,
+        "Tín hiệu cảm biến G nằm ngoài phạm vi\nquy định và phát hiện đóng băng cảm\nbiến.",
+        null,
+        null,
+        null
+      ],
+      [
+        "C1069 *1 (Trang 4F-\n47)",
+        "Thông số kỹ thuật của cảm\nbiến góc lái chưa được đăng\nký",
+        "Cảm biến góc lái phát hiện lỗi chưa được\nxác nhận.",
+        "OFF",
+        "OFF",
+        "Đèn sáng"
+      ],
+      [
+        "C1071 (Trang 4F-\n43)",
+        "Lỗi bên trong cụm điều khiển\nESP®",
+        "Phát hiện lỗi bên trong cụm điều khiển\nESP®.",
+        "Đèn sáng",
+        "Đèn sáng",
+        "Đèn sáng"
+      ],
+      [
+        "C1074 *1 (Trang 4F-\n47)",
+        "Hiệu chuẩn cảm biến G",
+        "Hiệu chuẩn cảm biến xoay quanh trục\nđứng/cảm biến G chưa hoàn tất.",
+        "Đèn sáng",
+        "OFF",
+        "Đèn sáng"
+      ],
+      [
+        "C1075 *1, *2 (Trang 4F-\n47)",
+        "Hiệu chuẩn cảm biến góc lái",
+        "Hiệu chuẩn cảm biến góc lái chưa hoàn\ntất.",
+        "OFF",
+        "OFF",
+        "Đèn sáng"
+      ],
+      [
+        "C107A (Trang 4F-\n47)",
+        "Hiệu chuẩn cảm biến xoay\nquanh trục đứng",
+        "Hiệu chuẩn bộ cảm biến xoay quanh trục\nđứng/cảm biến G chưa hoàn tất.",
+        "OFF",
+        "OFF",
+        "Đèn sáng"
+      ],
+      [
+        "C1090 (Trang 4F-\n48)",
+        "ECM phát hiện lỗi cảm biến\ntốc độ từ cụm điều khiển\nESP®",
+        "Cụm điều khiển ESP® gửi dữ liệu CAN\nkhông hợp lệ đến ECM.",
+        "OFF",
+        "OFF",
+        "Đèn sáng"
+      ],
+      [
+        "C1091 (Trang 4F-\n49)",
+        "Dữ liệu CAN không hợp lệ\ntừ ECM",
+        "Phát hiện DTC liên quan đến ECM.",
+        "OFF",
+        "OFF",
+        "Đèn sáng"
+      ]
+    ]
+  },
+  {
+    "page": 600,
+    "table_index": 1,
+    "data": [
+      ["DTC", "Hoạt động dự phòng", null, null, "Điều kiện hủy bỏ dự phòng"],
+      [null, "ABS", "EBD", "Kiểm soát lực\nkéo/điều khiển ổn\nđịnh xe", null],
+      [
+        "C1016 (Trang\n4F-30)",
+        "",
+        "",
+        "—",
+        "Khi cụm điều khiển ESP® đánh giá hệ thống là bình thường sau\nkhi chuyển công tắc máy từ “OFF” sang “ON”."
+      ],
+      [
+        "C1021 (Trang\n4F-32)",
+        "—",
+        "",
+        "—",
+        "Khi cụm điều khiển ESP® đánh giá hệ thống là bình thường sau\nkhi chuyển công tắc máy từ “OFF” sang “ON”."
+      ],
+      [
+        "C1022 (Trang\n4F-32)",
+        "—",
+        "",
+        "—",
+        "Khi cụm điều khiển ESP® đánh giá hệ thống là bình thường và\nđã thực hiện “Lái thử” theo “Kiểm tra hệ thống ESP®” (Trang\n4F-11) sau khi chuyển công tắc máy từ “OFF” sang “ON”."
+      ],
+      [
+        "C1023 (Trang\n4F-35)",
+        "",
+        "",
+        "—",
+        "Khi cụm điều khiển ESP® đánh giá hệ thống là bình thường và\nđã thực hiện “Lái thử” theo “Kiểm tra hệ thống ESP®” (Trang\n4F-11) sau khi chuyển công tắc máy từ “OFF” sang “ON”."
+      ],
+      [
+        "C1024 (Trang\n4F-35)",
+        "",
+        "",
+        "—",
+        "Khi cụm điều khiển ESP® đánh giá hệ thống là bình thường sau\nkhi chuyển công tắc máy từ “OFF” sang “ON”."
+      ],
+      [
+        "C1025 (Trang\n4F-32)",
+        "—",
+        "",
+        "—",
+        "Khi cụm điều khiển ESP® đánh giá hệ thống là bình thường sau\nkhi chuyển công tắc máy từ “OFF” sang “ON”."
+      ],
+      [
+        "C1026 (Trang\n4F-32)",
+        "—",
+        "",
+        "—",
+        "Khi cụm điều khiển ESP® đánh giá hệ thống là bình thường và\nđã thực hiện “Lái thử” theo “Kiểm tra hệ thống ESP®” (Trang\n4F-11) sau khi chuyển công tắc máy từ “OFF” sang “ON”."
+      ],
+      [
+        "C1027 (Trang\n4F-37)",
+        "",
+        "",
+        "",
+        "Khi cụm điều khiển ESP® đánh giá hệ thống là bình thường sau\nkhi chuyển công tắc máy từ “OFF” sang “ON”."
+      ],
+      [
+        "C1028 (Trang\n4F-38)",
+        "",
+        "",
+        "—",
+        "Khi cụm điều khiển ESP® đánh giá hệ thống là bình thường và\nđã thực hiện “Lái thử” theo “Kiểm tra hệ thống ESP®” (Trang\n4F-11) sau khi chuyển công tắc máy từ “OFF” sang “ON”."
+      ],
+      [
+        "C1031 (Trang\n4F-32)",
+        "—",
+        "—",
+        "—",
+        "Khi cụm điều khiển ESP® đánh giá hệ thống là bình thường sau\nkhi chuyển công tắc máy từ “OFF” sang “ON”."
+      ]
+    ]
+  }
+]

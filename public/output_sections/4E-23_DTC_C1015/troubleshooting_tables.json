@@ -1,0 +1,49 @@
+[
+  {
+    "page": 557,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1015: Lỗi mạch cảm biến G\n• Tín hiệu cảm biến G theo phương dọc nằm ngoài phạm vi quy định.\n• Tín hiệu cảm biến G theo phương dọc không thay đổi dù xe đang\ntăng tốc hay giảm tốc.",
+        "• Cụm điều khiển ABS\n• Giá đỡ bộ chấp hành"
+      ]
+    ]
+  },
+  {
+    "page": 557,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra ABS” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nABS” (Trang 4E-10)."
+      ],
+      [
+        "2",
+        "Kiểm tra cụm điều khiển ABS và giá đỡ bộ chấp hành\n1) Kiểm tra bộ thủy lực / cụm chi tiết điều khiển ABS và giá\nđỡ bộ chấp hành. (Trang 4E-38)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 3.",
+        "Sửa chữa hoặc thay thế\ncác bộ phận bị lỗi."
+      ],
+      [
+        "3",
+        "Kiểm tra DTC\n1) Tiến hành “Kiểm tra DTC” (Trang 4E-14).\nCó phát hiện DTC nào khác ngoài C1015 không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Thay bộ thủy lực / cụm\nchi tiết điều khiển ABS\nvà kiểm tra lại DTC. (Trang 4E-38)"
+      ]
+    ]
+  },
+  {
+    "page": 557,
+    "table_index": 2,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1016: Hoạt động mạch công tắc đèn phanh\n• Phát hiện tín hiệu ON của công tắc đèn phanh lâu hơn khoảng thời\ngian đã quy định trong khi tốc độ xe cao hơn giá trị quy định.\n• Không phát hiện thấy tín hiệu ON của công tắc đèn phanh mặc dù tín\nhiệu cảm biến áp suất xi-lanh chính cao hơn giá trị quy định.",
+        "• Mạch công tắc đèn phanh\n• Công tắc đèn phanh\n• ECM\n• Cụm điều khiển ABS"
+      ]
+    ]
+  }
+]

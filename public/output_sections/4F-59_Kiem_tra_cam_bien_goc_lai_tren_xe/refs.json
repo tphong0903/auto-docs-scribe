@@ -1,0 +1,10 @@
+{
+  "name": "Kiểm tra cảm biến góc lái trên xe",
+  "refs": [
+    "4A-8",
+    "6B-3",
+    "6B-5",
+    "6B-7",
+    "9B-21"
+  ]
+}

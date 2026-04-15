@@ -1,0 +1,106 @@
+[
+  {
+    "page": 627,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống ESP®” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống ESP®” (Trang\n4F-11)."
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\n1) Tiến hành “Kiểm tra DTC” (Trang 4F-15).\nCó phát hiện DTC C1057 không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 3."
+      ],
+      [
+        "3",
+        "Kiểm tra mạch cấp nguồn và mạch nối đất cụm điều\nkhiển ESP®\n1) Kiểm tra mạch cấp nguồn và mạch nối đất cụm điều\nkhiển ESP®. (Trang 4F-50)\nKết quả kiểm tra có ỔN không?",
+        "Thay bộ thủy lực / cụm\nchi tiết điều khiển ESP®\nvà kiểm tra lại DTC. (Trang 4F-56)",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ]
+    ]
+  },
+  {
+    "page": 627,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1069: Thông số kỹ thuật của cảm biến góc lái chưa được\nđăng ký\nCảm biến góc lái phát hiện lỗi chưa được xác nhận.",
+        "• Cụm điều khiển ESP®\n• Công tắc đèn và công tắc xi nhan"
+      ]
+    ]
+  },
+  {
+    "page": 627,
+    "table_index": 2,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra DTC\n1) Thay cảm biến góc lái (model không trang bị hệ thống\nđiều khiển đèn pha/cos tự động) hoặc công tắc đèn và\ncông tắc xi nhan (model có trang bị hệ thống điều khiển\nđèn pha/cos tự động). (Trang 9B-21)\n2) Tiến hành “Kiểm tra DTC” (Trang 4F-15).\nCó phát hiện ra DTC C1069 hay không?",
+        "Thay bộ thủy lực / cụm\nchi tiết điều khiển ESP®\nvà kiểm tra lại DTC. (Trang 4F-56)",
+        "Kết thúc."
+      ]
+    ]
+  },
+  {
+    "page": 627,
+    "table_index": 3,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1074: Hiệu chuẩn cảm biến G\nHiệu chuẩn cảm biến xoay quanh trục đứng/cảm biến G\nchưa hoàn tất.",
+        "• Hiệu chuẩn cảm biến xoay quanh trục đứng/cảm biến\nG không đầy đủ\n• Cụm điều khiển ESP®"
+      ],
+      [
+        "C1075: Hiệu chuẩn cảm biến góc lái\nHiệu chuẩn cảm biến góc lái chưa hoàn tất.",
+        "• Cảm biến góc lái\n• Hiệu chuẩn cảm biến góc lái không đầy đủ\n• Cụm điều khiển ESP®"
+      ],
+      [
+        "C107A: Hiệu chuẩn cảm biến xoay quanh trục đứng\nHiệu chuẩn bộ cảm biến xoay quanh trục đứng/cảm biến\nG chưa hoàn tất.",
+        "• Hiệu chuẩn cảm biến xoay quanh trục đứng/cảm biến\nG chưa hoàn tất\n• Cụm điều khiển ESP®"
+      ]
+    ]
+  },
+  {
+    "page": 628,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống ESP®” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống ESP®” (Trang\n4F-11)."
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\n1) Tiến hành “Kiểm tra DTC” (Trang 4F-15).\nCó phát hiện (những) DTC nào khác ngoài C1074, C1075\nvà C107A không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 3."
+      ],
+      [
+        "3",
+        "Hiệu chuẩn cảm biến\n1) Hiệu chuẩn tất cả cảm biến. (Trang 4F-53)\n2) Tiến hành “Kiểm tra DTC” (Trang 4F-15).\nVẫn phát hiện DTC C1074, C1075 và/hoặc C107A?",
+        "• DTC C1074 và\nC107A: Thay bộ thủy\nlực / cụm chi tiết điều\nkhiển ESP® và kiểm\ntra lại DTC. (Trang\n4F-56)\n• DTC C1075: Thay\ncảm biến góc lái\n(model không trang bị\nhệ thống điều khiển\nđèn pha/cos tự động)\nvà công tắc đèn và\ncông tắc xi nhan\n(model có trang bị hệ\nthống điều khiển đèn\npha/cos tự động) và\nkiểm tra lại DTC. Nếu\nvẫn phát hiện DTC\nC1075, thay bộ thủy\nlực / cụm chi tiết điều\nkhiển ESP® và kiểm\ntra lại DTC.",
+        "Kết thúc."
+      ]
+    ]
+  },
+  {
+    "page": 628,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1090: ECM phát hiện lỗi cảm biến tốc độ từ cụm điều khiển ESP®\nCụm điều khiển ESP® gửi dữ liệu CAN không hợp lệ đến ECM.",
+        "• Mạch giao tiếp CAN\n• ECM\n• Cụm điều khiển ESP®"
+      ]
+    ]
+  }
+]

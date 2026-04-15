@@ -1,0 +1,109 @@
+[
+  {
+    "page": 610,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "4",
+        "Kiểm tra mạch tín hiệu công tắc phanh tay và mạch tín\nhiệu công tắc mực dầu phanh\n1) Kiểm tra mạch tín hiệu công tắc phanh tay và mạch tín\nhiệu công tắc mực dầu phanh.\n• Model có J/B: (Trang 10B-21)\n• Model không có J/B: (Trang 10B-31)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 5.",
+        "Sửa chữa hoặc thay\ncác bộ phận bị lỗi."
+      ],
+      [
+        "5",
+        "Kiểm tra mạch giao tiếp CAN\n1) Kiểm tra để đảm bảo công tắc máy đang ở vị trí “OFF”.\n2) Kết nối máy chẩn đoán với DLC.\n3) Xoay công tắc máy về vị trí “ON”.\n4) Tiến hành “Kiểm tra DTC”:\nCó phát hiện thấy DTC U0073 không?",
+        "“Khắc phục sự cố\nđường truyền bị ngắt”\ntrong Phần 10H (Trang\n10H-23).",
+        "Chuyển sang Bước 6."
+      ],
+      [
+        "6",
+        "Kiểm tra DTC cho BCM\n1) Kiểm tra BCM để tìm DTC. (Trang 10B-12)\nCó phát hiện thấy DTC U0073 không?",
+        "“Khắc phục sự cố\nđường truyền bị ngắt”\ntrong Phần 10H (Trang\n10H-23).",
+        "Chuyển sang Bước 7."
+      ],
+      [
+        "7",
+        "Kiểm tra cụm đồng hồ\n1) Thay cụm đồng hồ. (Trang 9C-10)\n2) Xoay công tắc máy về vị trí “ON”.\nĐèn cảnh báo hệ thống phanh có còn sáng không?",
+        "Thay bộ thủy lực / cụm\nchi tiết điều khiển ESP®\nvà kiểm tra lại hoạt động\nđèn cảnh báo. (Trang\n4F-56)",
+        "Kết thúc."
+      ]
+    ]
+  },
+  {
+    "page": 610,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1016: Hoạt động mạch công tắc đèn phanh\n• Phát hiện tín hiệu ON của công tắc đèn phanh lâu hơn khoảng thời\ngian đã quy định trong khi tốc độ xe cao hơn giá trị quy định.\n• Không phát hiện thấy tín hiệu ON của công tắc đèn phanh mặc dù tín\nhiệu cảm biến áp suất xi-lanh phanh chính cao hơn giá trị quy định.",
+        "• Mạch công tắc đèn phanh\n• Công tắc đèn phanh\n• ECM\n• Cụm điều khiển ESP®\n• Mạch giao tiếp CAN"
+      ]
+    ]
+  },
+  {
+    "page": 611,
+    "table_index": 6,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống ESP®” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống ESP®” (Trang\n4F-11)."
+      ],
+      [
+        "2",
+        "Kiểm tra khoảng cách giữa đầu vít công tắc đèn phanh\nvà giá đỡ bàn đạp\n1) Kiểm tra khoảng cách giữa đầu vít công tắc đèn phanh\nvà giá đỡ bàn đạp, tham khảo “Tháo và lắp công tắc đèn\nphanh” trong Phần 4A (Trang 4A-13).\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 3.",
+        "Điều chỉnh vít công tắc\nđèn phanh đến giá trị\nquy định và kiểm tra lại DTC."
+      ],
+      [
+        "3",
+        "Kiểm tra DTC\n1) Tiến hành “Kiểm tra DTC” (Trang 4F-15).\nCó phát hiện mã DTC U0073 và/hoặc U0100 không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 4."
+      ]
+    ]
+  },
+  {
+    "page": 612,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "4",
+        "Kiểm tra mạch cấp nguồn công tắc đèn phanh\n1) Khi công tắc máy ở vị trí “OFF”, rút giắc cắm công tắc\nđèn phanh.\n2) Kiểm tra xem kết nối cực tới giắc cắm công tắc đèn\nphanh có chính xác không.\n3) Nếu kết nối ỔN, hãy xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra để đảm bảo điện áp giữa mạch “A1” và dây nối\nđất bằng điện áp bình điện.\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 5.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "5",
+        "Kiểm tra mạch tín hiệu công tắc đèn phanh\n1) Ngắt cáp âm (–) ở bình điện.\n2) Rút giắc cắm “E01”, công tắc đèn phanh và đèn phanh.\n3) Kiểm tra xem kết nối cực tới giắc cắm “E01”, công tắc\nđèn phanh và giắc cắm đèn phanh có chính xác không.\n4) Nếu các kết nối đều ỔN, hãy kiểm tra những điểm sau.\n• Điện trở các mạch “A2” và “A3”: dưới 1 Ω\n• Điện trở giữa từng mạch “A2\" và “A3” và dây nối đất:\nvô cực\n• Điện trở giữa mỗi cực mạch “A2” và “A3” và mỗi cực\ntại giắc cắm công tắc đèn phanh và giắc cắm đèn\nphanh: vô cực\n• Điện trở giữa từng mạch “A2” và “A3” và cáp dương\n(+) bình điện: vô cực\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 6.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "6",
+        "Kiểm tra công tắc đèn phanh\n1) Kiểm tra công tắc đèn phanh. (Trang 4A-13)\nKết quả kiểm tra có ỔN không?",
+        "Thay ECM và kiểm tra lại DTC. Nếu vẫn phát\nhiện DTC C1016, thay bộ thủy lực / cụm chi tiết\nđiều khiển ESP® và\nkiểm tra lại DTC.\n• ECM: (Trang 1C-2)\n• Bộ thủy lực / cụm chi\ntiết điều khiển ESP®: (Trang 4F-56)",
+        "Thay công tắc đèn\nphanh. (Trang 4A-13)"
+      ]
+    ]
+  },
+  {
+    "page": 612,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1021/C1025/C1031/C1035: Điện áp mạch cảm biến tốc độ bánh xe\nphía trước bên phải / phía trước bên trái / phía sau bên phải / phía\nsau bên trái\nTín hiệu cảm biến tốc độ bánh xe nằm ngoài phạm vi quy định.",
+        "• Cảm biến tốc độ bánh xe\n• Mạch cảm biến tốc độ bánh xe\n• Bộ đếm xung cảm biến tốc độ bánh xe\n• Vòng cảm biến tốc độ bánh sau\n• Cụm điều khiển ESP®"
+      ],
+      [
+        "C1022/C1026/C1032/C1036: Hoạt động truyền nhận tín hiệu của bộ\nđếm xung hoặc cảm biến tốc độ bánh xe phía trước bên phải / phía\ntrước bên trái / phía sau bên phải / phía sau bên trái\nLiên tục phát hiện tín hiệu cảm biến tốc độ bánh xe bất thường.",
+        null
+      ]
+    ]
+  }
+]
