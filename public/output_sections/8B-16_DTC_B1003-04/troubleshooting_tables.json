@@ -1,0 +1,68 @@
+[
+  {
+    "page": 850,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1003-04: Lỗi trong SDM\nMạch trong SDM, cảm biến G, bộ nhớ hoặc CPU gặp sự cố.",
+        "SDM"
+      ]
+    ]
+  },
+  {
+    "page": 850,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống chẩn đoán túi khí” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống chẩn đoán túi\nkhí” (Trang 8B-7)."
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\n1) Xóa DTC. (Trang 8B-9)\n2) Kiểm tra để đảm bảo công tắc máy đang ở vị trí “OFF”.\n3) Xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra DTC. (Trang 8B-9)\nCòn phát hiện DTC B1003-04 không?",
+        "Thay SDM và kiểm tra lại DTC. (Trang 8B-\n45)",
+        "Kiểm tra hỏng hóc gián\nđoạn. (Trang 00-11)"
+      ]
+    ]
+  },
+  {
+    "page": 851,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1004-17: Điện áp nguồn điện quá cao\nĐiện áp bộ cấp nguồn cao hơn khoảng quy định.",
+        "• Hệ thống sạc\n• SDM"
+      ]
+    ]
+  },
+  {
+    "page": 851,
+    "table_index": 3,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống chẩn đoán túi khí” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống chẩn đoán túi\nkhí” (Trang 8B-7)."
+      ],
+      [
+        "2",
+        "Kiểm tra điện áp nguồn SDM\n1) Kiểm tra để đảm bảo công tắc máy đang ở vị trí “OFF”.\n2) Rút giắc cắm “G11”. (Trang 8B-45)\n3) Khởi động động cơ và để động cơ chạy ở tốc độ 3000\nvòng/phút hoặc nhanh hơn.\n4) Đo điện áp giữa cực “G11-10” và dây nối đất.\nDụng cụ chuyên dụng\n: 09932-76010\nĐiện áp có nhỏ hơn hoặc bằng 15V không?",
+        "Chuyển sang Bước 3.",
+        "Kiểm tra hệ thống sạc\nvà sửa dây điện. (Trang 1J-5)"
+      ],
+      [
+        "3",
+        "Kiểm tra DTC\n1) Kiểm tra để đảm bảo công tắc máy đang ở vị trí “OFF”.\n2) Cắm giắc cắm “G11”. (Trang 8B-45)\n3) Xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra DTC. (Trang 8B-9)\nCó phát hiện thấy DTC B1004-17 không?",
+        "Thay SDM và kiểm tra lại DTC. (Trang 8B-\n45)",
+        "Hỏng hóc gián đoạn.\nKiểm tra hỏng hóc gián\nđoạn. (Trang 00-11)"
+      ]
+    ]
+  }
+]

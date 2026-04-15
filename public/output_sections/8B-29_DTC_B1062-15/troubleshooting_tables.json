@@ -1,0 +1,49 @@
+[
+  {
+    "page": 863,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1062-15: Mạch túi khí hành khách (trạng thái 1) ngắn\nmạch với bộ cấp nguồn\nMạch điện cụm túi khí hành khách ngắn mạch với bộ cấp\nnguồn.",
+        "• Mạch điện cụm túi khí hành khách\n• SDM"
+      ]
+    ]
+  },
+  {
+    "page": 864,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống chẩn đoán túi khí” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống chẩn đoán túi\nkhí” (Trang 8B-7)."
+      ],
+      [
+        "2",
+        "Kiểm tra mạch điện cụm túi khí hành khách\n1) Kiểm tra để đảm bảo công tắc máy đang ở vị trí “OFF”.\n2) Rút giắc cắm “G259”. (Trang 8B-49)\n3) Rút giắc cắm “G11”. (Trang 8B-45)\n4) Tháo thanh nối tắt trong giắc cắm SDM. (Trang 8B-45)\n5) Xoay công tắc máy về vị trí “ON”.\n6) Kiểm tra điểm sau.\n• Điện áp giữa từng mạch “A3” và “A4” và dây nối đất: 0 V\nDụng cụ chuyên dụng\n: 09932-76010\nKết quả kiểm tra có ỔN không?",
+        "Thay SDM và kiểm tra lại DTC. (Trang 8B-\n45)",
+        "Chuyển sang Bước 3."
+      ],
+      [
+        "3",
+        "Kiểm tra mạch điện cụm túi khí hành khách\n1) Kiểm tra để đảm bảo công tắc máy đang ở vị trí “OFF”.\n2) Rút giắc cắm “G372”.\n3) Tháo thanh nối tắt trong giắc cắm SDM. (Trang 8B-45)\n4) Xoay công tắc máy về vị trí “ON”.\n5) Kiểm tra điểm sau.\n• Điện áp giữa từng mạch “A3” và “A4” và dây nối đất: 0 V\nDụng cụ chuyên dụng\n: 09932-76010\nKết quả kiểm tra có ỔN không?",
+        "Thay dây điện cụm túi\nkhí hành khách.",
+        "Thay dây điện táp lô."
+      ]
+    ]
+  },
+  {
+    "page": 865,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1062-1A: Điện trở mạch túi khí hành khách (trạng\nthái 1) thấp\nĐiện trở mạch điện cụm túi khí hành khách nhỏ hơn\nkhoảng quy định.",
+        "• Mạch điện cụm túi khí hành khách\n• Cụm túi khí hành khách\n• SDM"
+      ]
+    ]
+  }
+]

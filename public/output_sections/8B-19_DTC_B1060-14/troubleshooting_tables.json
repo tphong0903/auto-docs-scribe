@@ -1,0 +1,73 @@
+[
+  {
+    "page": 853,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1032-00: Ghi lại tình trạng túi khí phía trước bị bung\nThông tin về tình trạng túi khí bị bung được lưu trong SDM.",
+        "Nếu hệ thống lưu lại DTC này, ngay cả khi túi khí\nchưa bung, hãy kiểm tra các bộ phận sau.\n• SDM\n• Cụm túi khí tài xế và/hoặc hành khách\n• Các mạch kích nổ"
+      ]
+    ]
+  },
+  {
+    "page": 853,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống chẩn đoán túi khí” chưa?",
+        "Thay SDM. (Trang\n8B-45)",
+        "Chuyển sang “Kiểm tra\nhệ thống chẩn đoán túi\nkhí” (Trang 8B-7)."
+      ]
+    ]
+  },
+  {
+    "page": 853,
+    "table_index": 2,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1060-14: Mạch túi khí tài xế (trạng thái 1) ngắn mạch với đất\nMạch cụm túi khí tài xế ngắn mạch với đất.",
+        "• Mạch cụm túi khí tài xế\n• Cụm cuộn dây xoắn\n• SDM"
+      ]
+    ]
+  },
+  {
+    "page": 854,
+    "table_index": 4,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống chẩn đoán túi khí” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống chẩn đoán túi\nkhí” (Trang 8B-7)."
+      ],
+      [
+        "2",
+        "Kiểm tra mạch cụm túi khí tài xế\n1) Kiểm tra để đảm bảo công tắc máy đang ở vị trí “OFF”.\n2) Rút giắc cắm “G346”. (Trang 6B-5)\n3) Rút giắc cắm “G11”. (Trang 8B-45)\n4) Tháo thanh nối tắt trong giắc cắm SDM. (Trang 8B-45\n5) Kiểm tra điểm sau.\n• Điện trở giữa từng mạch “A1” và “A2” và dây nối đất:\nvô cực\nDụng cụ chuyên dụng\n: 09932-76010\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 3.\n)",
+        "Thay dây điện táp lô."
+      ],
+      [
+        "3",
+        "Kiểm tra mạch cuộn dây xoắn\n1) Cắm giắc cắm “G346”.\n2) Tháo cụm túi khí tài xế khỏi vô lăng. (Trang 8B-46)\n3) Tháo thanh nối tắt trong giắc cắm SDM. (Trang 8B-45\n4) Kiểm tra điểm sau.\n• Điện trở giữa từng mạch “A1” và “A2” và dây nối đất:\nvô cực\nDụng cụ chuyên dụng\n: 09932-76010\nKết quả kiểm tra có ỔN không?",
+        "Thay SDM và kiểm tra lại DTC. (Trang 8B-\n45)\n)",
+        "Thay cuộn dây xoắn. (Trang 6B-5)"
+      ]
+    ]
+  },
+  {
+    "page": 855,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1060-15: Mạch túi khí tài xế (trạng thái 1) ngắn mạch với bộ cấp\nnguồn\nMạch cụm túi khí tài xế ngắn mạch với bộ cấp nguồn.",
+        "• Mạch cụm túi khí tài xế\n• Cụm cuộn dây xoắn\n• SDM"
+      ]
+    ]
+  }
+]

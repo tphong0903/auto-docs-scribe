@@ -1,0 +1,55 @@
+[
+  {
+    "page": 859,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1060-1B: Điện trở mạch túi khí tài xế (trạng thái 1) cao\nĐiện trở mạch cụm túi khí tài xế lớn hơn khoảng quy định.",
+        "• Mạch cụm túi khí tài xế\n• Cụm cuộn dây xoắn\n• Cụm túi khí tài xế\n• SDM"
+      ]
+    ]
+  },
+  {
+    "page": 860,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống chẩn đoán túi khí” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống chẩn đoán túi\nkhí” (Trang 8B-7)."
+      ],
+      [
+        "2",
+        "Kiểm tra cụm túi khí tài xế\n1) Kiểm tra để đảm bảo công tắc máy đang ở vị trí “OFF”.\n2) Kiểm tra xem kết nối tới giắc cắm “G346” có chính xác\nkhông.\n3) Rút giắc cắm “G346”. (Trang 6B-5)\n4) Nối dây điện có giắc cắm ký hiệu \"BASE OF COLUMN”\n(1) của dụng cụ chuyên dụng (A) và (B) với giắc cắm\n“G346”.\nDụng cụ chuyên dụng\n(A): 09932-75011\n(B): 09932-78340\n[G346]\n1\n(B)\n(A)\nIK4L0B820012-01\n5) Xoay công tắc máy về vị trí “ON”.\n6) Kiểm tra DTC. (Trang 8B-9)\nCó phát hiện thấy DTC B1060-1B không?",
+        "Chuyển sang Bước 3.",
+        "Chuyển sang Bước 4."
+      ],
+      [
+        "3",
+        "Kiểm tra mạch cụm túi khí tài xế\n1) Xoay công tắc máy về vị trí “OFF”.\n2) Kiểm tra xem kết nối tới giắc cắm “G11” có chính xác\nkhông.\n3) Rút giắc cắm “G11”. (Trang 8B-45)\n4) Tháo thanh nối tắt trong giắc cắm SDM. (Trang 8B-45)\n5) Kiểm tra điểm sau.\n• Điện trở của các mạch “A1” và “A2”: nhỏ hơn hoặc\nbằng 1 Ω\nDụng cụ chuyên dụng\n: 09932-76010\nKết quả kiểm tra có ỔN không?",
+        "Thay mới SDM. (Trang 8B-45)",
+        "Thay dây điện táp lô."
+      ],
+      [
+        "4",
+        "Kiểm tra mạch cuộn dây xoắn\n1) Kiểm tra mạch cuộn dây xoắn. (Trang 8B-40)\nKết quả kiểm tra có ỔN không?",
+        "Thay cụm túi khí tài xế. (Trang 8B-46)",
+        "Thay cụm cuộn dây\nxoắn. (Trang 6B-5)"
+      ]
+    ]
+  },
+  {
+    "page": 861,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1062-14: Mạch túi khí hành khách (trạng thái 1) ngắn\nmạch với đất\nMạch điện cụm túi khí hành khách ngắn mạch với đất.",
+        "• Mạch điện cụm túi khí hành khách\n• SDM"
+      ]
+    ]
+  }
+]

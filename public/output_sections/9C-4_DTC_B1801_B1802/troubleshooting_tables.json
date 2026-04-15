@@ -1,0 +1,78 @@
+[
+  {
+    "page": 1039,
+    "table_index": 0,
+    "data": [
+      ["Bộ phận bị lỗi", "Bộ phận cần kiểm tra", "Tham khảo"],
+      [
+        "Đèn báo pha",
+        "Công tắc đèn và công tắc xi nhan",
+        "Tham khảo “Kiểm tra công tắc đèn và\ncông tắc xi nhan” trong Phần 9B (Trang\n9B-21)."
+      ],
+      [null, "Mạch (bao gồm các rơ-le và cầu chì)", "—"],
+      [
+        "Đèn cảnh báo mức nhiên liệu\nthấp *1",
+        "Cảm biến mực nhiên liệu",
+        "Tham khảo “Kiểm tra cảm biến mực nhiên\nliệu” trong Phần 1G (Trang 1G-27)."
+      ],
+      [null, "Mạch (bao gồm các rơ-le và cầu chì)", "—"]
+    ]
+  },
+  {
+    "page": 1039,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1801: Điện áp bộ cấp nguồn quá cao\nĐiện áp qua cầu chì đồng hồ táp lô “MTR” cao hơn điện\náp giới hạn trên (16,0 V) trong thời gian quy định hoặc lâu\nhơn.",
+        "• Mạch cấp nguồn cụm đồng hồ\n• Mạch nối đất cụm đồng hồ\n• Cụm đồng hồ\n• Hệ thống sạc"
+      ],
+      [
+        "B1802: Điện áp bộ cấp nguồn quá thấp\nĐiện áp qua cầu chì đồng hồ táp lô “MTR” thấp hơn điện\náp giới hạn dưới (8,0 V) trong thời gian quy định hoặc lâu\nhơn.",
+        null
+      ]
+    ]
+  },
+  {
+    "page": 1040,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra DTC\n1) Xóa DTC. (Trang 10B-12)\n2) Kiểm tra để đảm bảo công tắc máy đang ở vị trí “OFF”.\n3) Xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra DTC. (Trang 10B-12)\nVẫn phát hiện DTC B1801/B1802?",
+        "Chuyển sang Bước 2.",
+        "Kiểm tra hỏng hóc gián\nđoạn. (Trang 00-11)"
+      ],
+      [
+        "2",
+        "Kiểm tra bình điện\n1) Kiểm tra bình điện. (Trang 1J-4)\nKết quả kiểm tra có ỔN không?",
+        "Thay ECM và kiểm tra lại DTC.",
+        "Sạc hoặc thay bình\nđiện."
+      ],
+      [
+        "3",
+        "Kiểm tra mạch cấp nguồn và mạch nối đất cụm đồng hồ\n1) Kiểm tra mạch cấp nguồn và mạch nối đất cụm đồng hồ. (Trang 9C-7)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 4.",
+        "Sửa chữa bộ dây điện\nbị hỏng."
+      ],
+      [
+        "4",
+        "Kiểm tra điện áp bộ cấp nguồn cụm đồng hồ\n1) Kiểm tra điện áp bộ cấp nguồn khi động cơ chạy ở tốc\nđộ 3.000 vòng/phút.\nĐiện áp có nằm trong khoảng 10 – 16 V không?",
+        "Thay cụm đồng hồ và\nkiểm tra lại DTC. (Trang 9C-10)",
+        "Kiểm tra hệ thống sạc. (Trang 1J-5)"
+      ]
+    ]
+  },
+  {
+    "page": 1040,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1810: Mạch cảm biến mực nhiên liệu / Hở mạch •\nTín hiệu mực nhiên liệu chưa được nhập vào trong thời •\ngian quy định hoặc lâu hơn.\n•\nB1811: Mạch cảm biến mực nhiên liệu / Ngắn mạch\nĐiện áp mạch tín hiệu mực nhiên liệu thấp hơn giá trị quy\nđịnh trong thời gian quy định.",
+        "Mạch cảm biến mực nhiên liệu\nCảm biến mực nhiên liệu\nCụm đồng hồ"
+      ]
+    ]
+  }
+]

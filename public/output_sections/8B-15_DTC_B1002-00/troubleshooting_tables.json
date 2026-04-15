@@ -1,0 +1,81 @@
+[
+  {
+    "page": 849,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "5",
+        "Kiểm tra mạch cấp nguồn cụm đồng hồ\n1) Kiểm tra để đảm bảo công tắc máy đang ở vị trí “OFF”.\n2) Tháo cụm đồng hồ. (Trang 9C-10)\n3) Kiểm tra xem kết nối tới giắc cắm “G241” có chính xác\nkhông.\n4) Nếu kết nối ỔN, xoay công tắc máy về vị trí “ON” và đo\nđiện áp giữa cực giắc cắm “G241-3” và dây nối đất.\n5) Đo điện áp giữa cực “G241-3” và dây nối đất.\nDụng cụ chuyên dụng\n: 09932-76010\nĐiện áp có nằm trong khoảng 10 – 14 V hay không?",
+        "Chuyển sang Bước 6.",
+        "Sửa chữa bộ dây điện\nbị hỏng."
+      ],
+      [
+        "6",
+        "Kiểm tra mạch nối đất cụm đồng hồ\n1) Đo điện trở giữa cực “G241-5” và dây nối đất.\nDụng cụ chuyên dụng\n: 09932-76010\nĐiện trở có nhỏ hơn 1 Ω không?",
+        "Thay cụm đồng hồ và\nkiểm tra lại hoạt động\ncủa đèn cảnh báo “AIR\nBAG”. (Trang 9C-10)",
+        "Sửa chữa bộ dây điện\nbị hỏng."
+      ]
+    ]
+  },
+  {
+    "page": 849,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1002-00: Giắc cắm SDM tiếp xúc chập chờn\nKết nối của giắc cắm SDM bị lỗi.",
+        "• Giắc cắm SDM\n• SDM"
+      ]
+    ]
+  },
+  {
+    "page": 849,
+    "table_index": 2,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống chẩn đoán túi khí” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống chẩn đoán túi\nkhí” (Trang 8B-7)."
+      ],
+      [
+        "2",
+        "Kiểm tra giắc cắm SDM\n1) Kiểm tra xem kết nối của giắc cắm SDM và “Chân phát\nhiện kết nối” của giắc cắm SDM có chính xác không.\nKết quả kiểm tra có ỔN không?",
+        "Thay SDM và kiểm tra lại DTC. (Trang 8B-\n45)",
+        "Kiểm tra hỏng hóc gián\nđoạn. (Trang 00-11)"
+      ]
+    ]
+  },
+  {
+    "page": 850,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1003-04: Lỗi trong SDM\nMạch trong SDM, cảm biến G, bộ nhớ hoặc CPU gặp sự cố.",
+        "SDM"
+      ]
+    ]
+  },
+  {
+    "page": 850,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống chẩn đoán túi khí” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống chẩn đoán túi\nkhí” (Trang 8B-7)."
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\n1) Xóa DTC. (Trang 8B-9)\n2) Kiểm tra để đảm bảo công tắc máy đang ở vị trí “OFF”.\n3) Xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra DTC. (Trang 8B-9)\nCòn phát hiện DTC B1003-04 không?",
+        "Thay SDM và kiểm tra lại DTC. (Trang 8B-\n45)",
+        "Kiểm tra hỏng hóc gián\nđoạn. (Trang 00-11)"
+      ]
+    ]
+  }
+]

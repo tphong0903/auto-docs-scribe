@@ -1,0 +1,70 @@
+[
+  {
+    "page": 872,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "7",
+        "Kiểm tra mạch cảm biến va chạm phía trước\n1) Kiểm tra điểm sau.\n• Điện trở giữa các cực “E40-1” và “E40-2”: vô cực\nDụng cụ chuyên dụng\n: 09932-76010\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 8.",
+        "Thay bộ dây điện chính."
+      ],
+      [
+        "8",
+        "Kiểm tra mạch cảm biến va chạm phía trước\n1) Kiểm tra điểm sau.\n• Điện trở giữa từng mạch “A1” và “A2” và dây nối đất:\nvô cực\nDụng cụ chuyên dụng\n: 09932-76010\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 9.",
+        "Thay bộ dây điện chính."
+      ],
+      [
+        "9",
+        "Kiểm tra mạch cảm biến va chạm phía trước\n1) Xoay công tắc máy về vị trí “ON”.\n2) Kiểm tra điểm sau.\n• Điện áp giữa từng mạch “A1” và “A2” và dây nối đất: 0 V\nDụng cụ chuyên dụng\n: 09932-76010\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 10.",
+        "Thay bộ dây điện chính."
+      ],
+      [
+        "10",
+        "Kiểm tra cảm biến va chạm phía trước\n1) Kiểm tra để đảm bảo công tắc máy đang ở vị trí “OFF”.\n2) Thay cảm biến va chạm phía trước. (Trang 8B-50)\n3) Xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra DTC. (Trang 8B-9)\nCó phát hiện thấy DTC không?",
+        "Thay SDM và kiểm tra lại DTC. (Trang 8B-\n45)",
+        "Kết thúc."
+      ]
+    ]
+  },
+  {
+    "page": 873,
+    "table_index": 2,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra điện áp bình điện\n1) Kiểm tra điện áp bình điện.\nĐiện áp có nằm trong khoảng 10 – 14 V không?",
+        "Chuyển sang Bước 2.",
+        "Kiểm tra hệ thống sạc\nvà sửa chữa hệ thống\nsạc. (Trang 1J-5)"
+      ],
+      [
+        "2",
+        "Kiểm tra kết nối SDM\n1) Kiểm tra xem kết nối tới giắc cắm SDM có chính xác\nkhông.\nKết nối có chắc chắn không?",
+        "Chuyển sang Bước 3.",
+        "Kiểm tra hỏng hóc gián\nđoạn. (Trang 00-11)\nNếu ỔN, hãy thay SDM\nvà kiểm tra lại DTC. (Trang 8B-45)"
+      ],
+      [
+        "3",
+        "Kiểm tra cầu chì\n1) Kiểm tra để đảm bảo công tắc máy đang ở vị trí “OFF”.\n2) Kiểm tra cầu chì túi khí “A/B”.\nCầu chì túi khí “A/B” có trong tình trạng tốt không?",
+        "Chuyển sang Bước 4.",
+        "Thay dây điện táp lô sau\nđó thay cầu chì túi khí\n“A/B”."
+      ],
+      [
+        "4",
+        "Kiểm tra mạch điện\n1) Rút giắc cắm “G11”. (Trang 8B-45)\n2) Xoay công tắc máy về vị trí “ON”.\n3) Đo điện áp giữa cực “G11-10” và dây nối đất.\nDụng cụ chuyên dụng\n: 09932-76010\nĐiện áp có nằm trong khoảng 10 – 14 V không?",
+        "Chuyển sang Bước 5.",
+        "Thay dây điện táp lô."
+      ],
+      [
+        "5",
+        "Kiểm tra mạch nối đất\n1) Xoay công tắc máy về vị trí “OFF”.\n2) Đo điện trở giữa cực “G11-16” và dây nối đất.\nDụng cụ chuyên dụng\n: 09932-76010\nĐiện trở có nhỏ hơn hoặc bằng 1 Ω không?",
+        "Mạch cấp nguồn và\nmạch nối đất SDM ở\ntrong tình trạng tốt.",
+        "Thay dây điện táp lô."
+      ]
+    ]
+  }
+]

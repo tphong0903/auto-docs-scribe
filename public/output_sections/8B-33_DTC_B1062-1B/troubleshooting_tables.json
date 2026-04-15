@@ -1,0 +1,91 @@
+[
+  {
+    "page": 867,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1062-1B: Điện trở mạch túi khí hành khách (trạng\nthái 1) cao\nĐiện trở mạch điện cụm túi khí hành khách lớn hơn\nkhoảng quy định.",
+        "• Mạch điện cụm túi khí hành khách\n• Cụm túi khí hành khách\n• SDM"
+      ]
+    ]
+  },
+  {
+    "page": 868,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống chẩn đoán túi khí” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống chẩn đoán túi\nkhí” (Trang 8B-7)."
+      ],
+      [
+        "2",
+        "Kiểm tra cụm túi khí hành khách\n1) Kiểm tra để đảm bảo công tắc máy đang ở vị trí “OFF”.\n2) Kiểm tra xem kết nối tới giắc cắm “G259” có chính xác\nkhông.\n3) Rút giắc cắm “G259”. (Trang 8B-49)\n4) Nối dây điện có giắc cắm ký hiệu “STEERING WHEEL”\n(1) của dụng cụ chuyên dụng (A), (B) và (C) với giắc\ncắm “G259”.\nDụng cụ chuyên dụng\n(A): 09932-76010\n(B): 09932-78310\n(C): 09932-75011\n(B)\n1 [G259]\n(A)\n(C)\nIK4L0B820014-01\n5) Xoay công tắc máy về vị trí “ON”.\n6) Kiểm tra DTC. (Trang 8B-9)\nCó phát hiện thấy DTC B1062-1B không?",
+        "Chuyển sang Bước 3.",
+        "Thay cụm túi khí hành\nkhách. (Trang 8B-49)"
+      ],
+      [
+        "3",
+        "Kiểm tra mạch điện cụm túi khí hành khách\n1) Xoay công tắc máy về vị trí “OFF”.\n2) Kiểm tra xem kết nối tới giắc cắm “G11” có chính xác\nkhông.\n3) Rút giắc cắm “G11”. (Trang 8B-45)\n4) Tháo thanh nối tắt trong giắc cắm SDM. (Trang 8B-45)\n5) Kiểm tra những điểm sau.\n• Điện trở giữa các cực “G11-24” và “G259-1”:\nnhỏ hơn hoặc bằng 1 Ω\n• Điện trở giữa các cực “G11-23” và “G259-2”:\nnhỏ hơn hoặc bằng 1 Ω\nDụng cụ chuyên dụng\n: 09932-76010\nKết quả kiểm tra có ỔN không?",
+        "Thay SDM và kiểm tra lại DTC. (Trang 8B-\n45)",
+        "Chuyển sang Bước 4."
+      ]
+    ]
+  },
+  {
+    "page": 869,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "4",
+        "Kiểm tra mạch điện cụm túi khí hành khách\n1) Kiểm tra xem kết nối tới giắc cắm “G372” có chính xác\nkhông.\n2) Rút giắc cắm “G372”.\n3) Tháo thanh nối tắt trong giắc cắm SDM. (Trang 8B-45)\n4) Kiểm tra điểm sau.\n• Điện trở của các mạch “A3” và “A4”: nhỏ hơn hoặc\nbằng 1 Ω\nDụng cụ chuyên dụng\n: 09932-76010\nKết quả kiểm tra có ỔN không?",
+        "Thay dây điện cụm túi\nkhí hành khách.",
+        "Thay dây điện táp lô."
+      ]
+    ]
+  },
+  {
+    "page": 869,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1090-01: Cảm biến va chạm phía trước bên tài xế hoạt động\nkhông chính xác\nCảm biến va chạm phía trước không truyền nhận dữ liệu hoặc truyền\nnhận mã ID không thống nhất.",
+        "• Cảm biến va chạm phía trước\n• Mạch cảm biến va chạm phía trước\n• SDM"
+      ],
+      [
+        "B1090-95: Dữ liệu đường truyền cảm biến va chạm phía trước\nbên tài xế không thống nhất\nCảm biến va chạm phía trước truyền nhận mã ID không thống nhất.",
+        null
+      ]
+    ]
+  },
+  {
+    "page": 869,
+    "table_index": 2,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống chẩn đoán túi khí” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống chẩn đoán túi\nkhí” (Trang 8B-7)."
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\n1) Tiến hành “Kiểm tra DTC” (Trang 8B-9).\nCó phát hiện DTC B1090-87 không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 3."
+      ],
+      [
+        "3",
+        "Kiểm tra cảm biến va chạm phía trước\n1) Kiểm tra để đảm bảo công tắc máy đang ở vị trí “OFF”.\n2) Thay cảm biến va chạm phía trước. (Trang 8B-50)\n3) Xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra DTC. (Trang 8B-9)\nCó phát hiện thấy DTC không?",
+        "Thay SDM và kiểm tra lại DTC. (Trang 8B-\n45)",
+        "Kết thúc."
+      ]
+    ]
+  }
+]

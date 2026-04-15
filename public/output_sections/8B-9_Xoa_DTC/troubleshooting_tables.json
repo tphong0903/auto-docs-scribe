@@ -1,0 +1,94 @@
+[
+  {
+    "page": 845,
+    "table_index": 1,
+    "data": [
+      ["DTC", "Tên DTC", "Điều kiện phát hiện lỗi DTC"],
+      [
+        "B1002-00 (Trang\n8B-15)",
+        "Giắc cắm SDM tiếp xúc chập chờn",
+        "Kết nối của giắc cắm SDM bị lỗi."
+      ],
+      [
+        "B1003-04 (Trang\n8B-16)",
+        "Lỗi trong SDM",
+        "Mạch trong SDM, cảm biến G, bộ nhớ hoặc CPU\ngặp sự cố."
+      ],
+      [
+        "B1004-17 (Trang\n8B-17)",
+        "Điện áp nguồn điện quá cao",
+        "Điện áp bộ cấp nguồn cao hơn khoảng quy định."
+      ],
+      [
+        "B1004-18 (Trang\n8B-18)",
+        "Điện áp nguồn điện quá thấp",
+        "Điện áp bộ cấp nguồn thấp hơn khoảng quy\nđịnh."
+      ],
+      [
+        "B1032-00 (Trang\n8B-19)",
+        "Ghi lại tình trạng túi khí phía trước bị bung",
+        "Thông tin về tình trạng túi khí bị bung được lưu\ntrong SDM."
+      ],
+      [
+        "B1060-14 (Trang\n8B-19)",
+        "Mạch túi khí tài xế (trạng thái 1) ngắn mạch\nvới đất",
+        "Mạch cụm túi khí tài xế ngắn mạch với đất."
+      ],
+      [
+        "B1060-15 (Trang\n8B-21)",
+        "Mạch túi khí tài xế (trạng thái 1) ngắn mạch\nvới bộ cấp nguồn",
+        "Mạch cụm túi khí tài xế ngắn mạch với bộ cấp\nnguồn."
+      ],
+      [
+        "B1060-1A (Trang\n8B-23)",
+        "Điện trở mạch túi khí tài xế (trạng thái 1)\nthấp",
+        "Điện trở mạch cụm túi khí tài xế nhỏ hơn khoảng\nquy định."
+      ],
+      [
+        "B1060-1B (Trang\n8B-25)",
+        "Điện trở mạch túi khí tài xế (trạng thái 1) cao",
+        "Điện trở mạch cụm túi khí tài xế lớn hơn khoảng\nquy định."
+      ],
+      [
+        "B1062-14 (Trang\n8B-27)",
+        "Mạch túi khí hành khách (trạng thái 1) ngắn\nmạch với đất",
+        "Mạch điện cụm túi khí hành khách ngắn mạch\nvới đất."
+      ],
+      [
+        "B1062-15 (Trang\n8B-29)",
+        "Mạch túi khí hành khách (trạng thái 1) ngắn\nmạch với bộ cấp nguồn",
+        "Mạch điện cụm túi khí hành khách ngắn mạch\nvới bộ cấp nguồn."
+      ],
+      [
+        "B1062-1A (Trang\n8B-31)",
+        "Điện trở mạch túi khí hành khách\n(trạng thái 1) thấp",
+        "Điện trở mạch điện cụm túi khí hành khách nhỏ\nhơn khoảng quy định."
+      ],
+      [
+        "B1062-1B (Trang\n8B-33)",
+        "Điện trở mạch túi khí hành khách\n(trạng thái 1) cao",
+        "Điện trở mạch điện cụm túi khí hành khách lớn\nhơn khoảng quy định."
+      ],
+      [
+        "B1090-01 (Trang\n8B-35)",
+        "Cảm biến va chạm phía trước bên tài xế\nhoạt động không chính xác",
+        "Cảm biến va chạm phía trước không truyền\nnhận dữ liệu hoặc truyền nhận mã ID không\nthống nhất."
+      ],
+      [
+        "B1090-87 (Trang\n8B-36)",
+        "Dữ liệu đường truyền cảm biến va chạm\nphía trước bên tài xế không hợp lệ",
+        "Cảm biến va chạm phía trước không truyền\nnhận dữ liệu hoặc truyền nhận dữ liệu không\nhợp lệ."
+      ],
+      [
+        "B1090-95 (Trang\n8B-35)",
+        "Dữ liệu đường truyền cảm biến va chạm\nphía trước bên tài xế không thống nhất",
+        "Cảm biến va chạm phía trước truyền nhận mã\nID không thống nhất."
+      ],
+      [
+        "U0073-88 (Trang\n8B-38)",
+        "Cụm điều khiển không truyền và nhận được\ndữ liệu",
+        "Liên tục truyền và nhận lỗi của SDM trong thời\ngian quy định."
+      ]
+    ]
+  }
+]

@@ -1,0 +1,124 @@
+[
+  {
+    "page": 1020,
+    "table_index": 0,
+    "data": [
+      ["Tình trạng", "Nguyên nhân có thể", "Sửa chữa / Mục tham khảo"],
+      [
+        "(Các) DRL không sáng\n(nếu được trang bị)",
+        "Bóng đèn cháy",
+        "Thay bóng đèn."
+      ],
+      [
+        null,
+        "Mạch hệ thống bị lỗi (bao gồm các rơ-le\nvà cầu chì)",
+        "Sửa chữa mạch và thay rơ-le và/hoặc cầu chì."
+      ],
+      [
+        null,
+        "Công tắc đèn và công tắc xi nhan bị lỗi",
+        "Tham khảo “Kiểm tra công tắc đèn và công tắc\nxi nhan” (Trang 9B-21)."
+      ],
+      [
+        null,
+        "BCM bị lỗi (model có trang bị hệ thống\nđiều khiển đèn pha/cos tự động)",
+        "Tham khảo “Kiểm tra BCM và mạch của nó\n(Model có J/B)” trong Phần 10B (Trang 10B-21)."
+      ],
+      [
+        "Các đèn lùi xe không\nsáng",
+        "Mạch hệ thống bị lỗi (bao gồm các rơ-le\nvà cầu chì)",
+        "Sửa mạch điện."
+      ],
+      [null, "Bóng đèn cháy", "Thay bóng đèn."],
+      [
+        null,
+        "Công tắc đèn lùi xe bị lỗi",
+        "Tham khảo “Kiểm tra công tắc đèn lùi xe” trong\nPhần 5B (Trang 5B-9)."
+      ],
+      [
+        "Các đèn phanh không\nsáng",
+        "Mạch hệ thống bị lỗi (bao gồm các rơ-le\nvà cầu chì)",
+        "Sửa mạch điện."
+      ],
+      [null, "Bóng đèn cháy", "Thay bóng đèn."],
+      [
+        null,
+        "Công tắc đèn phanh bị lỗi",
+        "Tham khảo “Kiểm tra công tắc đèn phanh trên\nxe” trong Phần 4A (Trang 4A-13)."
+      ],
+      [
+        "Đèn xi nhan / đèn cảnh\nbáo nguy hiểm không\nnhấp nháy",
+        "BCM bị lỗi",
+        "• Model không trang bị hệ thống điều khiển\nđèn pha/cos tự động: (Trang 10B-31)\n• Model có trang bị hệ thống điều khiển đèn\npha/cos tự động: (Trang 10B-21)"
+      ],
+      [
+        null,
+        "Mạch hệ thống bị lỗi (bao gồm các rơ-le\nvà cầu chì)",
+        "Sửa mạch điện."
+      ],
+      [null, "Bóng đèn cháy", "Thay bóng đèn."],
+      [
+        null,
+        "Công tắc đèn và công tắc xi nhan bị lỗi",
+        "Tham khảo “Kiểm tra công tắc đèn và công tắc\nxi nhan” (Trang 9B-21)."
+      ],
+      [
+        null,
+        "Công tắc báo nguy bị lỗi",
+        "Tham khảo “Kiểm tra công tắc cảnh báo nguy\nhiểm” (Trang 9B-23)."
+      ]
+    ]
+  },
+  {
+    "page": 1020,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1A80: Hoạt động công tắc đèn và công tắc xi nhan\nLỗi bên trong công tắc đèn và công tắc xi nhan",
+        "Công tắc đèn và công tắc xi nhan"
+      ]
+    ]
+  },
+  {
+    "page": 1020,
+    "table_index": 2,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra DTC\n1) Xóa DTC. (Trang 9B-6)\n2) Xoay công tắc máy về vị trí “OFF”.\n3) Xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra lại DTC.\nVẫn phát hiện mã DTC B1A80?",
+        "Thay công tắc đèn và\ncông tắc xi nhan và\nkiểm tra lại DTC. (Trang 9B-21)",
+        "Kết thúc. (Hỏng hóc\ngián đoạn.)"
+      ]
+    ]
+  },
+  {
+    "page": 1021,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1A81: Điện áp bình điện quá thấp\nĐiện áp mạch cấp nguồn từ cầu chì “IG1 SIG” liên tục\nthấp hơn 8 V trong thời gian quy định.",
+        "• Mạch / giắc cắm công tắc đèn và công tắc xi nhan\n• Công tắc đèn và công tắc xi nhan\n• Hệ thống sạc"
+      ],
+      [
+        "B1A82: Điện áp bình điện quá cao\nĐiện áp mạch cấp nguồn từ cầu chì “IG1 SIG” liên tục cao\nhơn 16 V trong thời gian quy định.",
+        null
+      ]
+    ]
+  },
+  {
+    "page": 1021,
+    "table_index": 4,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra DTC\n1) Xóa DTC. (Trang 9B-6)\n2) Xoay công tắc máy về vị trí “OFF”.\n3) Xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra lại DTC.\nVẫn phát hiện DTC B1A81 hoặc B1A82?",
+        "Chuyển sang Bước 2.",
+        "Kết thúc. (Hỏng hóc\ngián đoạn.)"
+      ]
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "name": "Kiểm tra mạch cấp nguồn và mạch nối đất SDM",
+  "refs": [
+    "00-11",
+    "1J-5",
+    "8B-45"
+  ]
+}

@@ -1,0 +1,51 @@
+[
+  {
+    "page": 1042,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra DTC\n1) Xóa DTC. (Trang 10B-12)\n2) Kiểm tra để đảm bảo công tắc máy đang ở vị trí “OFF”.\n3) Xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra DTC. (Trang 10B-12)\nVẫn phát hiện mã DTC B1840?",
+        "Chuyển sang Bước 2.",
+        "Kiểm tra hỏng hóc gián\nđoạn. (Trang 00-11)"
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\n1) Kiểm tra DTC trong ECM. (Trang 1A-22)\nCó phát hiện (các) DTC nào không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 3."
+      ],
+      [
+        "3",
+        "Kiểm tra DTC\n1) Kiểm tra DTC trong ECM. (Trang 1A-22)\nCó phát hiện CAN-DTC nào không?",
+        "Chuyển sang khắc phục\nsự cố cho CAN-DTC. (Trang 10H-11)",
+        "Thay cụm đồng hồ và\nkiểm tra lại DTC. (Trang 9C-10)"
+      ]
+    ]
+  },
+  {
+    "page": 1042,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1842: Dữ liệu lượng tiêu thụ nhiên liệu không hợp lệ\nCụm đồng hồ nhận được dữ liệu lượng tiêu thụ nhiên liệu\nbất thường từ ECM.",
+        "• ECM\n• Cụm đồng hồ"
+      ]
+    ]
+  },
+  {
+    "page": 1042,
+    "table_index": 2,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra DTC\n1) Kiểm tra DTC trong ECM. (Trang 1A-22)\nCó phát hiện (các) DTC nào không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Thay cụm đồng hồ và\nkiểm tra lại DTC. (Trang 9C-10)"
+      ]
+    ]
+  }
+]

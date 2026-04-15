@@ -1,0 +1,102 @@
+[
+  {
+    "page": 1022,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "2",
+        "Kiểm tra mạch cấp nguồn và mạch nối đất công tắc đèn\nvà công tắc xi nhan\n1) Kiểm tra để đảm bảo công tắc máy đang ở vị trí “OFF”.\n2) Rút các giắc cắm “G271” và “G144”.\n3) Kiểm tra xem kết nối cực tới các giắc cắm “G271” và\n“G144” có chính xác không.\n4) Nếu các kết nối đều ỔN, hãy kiểm tra những điểm sau.\n• Điện trở của mạch “A1” và “A2”: dưới 1 Ω\n• Điện trở giữa mạch “A1” và dây nối đất: vô cực\n• Điện trở giữa cực mạch “A1” và cực khác tại giắc cắm\n“G144”: vô cực\n• Điện trở giữa cực mạch “A2” và cực khác tại giắc cắm\n“G144”: vô cực\n• Điện áp các mạch “A1” và “A2”: xấp xỉ 0 V (khi công\ntắc máy ở vị trí “ON”)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 3.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "3",
+        "Kiểm tra điện áp bộ cấp nguồn công tắc đèn và công tắc\nxi nhan\n1) Xoay công tắc máy về vị trí “OFF”.\n2) Cắm giắc cắm “G271”.\n3) Kiểm tra điện áp mạch “A1” với tốc độ động cơ là 3.000\nvòng/phút.\nĐiện áp có nằm trong khoảng 12 – 15 V không?",
+        "Thay công tắc đèn và\ncông tắc xi nhan và\nkiểm tra lại DTC. (Trang 9B-21)",
+        "Kiểm tra hệ thống sạc. (Trang 1J-5)"
+      ]
+    ]
+  },
+  {
+    "page": 1022,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1AA0: Mạch công tắc đèn\nNếu gặp bất kỳ điều kiện nào sau đây.\n• Công tắc “AUTO” và công tắc “HEAD” ON cùng lúc.\n• Công tắc “HEAD” ON ngay cả khi công tắc “CLEARANCE” OFF.",
+        "Công tắc đèn và công tắc xi nhan"
+      ],
+      [
+        "B1AA1: Công tắc đèn sương mù sau bị kẹt\nCông tắc đèn sương mù sau vẫn ON trong thời gian quy định.",
+        null
+      ],
+      [
+        "B1AA2: Công tắc xin vượt bị kẹt\nCông tắc “PASS” vẫn ON trong thời gian quy định.",
+        null
+      ],
+      [
+        "B1AA3: Mạch công tắc xi nhan\nCông tắc xi nhan (trái) và công tắc xi nhan (phải) ON cùng lúc.",
+        null
+      ],
+      [
+        "B1AA4: Mạch công tắc pha cos/xin vượt\nCông tắc pha cos và công tắc xin vượt ON cùng lúc.",
+        null
+      ]
+    ]
+  },
+  {
+    "page": 1023,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra DTC\n1) Xóa DTC. (Trang 9B-6)\n2) Xoay công tắc máy về vị trí “OFF”.\n3) Tiến hành “Quy trình xác nhận DTC” (Trang 9B-12) rồi\nkiểm tra lại DTC.\nVẫn phát hiện DTC B1AA0, B1AA1, B1AA2, B1AA3 hoặc\nB1AA4?",
+        "Thay công tắc đèn và\ncông tắc xi nhan và\nkiểm tra lại DTC. (Trang 9B-21)",
+        "Kết thúc. (Hỏng hóc\ngián đoạn.)"
+      ]
+    ]
+  },
+  {
+    "page": 1023,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1AB0: Dữ liệu CAN không hợp lệ từ cụm điều khiển\ncụm táp lô (IPC)\nCông tắc đèn và công tắc xi nhan nhận dữ liệu giao tiếp\nCAN bất thường từ cụm đồng hồ.",
+        "Cụm đồng hồ"
+      ]
+    ]
+  },
+  {
+    "page": 1023,
+    "table_index": 2,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra DTC\nCó phát hiện (các) DTC nào khác ngoài B1AB0 không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Kết thúc. (Hỏng hóc\ngián đoạn.)"
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\n1) Kiểm tra DTC trong cụm đồng hồ.\nCó phát hiện (các) DTC nào không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Thay cụm đồng hồ và\nkiểm tra lại DTC. (Trang 9C-10)"
+      ]
+    ]
+  },
+  {
+    "page": 1023,
+    "table_index": 3,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1AB1: Dữ liệu CAN không hợp lệ từ cụm điều khiển ABS / ESP®\nCông tắc đèn và công tắc xi nhan phát hiện tình trạng bất thường trong dữ\nliệu điều khiển do cụm điều khiển ESP® truyền qua đường truyền CAN.",
+        "Cụm điều khiển ESP®"
+      ]
+    ]
+  }
+]

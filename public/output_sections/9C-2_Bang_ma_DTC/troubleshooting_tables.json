@@ -1,0 +1,24 @@
+[
+  {
+    "page": 1038,
+    "table_index": 2,
+    "data": [
+      [
+        "Mục kiểm tra",
+        "Nội dung kiểm tra"
+      ],
+      [
+        "Đồng hồ tốc độ (Quét)",
+        "Đồng hồ tốc độ bị ép hoạt động từ MIN sang MAX."
+      ],
+      [
+        "Đồng hồ tốc độ (Trực tiếp)",
+        "Đồng hồ tốc độ bị ép hoạt động đến mức quy định."
+      ],
+      [
+        "Còi cảnh báo",
+        "Còi báo trong cụm đồng hồ bị ép hoạt động."
+      ]
+    ]
+  }
+]
