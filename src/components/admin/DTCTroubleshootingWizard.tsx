@@ -7,7 +7,7 @@ import {
   RotateCcw,
   Wrench,
 } from "lucide-react";
-
+const API_URL = import.meta.env.VITE_API_URL || "";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
@@ -175,12 +175,9 @@ const DTCTroubleshootingWizard: React.FC<DTCTroubleshootingWizardProps> = ({
         setIsFinished(false);
         setConclusion("");
 
-        const response = await fetch(
-          `${process.env.VITE_API_URL}/api/dtc-tables/${folder}`,
-          {
-            signal: controller.signal,
-          },
-        );
+        const response = await fetch(`${API_URL}/api/dtc-tables/${folder}`, {
+          signal: controller.signal,
+        });
 
         if (!response.ok) {
           throw new Error("Không thể tải bảng khắc phục sự cố");
