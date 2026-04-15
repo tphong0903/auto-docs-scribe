@@ -175,9 +175,12 @@ const DTCTroubleshootingWizard: React.FC<DTCTroubleshootingWizardProps> = ({
         setIsFinished(false);
         setConclusion("");
 
-        const response = await fetch(`/api/dtc-tables/${folder}`, {
-          signal: controller.signal,
-        });
+        const response = await fetch(
+          `${process.env.VITE_API_URL}/api/dtc-tables/${folder}`,
+          {
+            signal: controller.signal,
+          },
+        );
 
         if (!response.ok) {
           throw new Error("Không thể tải bảng khắc phục sự cố");
