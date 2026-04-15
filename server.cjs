@@ -4,10 +4,23 @@ const fs = require("fs");
 const cors = require("cors");
 
 const app = express();
-const PORT = 3001;
 
-app.use(cors());
+// 1. Lấy PORT từ biến môi trường của Railway, nếu không có thì mặc định 3001
+const PORT = process.env.PORT || 3001;
+
+// 2. Cấu hình CORS mở cho Vercel gọi vào
+app.use(
+  cors({
+    origin: "*", // Tạm thời để '*' cho dễ test. Sau này đổi thành URL của Vercel (vd: 'https://auto-docs-scribe.vercel.app')
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  }),
+);
+
 app.use(express.json());
+
+// 3. Đường dẫn gốc tới thư mục output_sections (Sử dụng __dirname cho an toàn trên server)
+const OUTPUT_SECTIONS_PATH = path.join(__dirname, "public", "output_sections");
 
 // Helper function để đọc an toàn JSON
 const safeReadJSON = (filePath) => {
@@ -26,16 +39,17 @@ const safeReadJSON = (filePath) => {
 // API: Lấy danh sách tất cả folder DTC
 // ==========================================
 app.get("/api/dtc-list", (req, res) => {
-  const outputPath = path.join(process.cwd(), "public", "output_sections");
-
   try {
-    if (!fs.existsSync(outputPath)) {
-      return res
-        .status(500)
-        .json({ success: false, error: "Folder not found" });
+    if (!fs.existsSync(OUTPUT_SECTIONS_PATH)) {
+      return res.status(500).json({
+        success: false,
+        error: "Folder output_sections not found on server",
+      });
     }
 
-    const folders = fs.readdirSync(outputPath, { withFileTypes: true });
+    const folders = fs.readdirSync(OUTPUT_SECTIONS_PATH, {
+      withFileTypes: true,
+    });
 
     const dtcList = folders
       .filter((dirent) => dirent.isDirectory())
@@ -46,7 +60,7 @@ app.get("/api/dtc-list", (req, res) => {
         const parts = folderName.split("_");
         const code = parts[0];
 
-        const folderPath = path.join(outputPath, folderName);
+        const folderPath = path.join(OUTPUT_SECTIONS_PATH, folderName);
         const files = fs.readdirSync(folderPath);
         const pdfFiles = files.filter((file) => file.endsWith(".pdf"));
         const hasTables = files.includes("troubleshooting_tables.json");
@@ -62,7 +76,7 @@ app.get("/api/dtc-list", (req, res) => {
           code,
           name: exactName,
           folder: folderName,
-          displayName: exactName, // Gán trực tiếp tên hiển thị từ refs
+          displayName: exactName,
           metadata: {
             hasRefs: !!refsData.refs,
             hasPdf: pdfFiles.length > 0,
@@ -95,20 +109,19 @@ app.get("/api/search", (req, res) => {
     return res.status(400).json({ success: false, error: "Query required" });
   }
 
-  const outputPath = path.join(process.cwd(), "public", "output_sections");
-
   try {
-    const folders = fs.readdirSync(outputPath, { withFileTypes: true });
+    const folders = fs.readdirSync(OUTPUT_SECTIONS_PATH, {
+      withFileTypes: true,
+    });
     const searchResults = folders
       .filter((dirent) => dirent.isDirectory())
       .map((dirent) => {
         const folderName = dirent.name;
         const code = folderName.split("_")[0];
 
-        const folderPath = path.join(outputPath, folderName);
+        const folderPath = path.join(OUTPUT_SECTIONS_PATH, folderName);
         const refsData = safeReadJSON(path.join(folderPath, "refs.json")) || {};
 
-        // 🔥 LẤY TÊN TỪ REFS.JSON
         const exactName =
           refsData.name || folderName.split("_").slice(1).join(" ");
         const refsArray = refsData.refs || [];
@@ -151,9 +164,7 @@ app.get("/api/dtc-tables/:folder", (req, res) => {
   }
 
   const tablePath = path.join(
-    process.cwd(),
-    "public",
-    "output_sections",
+    OUTPUT_SECTIONS_PATH,
     safeFolder,
     "troubleshooting_tables.json",
   );
@@ -175,10 +186,11 @@ app.get("/api/dtc-tables/:folder", (req, res) => {
 // ==========================================
 app.get("/api/dtc-find/:code", (req, res) => {
   const { code } = req.params;
-  const outputPath = path.join(process.cwd(), "public", "output_sections");
 
   try {
-    const folders = fs.readdirSync(outputPath, { withFileTypes: true });
+    const folders = fs.readdirSync(OUTPUT_SECTIONS_PATH, {
+      withFileTypes: true,
+    });
     const found = folders.find((dirent) => {
       if (!dirent.isDirectory()) return false;
       const folderCode = dirent.name.split("_")[0];
@@ -206,11 +218,20 @@ app.get("/api/dtc-find/:code", (req, res) => {
 // ==========================================
 // Serve static files
 // ==========================================
-app.use(express.static(path.join(process.cwd(), "public")));
+// 4. Cho phép truy cập vào thư mục public, đặc biệt là PDF
+app.use(express.static(path.join(__dirname, "public")));
+// (Tùy chọn) Thêm một route riêng cho file PDF nếu cần
+app.use("/output_sections", express.static(OUTPUT_SECTIONS_PATH));
 
-app.listen(PORT, () => {
+// 5. Thêm route test kết nối cho Railway
+app.get("/", (req, res) => {
+  res.send("Backend DTC Auto Docs Scribe is running!");
+});
+
+// 6. Thêm 0.0.0.0 vào app.listen
+app.listen(PORT, "0.0.0.0", () => {
   console.log("\n=====================================");
   console.log("✓ DTC API Server is running!");
-  console.log(`✓ API available at: http://localhost:${PORT}`);
+  console.log(`✓ API available at port: ${PORT}`);
   console.log("=====================================\n");
 });
