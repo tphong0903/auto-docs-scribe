@@ -1,9 +1,18 @@
 import React, { useState, useEffect } from "react";
-import { Loader, AlertCircle, Search } from "lucide-react";
+import {
+  Loader,
+  AlertCircle,
+  Search,
+  Cpu,
+  ListChecks,
+  FileSearch,
+  BookOpen,
+  ChevronRight,
+} from "lucide-react";
 import { toast } from "sonner";
 import DTCSidebar from "./DTCSidebar";
 import DTCPDFViewer from "./DTCPDFViewer";
-import DTCReferencePanel from "./DTCReferencePanel";
+import DTCTroubleshootingWizard from "./DTCTroubleshootingWizard";
 import {
   Dialog,
   DialogContent,
@@ -32,11 +41,9 @@ const DTCViewer: React.FC = () => {
   const [dtcList, setDtcList] = useState<DTCItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [selected, setSelected] = useState<DTCItem | null>(null);
-  const [refs, setRefs] = useState<string[]>([]);
-  const [searchQuery, setSearchQuery] = useState(""); // Dùng cho ô search ở Sidebar
+  const [searchQuery, setSearchQuery] = useState("");
   const [error, setError] = useState<string | null>(null);
 
-  // State quản lý Dialog chọn tài liệu tham khảo
   const [refDialogOpen, setRefDialogOpen] = useState(false);
   const [refDialogData, setRefDialogData] = useState<{
     code: string;
@@ -45,9 +52,6 @@ const DTCViewer: React.FC = () => {
 
   const API_URL = "";
 
-  // ==========================================
-  // Tải danh sách DTC khi component mount
-  // ==========================================
   useEffect(() => {
     fetchDTCList();
   }, []);
@@ -57,127 +61,134 @@ const DTCViewer: React.FC = () => {
       setLoading(true);
       setError(null);
       const response = await fetch(`${API_URL}/api/dtc-list`);
-
-      if (!response.ok) {
-        throw new Error("Lỗi khi tải danh sách DTC");
-      }
+      if (!response.ok) throw new Error("Lỗi khi tải danh sách DTC");
 
       const { data } = await response.json();
       setDtcList(data);
 
-      // Chọn DTC đầu tiên
-      if (data.length > 0) {
-        selectDTC(data[0]);
+      const params = new URLSearchParams(window.location.search);
+      const urlFolder = params.get("folder");
+
+      if (urlFolder) {
+        const found = data.find((d: DTCItem) => d.folder === urlFolder);
+        if (found) selectDTC(found, "replace");
+        else if (data.length > 0) selectDTC(data[0], "replace");
+      } else if (data.length > 0) {
+        selectDTC(data[0], "replace");
       }
     } catch (err) {
       const errorMsg =
         err instanceof Error ? err.message : "Không thể kết nối tới server";
       setError(errorMsg);
       toast.error(errorMsg);
-      console.error("Error loading DTC list:", err);
     } finally {
       setLoading(false);
     }
   };
 
-  // ==========================================
-  // Chọn một DTC và thiết lập refs
-  // ==========================================
-  const selectDTC = async (dtc: DTCItem) => {
+  useEffect(() => {
+    const handlePopState = () => {
+      const params = new URLSearchParams(window.location.search);
+      const urlFolder = params.get("folder");
+
+      if (urlFolder && dtcList.length > 0) {
+        const found = dtcList.find((d) => d.folder === urlFolder);
+        if (found) setSelected(found);
+      }
+    };
+
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
+  }, [dtcList]);
+
+  const selectDTC = (
+    dtc: DTCItem,
+    historyMode: "push" | "replace" | "none" = "push",
+  ) => {
     setSelected(dtc);
-    setRefs(dtc.refs || []);
+
+    if (historyMode !== "none") {
+      const url = new URL(window.location.href);
+      url.searchParams.set("folder", dtc.folder);
+
+      if (historyMode === "push") {
+        window.history.pushState({}, "", url.toString());
+      } else {
+        window.history.replaceState({}, "", url.toString());
+      }
+    }
   };
 
-  // ==========================================
-  // Xử lý click trên Reference tags
-  // ==========================================
   const handleRefClick = async (code: string) => {
     try {
-      // 1. Gọi API search từ backend với từ khóa là mã code
       const response = await fetch(
         `${API_URL}/api/search?q=${encodeURIComponent(code)}`,
       );
-
-      if (!response.ok) {
-        throw new Error("Lỗi khi kết nối tới API tìm kiếm");
-      }
+      if (!response.ok) throw new Error("Lỗi API tìm kiếm");
 
       const result = await response.json();
       const foundDTCs: DTCItem[] = result.data;
 
-      // 2. Xử lý kết quả trả về
       if (foundDTCs.length === 1) {
-        // Nếu chỉ tìm thấy đúng 1 kết quả -> Tự động chuyển trang luôn
         handleSelectFromDialog(foundDTCs[0]);
         toast.success(`Đã chuyển đến tài liệu: ${code}`);
       } else if (foundDTCs.length > 1) {
-        // Nếu có nhiều kết quả -> Mở Dialog cho người dùng chọn
         setRefDialogData({ code, foundDTCs });
         setRefDialogOpen(true);
       } else {
-        // Không tìm thấy kết quả nào
-        toast.error(`Không tìm thấy tài liệu tham khảo cho mã: ${code}`);
+        toast.error(`Không tìm thấy tài liệu: ${code}`);
       }
-    } catch (err) {
-      console.error("Search API Error:", err);
-      toast.error("Đã xảy ra lỗi khi tìm kiếm tài liệu tham khảo.");
+    } catch {
+      toast.error("Lỗi khi tìm kiếm tài liệu.");
     }
   };
 
-  // ==========================================
-  // Xử lý chọn DTC từ dialog
-  // ==========================================
-  const handleSelectFromDialog = async (dtc: DTCItem) => {
-    await selectDTC(dtc);
+  const handleSelectFromDialog = (dtc: DTCItem) => {
+    selectDTC(dtc, "push");
     setRefDialogOpen(false);
     setRefDialogData(null);
-
-    // Xóa chữ trong ô tìm kiếm để hiện lại toàn bộ danh sách ở sidebar
     setSearchQuery("");
 
-    // Cuộn sidebar đến vị trí item được chọn
     setTimeout(() => {
-      const element = document.getElementById(`dtc-item-${dtc.code}`);
-      element?.scrollIntoView({ behavior: "smooth", block: "center" });
+      document
+        .getElementById(`dtc-item-${dtc.code}`)
+        ?.scrollIntoView({ behavior: "smooth", block: "center" });
     }, 100);
   };
 
-  // ==========================================
-  // Filter DTC theo search query (Sidebar)
-  // ==========================================
   const filteredDTC = dtcList.filter(
     (item) =>
       item.displayName.toLowerCase().includes(searchQuery.toLowerCase()) ||
       item.code.toLowerCase().includes(searchQuery.toLowerCase()),
   );
 
-  // ==========================================
-  // Render Loading & Error
-  // ==========================================
+  // ================= LOADING =================
   if (loading) {
     return (
-      <div className="flex items-center justify-center h-screen bg-gray-100">
+      <div className="flex items-center justify-center h-screen bg-slate-50">
         <div className="flex flex-col items-center gap-4">
-          <Loader className="w-8 h-8 text-blue-600 animate-spin" />
-          <p className="text-lg text-gray-700">Đang tải danh sách DTC...</p>
+          <Loader className="w-10 h-10 text-blue-600 animate-spin" />
+          <p className="text-lg text-slate-600 font-medium">
+            Đang khởi tạo hệ thống chẩn đoán...
+          </p>
         </div>
       </div>
     );
   }
 
+  // ================= ERROR =================
   if (error) {
     return (
-      <div className="flex items-center justify-center h-screen bg-gray-100">
-        <div className="flex flex-col items-center gap-4 p-6 bg-white rounded-lg shadow-lg max-w-md">
-          <AlertCircle className="w-12 h-12 text-red-600" />
-          <h2 className="text-xl font-semibold text-gray-800">Lỗi kết nối</h2>
-          <p className="text-center text-gray-600">{error}</p>
-          <p className="text-sm text-gray-500">
-            Vui lòng đảm bảo rằng cả frontend và backend server đều đang chạy
-          </p>
+      <div className="flex items-center justify-center h-screen bg-slate-50">
+        <div className="p-8 bg-white rounded-2xl shadow-xl border border-red-100 text-center max-w-md">
+          <AlertCircle className="w-14 h-14 text-red-500 mx-auto mb-4" />
+          <h2 className="text-xl font-bold text-slate-800">
+            Mất kết nối dữ liệu
+          </h2>
+          <p className="text-slate-600 mt-2">{error}</p>
           <button
             onClick={fetchDTCList}
-            className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+            className="mt-6 px-6 py-2.5 rounded-xl bg-blue-600 font-medium text-white hover:bg-blue-700 transition-colors"
           >
             Thử lại
           </button>
@@ -186,88 +197,132 @@ const DTCViewer: React.FC = () => {
     );
   }
 
-  // ==========================================
-  // Render UI Chính
-  // ==========================================
+  // ================= UI =================
   return (
-    <div className="flex h-screen bg-gray-50">
+    <div className="flex bg-slate-50 overflow-hidden">
       {/* Sidebar */}
-      <div className="w-80 border-r border-gray-200 bg-white flex flex-col">
-        <div className="p-4 border-b border-gray-200">
-          <h1 className="text-xl font-bold text-gray-800 mb-4">Tra cứu DTC</h1>
-          {/* Search bar */}
-          <div className="relative">
-            <Search className="absolute left-3 top-2.5 w-5 h-5 text-gray-400" />
+      <div className="w-80 bg-white border-r border-slate-200 shadow-[2px_0_8px_-4px_rgba(0,0,0,0.1)] flex flex-col z-10 shrink-0">
+        <div className="p-5 border-b border-slate-100">
+          <div className="flex items-center gap-3">
+            <div className="p-2 bg-blue-50 rounded-lg">
+              <Cpu className="w-6 h-6 text-blue-600" />
+            </div>
+            <div>
+              <h1 className="text-xl font-bold text-slate-800">DTC Explorer</h1>
+              <p className="text-xs font-medium text-slate-500 uppercase tracking-wider mt-0.5">
+                Diagnostic System
+              </p>
+            </div>
+          </div>
+
+          <div className="relative mt-5">
+            <Search className="absolute left-3.5 top-3 w-4 h-4 text-slate-400" />
             <input
               type="text"
-              placeholder="Tìm kiếm mã DTC..."
+              placeholder="Nhập mã lỗi (VD: P0010)..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all text-sm"
             />
           </div>
         </div>
 
-        {/* DTC List */}
-        <DTCSidebar
-          items={filteredDTC}
-          selected={selected}
-          onSelect={selectDTC}
-        />
+        <div className="flex-1 overflow-hidden">
+          <DTCSidebar
+            items={filteredDTC}
+            selected={selected}
+            onSelect={(dtc) => selectDTC(dtc, "push")}
+          />
+        </div>
       </div>
 
-      {/* Main Content */}
-      <div className="flex-1 flex flex-col">
+      {/* Main Area */}
+      <div className="flex-1 flex flex-col overflow-hidden bg-slate-50/50 p-4 md:p-6 gap-4">
         {selected ? (
-          <div className="flex-1 flex overflow-hidden">
-            {/* PDF Viewer */}
-            <div className="flex-1 flex flex-col border-r border-gray-200">
-              <div className="p-4 border-b border-gray-200 bg-white">
-                <h2 className="text-lg font-semibold text-gray-800">
-                  {selected.displayName}
-                </h2>
+          <>
+            {/* Header Title */}
+            <div className="bg-white border border-slate-200 rounded-2xl shadow-sm p-4 shrink-0 flex items-center gap-3">
+              <div className="p-2 bg-blue-50 text-blue-600 rounded-lg">
+                <BookOpen className="w-5 h-5" />
               </div>
-              <DTCPDFViewer folder={selected.folder} />
+              <h2 className="text-lg font-bold text-slate-800 truncate">
+                {selected.displayName}
+              </h2>
             </div>
 
-            {/* Reference Panel */}
-            <div className="w-72 border-l border-gray-200 bg-white flex flex-col">
-              <div className="p-4 border-b border-gray-200">
-                <h3 className="text-base font-semibold text-gray-800">
-                  Tài liệu tham khảo
-                </h3>
+            <div className="flex-1 flex flex-col gap-4">
+              <div className="bg-white border border-slate-200 rounded-2xl shadow-sm  ">
+                <DTCPDFViewer folder={selected.folder} />
               </div>
-              <DTCReferencePanel refs={refs} onRefClick={handleRefClick} />
+
+              <div className="bg-white border border-slate-200 rounded-2xl shadow-sm shrink-0  flex flex-col ">
+                <div className="px-5 py-4 border-b border-slate-100 bg-slate-50/50 flex items-center gap-2">
+                  <ListChecks className="w-5 h-5 text-blue-600" />
+                  <h3 className="font-bold text-slate-800">
+                    Quy trình chẩn đoán & Khắc phục
+                  </h3>
+                </div>
+                {/* Cuộn nếu nội dung Wizard quá dài */}
+                <div className="p-5 overflow-y-auto">
+                  <DTCTroubleshootingWizard
+                    folder={selected.folder}
+                    onRefClick={handleRefClick}
+                  />
+                </div>
+              </div>
             </div>
-          </div>
+          </>
         ) : (
-          <div className="flex-1 flex items-center justify-center">
-            <p className="text-gray-500 text-lg">Không có DTC nào được chọn</p>
+          /* Empty State Chuyên nghiệp */
+          <div className="flex-1 flex flex-col items-center justify-center text-center">
+            <div className="w-24 h-24 bg-blue-50 rounded-full flex items-center justify-center mb-6">
+              <FileSearch className="w-12 h-12 text-blue-300" />
+            </div>
+            <h3 className="text-2xl font-bold text-slate-800 mb-2">
+              Chưa chọn mã lỗi
+            </h3>
+            <p className="text-slate-500 max-w-md">
+              Vui lòng tìm kiếm và chọn một mã DTC từ danh sách bên trái để xem
+              tài liệu hướng dẫn và quy trình khắc phục sự cố.
+            </p>
           </div>
         )}
       </div>
 
-      {/* Reference Selection Dialog */}
+      {/* Reference Dialog */}
       <Dialog open={refDialogOpen} onOpenChange={setRefDialogOpen}>
-        <DialogContent className="max-w-md">
-          <DialogHeader>
-            <DialogTitle>Chọn tài liệu tham khảo</DialogTitle>
-            <DialogDescription>
-              Tìm thấy {refDialogData?.foundDTCs.length} kết quả cho "
-              {refDialogData?.code}"
+        <DialogContent className="rounded-2xl max-w-md p-0 overflow-hidden">
+          <div className="px-6 pt-6 pb-4 border-b border-slate-100">
+            <DialogTitle className="text-lg font-bold text-slate-800 flex items-center gap-2">
+              <BookOpen className="w-5 h-5 text-blue-600" />
+              Tài liệu tham khảo
+            </DialogTitle>
+            <DialogDescription className="mt-1">
+              Tìm thấy {refDialogData?.foundDTCs.length} kết quả liên quan đến
+              mã{" "}
+              <span className="font-semibold text-slate-700">
+                {refDialogData?.code}
+              </span>
             </DialogDescription>
-          </DialogHeader>
+          </div>
 
-          <ScrollArea className="max-h-96">
-            <div className="space-y-2 mt-4">
+          <ScrollArea className="max-h-[60vh] px-6 pb-6">
+            <div className="space-y-3 mt-4">
               {refDialogData?.foundDTCs.map((dtc) => (
                 <button
                   key={dtc.folder}
                   onClick={() => handleSelectFromDialog(dtc)}
-                  className="w-full text-left p-3 rounded-lg border border-gray-200 hover:border-blue-500 hover:bg-blue-50 transition-colors"
+                  className="w-full text-left p-4 rounded-xl border border-slate-200 hover:border-blue-400 hover:bg-blue-50/50 hover:shadow-md transition-all group flex items-center justify-between"
                 >
-                  <div className="font-semibold text-blue-700">{dtc.code}</div>
-                  <div className="text-sm text-gray-600 mt-1">{dtc.name}</div>
+                  <div className="pr-4">
+                    <div className="font-bold text-blue-700 group-hover:text-blue-800">
+                      {dtc.code}
+                    </div>
+                    <div className="text-sm text-slate-600 mt-1 line-clamp-2">
+                      {dtc.name}
+                    </div>
+                  </div>
+                  <ChevronRight className="w-5 h-5 text-slate-300 group-hover:text-blue-500 shrink-0" />
                 </button>
               ))}
             </div>

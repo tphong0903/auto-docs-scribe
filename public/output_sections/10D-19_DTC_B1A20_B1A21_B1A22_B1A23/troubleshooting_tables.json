@@ -1,0 +1,86 @@
+[
+  {
+    "page": 1409,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1A20: Dữ liệu cảm biến áp suất lốp phía trước bên\nphải bị lỗi\nB1A21: Dữ liệu cảm biến áp suất lốp phía trước bên\ntrái bị lỗi\nB1A22: Dữ liệu cảm biến áp suất lốp phía sau bên\nphải bị lỗi\nB1A23: Dữ liệu cảm biến áp suất lốp phía sau bên trái\nbị lỗi\nCụm điều khiển hệ thống TPMS nhận được dữ liệu bất\nthường từ cảm biến áp suất lốp.",
+        "• Cảm biến áp suất lốp số 1, số 2, số 3 và/hoặc số 4\n• Cụm điều khiển hệ thống TPMS"
+      ]
+    ]
+  },
+  {
+    "page": 1409,
+    "table_index": 2,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Bạn có dụng cụ khuyên dùng không?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang Bước 4."
+      ],
+      [
+        "2",
+        "Kiểm tra cảm biến áp suất lốp\n1) Khi sử dụng dụng cụ khuyên dùng, hãy kiểm tra cảm\nbiến áp suất lốp phát hiện DTC. (Trang 10D-29)\nDụng cụ khuyên dùng\n“VT56” hoặc “VT36” của ATEQ\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 3.",
+        "Chuyển sang Bước 4."
+      ],
+      [
+        "3",
+        "Kiểm tra DTC\n1) Xóa DTC. (Trang 10D-8)\n2) Tiến hành “Quy trình xác nhận DTC” (Trang 10D-19) rồi\nkiểm tra lại DTC.\nVẫn phát hiện DTC B1A20, B1A21, B1A22 hoặc B1A23?",
+        "Chuyển sang Bước 4.",
+        "Kiểm tra hỏng hóc gián\nđoạn. (Trang 00-11)"
+      ],
+      [
+        "4",
+        "Kiểm tra DTC\n1) Thay cảm biến áp suất lốp phát hiện DTC. (Trang\n10D-29)\n2) Xóa DTC. (Trang 10D-8)\n3) Tiến hành “Quy trình xác nhận DTC” (Trang 10D-19) rồi\nkiểm tra lại DTC.\nVẫn phát hiện DTC B1A20, B1A21, B1A22 hoặc B1A23?",
+        "Thay cụm điều khiển hệ\nthống TPMS và kiểm tra lại DTC. (Trang 10D-\n30)",
+        "Kết thúc."
+      ]
+    ]
+  },
+  {
+    "page": 1410,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1A24: Cảm biến áp suất lốp phía trước bên phải thông báo điện áp\nbình điện yếu\nB1A25: Cảm biến áp suất lốp phía trước bên trái thông báo điện áp\nbình điện yếu\nB1A26: Cảm biến áp suất lốp phía sau bên phải thông báo điện áp bình\nđiện yếu\nB1A27: Cảm biến áp suất lốp phía sau bên trái thông báo điện áp bình\nđiện yếu\nCụm điều khiển hệ thống TPMS tiếp nhận tín hiệu bình điện yếu điện từ cảm\nbiến áp suất lốp trong thời gian quy định khi nhiệt độ lốp cao hơn –10 °C\n(14 °F).",
+        "• Cảm biến áp suất lốp số 1, số 2, số\n3 và/hoặc số 4\n• Cụm điều khiển hệ thống TPMS"
+      ]
+    ]
+  },
+  {
+    "page": 1410,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Bạn có dụng cụ khuyên dùng không?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang Bước 4."
+      ],
+      [
+        "2",
+        "Kiểm tra cảm biến áp suất lốp\n1) Khi sử dụng dụng cụ khuyên dùng, hãy kiểm tra cảm\nbiến áp suất lốp phát hiện DTC. (Trang 10D-29)\nDụng cụ khuyên dùng\n“VT56” hoặc “VT36” của ATEQ\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 3.",
+        "Chuyển sang Bước 4."
+      ],
+      [
+        "3",
+        "Kiểm tra DTC\n1) Xóa DTC. (Trang 10D-8)\n2) Tiến hành “Quy trình xác nhận DTC” (Trang 10D-20) rồi\nkiểm tra lại DTC.\nVẫn phát hiện DTC B1A24, B1A25, B1A26 hoặc B1A27?",
+        "Chuyển sang Bước 4.",
+        "Kiểm tra hỏng hóc gián\nđoạn. (Trang 00-11)"
+      ],
+      [
+        "4",
+        "Kiểm tra DTC\n1) Thay cảm biến áp suất lốp phát hiện DTC. (Trang\n10D-29)\n2) Xóa DTC. (Trang 10D-8)\n3) Tiến hành “Quy trình xác nhận DTC” (Trang 10D-20) rồi\nkiểm tra lại DTC.\nVẫn phát hiện DTC B1A24, B1A25, B1A26 hoặc B1A27?",
+        "Thay cụm điều khiển hệ\nthống TPMS và kiểm tra lại DTC. (Trang 10D-\n30)",
+        "Kết thúc."
+      ]
+    ]
+  }
+]

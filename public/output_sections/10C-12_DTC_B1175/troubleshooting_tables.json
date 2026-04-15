@@ -1,0 +1,104 @@
+[
+  {
+    "page": 1386,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "3",
+        "Đăng ký chìa khóa công tắc máy\n1) Tiến hành “Đăng ký chìa khóa hệ thống chống trộm”. (Trang 10C-16)\n2) Xoay công tắc máy về vị trí “OFF” và để công tắc máy ở\nvị trí “OFF” trong ít nhất 5 giây.\n3) Xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra lại DTC.\nVẫn phát hiện mã DTC B1173?",
+        "Chuyển sang Bước 4.",
+        "Kết thúc. (Chìa khóa\ncông tắc máy chưa\nđược đăng ký)"
+      ],
+      [
+        "4",
+        "Đăng ký chìa khóa công tắc máy\n1) Thay chìa khóa công tắc máy.\n2) Tiến hành “Đăng ký chìa khóa hệ thống chống trộm”. (Trang 10C-16)\n3) Xoay công tắc máy về vị trí “OFF” và để công tắc máy ở\nvị trí “OFF” trong ít nhất 5 giây.\n4) Xoay công tắc máy về vị trí “ON”.\n5) Kiểm tra lại DTC.\nVẫn phát hiện mã DTC B1173?",
+        "Thay BCM và kiểm tra lại DTC. (Trang 10B-\n43)",
+        "Kết thúc. (Chìa khóa\ncông tắc máy bị lỗi)"
+      ]
+    ]
+  },
+  {
+    "page": 1386,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1175: Thông tin hệ thống chống trộm chưa được\nđăng ký\nMã ID hệ thống chống trộm chưa được đăng ký trong\nBCM.",
+        "• Mạch / giắc cắm giao tiếp CAN\n• ECM\n• BCM"
+      ]
+    ]
+  },
+  {
+    "page": 1386,
+    "table_index": 2,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra DTC\nCó phát hiện (các) DTC nào khác ngoài mã B1175 không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 2."
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\n1) Kiểm tra DTC liên quan đến hệ thống giao tiếp CAN.\nCó phát hiện CAN-DTC nào không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 3."
+      ],
+      [
+        "3",
+        "Đăng ký chìa khóa công tắc máy\n1) Tiến hành “Đăng ký chìa khóa hệ thống chống trộm”. (Trang 10C-16)\n2) Xoay công tắc máy về vị trí “OFF” và để công tắc máy ở\nvị trí “OFF” trong ít nhất 5 giây.\n3) Xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra lại DTC.\nVẫn phát hiện mã DTC B1175?",
+        "Thay BCM và kiểm tra lại DTC. (Trang 10B-\n43)",
+        "Kết thúc. (Chìa khóa\ncông tắc máy chưa\nđược đăng ký)"
+      ]
+    ]
+  },
+  {
+    "page": 1387,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1176: Thông tin thông số kỹ thuật chưa được đăng\nký\nThông số kỹ thuật của xe chưa được đăng ký trong BCM.",
+        "• Chìa khóa công tắc máy chưa được đăng ký\n• Mạch / giắc cắm giao tiếp CAN\n• BCM"
+      ]
+    ]
+  },
+  {
+    "page": 1387,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra DTC\nCó phát hiện (các) DTC nào khác ngoài mã B1176 không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 2."
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\n1) Kiểm tra DTC liên quan đến hệ thống giao tiếp CAN.\nCó phát hiện CAN-DTC nào không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 3."
+      ],
+      [
+        "3",
+        "Đăng ký chìa khóa công tắc máy\n1) Tiến hành “Đăng ký chìa khóa hệ thống chống trộm”. (Trang 10C-16)\n2) Xoay công tắc máy về vị trí “OFF” và để công tắc máy ở\nvị trí “OFF” trong ít nhất 5 giây.\n3) Xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra lại DTC.\nVẫn phát hiện mã DTC B1176?",
+        "Thay BCM và kiểm tra lại DTC. (Trang 10B-\n43)",
+        "Kết thúc. (Chìa khóa\ncông tắc máy chưa\nđược đăng ký)"
+      ]
+    ]
+  },
+  {
+    "page": 1387,
+    "table_index": 2,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1188: Lỗi đường truyền bộ thu phát tín hiệu\nLỗi xác nhận giữa chìa khóa công tắc máy và BCM.",
+        "• Chìa khóa công tắc máy chưa được đăng ký\n• Chìa khóa công tắc máy\n• BCM"
+      ]
+    ]
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "page": 1407,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1A03: Lỗi cụm điều khiển bên trong EEPROM\nLỗi bên trong cụm điều khiển hệ thống TPMS. (Lỗi\nEEPROM)",
+        "Cụm điều khiển hệ thống TPMS"
+      ]
+    ]
+  },
+  {
+    "page": 1407,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra lại DTC\n1) Xóa DTC. (Trang 10D-8)\n2) Xoay công tắc máy về vị trí “OFF”.\n3) Tiến hành “Quy trình xác nhận DTC” (Trang 10D-17) rồi\nkiểm tra lại DTC.\nVẫn phát hiện mã DTC B1A03?",
+        "Thay cụm điều khiển hệ\nthống TPMS và kiểm tra lại DTC. (Trang 10D-\n30)",
+        "Kiểm tra hỏng hóc gián\nđoạn. (Trang 00-11)"
+      ]
+    ]
+  },
+  {
+    "page": 1407,
+    "table_index": 2,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1A10: Không phát hiện vị trí cảm biến áp suất lốp\nVị trí của cảm biến áp suất lốp không được phát hiện.",
+        "• Cảm biến tốc độ bánh xe\n• Cảm biến áp suất lốp số 1, số 2, số 3 và/hoặc số 4\n• ECM"
+      ]
+    ]
+  }
+]

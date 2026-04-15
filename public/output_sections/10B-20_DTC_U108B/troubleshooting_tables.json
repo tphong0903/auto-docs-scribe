@@ -1,0 +1,23 @@
+[
+  {
+    "page": 1349,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      ["B1170: Lỗi truy cập EEPROM\nLỗi bên trong BCM. (Lỗi EEPROM)", "BCM"]
+    ]
+  },
+  {
+    "page": 1349,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra lại DTC\n1) Ngắt cáp âm (–) ở bình điện.\n2) Nối cáp âm (–) ở bình điện.\n3) Tiến hành “Quy trình xác nhận DTC” (Trang 10B-20) rồi\nkiểm tra lại DTC.\nVẫn phát hiện mã DTC B1170?",
+        "Thay BCM và kiểm tra lại DTC. (Trang 10B-\n43)",
+        "Kết thúc."
+      ]
+    ]
+  }
+]

@@ -1,0 +1,88 @@
+[
+  {
+    "page": 1347,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1147: Cảm biến bật đèn pha/cos tự động ngắn mạch\nvới mạch nguồn\nĐiện áp mạch tín hiệu cảm biến đèn pha/cos tự động liên\ntục cao hơn 4,8 V trong thời gian quy định.",
+        "• Mạch / giắc cắm cảm biến đèn pha/cos tự động\n• Cảm biến đèn pha/cos tự động\n• BCM"
+      ],
+      [
+        "B1148: Sự cố cảm biến bật đèn pha/cos tự động\nĐiện áp mạch tín hiệu cảm biến đèn pha/cos tự động liên\ntục thấp hơn 0,5 V trong thời gian quy định.",
+        null
+      ]
+    ]
+  },
+  {
+    "page": 1347,
+    "table_index": 4,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra thông số\n1) Kết nối máy chẩn đoán SUZUKI với DLC khi công tắc\nmáy ở vị trí “OFF”.\n2) Xoay công tắc máy về vị trí “ON”.\n3) Kiểm tra “Cảm biến bật đèn pha/cos tự động” hiển thị\ntrên máy chẩn đoán SUZUKI. (Trang 10B-15)\nKết quả kiểm tra có ỔN không?",
+        "Kết thúc. (Hỏng hóc\ngián đoạn.)",
+        "Chuyển sang Bước 2."
+      ]
+    ]
+  },
+  {
+    "page": 1348,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "2",
+        "Kiểm tra mạch cấp nguồn cảm biến đèn pha/cos tự\nđộng\n1) Ngắt cáp âm (–) ở bình điện.\n2) Rút các giắc cắm của cảm biến đèn pha/cos tự động,\n“G04” và “G05”.\n3) Kiểm tra xem kết nối cực tới các giắc cắm cảm biến đèn\npha/cos tự động, “G04” và “G05” có chính xác không.\n4) Nếu các kết nối đều ỔN, hãy kiểm tra những điểm sau.\n• Điện trở mạch “A1”: dưới 1 Ω\n• Điện trở giữa mạch “A1” và dây nối đất: vô cực\n• Điện trở giữa cực mạch “A1” và mỗi cực tại giắc cắm\n“G05”: vô cực\n• Điện trở giữa mạch “A1” và cáp dương (+) bình điện:\nvô cực\n• Điện trở giữa mạch “A1” và từng cầu chì trong hộp\ncầu chì mạch riêng lẻ số 2: vô cực\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 3.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "3",
+        "Kiểm tra mạch nối đất cảm biến đèn pha/cos tự động\n1) Kiểm tra những điểm sau.\n• Điện trở mạch “A3”: dưới 1 Ω\n• Điện trở giữa cực mạch “A3” và mỗi cực tại giắc cắm\n“G04”: vô cực\n• Điện trở giữa mạch “A3” và cáp dương (+) bình điện:\nvô cực\n• Điện trở giữa mạch “A3” và từng cầu chì trong hộp\ncầu chì mạch riêng lẻ số 2: vô cực\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 4.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "4",
+        "Kiểm tra mạch tín hiệu cảm biến đèn pha/cos tự động\n1) Kiểm tra những điểm sau.\n• Điện trở mạch “A2”: dưới 1 Ω\n• Điện trở giữa mạch “A2” và dây nối đất: vô cực\n• Điện trở giữa cực mạch “A2” và mỗi cực tại giắc cắm\n“G05”: vô cực\n• Điện trở giữa mạch “A2” và cáp dương (+) bình điện:\nvô cực\n• Điện trở giữa mạch “A2” và từng cầu chì trong hộp\ncầu chì mạch riêng lẻ số 2: vô cực\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 5.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "5",
+        "Kiểm tra cảm biến đèn pha/cos tự động\n1) Kiểm tra cảm biến đèn pha/cos tự động. (Trang 9B-24)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 6.",
+        "Thay cảm biến đèn\npha/cos tự động. (Trang 9B-24)"
+      ],
+      [
+        "6",
+        "Kiểm tra DTC\n1) Cắm các giắc cắm của cảm biến đèn pha/cos tự động,\n“G04” và “G05”.\n2) Nối cáp âm (–) ở bình điện.\n3) Tiến hành “Quy trình xác nhận DTC” (Trang 10B-18) rồi\nkiểm tra lại DTC.\nCó phát hiện thấy DTC B1147 hoặc B1148 hiện tại không?",
+        "Thay BCM và kiểm tra lại DTC. (Trang 10B-\n43)",
+        "Kết thúc. (Hỏng hóc\ngián đoạn.)"
+      ]
+    ]
+  },
+  {
+    "page": 1349,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      ["B1170: Lỗi truy cập EEPROM\nLỗi bên trong BCM. (Lỗi EEPROM)", "BCM"]
+    ]
+  },
+  {
+    "page": 1349,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra lại DTC\n1) Ngắt cáp âm (–) ở bình điện.\n2) Nối cáp âm (–) ở bình điện.\n3) Tiến hành “Quy trình xác nhận DTC” (Trang 10B-20) rồi\nkiểm tra lại DTC.\nVẫn phát hiện mã DTC B1170?",
+        "Thay BCM và kiểm tra lại DTC. (Trang 10B-\n43)",
+        "Kết thúc."
+      ]
+    ]
+  }
+]

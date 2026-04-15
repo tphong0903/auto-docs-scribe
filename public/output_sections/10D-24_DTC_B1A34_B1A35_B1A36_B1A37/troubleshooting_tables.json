@@ -1,0 +1,128 @@
+[
+  {
+    "page": 1414,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "4",
+        "Kiểm tra DTC\n1) Xóa DTC. (Trang 10D-8)\n2) Tiến hành “Quy trình xác nhận DTC” (Trang 10D-23) rồi\nkiểm tra lại DTC.\nVẫn phát hiện DTC B1A30, B1A31, B1A32 hoặc B1A33?",
+        "Chuyển sang Bước 5.",
+        "Kiểm tra hỏng hóc gián\nđoạn. (Trang 00-11)"
+      ],
+      [
+        "5",
+        "Kiểm tra DTC\n1) Thay cảm biến áp suất lốp phát hiện DTC. (Trang\n10D-29)\n2) Xóa DTC. (Trang 10D-8)\n3) Tiến hành “Quy trình xác nhận DTC” (Trang 10D-23) rồi\nkiểm tra lại DTC.\nVẫn phát hiện DTC B1A30, B1A31, B1A32 hoặc B1A33?",
+        "Thay cụm điều khiển hệ\nthống TPMS và kiểm tra lại DTC. (Trang 10D-\n30)",
+        "Kết thúc."
+      ]
+    ]
+  },
+  {
+    "page": 1414,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1A34: Loại cảm biến áp suất lốp phía trước bên phải không phù\nhợp\nB1A35: Loại cảm biến áp suất lốp phía trước bên trái không phù\nhợp\nB1A36: Loại cảm biến áp suất lốp phía sau bên phải không phù hợp\nB1A37: Loại cảm biến áp suất lốp phía sau bên trái không phù hợp\nKhông lắp cảm biến áp suất lốp quy định.",
+        "• Cảm biến áp suất lốp số 1, số 2, số 3 và/\nhoặc số 4\n• Cụm điều khiển hệ thống TPMS"
+      ]
+    ]
+  },
+  {
+    "page": 1414,
+    "table_index": 2,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra DTC\n1) Xóa DTC. (Trang 10D-8)\n2) Tiến hành “Quy trình xác nhận DTC” (Trang 10D-24) rồi\nkiểm tra lại DTC.\nVẫn phát hiện DTC B1A34, B1A35, B1A36 hoặc B1A37?",
+        "Chuyển sang Bước 2.",
+        "Kiểm tra hỏng hóc gián\nđoạn. (Trang 00-11)"
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\n1) Thay cảm biến áp suất lốp phát hiện DTC. (Trang\n10D-29)\n2) Xóa DTC. (Trang 10D-8)\n3) Tiến hành “Quy trình xác nhận DTC” (Trang 10D-24) rồi\nkiểm tra lại DTC.\nVẫn phát hiện DTC B1A34, B1A35, B1A36 hoặc B1A37?",
+        "Thay cụm điều khiển hệ\nthống TPMS và kiểm tra lại DTC. (Trang 10D-\n30)",
+        "Kết thúc."
+      ]
+    ]
+  },
+  {
+    "page": 1415,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1A40: Cảm biến áp suất lốp không được nghiên cứu/lập trình\nMã ID cảm biến áp suất lốp chưa được đăng ký trong cụm điều khiển hệ\nthống TPMS.",
+        "Cụm điều khiển hệ thống TPMS"
+      ]
+    ]
+  },
+  {
+    "page": 1415,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra DTC\nCó phát hiện DTC B1A03 không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 2."
+      ],
+      [
+        "2",
+        "Đăng ký mã ID cảm biến áp suất lốp\n1) Đăng ký mã ID cảm biến áp suất lốp trong cụm điều\nkhiển hệ thống TPMS. (Trang 10D-31)\n2) Kiểm tra lại DTC.\nVẫn phát hiện mã DTC B1A40?",
+        "Thay cụm điều khiển hệ\nthống TPMS và kiểm tra lại DTC. (Trang 10D-\n30)",
+        "Kết thúc."
+      ]
+    ]
+  },
+  {
+    "page": 1415,
+    "table_index": 2,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1A41: Dữ liệu thay đổi của xe không được lập trình\nDữ liệu thay đổi của xe không được lưu trong cụm điều\nkhiển hệ thống TPMS.",
+        "• ECM\n• Cụm đồng hồ\n• Cụm điều khiển hệ thống TPMS"
+      ]
+    ]
+  },
+  {
+    "page": 1415,
+    "table_index": 3,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra DTC\nCó phát hiện thấy DTC B1A03 hoặc B1A40 không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 2."
+      ],
+      [
+        "2",
+        "Kiểm tra thông số kỹ thuật ECM\n1) Kiểm tra mã phụ tùng ECM của xe đang bảo dưỡng.\nCó sử dụng ECM chính xác cho xe đang bảo dưỡng không?",
+        "Chuyển sang Bước 3.",
+        "Thay ECM bằng một\nECM chính xác và kiểm\ntra lại DTC. (Trang\n1C-2)"
+      ],
+      [
+        "3",
+        "Kiểm tra thông số kỹ thuật cụm đồng hồ\n1) Kiểm tra mã phụ tùng cụm đồng hồ của xe đang bảo\ndưỡng.\nCó sử dụng cụm đồng hồ chính xác cho xe đang bảo dưỡng\nkhông?",
+        "Thay cụm điều khiển hệ\nthống TPMS chính xác\nvà kiểm tra lại DTC. (Trang 10D-30)",
+        "Thay cụm đồng hồ\nchính xác và kiểm tra lại DTC. (Trang 9C-10)"
+      ]
+    ]
+  },
+  {
+    "page": 1415,
+    "table_index": 4,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1A42: Dữ liệu thay đổi của xe không khớp\nSự không thống nhất giữa dữ liệu thay đổi của xe được lưu trong cụm điều\nkhiển hệ thống TPMS và tín hiệu thông tin xe được truyền qua hệ thống\ngiao tiếp CAN.",
+        "• ECM\n• Cụm đồng hồ\n• Cụm điều khiển hệ thống TPMS"
+      ]
+    ]
+  }
+]

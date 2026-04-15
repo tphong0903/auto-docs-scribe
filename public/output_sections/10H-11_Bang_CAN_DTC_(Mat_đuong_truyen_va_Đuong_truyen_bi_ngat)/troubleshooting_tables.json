@@ -1,0 +1,34 @@
+[
+  {
+    "page": 1436,
+    "table_index": 0,
+    "data": [
+      ["Tình trạng", "Hành động", "Tham khảo"],
+      [
+        "Chỉ phát hiện được DTC cũ ở một trong các\nhệ thống",
+        "Thực hiện các bước sau.\n1. Rút và cắm tất cả giắc cắm cảm biến và\ncụm điều khiển được kết nối với đường\ntruyền CAN.\n2. Kiểm tra tất cả nguồn điện cụm điều khiển\n(bao gồm cả cầu chì) được kết nối với\nđường truyền CAN.\n3. Khởi động động cơ và kiểm tra DTC khi\nchạy cầm chừng.\nNếu DTC được phát hiện là một DTC cũ,\ncó thể có một sự cố tạm thời do kết nối\nkém tại giắc cắm hoặc bộ cấp nguồn bị lỗi.",
+        "—"
+      ],
+      [
+        "“Control Module Bus Off ” (Cụm điều khiển\nkhông truyền và nhận được dữ liệu) được\nphát hiện ở trong một trong các hệ thống\n(DTC hiện tại)",
+        "Thực hiện “Troubleshooting for\nCommunication Bus Off” (Khắc phục sự cố\nđường truyền bị ngắt).",
+        "(Trang 10H-23)"
+      ],
+      [
+        "Chỉ “Lost Communication” (Mất đường\ntruyền) được phát hiện trong một trong các\nhệ thống (DTC hiện tại)",
+        "Thực hiện “Troubleshooting for Lost\nCommunication” (Khắc phục sự cố mất\nđường truyền).",
+        "(Trang 10H-13)"
+      ],
+      [
+        "Máy chẩn đoán SUZUKI không hiển thị gì\n(Không thể giao tiếp với bất kỳ hệ thống\nnào.)",
+        "Kiểm tra xem máy chẩn đoán SUZUKI có thể\ngiao tiếp bằng cách kết nối với một xe khác\nkhông.",
+        "—"
+      ],
+      [
+        null,
+        "Thực hiện “Troubleshooting for\nCommunication Bus Off” (Khắc phục sự cố\nđường truyền bị ngắt).",
+        "(Trang 10H-23)"
+      ]
+    ]
+  }
+]

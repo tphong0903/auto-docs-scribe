@@ -9,98 +9,80 @@ const PORT = 3001;
 app.use(cors());
 app.use(express.json());
 
+// Helper function để đọc an toàn JSON
+const safeReadJSON = (filePath) => {
+  try {
+    if (fs.existsSync(filePath)) {
+      const data = fs.readFileSync(filePath, "utf-8");
+      return JSON.parse(data);
+    }
+  } catch (error) {
+    console.warn(`[API] Could not parse JSON at ${filePath}:`, error.message);
+  }
+  return null;
+};
+
 // ==========================================
-// API: Lấy danh sách tất cả folder DTC (chỉ folder có chứa "DTC")
+// API: Lấy danh sách tất cả folder DTC
 // ==========================================
 app.get("/api/dtc-list", (req, res) => {
   const outputPath = path.join(process.cwd(), "public", "output_sections");
-  console.log("[API /api/dtc-list] Looking for DTC in:", outputPath);
-  console.log("[API /api/dtc-list] Folder exists:", fs.existsSync(outputPath));
 
   try {
     if (!fs.existsSync(outputPath)) {
-      console.log("[API /api/dtc-list] ERROR: Folder not found");
-      return res.status(500).json({
-        success: false,
-        error: `Folder not found: ${outputPath}`,
-      });
+      return res
+        .status(500)
+        .json({ success: false, error: "Folder not found" });
     }
 
     const folders = fs.readdirSync(outputPath, { withFileTypes: true });
-    console.log("[API /api/dtc-list] Found", folders.length, "items");
 
     const dtcList = folders
       .filter((dirent) => dirent.isDirectory())
-      .filter((dirent) => dirent.name.includes("DTC")) // Chỉ lấy folder có chứa "DTC"
+      .filter((dirent) => dirent.name.includes("DTC_P"))
+      .filter((dirent) => !dirent.name.includes("CAN"))
       .map((dirent) => {
         const folderName = dirent.name;
-        // Extract code and name: "1A-51_DTC_P0010_P2088" -> code: "1A-51", name: "DTC_P0010_P2088"
-        // Only process folders containing "DTC"
         const parts = folderName.split("_");
         const code = parts[0];
-        const name = parts.slice(1).join(" ");
 
-        // Get additional metadata
         const folderPath = path.join(outputPath, folderName);
         const files = fs.readdirSync(folderPath);
-        const hasRefs = files.includes("refs.json");
         const pdfFiles = files.filter((file) => file.endsWith(".pdf"));
-        const hasPdf = pdfFiles.length > 0;
+        const hasTables = files.includes("troubleshooting_tables.json");
 
-        // Load refs if available
-        let refs = [];
-        if (hasRefs) {
-          try {
-            const refsData = fs.readFileSync(
-              path.join(folderPath, "refs.json"),
-              "utf-8",
-            );
-            refs = JSON.parse(refsData);
-          } catch (error) {
-            console.warn(
-              `[API] Could not parse refs.json for ${folderName}:`,
-              error.message,
-            );
-          }
-        }
+        // Đọc refs.json
+        const refsData = safeReadJSON(path.join(folderPath, "refs.json")) || {};
+
+        // 🔥 LẤY TÊN TỪ REFS.JSON: Ưu tiên lấy tên tiếng Việt có dấu
+        const exactName = refsData.name || parts.slice(1).join(" ");
+        const refsArray = refsData.refs || [];
 
         return {
           code,
-          name,
+          name: exactName,
           folder: folderName,
-          displayName: `${name}`,
+          displayName: exactName, // Gán trực tiếp tên hiển thị từ refs
           metadata: {
-            hasRefs,
-            hasPdf,
-            refsCount: refs.length,
+            hasRefs: !!refsData.refs,
+            hasPdf: pdfFiles.length > 0,
+            hasTables: hasTables,
+            refsCount: refsArray.length,
             totalFiles: files.length,
-            pdfFile: hasPdf ? pdfFiles[0] : null,
+            pdfFile: pdfFiles.length > 0 ? pdfFiles[0] : null,
           },
-          refs: refs, // Include refs data directly
+          refs: refsArray,
         };
       })
       .sort((a, b) => {
-        // Sort by code naturally
         const aMatch = a.code.match(/(\d+)|([A-Z])/g) || [];
         const bMatch = b.code.match(/(\d+)|([A-Z])/g) || [];
         return aMatch.toString().localeCompare(bMatch.toString());
       });
 
-    console.log(
-      "[API /api/dtc-list] SUCCESS: Returning",
-      dtcList.length,
-      "DTCs",
-    );
     res.json({ success: true, data: dtcList });
   } catch (error) {
-    console.error("[API /api/dtc-list] ERROR:", error);
-    res.status(500).json({
-      success: false,
-      error:
-        error instanceof Error
-          ? error.message
-          : "Lỗi khi đọc danh sách thư mục",
-    });
+    res.status(500).json({ success: false, error: error.message });
   }
 });
 
@@ -109,11 +91,8 @@ app.get("/api/dtc-list", (req, res) => {
 // ==========================================
 app.get("/api/search", (req, res) => {
   const { q } = req.query;
-  if (!q || typeof q !== "string") {
-    return res.status(400).json({
-      success: false,
-      error: "Query parameter 'q' is required",
-    });
+  if (!q) {
+    return res.status(400).json({ success: false, error: "Query required" });
   }
 
   const outputPath = path.join(process.cwd(), "public", "output_sections");
@@ -124,68 +103,27 @@ app.get("/api/search", (req, res) => {
       .filter((dirent) => dirent.isDirectory())
       .map((dirent) => {
         const folderName = dirent.name;
-        const parts = folderName.split("_");
-        const code = parts[0];
-        const name = parts.slice(1).join(" ");
+        const code = folderName.split("_")[0];
 
-        // Get metadata
         const folderPath = path.join(outputPath, folderName);
-        const files = fs.readdirSync(folderPath);
-        const hasRefs = files.includes("refs.json");
-        const pdfFiles = files.filter((file) => file.endsWith(".pdf"));
-        const hasPdf = pdfFiles.length > 0;
+        const refsData = safeReadJSON(path.join(folderPath, "refs.json")) || {};
 
-        let refs = [];
-        if (hasRefs) {
-          try {
-            const refsData = fs.readFileSync(
-              path.join(folderPath, "refs.json"),
-              "utf-8",
-            );
-            refs = JSON.parse(refsData);
-          } catch (error) {
-            // Ignore parse errors
-          }
-        }
+        // 🔥 LẤY TÊN TỪ REFS.JSON
+        const exactName =
+          refsData.name || folderName.split("_").slice(1).join(" ");
+        const refsArray = refsData.refs || [];
 
         return {
           code,
-          name,
+          name: exactName,
           folder: folderName,
-          displayName: `${code} - ${name}`,
-          metadata: {
-            hasRefs,
-            hasPdf,
-            refsCount: refs.length,
-            totalFiles: files.length,
-            pdfFile: hasPdf ? pdfFiles[0] : null,
-          },
-          refs,
+          displayName: exactName,
+          refs: refsArray,
         };
       })
       .filter((dtc) => {
-        // Search in code, name, and refs
         const searchTerm = q.toLowerCase();
-        return (
-          dtc.code.toLowerCase().includes(searchTerm) ||
-          dtc.name.toLowerCase().includes(searchTerm)
-        );
-      })
-      .sort((a, b) => {
-        // Sort by relevance: exact code match first, then name match, then refs match
-        const query = q.toLowerCase();
-        const aExactCode = a.code.toLowerCase() === query ? 1 : 0;
-        const bExactCode = b.code.toLowerCase() === query ? 1 : 0;
-        if (aExactCode !== bExactCode) return bExactCode - aExactCode;
-
-        const aCodeMatch = a.code.toLowerCase().includes(query) ? 1 : 0;
-        const bCodeMatch = b.code.toLowerCase().includes(query) ? 1 : 0;
-        if (aCodeMatch !== bCodeMatch) return bCodeMatch - aCodeMatch;
-
-        // Natural sort by code
-        const aMatch = a.code.match(/(\d+)|([A-Z])/g) || [];
-        const bMatch = b.code.match(/(\d+)|([A-Z])/g) || [];
-        return aMatch.toString().localeCompare(bMatch.toString());
+        return dtc.code.toLowerCase().includes(searchTerm);
       });
 
     res.json({
@@ -195,10 +133,40 @@ app.get("/api/search", (req, res) => {
       total: searchResults.length,
     });
   } catch (error) {
-    res.status(500).json({
-      success: false,
-      error: "Lỗi khi tìm kiếm",
-    });
+    res.status(500).json({ success: false, error: "Search error" });
+  }
+});
+
+// ==========================================
+// API: Lấy dữ liệu Bảng (Tables) của một DTC
+// ==========================================
+app.get("/api/dtc-tables/:folder", (req, res) => {
+  const { folder } = req.params;
+  const safeFolder = path.basename(folder);
+
+  const isPowertrainDTC = /P[0-9A-F]{4}/i.test(safeFolder);
+
+  if (!isPowertrainDTC) {
+    return res.json({ success: true, data: [] });
+  }
+
+  const tablePath = path.join(
+    process.cwd(),
+    "public",
+    "output_sections",
+    safeFolder,
+    "troubleshooting_tables.json",
+  );
+
+  try {
+    if (!fs.existsSync(tablePath)) {
+      return res.json({ success: true, data: [] });
+    }
+
+    const tablesData = safeReadJSON(tablePath);
+    res.json({ success: true, data: tablesData || [] });
+  } catch (error) {
+    res.status(500).json({ success: false, error: "Lỗi khi đọc dữ liệu bảng" });
   }
 });
 
@@ -226,16 +194,12 @@ app.get("/api/dtc-find/:code", (req, res) => {
         },
       });
     } else {
-      res.status(404).json({
-        success: false,
-        error: `Không tìm thấy DTC với mã: ${code}`,
-      });
+      res
+        .status(404)
+        .json({ success: false, error: `Không tìm thấy DTC: ${code}` });
     }
   } catch (error) {
-    res.status(500).json({
-      success: false,
-      error: "Lỗi khi tìm kiếm DTC",
-    });
+    res.status(500).json({ success: false, error: "Find error" });
   }
 });
 
@@ -248,6 +212,5 @@ app.listen(PORT, () => {
   console.log("\n=====================================");
   console.log("✓ DTC API Server is running!");
   console.log(`✓ API available at: http://localhost:${PORT}`);
-  console.log(`✓ Serving files from: ${path.join(process.cwd(), "public")}`);
   console.log("=====================================\n");
 });

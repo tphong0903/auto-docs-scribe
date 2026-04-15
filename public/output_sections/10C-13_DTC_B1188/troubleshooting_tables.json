@@ -1,0 +1,79 @@
+[
+  {
+    "page": 1387,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1176: Thông tin thông số kỹ thuật chưa được đăng\nký\nThông số kỹ thuật của xe chưa được đăng ký trong BCM.",
+        "• Chìa khóa công tắc máy chưa được đăng ký\n• Mạch / giắc cắm giao tiếp CAN\n• BCM"
+      ]
+    ]
+  },
+  {
+    "page": 1387,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra DTC\nCó phát hiện (các) DTC nào khác ngoài mã B1176 không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 2."
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\n1) Kiểm tra DTC liên quan đến hệ thống giao tiếp CAN.\nCó phát hiện CAN-DTC nào không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 3."
+      ],
+      [
+        "3",
+        "Đăng ký chìa khóa công tắc máy\n1) Tiến hành “Đăng ký chìa khóa hệ thống chống trộm”. (Trang 10C-16)\n2) Xoay công tắc máy về vị trí “OFF” và để công tắc máy ở\nvị trí “OFF” trong ít nhất 5 giây.\n3) Xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra lại DTC.\nVẫn phát hiện mã DTC B1176?",
+        "Thay BCM và kiểm tra lại DTC. (Trang 10B-\n43)",
+        "Kết thúc. (Chìa khóa\ncông tắc máy chưa\nđược đăng ký)"
+      ]
+    ]
+  },
+  {
+    "page": 1387,
+    "table_index": 2,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1188: Lỗi đường truyền bộ thu phát tín hiệu\nLỗi xác nhận giữa chìa khóa công tắc máy và BCM.",
+        "• Chìa khóa công tắc máy chưa được đăng ký\n• Chìa khóa công tắc máy\n• BCM"
+      ]
+    ]
+  },
+  {
+    "page": 1388,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra khởi động động cơ\n1) Khởi động động cơ sử dụng chìa khóa công tắc máy dự\nphòng.\nĐộng cơ có khởi động không?",
+        "Kết thúc. (Chìa khóa\ncông tắc máy chưa\nđược đăng ký)",
+        "Chuyển sang Bước 2."
+      ],
+      [
+        "2",
+        "Đăng ký chìa khóa công tắc máy\n1) Tiến hành “Đăng ký chìa khóa hệ thống chống trộm”. (Trang 10C-16)\n2) Kiểm tra để đảm bảo công tắc máy đang ở vị trí “OFF”.\n3) Xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra lại DTC.\nVẫn phát hiện mã DTC B1188?",
+        "Thay BCM và kiểm tra lại DTC. (Trang 10B-\n43)",
+        "Kết thúc. (Chìa khóa\ncông tắc máy chưa\nđược đăng ký)"
+      ]
+    ]
+  },
+  {
+    "page": 1388,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1189: Lỗi giao tiếp ăng-ten hệ thống chống trộm •\nLỗi giao tiếp với hộp điều khiển hệ thống chống trộm •\n(có tích hợp ăng-ten cuộn dây hệ thống chống trộm).\n•",
+        "Mạch / giắc cắm hộp điều khiển hệ thống chống trộm\nHộp điều khiển hệ thống chống trộm\nBCM"
+      ]
+    ]
+  }
+]

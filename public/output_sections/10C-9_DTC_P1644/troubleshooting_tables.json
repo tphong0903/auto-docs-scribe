@@ -1,0 +1,108 @@
+[
+  {
+    "page": 1383,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra mạch cấp nguồn / mạch nối đất BCM\n1) Kiểm tra mạch cấp nguồn và mạch nối đất BCM. (Trang 10B-40)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 2.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\n1) Xoay công tắc máy về vị trí “OFF” và để công tắc máy ở\nvị trí “OFF” trong ít nhất 5 giây.\n2) Xoay công tắc máy về vị trí “ON”.\n3) Kiểm tra lại DTC.\nCó phát hiện thấy DTC P1642 hoặc P1646 hiện tại không?",
+        "Chuyển sang Bước 3.",
+        "Kết thúc. (Hỏng hóc\ngián đoạn)"
+      ],
+      [
+        "3",
+        "Kiểm tra DTC\n1) Kiểm tra DTC liên quan đến hệ thống giao tiếp CAN.\nCó phát hiện CAN-DTC nào không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 4."
+      ],
+      [
+        "4",
+        "Kiểm tra mạch giao tiếp CAN\n1) Kiểm tra mạch giao tiếp CAN, tham khảo “Khắc phục sự\ncố đường truyền bị ngắt” trong Phần 10H (Trang 10H-\n23).\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 5.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "5",
+        "Kiểm tra DTC\n1) Kiểm tra DTC trong BCM. (Trang 10C-6)\nCó phát hiện thấy DTC B1173, B1175 hoặc B1176 không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Thay ECM và kiểm tra lại DTC. Nếu vẫn phát\nhiện mã DTC P1642\nhoặc P1646, hãy thay\nBCM và kiểm tra lại DTC.\n• ECM: (Trang 1C-2)\n• BCM: (Trang 10B-\n43)"
+      ]
+    ]
+  },
+  {
+    "page": 1383,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "P1644: ID hệ thống chống trộm không khớp\nLỗi xác nhận giữa ECM và BCM.",
+        "• Chìa khóa công tắc máy\n• Mạch / giắc cắm hộp điều khiển hệ thống chống trộm\n• Hộp điều khiển hệ thống chống trộm\n• ECM\n• BCM"
+      ]
+    ]
+  },
+  {
+    "page": 1384,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra DTC\n1) Kiểm tra DTC trong BCM. (Trang 10C-6)\nCó phát hiện thấy DTC B1173, B1175 hoặc B1176 không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 2."
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\n1) Xoay công tắc máy về vị trí “OFF” và để công tắc máy ở\nvị trí “OFF” trong ít nhất 5 giây.\n2) Xoay công tắc máy về vị trí “ON”.\n3) Kiểm tra lại DTC.\nCó phát hiện thấy DTC P1644 hiện tại không?",
+        "Chuyển sang Bước 3.",
+        "Kết thúc. (Hỏng hóc\ngián đoạn)"
+      ],
+      [
+        "3",
+        "Kiểm tra DTC\n1) Kiểm tra DTC trong BCM. (Trang 10C-6)\nCó phát hiện thấy DTC B1188 hoặc B1189 không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 4."
+      ],
+      [
+        "4",
+        "Đăng ký ECM\n1) Tiến hành “Đăng ký ECM” (Trang 10C-16).\n2) Xoay công tắc máy về vị trí “OFF” và để công tắc máy ở\nvị trí “OFF” trong ít nhất 5 giây.\n3) Xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra lại DTC.\nVẫn phát hiện mã DTC P1644?",
+        "Chuyển sang Bước 5.",
+        "Kết thúc. (ECM không\nđược đăng ký)"
+      ],
+      [
+        "5",
+        "Đăng ký chìa khóa công tắc máy\n1) Tiến hành “Đăng ký chìa khóa hệ thống chống trộm”. (Trang 10C-16)\n2) Xoay công tắc máy về vị trí “OFF” và để công tắc máy ở\nvị trí “OFF” trong ít nhất 5 giây.\n3) Xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra lại DTC.\nVẫn phát hiện mã DTC P1644?",
+        "Thay ECM và kiểm tra lại DTC. Nếu vẫn phát\nhiện mã DTC P1644,\nhãy thay BCM và kiểm\ntra lại DTC.\n• ECM: (Trang 1C-2)\n• BCM: (Trang 10B-\n43)",
+        "Kết thúc. (Chìa khóa\ncông tắc máy chưa\nđược đăng ký)"
+      ]
+    ]
+  },
+  {
+    "page": 1384,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      ["B1168: Mật khẩu không khớp\nNhập mật khẩu sai.", "Nhập mật khẩu sai"]
+    ]
+  },
+  {
+    "page": 1384,
+    "table_index": 2,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Nhập mật khẩu hệ thống chống trộm\n1) Nhập lại mật khẩu hệ thống chống trộm.\n2) Xoay công tắc máy về vị trí “OFF” và để công tắc máy ở\nvị trí “OFF” trong ít nhất 10 giây.\n3) Xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra lại DTC.\nVẫn phát hiện mã DTC B1168?",
+        "Kiểm tra lại mật khẩu hệ\nthống chống trộm.",
+        "Kết thúc. (Nhập mật\nkhẩu sai)"
+      ]
+    ]
+  }
+]

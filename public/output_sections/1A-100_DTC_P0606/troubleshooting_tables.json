@@ -1,0 +1,112 @@
+[
+  {
+    "page": 146,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra lại DTC\n1) Xóa DTC. (Trang 1A-23)\n2) Xoay công tắc máy về vị trí “OFF”.\n3) Thực hiện “Quy trình xác nhận DTC”, và kiểm tra DTC.\nVẫn phát hiện DTC P0602?",
+        "Chuyển sang Bước 2.",
+        "Hỏng hóc gián đoạn.\nKiểm tra hỏng hóc gián\nđoạn. (Trang 00-11)"
+      ],
+      [
+        "2",
+        "Kiểm tra lập trình lại ECM\nLập trình lại ECM có được tiến hành không?",
+        "Tiến hành lập trình\nchính xác lại ECM một\nlần nữa.",
+        "Chuyển sang Bước 3."
+      ],
+      [
+        "3",
+        "Kiểm tra mạch nguồn và mạch nối đất ECM\n1) Hãy kiểm tra mạch nguồn và mạch nối đất ECM. (Trang 1A-130)\nKết quả kiểm tra có ỔN không?",
+        "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ]
+    ]
+  },
+  {
+    "page": 146,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "P0606: Bộ xử lý cụm điều khiển\nLỗi bộ xử lý bên trong ECM.\n(lô-gic phát hiện 3 D/C)",
+        "• Mạch cấp nguồn và/hoặc mạch nối đất ECM\n• ECM"
+      ]
+    ]
+  },
+  {
+    "page": 146,
+    "table_index": 2,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra lại DTC\n1) Xóa DTC. (Trang 1A-23)\n2) Xoay công tắc máy về vị trí “OFF”.\n3) Thực hiện “Quy trình xác nhận DTC”, và kiểm tra DTC.\nVẫn phát hiện DTC P0606?",
+        "Chuyển sang Bước 2.",
+        "Kiểm tra hỏng hóc gián\nđoạn. (Trang 00-11)"
+      ],
+      [
+        "2",
+        "Kiểm tra mạch nguồn và mạch nối đất ECM\n1) Kiểm tra mạch cấp nguồn và mạch nối đất ECM. (Trang 1A-130)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 3.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "3",
+        "Kiểm tra lại DTC\n1) Thay thế HO2S-2. (Trang 1C-9)\n2) Thực hiện “Quy trình xác nhận DTC”, và kiểm tra DTC.\nVẫn phát hiện DTC P0606?",
+        "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "Kết thúc."
+      ]
+    ]
+  },
+  {
+    "page": 147,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "P0607: Hoạt động cụm điều khiển\nPhát hiện hỏng hóc bên trong ECM.\n(lô-gic phát hiện 1 D/C hoặc lô-gic phát hiện 3 D/C nhưng\nMIL không sáng đèn)",
+        "• Mạch cấp nguồn và/hoặc mạch nối đất ECM\n• ECM"
+      ]
+    ]
+  },
+  {
+    "page": 147,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra lại DTC\n1) Xóa DTC. (Trang 1A-23)\n2) Xoay công tắc máy về vị trí “OFF”.\n3) Thực hiện “Quy trình xác nhận DTC”, và kiểm tra DTC.\nVẫn phát hiện DTC P0607?",
+        "Chuyển sang Bước 2.",
+        "Kiểm tra hỏng hóc gián\nđoạn. (Trang 00-11)"
+      ],
+      [
+        "2",
+        "Kiểm tra mạch cấp nguồn và mạch nối đất ECM\n1) Kiểm tra mạch cấp nguồn và mạch nối đất ECM. (Trang 1A-130)\nKết quả kiểm tra có ỔN không?",
+        "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ]
+    ]
+  },
+  {
+    "page": 147,
+    "table_index": 2,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "P0645: Mạch điều khiển rơ-le ly hợp A/C\nMạch điều khiển rơ-le máy nén A/C bị hở.\n(lô-gic phát hiện 3 D/C nhưng MIL không sáng đèn)",
+        "• Rơ-le máy nén A/C và/hoặc mạch của nó\n• ECM"
+      ],
+      [
+        "P0646: Mạch điều khiển rơ-le ly hợp A/C thấp\nMạch điều khiển rơ-le máy nén A/C ngắn mạch với đất.\n(lô-gic phát hiện 3 D/C nhưng MIL không sáng đèn)",
+        null
+      ],
+      [
+        "P0647: Mạch điều khiển rơ-le ly hợp A/C cao\nMạch điều khiển rơ-le máy nén A/C ngắn mạch với bộ cấp\nnguồn.\n(lô-gic phát hiện 3 D/C nhưng MIL không sáng đèn)",
+        null
+      ]
+    ]
+  }
+]

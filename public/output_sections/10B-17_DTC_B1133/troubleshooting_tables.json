@@ -1,0 +1,85 @@
+[
+  {
+    "page": 1346,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra mạch cấp nguồn BCM\n1) Kiểm tra mạch cấp nguồn BCM. (Trang 10B-40)\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 2.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "2",
+        "Kiểm tra cầu chì\n1) Xoay công tắc máy về vị trí “OFF”.\n2) Kiểm tra cầu chì “DOME2”.\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 3.",
+        "Thay cầu chì “DOME2”\nvà kiểm tra lại DTC."
+      ],
+      [
+        "3",
+        "Kiểm tra DTC\n1) Kiểm tra xem kết nối tới giắc cắm BCM và giắc cắm J/B\ncó chính xác không.\n2) Nếu kết nối ỔN, thực hiện “Quy trình xác nhận DTC” (Trang 10B-17), sau đó kiểm tra lại DTC.\nVẫn phát hiện mã DTC B1123?",
+        "Thay BCM và kiểm tra lại DTC. (Trang 10B-\n43)",
+        "Kết thúc."
+      ]
+    ]
+  },
+  {
+    "page": 1346,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1133: Điện áp bình điện quá cao\nĐiện áp mạch nguồn điện dự phòng từ cầu chì “HAZ” liên\ntục cao hơn 16,0 V trong thời gian quy định.",
+        "• Hệ thống sạc\n• BCM"
+      ]
+    ]
+  },
+  {
+    "page": 1346,
+    "table_index": 2,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra thông số\n1) Kết nối máy chẩn đoán SUZUKI với DLC khi công tắc\nmáy ở vị trí “OFF”.\n2) Xoay công tắc máy về vị trí “ON”.\n3) Kiểm tra “Điện áp bình điện” hiển thị trên máy chẩn đoán\nSUZUKI. (Trang 10B-15)\nKết quả kiểm tra có ỔN không?",
+        "Kết thúc. (Hỏng hóc\ngián đoạn.)",
+        "Chuyển sang Bước 2."
+      ],
+      [
+        "2",
+        "Kiểm tra hệ thống sạc\n1) Kiểm tra hệ thống sạc. (Trang 1J-5)\nKết quả kiểm tra có ỔN không?",
+        "Thay BCM và kiểm tra lại DTC. (Trang 10B-\n43)",
+        "Sửa chữa hệ thống sạc."
+      ]
+    ]
+  },
+  {
+    "page": 1347,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1147: Cảm biến bật đèn pha/cos tự động ngắn mạch\nvới mạch nguồn\nĐiện áp mạch tín hiệu cảm biến đèn pha/cos tự động liên\ntục cao hơn 4,8 V trong thời gian quy định.",
+        "• Mạch / giắc cắm cảm biến đèn pha/cos tự động\n• Cảm biến đèn pha/cos tự động\n• BCM"
+      ],
+      [
+        "B1148: Sự cố cảm biến bật đèn pha/cos tự động\nĐiện áp mạch tín hiệu cảm biến đèn pha/cos tự động liên\ntục thấp hơn 0,5 V trong thời gian quy định.",
+        null
+      ]
+    ]
+  },
+  {
+    "page": 1347,
+    "table_index": 4,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra thông số\n1) Kết nối máy chẩn đoán SUZUKI với DLC khi công tắc\nmáy ở vị trí “OFF”.\n2) Xoay công tắc máy về vị trí “ON”.\n3) Kiểm tra “Cảm biến bật đèn pha/cos tự động” hiển thị\ntrên máy chẩn đoán SUZUKI. (Trang 10B-15)\nKết quả kiểm tra có ỔN không?",
+        "Kết thúc. (Hỏng hóc\ngián đoạn.)",
+        "Chuyển sang Bước 2."
+      ]
+    ]
+  }
+]

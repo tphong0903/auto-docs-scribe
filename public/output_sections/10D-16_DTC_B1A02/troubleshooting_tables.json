@@ -1,0 +1,85 @@
+[
+  {
+    "page": 1406,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1A01: Điện áp bình điện cao\nĐiện áp mạch cấp nguồn cao hơn giá trị quy định trong thời gian quy định.",
+        "• Hệ thống sạc\n• Cụm điều khiển hệ thống TPMS"
+      ]
+    ]
+  },
+  {
+    "page": 1406,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra hệ thống sạc\n1) Kiểm tra hệ thống sạc. (Trang 1J-5)\nKết quả kiểm tra có ỔN không?",
+        "Thay cụm điều khiển hệ\nthống TPMS và kiểm tra lại DTC. (Trang 10D-\n30)",
+        "Sửa chữa hệ thống sạc."
+      ]
+    ]
+  },
+  {
+    "page": 1406,
+    "table_index": 2,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1A02: Mạch bộ thu không hoạt động tốt\nPhát hiện DTC này nếu xảy ra tất cả các tình trạng sau.\n• Cụm điều khiển hệ thống TPMS không nhận được bất kỳ dữ liệu\nnào từ tất cả các cảm biến áp suất lốp trong thời gian quy định.\n• Bộ thu được tích hợp trong cụm điều khiển hệ thống TPMS không\nhoạt động tốt.",
+        "Cụm điều khiển hệ thống TPMS"
+      ]
+    ]
+  },
+  {
+    "page": 1406,
+    "table_index": 3,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra cảm biến áp suất lốp\n1) Xóa DTC. (Trang 10D-8)\n2) Tiến hành “Quy trình xác nhận DTC” (Trang 10D-16) rồi\nkiểm tra lại DTC.\nVẫn phát hiện mã DTC B1A02?",
+        "Thay cụm điều khiển hệ\nthống TPMS và kiểm tra lại DTC. (Trang 10D-\n30)",
+        "Kiểm tra hỏng hóc gián\nđoạn. (Trang 00-11)"
+      ]
+    ]
+  },
+  {
+    "page": 1407,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1A03: Lỗi cụm điều khiển bên trong EEPROM\nLỗi bên trong cụm điều khiển hệ thống TPMS. (Lỗi\nEEPROM)",
+        "Cụm điều khiển hệ thống TPMS"
+      ]
+    ]
+  },
+  {
+    "page": 1407,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra lại DTC\n1) Xóa DTC. (Trang 10D-8)\n2) Xoay công tắc máy về vị trí “OFF”.\n3) Tiến hành “Quy trình xác nhận DTC” (Trang 10D-17) rồi\nkiểm tra lại DTC.\nVẫn phát hiện mã DTC B1A03?",
+        "Thay cụm điều khiển hệ\nthống TPMS và kiểm tra lại DTC. (Trang 10D-\n30)",
+        "Kiểm tra hỏng hóc gián\nđoạn. (Trang 00-11)"
+      ]
+    ]
+  },
+  {
+    "page": 1407,
+    "table_index": 2,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1A10: Không phát hiện vị trí cảm biến áp suất lốp\nVị trí của cảm biến áp suất lốp không được phát hiện.",
+        "• Cảm biến tốc độ bánh xe\n• Cảm biến áp suất lốp số 1, số 2, số 3 và/hoặc số 4\n• ECM"
+      ]
+    ]
+  }
+]

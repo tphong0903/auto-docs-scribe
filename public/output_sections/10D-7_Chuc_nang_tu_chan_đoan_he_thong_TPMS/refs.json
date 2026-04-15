@@ -1,0 +1,9 @@
+{
+  "name": "Chức năng tự chẩn đoán hệ thống TPMS",
+  "refs": [
+    "00-11",
+    "10D-10",
+    "10D-27",
+    "10H-23"
+  ]
+}

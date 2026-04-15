@@ -1,0 +1,44 @@
+[
+  {
+    "page": 1381,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "P1610: Mã ID và/hoặc mật khẩu hệ thống chống\ntrộm chưa được đăng ký\nMã ID hệ thống chống trộm chưa được đăng ký.",
+        "• Mã ID hệ thống chống trộm chưa được đăng ký trong\nECM\n• ECM\n• Mạch / giắc cắm giao tiếp CAN\n• Cụm điều khiển được kết nối với đường truyền CAN"
+      ]
+    ]
+  },
+  {
+    "page": 1381,
+    "table_index": 2,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra DTC\n1) Kiểm tra DTC trong BCM. (Trang 10C-6)\nCó phát hiện thấy DTC B1173, B1175 hoặc B1176 không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 2."
+      ],
+      [
+        "2",
+        "Đăng ký ECM\n1) Tiến hành “Đăng ký ECM” (Trang 10C-16).\n2) Kiểm tra lại DTC.\nVẫn phát hiện mã DTC P1610?",
+        "Chuyển sang Bước 3.",
+        "Kết thúc. (ECM không\nđược đăng ký)"
+      ],
+      [
+        "3",
+        "Kiểm tra DTC\n1) Kiểm tra DTC liên quan đến hệ thống giao tiếp CAN.\nCó phát hiện CAN-DTC nào không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 4."
+      ],
+      [
+        "4",
+        "Kiểm tra mạch giao tiếp CAN\n1) Kiểm tra mạch giao tiếp CAN, tham khảo “Khắc phục sự\ncố đường truyền bị ngắt” trong Phần 10H (Trang 10H-\n23).\nKết quả kiểm tra có ỔN không?",
+        "Thay ECM và kiểm tra lại DTC. Nếu vẫn phát\nhiện mã DTC P1610,\nhãy thay BCM và kiểm\ntra lại DTC.\n• ECM: (Trang 1C-2)\n• BCM: (Trang 10B-\n43)",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ]
+    ]
+  }
+]

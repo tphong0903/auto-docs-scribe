@@ -1,0 +1,7 @@
+{
+  "name": "Kiểm tra giao tiếp CAN",
+  "refs": [
+    "10H-13",
+    "10H-23"
+  ]
+}

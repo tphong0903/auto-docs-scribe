@@ -1,0 +1,74 @@
+[
+  {
+    "page": 1388,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra khởi động động cơ\n1) Khởi động động cơ sử dụng chìa khóa công tắc máy dự\nphòng.\nĐộng cơ có khởi động không?",
+        "Kết thúc. (Chìa khóa\ncông tắc máy chưa\nđược đăng ký)",
+        "Chuyển sang Bước 2."
+      ],
+      [
+        "2",
+        "Đăng ký chìa khóa công tắc máy\n1) Tiến hành “Đăng ký chìa khóa hệ thống chống trộm”. (Trang 10C-16)\n2) Kiểm tra để đảm bảo công tắc máy đang ở vị trí “OFF”.\n3) Xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra lại DTC.\nVẫn phát hiện mã DTC B1188?",
+        "Thay BCM và kiểm tra lại DTC. (Trang 10B-\n43)",
+        "Kết thúc. (Chìa khóa\ncông tắc máy chưa\nđược đăng ký)"
+      ]
+    ]
+  },
+  {
+    "page": 1388,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1189: Lỗi giao tiếp ăng-ten hệ thống chống trộm •\nLỗi giao tiếp với hộp điều khiển hệ thống chống trộm •\n(có tích hợp ăng-ten cuộn dây hệ thống chống trộm).\n•",
+        "Mạch / giắc cắm hộp điều khiển hệ thống chống trộm\nHộp điều khiển hệ thống chống trộm\nBCM"
+      ]
+    ]
+  },
+  {
+    "page": 1389,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra mạch cấp nguồn hộp điều khiển hệ thống\nchống trộm\n1) Xoay công tắc máy về vị trí “OFF”.\n2) Rút giắc cắm “G17”.\n3) Kiểm tra xem kết nối cực tới giắc cắm “G17” có chính\nxác không.\n4) Nếu kết nối ỔN, hãy xoay công tắc máy về vị trí “ON”.\n5) Kiểm tra để đảm bảo điện áp giữa mạch “A1” và dây nối\nđất bằng điện áp bình điện.\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 2.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "2",
+        "Kiểm tra mạch tín hiệu hộp điều khiển hệ thống chống\ntrộm\n1) Ngắt cáp âm (–) ở bình điện.\n2) Rút giắc cắm “G04”.\n3) Kiểm tra xem kết nối cực tới giắc cắm “G04” có chính\nxác không.\n4) Nếu các kết nối đều ỔN, hãy kiểm tra những điểm sau.\n• Điện trở mạch “A2”: dưới 1 Ω\n• Điện trở giữa mạch “A2” và dây nối đất: vô cực\n• Điện trở giữa mạch “A2” và cáp dương (+) bình điện:\nvô cực\n• Điện trở giữa mạch “A2” và từng cầu chì trong hộp\ncầu chì mạch riêng lẻ: vô cực\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 3.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "3",
+        "Kiểm tra mạch nối đất hộp điều khiển hệ thống chống\ntrộm\n1) Kiểm tra để đảm bảo điện trở giữa mạch “A3” và dây nối\nđất thấp hơn 1 Ω.\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 4.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "4",
+        "Kiểm tra DTC\n1) Thay hộp điều khiển hệ thống chống trộm. (Trang\n10C-16)\n2) Tiến hành “Quy trình xác nhận DTC” (Trang 10C-14) rồi\nkiểm tra lại DTC.\nVẫn phát hiện mã DTC B1189?",
+        "Thay BCM và kiểm tra lại DTC. (Trang 10B-\n43)",
+        "Kết thúc. (Hộp điều\nkhiển hệ thống chống\ntrộm bị lỗi)"
+      ]
+    ]
+  },
+  {
+    "page": 1389,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B118A: Điện áp bình điện thấp (Xác nhận mã ID hệ\nthống chống trộm)\nLỗi giao tiếp với hộp điều khiển hệ thống chống trộm do\nđiện áp bình điện thấp.",
+        "• Bình điện\n• Mạch cấp nguồn / mạch nối đất BCM\n• BCM"
+      ]
+    ]
+  }
+]

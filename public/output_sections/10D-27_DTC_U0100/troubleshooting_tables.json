@@ -1,0 +1,32 @@
+[
+  {
+    "page": 1417,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1A49: Dữ liệu cảm biến tốc độ bánh xe không chính\nxác\nCụm điều khiển hệ thống TPMS nhận được tín hiệu tốc độ\nbánh xe không hợp lệ từ cụm điều khiển ESP® trong thời\ngian quy định.",
+        "• Cảm biến tốc độ bánh xe\n• Cụm điều khiển hệ thống TPMS\n• Cảm biến áp suất lốp số 1, số 2, số 3 và/hoặc số 4"
+      ]
+    ]
+  },
+  {
+    "page": 1417,
+    "table_index": 2,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra DTC\n1) Kiểm tra DTC trong cụm điều khiển ESP®. (Trang 4F-\n15)\nCó phát hiện (các) DTC nào không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 2."
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\nCó phát hiện DTC B1A20, B1A21, B1A22 hoặc B1A23\nkhông?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Thay cụm điều khiển hệ\nthống TPMS và kiểm tra lại DTC. (Trang 10D-\n30)"
+      ]
+    ]
+  }
+]

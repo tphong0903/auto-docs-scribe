@@ -1,0 +1,80 @@
+[
+  {
+    "page": 1411,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1A28: Nhiệt độ cảm biến áp suất lốp phía trước bên phải quá cao\nB1A29: Nhiệt độ cảm biến áp suất lốp phía trước bên trái quá cao\nB1A2A: Nhiệt độ cảm biến áp suất lốp phía sau bên phải quá cao\nB1A2B: Nhiệt độ cảm biến áp suất lốp phía sau bên trái quá cao\nPhát hiện DTC này nếu xảy ra tất cả các tình trạng sau.\n• Cụm điều khiển hệ thống TPMS không nhận được bất kỳ dữ liệu nào từ cảm biến\náp suất lốp mặc dù xe chạy ở tốc độ 25 km/giờ (16 dặm/giờ) hoặc hơn trong hơn\n6 phút.\n• Cụm điều khiển hệ thống TPMS nhận được nhiệt độ lốp cao hơn giá trị tiêu\nchuẩn.",
+        "• Cảm biến áp suất lốp số 1, số\n2, số 3 và/hoặc số 4\n• Cụm điều khiển hệ thống\nTPMS"
+      ]
+    ]
+  },
+  {
+    "page": 1411,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Bạn có dụng cụ khuyên dùng không?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang Bước 4."
+      ],
+      [
+        "2",
+        "Kiểm tra cảm biến áp suất lốp\n1) Khi sử dụng dụng cụ khuyên dùng, hãy kiểm tra cảm\nbiến áp suất lốp phát hiện DTC. (Trang 10D-29)\nDụng cụ khuyên dùng\n“VT56” hoặc “VT36” của ATEQ\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 3.",
+        "Chuyển sang Bước 4."
+      ],
+      [
+        "3",
+        "Kiểm tra DTC\n1) Xóa DTC. (Trang 10D-8)\n2) Tiến hành “Quy trình xác nhận DTC” (Trang 10D-21) rồi\nkiểm tra lại DTC.\nVẫn phát hiện DTC B1A28, B1A29, B1A2A hoặc B1A2B?",
+        "Chuyển sang Bước 4.",
+        "Kiểm tra hỏng hóc gián\nđoạn. (Trang 00-11)"
+      ],
+      [
+        "4",
+        "Kiểm tra DTC\n1) Thay cảm biến áp suất lốp phát hiện DTC. (Trang\n10D-29)\n2) Xóa DTC. (Trang 10D-8)\n3) Tiến hành “Quy trình xác nhận DTC” (Trang 10D-21) rồi\nkiểm tra lại DTC.\nVẫn phát hiện DTC B1A28, B1A29, B1A2A hoặc B1A2B?",
+        "Thay cụm điều khiển hệ\nthống TPMS và kiểm tra lại DTC. (Trang 10D-\n30)",
+        "Kết thúc."
+      ]
+    ]
+  },
+  {
+    "page": 1412,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1A2C: Không nhận được dữ liệu từ cảm biến áp suất lốp phía trước bên\nphải\nB1A2D: Không nhận được dữ liệu từ cảm biến áp suất lốp phía trước bên\ntrái\nB1A2E: Không nhận được dữ liệu từ cảm biến áp suất lốp phía sau bên phải\nB1A2F: Không nhận được dữ liệu từ cảm biến áp suất lốp phía sau bên trái\nCụm điều khiển hệ thống TPMS không nhận được bất kỳ dữ liệu nào từ cảm biến\náp suất lốp mặc dù xe chạy ở tốc độ 25 km/giờ (16 dặm/giờ) hoặc hơn trong hơn\n9 phút.",
+        "• Cảm biến áp suất lốp số 1, số\n2, số 3 và/hoặc số 4\n• Cụm điều khiển hệ thống\nTPMS"
+      ]
+    ]
+  },
+  {
+    "page": 1412,
+    "table_index": 2,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Bạn có dụng cụ khuyên dùng không?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang Bước 4."
+      ],
+      [
+        "2",
+        "Kiểm tra cảm biến áp suất lốp\n1) Khi sử dụng dụng cụ khuyên dùng, hãy kiểm tra cảm\nbiến áp suất lốp phát hiện DTC. (Trang 10D-29)\nDụng cụ khuyên dùng\n“VT56” hoặc “VT36” của ATEQ\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 3.",
+        "Chuyển sang Bước 4."
+      ],
+      [
+        "3",
+        "Kiểm tra DTC\n1) Xóa DTC. (Trang 10D-8)\n2) Tiến hành “Quy trình xác nhận DTC” (Trang 10D-22) rồi\nkiểm tra lại DTC.\nVẫn phát hiện DTC B1A2C, B1A2D, B1A2E hoặc B1A2F?",
+        "Chuyển sang Bước 4.",
+        "Kiểm tra hỏng hóc gián\nđoạn. (Trang 00-11)"
+      ]
+    ]
+  }
+]

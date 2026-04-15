@@ -1,0 +1,8 @@
+{
+  "name": "Bảng CAN DTC (Mất đường truyền và Đường truyền bị ngắt)",
+  "refs": [
+    "10H-\n23",
+    "10H-13",
+    "10H-23"
+  ]
+}

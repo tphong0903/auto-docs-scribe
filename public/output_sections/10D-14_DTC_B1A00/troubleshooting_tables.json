@@ -1,0 +1,80 @@
+[
+  {
+    "page": 1404,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1A00: Điện áp bình điện thấp\nĐiện áp mạch cấp nguồn thấp hơn giá trị quy định mặc dù\nxe chạy ở tốc độ 25 km/h (16 dặm/giờ) hoặc hơn.",
+        "• Mạch cấp nguồn / mạch nối đất\n• Cụm điều khiển hệ thống TPMS"
+      ]
+    ]
+  },
+  {
+    "page": 1405,
+    "table_index": 3,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra mạch cấp nguồn cụm điều khiển hệ thống\nTPMS\n1) Kiểm tra để đảm bảo công tắc máy đang ở vị trí “OFF”.\n2) Rút giắc cắm “G452”.\n3) Kiểm tra xem kết nối cực tới giắc cắm “G452” có chính\nxác không.\n4) Nếu kết nối ỔN, kiểm tra để đảm bảo điện áp giữa mạch\n“A1” và dây nối đất bằng điện áp bình điện.\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 2.",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ],
+      [
+        "2",
+        "Kiểm tra mạch nối đất cụm điều khiển hệ thống TPMS\n1) Kiểm tra để đảm bảo điện trở giữa mạch “A2” và dây nối\nđất thấp hơn 1 Ω.\nKết quả kiểm tra có ỔN không?",
+        "Thay cụm điều khiển h\nthống TPMS và kiểm tr\nlại DTC. (Trang 10D-\n30)",
+        "ệ Sửa chữa hoặc thay thế\na bộ dây điện bị hỏng."
+      ]
+    ]
+  },
+  {
+    "page": 1406,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1A01: Điện áp bình điện cao\nĐiện áp mạch cấp nguồn cao hơn giá trị quy định trong thời gian quy định.",
+        "• Hệ thống sạc\n• Cụm điều khiển hệ thống TPMS"
+      ]
+    ]
+  },
+  {
+    "page": 1406,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra hệ thống sạc\n1) Kiểm tra hệ thống sạc. (Trang 1J-5)\nKết quả kiểm tra có ỔN không?",
+        "Thay cụm điều khiển hệ\nthống TPMS và kiểm tra lại DTC. (Trang 10D-\n30)",
+        "Sửa chữa hệ thống sạc."
+      ]
+    ]
+  },
+  {
+    "page": 1406,
+    "table_index": 2,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1A02: Mạch bộ thu không hoạt động tốt\nPhát hiện DTC này nếu xảy ra tất cả các tình trạng sau.\n• Cụm điều khiển hệ thống TPMS không nhận được bất kỳ dữ liệu\nnào từ tất cả các cảm biến áp suất lốp trong thời gian quy định.\n• Bộ thu được tích hợp trong cụm điều khiển hệ thống TPMS không\nhoạt động tốt.",
+        "Cụm điều khiển hệ thống TPMS"
+      ]
+    ]
+  },
+  {
+    "page": 1406,
+    "table_index": 3,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra cảm biến áp suất lốp\n1) Xóa DTC. (Trang 10D-8)\n2) Tiến hành “Quy trình xác nhận DTC” (Trang 10D-16) rồi\nkiểm tra lại DTC.\nVẫn phát hiện mã DTC B1A02?",
+        "Thay cụm điều khiển hệ\nthống TPMS và kiểm tra lại DTC. (Trang 10D-\n30)",
+        "Kiểm tra hỏng hóc gián\nđoạn. (Trang 00-11)"
+      ]
+    ]
+  }
+]

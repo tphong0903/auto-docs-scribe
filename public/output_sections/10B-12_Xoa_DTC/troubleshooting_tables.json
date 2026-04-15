@@ -1,0 +1,46 @@
+[
+  {
+    "page": 1342,
+    "table_index": 0,
+    "data": [
+      ["DTC", "Tên DTC", "Điều kiện phát hiện lỗi DTC", "Cảnh báo"],
+      [
+        "B1123 (Trang\n10B-16)",
+        "Mạch cầu chì DOME / Hở mạch",
+        "Điện áp mạch nguồn điện dự phòng từ\ncầu chì “DOME2” thấp hơn giá trị quy\nđịnh.",
+        "Tắt"
+      ],
+      [
+        "B1133 (Trang\n10B-17)",
+        "Điện áp bình điện quá cao",
+        "Điện áp mạch nguồn điện dự phòng từ\ncầu chì “HAZ” liên tục cao hơn 16,0 V\ntrong thời gian quy định.",
+        "Tắt"
+      ],
+      [
+        "B1147 (Trang\n10B-18)",
+        "Cảm biến bật đèn pha/cos tự động ngắn\nmạch với mạch nguồn",
+        "Điện áp mạch tín hiệu cảm biến đèn\npha/cos tự động liên tục cao hơn 4,8 V\ntrong thời gian quy định.",
+        "Tắt"
+      ],
+      [
+        "B1148 (Trang\n10B-18)",
+        "Sự cố cảm biến bật đèn pha/cos tự động",
+        "Điện áp mạch tín hiệu cảm biến đèn\npha/cos tự động liên tục thấp hơn 0,5 V\ntrong thời gian quy định.",
+        "Tắt"
+      ],
+      [
+        "B1168",
+        "Mật khẩu không khớp",
+        "Tham khảo “Bảng mã DTC” trong Phần\n10C (Trang 10C-6).",
+        "Tắt"
+      ],
+      ["B1169", "Đăng ký thất bại", null, "Tắt"],
+      [
+        "B1170 (Trang\n10B-20)",
+        "Lỗi truy cập EEPROM",
+        "Lỗi bên trong BCM. (Lỗi EEPROM)",
+        "Sáng *1"
+      ]
+    ]
+  }
+]

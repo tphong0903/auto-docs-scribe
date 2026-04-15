@@ -1,0 +1,77 @@
+[
+  {
+    "page": 1342,
+    "table_index": 0,
+    "data": [
+      ["DTC", "Tên DTC", "Điều kiện phát hiện lỗi DTC", "Cảnh báo"],
+      [
+        "B1123 (Trang\n10B-16)",
+        "Mạch cầu chì DOME / Hở mạch",
+        "Điện áp mạch nguồn điện dự phòng từ\ncầu chì “DOME2” thấp hơn giá trị quy\nđịnh.",
+        "Tắt"
+      ],
+      [
+        "B1133 (Trang\n10B-17)",
+        "Điện áp bình điện quá cao",
+        "Điện áp mạch nguồn điện dự phòng từ\ncầu chì “HAZ” liên tục cao hơn 16,0 V\ntrong thời gian quy định.",
+        "Tắt"
+      ],
+      [
+        "B1147 (Trang\n10B-18)",
+        "Cảm biến bật đèn pha/cos tự động ngắn\nmạch với mạch nguồn",
+        "Điện áp mạch tín hiệu cảm biến đèn\npha/cos tự động liên tục cao hơn 4,8 V\ntrong thời gian quy định.",
+        "Tắt"
+      ],
+      [
+        "B1148 (Trang\n10B-18)",
+        "Sự cố cảm biến bật đèn pha/cos tự động",
+        "Điện áp mạch tín hiệu cảm biến đèn\npha/cos tự động liên tục thấp hơn 0,5 V\ntrong thời gian quy định.",
+        "Tắt"
+      ],
+      [
+        "B1168",
+        "Mật khẩu không khớp",
+        "Tham khảo “Bảng mã DTC” trong Phần\n10C (Trang 10C-6).",
+        "Tắt"
+      ],
+      ["B1169", "Đăng ký thất bại", null, "Tắt"],
+      [
+        "B1170 (Trang\n10B-20)",
+        "Lỗi truy cập EEPROM",
+        "Lỗi bên trong BCM. (Lỗi EEPROM)",
+        "Sáng *1"
+      ]
+    ]
+  },
+  {
+    "page": 1343,
+    "table_index": 1,
+    "data": [
+      ["DTC", "Tên DTC", "Hoạt động dự phòng"],
+      ["B1123 (Trang 10B-\n16)", "Mạch cầu chì DOME / Hở mạch", "—"],
+      ["B1133 (Trang 10B-\n17)", "Điện áp bình điện quá cao", "—"],
+      [
+        "B1147 (Trang 10B-\n18)",
+        "Cảm biến bật đèn pha/cos tự động ngắn\nmạch với mạch nguồn",
+        "BCM ngừng điều khiển đèn pha/cos tự động."
+      ],
+      [
+        "B1148 (Trang 10B-\n18)",
+        "Sự cố cảm biến bật đèn pha/cos tự động",
+        "BCM ngừng điều khiển đèn pha/cos tự động."
+      ],
+      ["B1170 (Trang 10B-\n20)", "Lỗi truy cập EEPROM", "—"],
+      [
+        "U0073 (Trang 10B-\n20)",
+        "Cụm điều khiển không truyền và nhận\nđược dữ liệu",
+        "—"
+      ],
+      ["U0100 (Trang 10B-\n20)", "Mất đường truyền với ECM", "—"],
+      [
+        "U108B (Trang 10B-\n20)",
+        "Mất đường truyền với công tắc đèn và\ncông tắc xi nhan",
+        "BCM bật đèn pha/cos (đèn cos), đèn kích thước và đèn\nhậu khi công tắc máy ở vị trí “ON”."
+      ]
+    ]
+  }
+]

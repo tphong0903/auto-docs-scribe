@@ -1,0 +1,93 @@
+[
+  {
+    "page": 1416,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra DTC\nCó phát hiện DTC B1A03 không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 2."
+      ],
+      [
+        "2",
+        "Kiểm tra thông số kỹ thuật ECM\n1) Kiểm tra mã phụ tùng ECM của xe đang bảo dưỡng.\nCó sử dụng ECM chính xác cho xe đang bảo dưỡng không?",
+        "Chuyển sang Bước 3.",
+        "Thay ECM bằng một\nECM chính xác và kiểm\ntra lại DTC. (Trang\n1C-2)"
+      ],
+      [
+        "3",
+        "Kiểm tra thông số kỹ thuật cụm đồng hồ\n1) Kiểm tra mã phụ tùng cụm đồng hồ của xe đang bảo\ndưỡng.\nCó sử dụng cụm đồng hồ chính xác cho xe đang bảo dưỡng\nkhông?",
+        "Thay cụm điều khiển hệ\nthống TPMS chính xác\nvà kiểm tra lại DTC. (Trang 10D-30)",
+        "Thay cụm đồng hồ\nchính xác và kiểm tra lại DTC. (Trang 9C-10)"
+      ]
+    ]
+  },
+  {
+    "page": 1416,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1A48: Dữ liệu tốc độ xe không chính xác\nDTC này được phát hiện nếu xảy ra một trong những tình trạng sau.\n• Cụm điều khiển hệ thống TPMS nhận được dữ liệu tăng tốc lốp cao hơn giá trị quy\nđịnh trong thời gian quy định ngay cả khi tốc độ xe dưới 5 km/giờ (3 dặm/giờ).\n• Cụm điều khiển hệ thống TPMS liên tục nhận được tín hiệu tốc độ xe không hợp lệ\ntừ ECM trong thời gian quy định.",
+        "• ECM\n• Cảm biến tốc độ bánh xe\n• Cụm điều khiển hệ thống\nTPMS\n• Cảm biến áp suất lốp số 1,\nsố 2, số 3 và/hoặc số 4"
+      ]
+    ]
+  },
+  {
+    "page": 1416,
+    "table_index": 3,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra DTC\n1) Kiểm tra DTC trong ECM. (Trang 1A-22)\nCó phát hiện (các) DTC nào không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 2."
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\n1) Kiểm tra DTC trong cụm điều khiển ESP®. (Trang 4F-15)\nCó phát hiện (các) DTC nào không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 3."
+      ],
+      [
+        "3",
+        "Kiểm tra DTC\nCó phát hiện DTC B1A20, B1A21, B1A22 hoặc B1A23\nkhông?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Thay cụm điều khiển hệ\nthống TPMS và kiểm tra lại DTC. (Trang 10D-\n30)"
+      ]
+    ]
+  },
+  {
+    "page": 1417,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1A49: Dữ liệu cảm biến tốc độ bánh xe không chính\nxác\nCụm điều khiển hệ thống TPMS nhận được tín hiệu tốc độ\nbánh xe không hợp lệ từ cụm điều khiển ESP® trong thời\ngian quy định.",
+        "• Cảm biến tốc độ bánh xe\n• Cụm điều khiển hệ thống TPMS\n• Cảm biến áp suất lốp số 1, số 2, số 3 và/hoặc số 4"
+      ]
+    ]
+  },
+  {
+    "page": 1417,
+    "table_index": 2,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra DTC\n1) Kiểm tra DTC trong cụm điều khiển ESP®. (Trang 4F-\n15)\nCó phát hiện (các) DTC nào không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 2."
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\nCó phát hiện DTC B1A20, B1A21, B1A22 hoặc B1A23\nkhông?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Thay cụm điều khiển hệ\nthống TPMS và kiểm tra lại DTC. (Trang 10D-\n30)"
+      ]
+    ]
+  }
+]

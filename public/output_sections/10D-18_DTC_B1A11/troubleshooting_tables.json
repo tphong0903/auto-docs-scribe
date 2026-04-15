@@ -1,0 +1,105 @@
+[
+  {
+    "page": 1408,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra DTC\n1) Kiểm tra DTC trong cụm điều khiển ESP®. (Trang 4F-\n15)\nCó phát hiện (các) DTC nào không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 2."
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\n1) Kiểm tra DTC trong ECM. (Trang 1A-22)\nCó phát hiện (các) DTC nào không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 3."
+      ],
+      [
+        "3",
+        "Kiểm tra cảm biến áp suất lốp\n1) Điều chỉnh từng áp suất lốp đến thông số kỹ thuật tương\nứng.\n2) Tiến hành “Quy trình xác nhận DTC” (Trang 10D-17) rồi\nkiểm tra lại DTC.\nVẫn phát hiện mã DTC B1A10?",
+        "Thay cảm biến áp suất\nlốp bị hỏng. (Trang\n10D-29)",
+        "Kiểm tra hỏng hóc gián\nđoạn. (Trang 00-11)"
+      ]
+    ]
+  },
+  {
+    "page": 1408,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1A11: Chưa hoàn tất nhận biết mã ID cảm biến áp\nsuất lốp tự động\nViệc nhận biết mã ID cảm biến áp suất lốp tự động chưa\nđược hoàn thành.",
+        "• Cảm biến áp suất lốp số 1, số 2, số 3 và/hoặc số 4\n• Cụm điều khiển hệ thống TPMS\n• ECM"
+      ]
+    ]
+  },
+  {
+    "page": 1408,
+    "table_index": 3,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra DTC\n1) Kiểm tra DTC trong ECM. (Trang 1A-22)\nCó phát hiện (các) DTC nào không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 2."
+      ],
+      [
+        "2",
+        "Đăng ký mã ID cảm biến áp suất lốp\n1) Tiến hành nhận biết tự động tham khảo “Nhận biết tự\nđộng” trong “Quy trình đăng ký mã ID cảm biến áp suất\nlốp” (Trang 10D-31).\nĐăng ký mã ID đã hoàn tất chưa?",
+        "Kết thúc.",
+        "Chuyển sang Bước 3."
+      ],
+      [
+        "3",
+        "Kiểm tra DTC\nCó (các) DTC nào khác ngoài B1A11 không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Thay tất cả cảm biến áp\nsuất lốp. (Trang 10D-\n29)"
+      ]
+    ]
+  },
+  {
+    "page": 1409,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "B1A20: Dữ liệu cảm biến áp suất lốp phía trước bên\nphải bị lỗi\nB1A21: Dữ liệu cảm biến áp suất lốp phía trước bên\ntrái bị lỗi\nB1A22: Dữ liệu cảm biến áp suất lốp phía sau bên\nphải bị lỗi\nB1A23: Dữ liệu cảm biến áp suất lốp phía sau bên trái\nbị lỗi\nCụm điều khiển hệ thống TPMS nhận được dữ liệu bất\nthường từ cảm biến áp suất lốp.",
+        "• Cảm biến áp suất lốp số 1, số 2, số 3 và/hoặc số 4\n• Cụm điều khiển hệ thống TPMS"
+      ]
+    ]
+  },
+  {
+    "page": 1409,
+    "table_index": 2,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Bạn có dụng cụ khuyên dùng không?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang Bước 4."
+      ],
+      [
+        "2",
+        "Kiểm tra cảm biến áp suất lốp\n1) Khi sử dụng dụng cụ khuyên dùng, hãy kiểm tra cảm\nbiến áp suất lốp phát hiện DTC. (Trang 10D-29)\nDụng cụ khuyên dùng\n“VT56” hoặc “VT36” của ATEQ\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 3.",
+        "Chuyển sang Bước 4."
+      ],
+      [
+        "3",
+        "Kiểm tra DTC\n1) Xóa DTC. (Trang 10D-8)\n2) Tiến hành “Quy trình xác nhận DTC” (Trang 10D-19) rồi\nkiểm tra lại DTC.\nVẫn phát hiện DTC B1A20, B1A21, B1A22 hoặc B1A23?",
+        "Chuyển sang Bước 4.",
+        "Kiểm tra hỏng hóc gián\nđoạn. (Trang 00-11)"
+      ],
+      [
+        "4",
+        "Kiểm tra DTC\n1) Thay cảm biến áp suất lốp phát hiện DTC. (Trang\n10D-29)\n2) Xóa DTC. (Trang 10D-8)\n3) Tiến hành “Quy trình xác nhận DTC” (Trang 10D-19) rồi\nkiểm tra lại DTC.\nVẫn phát hiện DTC B1A20, B1A21, B1A22 hoặc B1A23?",
+        "Thay cụm điều khiển hệ\nthống TPMS và kiểm tra lại DTC. (Trang 10D-\n30)",
+        "Kết thúc."
+      ]
+    ]
+  }
+]
