@@ -1,0 +1,72 @@
+[
+  {
+    "page": 752,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống EPS” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống P/S” (Trang\n6C-8)."
+      ],
+      [
+        "2",
+        "Kiểm tra dây mạch điều khiển mô-tơ P/S\n1) Với công tắc máy ở vị trí “OFF”, rút giắc cắm mô-tơ P/S.\n2) Kiểm tra xem kết nối cực tới giắc cắm mô-tơ P/S có chính xác không.\n3) Kiểm tra mạch “A1” và “A2” xem có hở mạch và ngắn\nmạch với đất không.\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 3",
+        "Thay mô-tơ P/S như\ncụm trụ lái."
+      ],
+      [
+        "3",
+        "Kiểm tra mạch mô-tơ P/S\n1) Kiểm tra mô-tơ P/S. (Trang 6C-32)\nKết quả kiểm tra có ỔN không?",
+        "Thay cụm điều khiển\nP/S. (Trang 6C-30)",
+        "Thay mô-tơ P/S như\ncụm trụ lái."
+      ]
+    ]
+  },
+  {
+    "page": 752,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1152: Lỗi rơ-le dự phòng (Bị kẹt do nóng chảy)\nĐiện áp đo được tại tiếp điểm của rơ-le dự phòng lớn hơn 5,5 V ngay cả\nkhi rơ-le dự phòng được lệnh đóng.",
+        "Cụm điều khiển P/S"
+      ],
+      [
+        "C1154: Lỗi rơ-le dự phòng (Tiếp điểm)\nĐiện áp đo được tại tiếp điểm của rơ-le dự phòng nhỏ hơn 4 V ngay cả\nkhi rơ-le dự phòng được lệnh bật.",
+        null
+      ]
+    ]
+  },
+  {
+    "page": 753,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống P/S” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống P/S” (Trang\n6C-8)."
+      ],
+      [
+        "2",
+        "Kiểm tra mạch cấp nguồn và mạch nối đất cụm điều\nkhiển P/S\n1) Kiểm tra mạch “A1” và “A2”. (Trang 6C-25)\nKết quả kiểm tra có ỔN không?",
+        "Thay cụm điều khiển\nP/S và kiểm tra lại DTC. (Trang 6C-30)",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ]
+    ]
+  },
+  {
+    "page": 753,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1153: Điện áp bộ cấp nguồn quá thấp hoặc quá cao\nDTC này được phát hiện nếu gặp bất kỳ điều kiện nào sau đây.\n• Điện áp đo được tại tiếp điểm của rơ-le dự phòng nhỏ hơn 9 V mặc dù\ntốc độ động cơ trên 600 vòng/phút và rơ-le dự phòng được lệnh bật.\n• Điện áp đo được tại tiếp điểm của rơ-le dự phòng quá cao mặc dù tốc\nđộ động cơ trên 600 vòng/phút và rơ-le dự phòng được lệnh bật.",
+        "• Hệ thống sạc\n• Cụm điều khiển P/S\n• Mạch cấp nguồn cụm điều khiển P/S"
+      ]
+    ]
+  }
+]

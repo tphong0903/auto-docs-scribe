@@ -1,0 +1,57 @@
+[
+  {
+    "page": 744,
+    "table_index": 0,
+    "data": [
+      [
+        "DTC",
+        "Tên DTC",
+        "Điều kiện phát hiện lỗi DTC",
+        "*D/C",
+        "Đèn\ncảnh\nbáo P/S"
+      ],
+      [
+        "C1157 (Trang 6C-23)",
+        "Sự cố rơ-le mô-tơ",
+        "Rơ-le mô-tơ P/S bật mặc dù rơ-le mô-tơ P/S được\nlệnh tắt sau khi khởi động động cơ.",
+        "1",
+        "Đèn sáng"
+      ],
+      [
+        "C1161 (Trang 6C-24)",
+        "Dữ liệu CAN không hợp lệ\ntừ tốc độ xe",
+        "Nhận được dữ liệu không hợp lệ từ ECM.",
+        "1",
+        "Đèn sáng"
+      ],
+      [
+        "C1162 (Trang 6C-24)",
+        "Dữ liệu CAN không hợp lệ\ntừ tốc độ động cơ",
+        "Nhận được dữ liệu không hợp lệ từ ECM.",
+        "1",
+        "Đèn sáng"
+      ],
+      [
+        "C1166 (Trang 6C-24)",
+        "Dữ liệu tốc độ xe không\nđáng tin cậy",
+        "Nhận được dữ liệu không đáng tin cậy từ ECM.",
+        "1",
+        "Đèn sáng"
+      ],
+      [
+        "U0073 (Trang 6C-24)",
+        "Cụm điều khiển không\ntruyền và nhận được dữ\nliệu",
+        "Lỗi thu phát của cụm điều khiển P/S xảy ra liên tục\ntrong thời gian quy định.",
+        "1",
+        "Tắt"
+      ],
+      [
+        "U0100 (Trang 6C-24)",
+        "Mất đường truyền với ECM",
+        "Không thể nhận được dữ liệu giao tiếp CAN từ\nECM.",
+        "1",
+        "Đèn sáng"
+      ]
+    ]
+  }
+]

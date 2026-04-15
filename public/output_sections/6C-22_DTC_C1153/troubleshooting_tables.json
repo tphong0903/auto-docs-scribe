@@ -1,0 +1,91 @@
+[
+  {
+    "page": 753,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống P/S” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống P/S” (Trang\n6C-8)."
+      ],
+      [
+        "2",
+        "Kiểm tra mạch cấp nguồn và mạch nối đất cụm điều\nkhiển P/S\n1) Kiểm tra mạch “A1” và “A2”. (Trang 6C-25)\nKết quả kiểm tra có ỔN không?",
+        "Thay cụm điều khiển\nP/S và kiểm tra lại DTC. (Trang 6C-30)",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ]
+    ]
+  },
+  {
+    "page": 753,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1153: Điện áp bộ cấp nguồn quá thấp hoặc quá cao\nDTC này được phát hiện nếu gặp bất kỳ điều kiện nào sau đây.\n• Điện áp đo được tại tiếp điểm của rơ-le dự phòng nhỏ hơn 9 V mặc dù\ntốc độ động cơ trên 600 vòng/phút và rơ-le dự phòng được lệnh bật.\n• Điện áp đo được tại tiếp điểm của rơ-le dự phòng quá cao mặc dù tốc\nđộ động cơ trên 600 vòng/phút và rơ-le dự phòng được lệnh bật.",
+        "• Hệ thống sạc\n• Cụm điều khiển P/S\n• Mạch cấp nguồn cụm điều khiển P/S"
+      ]
+    ]
+  },
+  {
+    "page": 754,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống P/S” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống P/S” (Trang\n6C-8)."
+      ],
+      [
+        "2",
+        "Kiểm tra điện áp bộ cấp nguồn cụm điều khiển P/S\n1) Với công tắc máy ở vị trí “OFF”, rút giắc cắm cụm\nđiều khiển P/S “G55”.\n2) Xoay công tắc máy về vị trí “ON”, đo điện áp giữa cực\ngiắc cắm cụm điều khiển P/S “G55–1” và dây nối đất.\nĐiện áp có bằng khoảng 12 V không?",
+        "Thay cụm điều khiển\nP/S và kiểm tra lại DTC. (Trang 6C-30)",
+        "Chuyển sang Bước 3."
+      ],
+      [
+        "3",
+        "Kiểm tra mạch cấp nguồn cụm điều khiển P/S\n1) Xoay công tắc máy về vị trí “OFF”.\n2) Kiểm tra điện trở của mạch “A1”.\nCó phải điện trở từ 1 Ω trở xuống?",
+        "Kiểm tra hệ thống sạc. (Trang 1J-5)",
+        "Sửa chữa hoặc thay thế\nmạch “A1”."
+      ]
+    ]
+  },
+  {
+    "page": 754,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1155: Lỗi bên trong cụm điều khiển P/S\nXảy ra lỗi bên trong cụm điều khiển P/S.",
+        "• Mạch cấp nguồn cụm điều khiển P/S\n• Mạch nối đất cụm điều khiển P/S\n• Cụm điều khiển P/S"
+      ],
+      [
+        "C1157: Sự cố rơ-le mô-tơ\nRơ-le mô-tơ P/S bật mặc dù rơ-le mô-tơ P/S được lệnh tắt sau khi khởi\nđộng động cơ.",
+        null
+      ]
+    ]
+  },
+  {
+    "page": 754,
+    "table_index": 2,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra lại DTC\n1) Xóa DTC. (Trang 6C-11)\n2) Xoay công tắc máy về vị trí “OFF”.\n3) Thực hiện “Quy trình xác nhận DTC”, và kiểm tra DTC.\nVẫn phát hiện DTC C1155 hoặc C1157?",
+        "Chuyển sang Bước 2.",
+        "Kiểm tra hỏng hóc gián\nđoạn. (Trang 00-11)"
+      ],
+      [
+        "2",
+        "Kiểm tra mạch cấp nguồn và mạch nối đất cụm điều\nkhiển P/S\n1) Kiểm tra mạch cấp nguồn và mạch nối đất cụm điều\nkhiển P/S. (Trang 6C-25)\nKết quả kiểm tra có ỔN không?",
+        "Thay cụm điều khiển\nP/S và kiểm tra lại DTC. (Trang 6C-30)",
+        "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
+      ]
+    ]
+  }
+]

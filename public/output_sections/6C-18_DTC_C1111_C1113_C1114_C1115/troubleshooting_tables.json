@@ -1,0 +1,104 @@
+[
+  {
+    "page": 749,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra DTC\n1) Khởi động động cơ và kiểm tra lại DTC của cụm điều\nkhiển P/S.\nCó (các) DTC nào không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
+        "Chuyển sang Bước 2."
+      ],
+      [
+        "2",
+        "Kiểm tra cụm đồng hồ\n1) Thay cụm đồng hồ. (Trang 9C-10)\n2) Khởi động động cơ.\nĐèn cảnh báo P/S có còn sáng không?",
+        "Thay cụm điều khiển\nP/S và kiểm tra lại DTC. (Trang 6C-30)",
+        "Kết thúc."
+      ]
+    ]
+  },
+  {
+    "page": 749,
+    "table_index": 2,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1111: Lỗi mạch (chính) cảm biến mô-men xoắn\nĐiện áp của mạch (chính) tín hiệu cảm biến mô-men xoắn lớn hơn\ngiá trị quy định (4,7 V) hoặc nhỏ hơn giá trị quy định (0,3 V) trong\nthời gian dài hơn quy định.",
+        "• Cảm biến mô-men xoắn (cụm trụ lái)\n• Cụm điều khiển P/S"
+      ],
+      [
+        "C1113: Chênh lệch tín hiệu (chính và phụ) cảm biến mô-men\nxoắn\nChênh lệch điện áp giữa mạch (chính) tín hiệu cảm biến mô-men\nxoắn và mạch (phụ) tín hiệu cảm biến mô-men xoắn vẫn quá lớn\ntrong thời gian lâu hơn quy định.",
+        null
+      ],
+      [
+        "C1114: Lỗi mạch cấp nguồn cảm biến mô-men xoắn (5 V)\nĐiện áp bộ cấp nguồn (5 V) cho mạch cảm biến mô-men xoắn lớn\nhơn giá trị quy định (5,5 V) hoặc nhỏ hơn giá trị quy định (4,5 V)\ntrong thời gian lâu hơn quy định.",
+        null
+      ],
+      [
+        "C1115: Lỗi mạch (phụ) cảm biến mô-men xoắn\nĐiện áp của mạch (phụ) tín hiệu cảm biến mô-men xoắn lớn hơn giá\ntrị quy định (4,7 V) hoặc nhỏ hơn giá trị quy định (0,3 V) trong thời\ngian dài hơn quy định.",
+        null
+      ]
+    ]
+  },
+  {
+    "page": 750,
+    "table_index": 3,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống P/S” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống P/S” (Trang\n6C-8)."
+      ],
+      [
+        "2",
+        "Kiểm tra dây mạch cảm biến mô-men xoắn\n1) Kiểm tra bằng mắt thường mạch giữa giắc cắm cảm\nbiến mô-men xoắn và cảm biến mô-men xoắn xem có\nhở mạch và ngắn mạch với đất không.\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 3.",
+        "Thay cảm biến mô-men\nxoắn (Cụm trụ lái)."
+      ],
+      [
+        "3",
+        "Kiểm tra mạch cấp nguồn cảm biến mô-men xoắn\n1) Khởi động động cơ.\n2) Đo điện áp giữa cực giắc cắm cụm điều khiển P/S (cảm\nbiến mô-men xoắn) “TS-1” và dây nối đất xấp xỉ 5 V.\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 4.",
+        "Thay cụm điều khiển\nP/S. (Trang 6C-30)"
+      ],
+      [
+        "4",
+        "Kiểm tra mạch nối đất cảm biến mô-men xoắn\n1) Đo điện áp giữa các cực giắc cắm cụm điều khiển P/S\n(cảm biến mô-men xoắn) “TS-1” và “TS-5” xấp xỉ 5 V.\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 5.",
+        "Thay cụm điều khiển\nP/S. (Trang 6C-30)"
+      ],
+      [
+        "5",
+        "Kiểm tra cảm biến mô-men xoắn\n1) Kiểm tra cảm biến mô-men xoắn. (Trang 6C-30)\nKết quả kiểm tra có ỔN không?",
+        "Thay cụm điều khiển\nP/S. (Trang 6C-30)",
+        "Thay cảm biến mô-men\nxoắn (cụm trụ lái)."
+      ]
+    ]
+  },
+  {
+    "page": 751,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1141: Lỗi điện áp mạch mô-tơ P/S\nĐiện áp giữa các cực mô-tơ P/S vượt quá giới hạn trên (8,5 V) hoặc giới hạn\ndưới (0,2 V) trong thời gian lâu hơn quy định.",
+        "• Cụm điều khiển P/S\n• Mô-tơ P/S (cụm trụ lái)"
+      ],
+      [
+        "C1142: Lỗi dòng điện mạch mô-tơ P/S 1\nChênh lệch giữa dòng điện dẫn động mô-tơ P/S đo được và dòng điện dẫn\nđộng mô-tơ P/S mục tiêu lớn hơn 10 A.",
+        null
+      ],
+      [
+        "C1143: Dòng điện mạch mô-tơ P/S quá lớn\nDòng điện dẫn động mô-tơ P/S đo được lớn hơn 65 A.",
+        null
+      ],
+      [
+        "C1145: Lỗi dòng điện mạch mô-tơ P/S 2\nDòng điện dẫn động mô-tơ P/S mục tiêu lớn hơn dòng điện dẫn động mô-tơ\nP/S đo được.",
+        null
+      ]
+    ]
+  }
+]

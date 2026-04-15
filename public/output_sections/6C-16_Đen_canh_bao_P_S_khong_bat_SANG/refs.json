@@ -1,0 +1,10 @@
+{
+  "name": "Đèn cảnh báo P/S không bật SÁNG với công tắc máy ở vị trí ON trước khi động cơ khởi động",
+  "refs": [
+    "10H-11",
+    "10H-13",
+    "6C-10",
+    "6C-30",
+    "9C-10"
+  ]
+}

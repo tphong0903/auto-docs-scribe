@@ -1,0 +1,8 @@
+{
+  "name": "Kiểm tra núm chọn nhiệt độ có công tắc A/C: (model RHD (Tay lái nghịch))",
+  "refs": [
+    "1A-119",
+    "7B-25",
+    "7B-47"
+  ]
+}

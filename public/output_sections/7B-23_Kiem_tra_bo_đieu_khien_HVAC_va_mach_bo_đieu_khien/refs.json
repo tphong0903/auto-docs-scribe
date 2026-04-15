@@ -1,0 +1,9 @@
+{
+  "name": "Kiểm tra bộ điều khiển HVAC và mạch bộ điều khiển",
+  "refs": [
+    "00-11",
+    "1A-119",
+    "1J-2",
+    "7B-43"
+  ]
+}

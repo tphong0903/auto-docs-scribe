@@ -1,0 +1,8 @@
+{
+  "name": "Kiểm tra cụm điều khiển P/S và mạch của cụm điều khiển",
+  "refs": [
+    "6C-28",
+    "6C-29",
+    "9C-10"
+  ]
+}

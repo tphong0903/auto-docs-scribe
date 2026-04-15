@@ -1,0 +1,65 @@
+[
+  {
+    "page": 751,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1141: Lỗi điện áp mạch mô-tơ P/S\nĐiện áp giữa các cực mô-tơ P/S vượt quá giới hạn trên (8,5 V) hoặc giới hạn\ndưới (0,2 V) trong thời gian lâu hơn quy định.",
+        "• Cụm điều khiển P/S\n• Mô-tơ P/S (cụm trụ lái)"
+      ],
+      [
+        "C1142: Lỗi dòng điện mạch mô-tơ P/S 1\nChênh lệch giữa dòng điện dẫn động mô-tơ P/S đo được và dòng điện dẫn\nđộng mô-tơ P/S mục tiêu lớn hơn 10 A.",
+        null
+      ],
+      [
+        "C1143: Dòng điện mạch mô-tơ P/S quá lớn\nDòng điện dẫn động mô-tơ P/S đo được lớn hơn 65 A.",
+        null
+      ],
+      [
+        "C1145: Lỗi dòng điện mạch mô-tơ P/S 2\nDòng điện dẫn động mô-tơ P/S mục tiêu lớn hơn dòng điện dẫn động mô-tơ\nP/S đo được.",
+        null
+      ]
+    ]
+  },
+  {
+    "page": 752,
+    "table_index": 0,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống EPS” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống P/S” (Trang\n6C-8)."
+      ],
+      [
+        "2",
+        "Kiểm tra dây mạch điều khiển mô-tơ P/S\n1) Với công tắc máy ở vị trí “OFF”, rút giắc cắm mô-tơ P/S.\n2) Kiểm tra xem kết nối cực tới giắc cắm mô-tơ P/S có chính xác không.\n3) Kiểm tra mạch “A1” và “A2” xem có hở mạch và ngắn\nmạch với đất không.\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 3",
+        "Thay mô-tơ P/S như\ncụm trụ lái."
+      ],
+      [
+        "3",
+        "Kiểm tra mạch mô-tơ P/S\n1) Kiểm tra mô-tơ P/S. (Trang 6C-32)\nKết quả kiểm tra có ỔN không?",
+        "Thay cụm điều khiển\nP/S. (Trang 6C-30)",
+        "Thay mô-tơ P/S như\ncụm trụ lái."
+      ]
+    ]
+  },
+  {
+    "page": 752,
+    "table_index": 1,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1152: Lỗi rơ-le dự phòng (Bị kẹt do nóng chảy)\nĐiện áp đo được tại tiếp điểm của rơ-le dự phòng lớn hơn 5,5 V ngay cả\nkhi rơ-le dự phòng được lệnh đóng.",
+        "Cụm điều khiển P/S"
+      ],
+      [
+        "C1154: Lỗi rơ-le dự phòng (Tiếp điểm)\nĐiện áp đo được tại tiếp điểm của rơ-le dự phòng nhỏ hơn 4 V ngay cả\nkhi rơ-le dự phòng được lệnh bật.",
+        null
+      ]
+    ]
+  }
+]

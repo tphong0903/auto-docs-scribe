@@ -1,0 +1,71 @@
+[
+  {
+    "page": 755,
+    "table_index": 0,
+    "data": [
+      ["Điều kiện phát hiện lỗi DTC", "Khu vực có sự cố"],
+      [
+        "C1161: Dữ liệu CAN không hợp lệ từ tốc độ xe\nNhận được dữ liệu không hợp lệ từ ECM.",
+        "• Mạch giao tiếp CAN\n• ECM\n• Cụm điều khiển P/S"
+      ],
+      [
+        "C1162: Dữ liệu CAN không hợp lệ từ tốc độ động cơ\nNhận được dữ liệu không hợp lệ từ ECM.",
+        null
+      ],
+      [
+        "C1166: Dữ liệu tốc độ xe không đáng tin cậy\nNhận được dữ liệu không đáng tin cậy từ ECM.",
+        null
+      ]
+    ]
+  },
+  {
+    "page": 755,
+    "table_index": 1,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Đã thực hiện “Kiểm tra hệ thống P/S” chưa?",
+        "Chuyển sang Bước 2.",
+        "Chuyển sang “Kiểm tra\nhệ thống P/S” (Trang\n6C-8)."
+      ],
+      [
+        "2",
+        "Kiểm tra DTC\n1) Kiểm tra ECM để tìm DTC. (Trang 6C-10)\nCó phát hiện (các) DTC nào không?",
+        "Chuyển sang khắc phục\nsự cố DTC thích hợp.\n(Lỗi liên quan đến ECM) (Trang 1A-24)",
+        "Thay cụm điều khiển\nP/S chuẩn và kiểm tra lại DTC. (Trang 6C-\n30)"
+      ]
+    ]
+  },
+  {
+    "page": 756,
+    "table_index": 2,
+    "data": [
+      ["Bước", "Hành động", "Có", "Không"],
+      [
+        "1",
+        "Kiểm tra cầu chì mạch\n1) Kiểm tra để đảm bảo công tắc máy đang ở vị trí “OFF”.\n2) Rút các giắc cắm “G10” và “G55”.\n3) Kiểm tra xem kết nối tới các cực “G55-1” và “G10-8” có chính xác không.\n4) Nếu các kết nối ỔN, hãy kiểm tra các cầu chì trong hộp\ncầu chì chính, cầu chì “P/S”, cầu chì “IG1 SIG” (model\nhộp cầu chì) và cầu chì “IG1 SIG2” (model có giắc hộp\nkết nối) xem có nổ không.\nKết quả kiểm tra có ỔN không?",
+        "Chuyển sang Bước 2.",
+        "Thay (các) cầu chì và\nkiểm tra xem có ngắn\nmạch với đất ở các\nmạch điện nối với (các)\ncầu chì không."
+      ],
+      [
+        "2",
+        "Kiểm tra mạch cấp nguồn cụm điều khiển P/S\n1) Kiểm tra điện áp giữa cực “G55-1” và dây nối đất.\nĐiện áp có nằm trong khoảng 10 – 14 V không?",
+        "Chuyển sang Bước 3.",
+        "Mạch “A1” bị hở."
+      ],
+      [
+        "3",
+        "Kiểm tra mạch cấp nguồn IG1\n1) Xoay công tắc máy về vị trí “ON”.\n2) Kiểm tra điện áp giữa cực “G10-8” và dây nối đất.\nĐiện áp có nằm trong khoảng 10 – 14 V không?",
+        "Chuyển sang Bước 4.",
+        "Mạch “A2” bị hở."
+      ],
+      [
+        "4",
+        "Kiểm tra mạch nối đất cụm điều khiển P/S\n1) Xoay công tắc máy về vị trí “OFF”.\n2) Kiểm tra điện trở giữa cực “G55-2” và dây nối đất.\nCó phải điện trở từ 1 Ω trở xuống?",
+        "Kết thúc.",
+        "Mạch “A3” bị hở hoặc\ncó điện trở quá cao."
+      ]
+    ]
+  }
+]
