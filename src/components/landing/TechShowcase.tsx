@@ -105,7 +105,7 @@ export const TechShowcase = () => {
             <p className="font-mono text-xs uppercase tracking-[0.3em] text-teal-light mb-4">
               // Công nghệ cốt lõi
             </p>
-            <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground leading-tight">
+            <h2 className="font-heading text-4xl md:text-5xl font-extrabold text-foreground leading-tight tracking-tight heading-shadow">
               Kỹ thuật chính xác <br />
               <span className="text-gradient">trong từng chi tiết</span>
             </h2>
@@ -130,7 +130,7 @@ export const TechShowcase = () => {
                       <Icon className="h-5 w-5 text-teal-light" />
                     </div>
                     <div>
-                      <h3 className="font-heading text-lg font-semibold text-foreground">{f.title}</h3>
+                      <h3 className="font-heading text-lg font-bold text-foreground">{f.title}</h3>
                       <p className="mt-1 text-foreground/60 text-sm leading-relaxed">{f.desc}</p>
                     </div>
                   </motion.div>
