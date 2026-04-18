@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "./pages/NotFound.tsx";
 import Viewer from "./components/admin/Viewer.tsx";
+import Landing from "./pages/Landing.tsx";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -14,7 +15,8 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Viewer />} />
+          <Route path="/" element={<Landing />} />
+          <Route path="/viewer" element={<Viewer />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
