@@ -27,8 +27,8 @@ export const Hero = ({ onPlayVideo }: HeroProps) => {
             type="video/mp4"
           />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/30 to-background" />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-transparent to-background/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/50 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/40 to-background/80" />
       </div>
 
       {/* Animated grid overlay */}
@@ -56,10 +56,10 @@ export const Hero = ({ onPlayVideo }: HeroProps) => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="font-heading text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-[1.05] text-glow"
+          className="font-heading text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-[1.05]"
         >
-          <span className="text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">SỨC MẠNH</span> <br />
-          <span className="text-gradient">VƯỢT GIỚI HẠN</span>
+          <span className="text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.95)]">SỨC MẠNH</span> <br />
+          <span className="text-[hsl(var(--teal-light))] drop-shadow-[0_0_30px_hsl(var(--teal)/0.8),0_4px_12px_rgba(0,0,0,0.9)]">VƯỢT GIỚI HẠN</span>
         </motion.h1>
 
         <motion.p
