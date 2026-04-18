@@ -59,7 +59,7 @@ export const Hero = ({ onPlayVideo }: HeroProps) => {
           className="font-heading text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-[1.05]"
         >
           <span className="text-white drop-shadow-[0_4px_12px_rgba(0,0,0,0.95)]">SỨC MẠNH</span> <br />
-          <span className="text-teal-300 drop-shadow-[0_0_30px_rgba(45,212,191,0.8),0_4px_12px_rgba(0,0,0,0.9)]">VƯỢT GIỚI HẠN</span>
+          <span className="text-[hsl(var(--teal-light))] drop-shadow-[0_0_30px_hsl(var(--teal)/0.8),0_4px_12px_rgba(0,0,0,0.9)]">VƯỢT GIỚI HẠN</span>
         </motion.h1>
 
         <motion.p
