@@ -79,7 +79,7 @@ export const Gallery = ({ onPlayVideo }: GalleryProps) => {
                 <span className="inline-block px-2.5 py-1 rounded-md bg-teal/20 border border-teal/40 text-teal-light text-[10px] font-mono uppercase tracking-widest mb-3">
                   {it.tag}
                 </span>
-                <h3 className="font-heading text-xl md:text-2xl font-extrabold text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">{it.title}</h3>
+                <h3 className="font-heading text-xl md:text-2xl font-extrabold text-white drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)]">{it.title}</h3>
               </div>
             </motion.button>
           ))}
