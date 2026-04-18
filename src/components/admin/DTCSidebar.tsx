@@ -35,7 +35,9 @@ const DTCSidebar: React.FC<DTCSidebarProps> = ({
                 : "bg-gray-100 text-gray-800 hover:bg-gray-200"
             }`}
           >
-            <div className="font-semibold text-sm">{item.name}</div>
+            <div className="font-semibold text-sm break-words whitespace-normal">
+              {item.name}
+            </div>
             <div className="text-xs mt-1 truncate opacity-80">{item.code}</div>
           </button>
         ))}

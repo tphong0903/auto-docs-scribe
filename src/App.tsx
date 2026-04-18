@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "./pages/NotFound.tsx";
 import Viewer from "./components/admin/Viewer.tsx";
 import Landing from "./pages/Landing.tsx";
+import Canva from "./components/canva/Canva.tsx";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -17,6 +18,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/dtc-explorer" element={<Viewer />} />
+          <Route path="/diagram" element={<Canva />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

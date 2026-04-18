@@ -11,6 +11,7 @@ import {
   Link as LinkIcon,
   FileText,
   Home,
+  PanelLeft, // Import thêm icon PanelLeft
 } from "lucide-react";
 import { toast } from "sonner";
 import DTCSidebar from "./DTCSidebar";
@@ -50,6 +51,10 @@ const DTCViewer: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [error, setError] = useState<string | null>(null);
   const navigate = useNavigate();
+
+  // State quản lý ẩn/hiện sidebar
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+
   const [refDialogOpen, setRefDialogOpen] = useState(false);
   const [refDialogData, setRefDialogData] = useState<{
     code: string;
@@ -214,64 +219,83 @@ const DTCViewer: React.FC = () => {
 
   // ================= UI =================
   return (
-    /* FIX: Thêm h-screen w-full để giới hạn khung hình, kích hoạt tính năng cuộn nội bộ */
     <div className="flex h-screen w-full bg-slate-50 overflow-hidden">
-      <div className="w-80 bg-white border-r border-slate-200 shadow-[2px_0_8px_-4px_rgba(0,0,0,0.1)] flex flex-col z-10 shrink-0 h-full">
-        <div className="p-5 border-b border-slate-100">
-          {/* Header Title & Home Button */}
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="p-2 bg-blue-50 rounded-lg">
-                <Cpu className="w-6 h-6 text-blue-600" />
+      {/* Sidebar - Thêm hiệu ứng trượt ẩn/hiện */}
+      <div
+        className={`bg-white shadow-[2px_0_8px_-4px_rgba(0,0,0,0.1)] flex flex-col z-20 shrink-0 h-full transition-all duration-300 ease-in-out overflow-hidden ${
+          isSidebarOpen ? "w-80 border-r border-slate-200" : "w-0 border-none"
+        }`}
+      >
+        {/* Wrapper w-80 để text bên trong không bị rớt dòng khi đang diễn ra animation */}
+        <div className="w-80 h-full flex flex-col">
+          <div className="p-5 border-b border-slate-100">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-3">
+                <div className="p-2 bg-blue-50 rounded-lg">
+                  <Cpu className="w-6 h-6 text-blue-600" />
+                </div>
+                <div>
+                  <h1 className="text-xl font-bold text-slate-800">
+                    DTC Explorer
+                  </h1>
+                  <p className="text-xs font-medium text-slate-500 uppercase tracking-wider mt-0.5">
+                    Diagnostic System
+                  </p>
+                </div>
               </div>
-              <div>
-                <h1 className="text-xl font-bold text-slate-800">
-                  DTC Explorer
-                </h1>
-                <p className="text-xs font-medium text-slate-500 uppercase tracking-wider mt-0.5">
-                  Diagnostic System
-                </p>
-              </div>
+
+              <button
+                onClick={() => navigate("/")}
+                className="p-2 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors flex items-center justify-center"
+                title="Về trang chủ"
+              >
+                <Home className="w-5 h-5" />
+              </button>
             </div>
 
-            <button
-              onClick={() => navigate("/")}
-              className="p-2 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors flex items-center justify-center"
-              title="Về trang chủ"
-            >
-              <Home className="w-5 h-5" />
-            </button>
+            <div className="relative mt-5">
+              <Search className="absolute left-3.5 top-3 w-4 h-4 text-slate-400" />
+              <input
+                type="text"
+                placeholder="Nhập mã lỗi (VD: P0010)..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all text-sm"
+              />
+            </div>
           </div>
 
-          {/* Search Box */}
-          <div className="relative mt-5">
-            <Search className="absolute left-3.5 top-3 w-4 h-4 text-slate-400" />
-            <input
-              type="text"
-              placeholder="Nhập mã lỗi (VD: P0010)..."
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-10 pr-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all text-sm"
+          <div className="flex-1 overflow-y-auto custom-scrollbar">
+            <DTCSidebar
+              items={filteredDTC}
+              selected={selected}
+              onSelect={(dtc) => selectDTC(dtc, "push")}
             />
           </div>
-        </div>
-
-        {/* List Content */}
-        <div className="flex-1 overflow-hidden">
-          <DTCSidebar
-            items={filteredDTC}
-            selected={selected}
-            onSelect={(dtc) => selectDTC(dtc, "push")}
-          />
         </div>
       </div>
 
       {/* Main Area */}
-      <div className="flex-1 flex flex-col overflow-hidden bg-slate-50/50 p-4 md:p-6 gap-4">
+      <div className="flex-1 flex flex-col overflow-hidden bg-slate-50/50 p-4 md:p-6 gap-4 relative">
         {selected ? (
           <>
             {/* Header Title */}
             <div className="bg-white border border-slate-200 rounded-2xl shadow-sm p-4 shrink-0 flex items-center gap-3">
+              {/* Nút Toggle Sidebar */}
+              <button
+                onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+                className="p-2 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors flex items-center justify-center"
+                title={
+                  isSidebarOpen
+                    ? "Ẩn danh sách mã lỗi"
+                    : "Hiện danh sách mã lỗi"
+                }
+              >
+                <PanelLeft className="w-5 h-5" />
+              </button>
+
+              <div className="w-px h-6 bg-slate-200 mx-1"></div>
+
               <div className="p-2 bg-blue-50 text-blue-600 rounded-lg">
                 <BookOpen className="w-5 h-5" />
               </div>
@@ -284,20 +308,20 @@ const DTCViewer: React.FC = () => {
               ref={scrollContainerRef}
               className="flex-1 flex flex-col gap-4 overflow-y-auto pr-2 pb-10"
             >
-              {/* FIX: Thêm min-h-[600px] để khung PDF không bị xẹp */}
-              <div className="flex flex-col xl:flex-row gap-4 shrink-0 min-h-[600px]">
-                {/* PDF Viewer - Chiếm 3 phần */}
-                <div className="flex-[3] bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden h-full">
+              {/* CẬP NHẬT: Chiều cao PDF siêu lớn (h-[85vh]), Tài liệu liên quan thu hẹp (w-64) */}
+              <div className="flex flex-col xl:flex-row gap-4 shrink-0 h-[85vh] min-h-[700px]">
+                {/* PDF Viewer - Chiếm tối đa không gian còn lại bằng flex-1 */}
+                <div className="flex-1 bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden h-full">
                   <DTCPDFViewer folder={selected.folder} />
                 </div>
 
-                {/* References Sidebar - Chiếm 1 phần */}
-                <div className="flex-[1] bg-white border border-slate-200 rounded-2xl shadow-sm flex flex-col min-w-[280px] xl:max-w-sm h-full max-h-[600px]">
+                {/* References Sidebar - Nhỏ gọn lại với w-64 */}
+                <div className="w-full xl:w-64 shrink-0 bg-white border border-slate-200 rounded-2xl shadow-sm flex flex-col h-full max-h-[100%]">
                   <div className="px-5 py-4 border-b border-slate-100 bg-slate-50/50 flex items-center justify-between shrink-0">
                     <div className="flex items-center gap-2">
                       <LinkIcon className="w-5 h-5 text-blue-600" />
-                      <h3 className="font-bold text-slate-800">
-                        Tài liệu liên quan
+                      <h3 className="font-bold text-slate-800 text-sm">
+                        Tham chiếu
                       </h3>
                     </div>
                     <span className="bg-blue-100 text-blue-700 text-xs font-bold px-2.5 py-1 rounded-full">
@@ -305,19 +329,19 @@ const DTCViewer: React.FC = () => {
                     </span>
                   </div>
 
-                  <div className="flex-1 overflow-y-auto p-4 space-y-2">
+                  <div className="flex-1 overflow-y-auto p-3 space-y-2">
                     {selected.refs && selected.refs.length > 0 ? (
                       selected.refs.map((refCode, idx) => (
                         <button
                           key={idx}
                           onClick={() => handleRefClick(refCode)}
-                          className="w-full text-left p-3 rounded-xl border border-slate-200 hover:border-blue-400 hover:bg-blue-50 hover:shadow-sm transition-all group flex items-center justify-between"
+                          className="w-full text-left p-2.5 rounded-xl border border-slate-200 hover:border-blue-400 hover:bg-blue-50 hover:shadow-sm transition-all group flex items-center justify-between"
                         >
-                          <div className="flex items-center gap-3">
-                            <div className="p-1.5 bg-slate-100 rounded-md group-hover:bg-blue-100 transition-colors">
+                          <div className="flex items-center gap-2.5 overflow-hidden">
+                            <div className="p-1.5 bg-slate-100 rounded-md group-hover:bg-blue-100 transition-colors shrink-0">
                               <FileText className="w-4 h-4 text-slate-500 group-hover:text-blue-600" />
                             </div>
-                            <span className="font-semibold text-slate-700 group-hover:text-blue-700">
+                            <span className="font-semibold text-sm text-slate-700 group-hover:text-blue-700 truncate">
                               {refCode}
                             </span>
                           </div>
@@ -326,14 +350,11 @@ const DTCViewer: React.FC = () => {
                       ))
                     ) : (
                       <div className="h-full flex flex-col items-center justify-center text-center p-4">
-                        <div className="w-12 h-12 bg-slate-50 rounded-full flex items-center justify-center mb-3">
-                          <FileSearch className="w-6 h-6 text-slate-300" />
+                        <div className="w-10 h-10 bg-slate-50 rounded-full flex items-center justify-center mb-3">
+                          <FileSearch className="w-5 h-5 text-slate-300" />
                         </div>
                         <p className="text-sm font-medium text-slate-600">
                           Không có liên kết
-                        </p>
-                        <p className="text-xs text-slate-400 mt-1">
-                          Tài liệu này không chứa mã tham chiếu nào.
                         </p>
                       </div>
                     )}
@@ -360,7 +381,16 @@ const DTCViewer: React.FC = () => {
           </>
         ) : (
           /* Empty State */
-          <div className="flex-1 flex flex-col items-center justify-center text-center">
+          <div className="flex-1 flex flex-col items-center justify-center text-center relative">
+            {!isSidebarOpen && (
+              <button
+                onClick={() => setIsSidebarOpen(true)}
+                className="absolute top-0 left-0 p-3 bg-white border border-slate-200 text-slate-500 hover:text-blue-600 hover:bg-blue-50 rounded-xl shadow-sm transition-colors"
+                title="Hiện danh sách mã lỗi"
+              >
+                <PanelLeft className="w-5 h-5" />
+              </button>
+            )}
             <div className="w-24 h-24 bg-blue-50 rounded-full flex items-center justify-center mb-6">
               <FileSearch className="w-12 h-12 text-blue-300" />
             </div>
