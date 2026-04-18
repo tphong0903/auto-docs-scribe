@@ -56,9 +56,9 @@ export const Hero = ({ onPlayVideo }: HeroProps) => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="font-heading text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight text-foreground leading-[1.05]"
+          className="font-heading text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-[1.05] text-glow"
         >
-          SỨC MẠNH <br />
+          <span className="text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">SỨC MẠNH</span> <br />
           <span className="text-gradient">VƯỢT GIỚI HẠN</span>
         </motion.h1>
 
