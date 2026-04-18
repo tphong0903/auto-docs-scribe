@@ -25,7 +25,7 @@
         "2",
         "Đăng ký ECM\n1) Tiến hành “Đăng ký ECM” (Trang 10C-16).\n2) Xoay công tắc máy về vị trí “OFF” và để công tắc máy ở\nvị trí “OFF” trong ít nhất 5 giây.\n3) Xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra lại DTC.\nVẫn phát hiện mã DTC B1169?",
         "Thay ECM và kiểm tra lại DTC. (Trang 1C-2)",
-        "Thay BCM và kiểm tra lại DTC. (Trang 10B-\n43)"
+        "Thay BCM và kiểm tra lại DTC. (Trang 10B-43)"
       ]
     ]
   },
@@ -73,7 +73,7 @@
       [
         "4",
         "Đăng ký chìa khóa công tắc máy\n1) Thay chìa khóa công tắc máy.\n2) Tiến hành “Đăng ký chìa khóa hệ thống chống trộm”. (Trang 10C-16)\n3) Xoay công tắc máy về vị trí “OFF” và để công tắc máy ở\nvị trí “OFF” trong ít nhất 5 giây.\n4) Xoay công tắc máy về vị trí “ON”.\n5) Kiểm tra lại DTC.\nVẫn phát hiện mã DTC B1173?",
-        "Thay BCM và kiểm tra lại DTC. (Trang 10B-\n43)",
+        "Thay BCM và kiểm tra lại DTC. (Trang 10B-43)",
         "Kết thúc. (Chìa khóa\ncông tắc máy bị lỗi)"
       ]
     ]
@@ -109,7 +109,7 @@
       [
         "3",
         "Đăng ký chìa khóa công tắc máy\n1) Tiến hành “Đăng ký chìa khóa hệ thống chống trộm”. (Trang 10C-16)\n2) Xoay công tắc máy về vị trí “OFF” và để công tắc máy ở\nvị trí “OFF” trong ít nhất 5 giây.\n3) Xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra lại DTC.\nVẫn phát hiện mã DTC B1175?",
-        "Thay BCM và kiểm tra lại DTC. (Trang 10B-\n43)",
+        "Thay BCM và kiểm tra lại DTC. (Trang 10B-43)",
         "Kết thúc. (Chìa khóa\ncông tắc máy chưa\nđược đăng ký)"
       ]
     ]

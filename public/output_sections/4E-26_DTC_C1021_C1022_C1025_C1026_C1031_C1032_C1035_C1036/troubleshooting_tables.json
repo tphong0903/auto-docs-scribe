@@ -33,7 +33,7 @@
       ],
       [
         "3",
-        "Kiểm tra mạch cấp nguồn và mạch tín hiệu cảm biến tốc\nđộ bánh xe\n1) Xoay công tắc máy về vị trí “OFF”.\n2) Rút giắc cắm “E09” và từng giắc cắm cảm biến tốc độ\nbánh xe.\n3) Kiểm tra xem kết nối cực tới giắc cắm “E09” và từng\ngiắc cắm cảm biến tốc độ bánh xe có chính xác không.\n4) Nếu các kết nối đều ỔN, hãy kiểm tra những điểm sau.\n• Điện trở của các mạch “A1”, “A2”, “B1”, “B2”, “C1”,\n“C2”, “D1” và “D2”: dưới 1 Ω\n• Điện trở giữa từng mạch “A1”, “A2”, “B1”, “B2”, “C1”,\n“C2”, “D1” và “D2” và dây nối đất: vô cực\n• Điện trở giữa mỗi cực của mạch “A1” - “A2”, “B1” -\n“B2”, “C1” - “C2” and “D1” - “D2” và mỗi cực của giắc\ncắm “E09”: vô cực\n• Điện áp của các mạch “A1”, “A2”, “B1”, “B2”, “C1”,\n“C2”, “D1” và “D2”: khoảng 0 V (Khi công tắc máy ở vị trí “ON”)\nKết quả kiểm tra có ỔN không?",
+        "Kiểm tra mạch cấp nguồn và mạch tín hiệu cảm biến tốc\nđộ bánh xe\n1) Xoay công tắc máy về vị trí “OFF”.\n2) Rút giắc cắm “E09” và từng giắc cắm cảm biến tốc độ\nbánh xe.\n3) Kiểm tra xem kết nối cực tới giắc cắm “E09” và từng\ngiắc cắm cảm biến tốc độ bánh xe có chính xác không.\n4) Nếu các kết nối đều ỔN, hãy kiểm tra những điểm sau.\n• Điện trở của các mạch “A1”, “A2”, “B1”, “B2”, “C1”,\n“C2”, “D1” và “D2”: dưới 1 Ω\n• Điện trở giữa từng mạch “A1”, “A2”, “B1”, “B2”, “C1”,\n“C2”, “D1” và “D2” và dây nối đất: vô cực\n• Điện trở giữa mỗi cực của mạch “A1” - “A2”, “B1” -“B2”, “C1” - “C2” and “D1” - “D2” và mỗi cực của giắc\ncắm “E09”: vô cực\n• Điện áp của các mạch “A1”, “A2”, “B1”, “B2”, “C1”,\n“C2”, “D1” và “D2”: khoảng 0 V (Khi công tắc máy ở vị trí “ON”)\nKết quả kiểm tra có ỔN không?",
         "Chuyển sang Bước 4.",
         "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
       ],
@@ -60,7 +60,7 @@
         "6",
         "Kiểm tra bộ đếm xung cảm biến tốc độ bánh xe\n1) Kiểm tra bộ đếm xung cảm biến tốc độ bánh xe thích\nhợp. (Trang 4E-46)\nKết quả kiểm tra có ỔN không?",
         "Thay bộ thủy lực / cụm\nchi tiết điều khiển ABS\nvà kiểm tra lại DTC. (Trang 4E-38)",
-        "Vệ sinh, sửa chữa hoặc\nthay bộ đếm xung cảm\nbiến tốc độ bánh xe.\n• Bộ đếm xung cảm\nbiến tốc độ bánh\ntrước: (Trang 4E-\n46)\n• Bộ đếm xung cảm\nbiến tốc độ bánh sau: (Trang 4E-46)"
+        "Vệ sinh, sửa chữa hoặc\nthay bộ đếm xung cảm\nbiến tốc độ bánh xe.\n• Bộ đếm xung cảm\nbiến tốc độ bánh\ntrước: (Trang 4E-46)\n• Bộ đếm xung cảm\nbiến tốc độ bánh sau: (Trang 4E-46)"
       ]
     ]
   },

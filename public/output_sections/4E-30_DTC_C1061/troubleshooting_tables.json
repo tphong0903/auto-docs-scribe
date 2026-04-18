@@ -115,7 +115,7 @@
       [
         "3",
         "Kiểm tra DTC cho ECM\n1) Kiểm tra ECM để tìm DTC. (Trang 4E-14)\nCó phát hiện thấy DTC U0073 hoặc U0121 không?",
-        "Chuyển sang “Khắc\nphục sự cố đường\ntruyền bị ngắt” trong\nPhần 10H (Trang 10H-\n23) hoặc “Khắc phục sự\ncố mất đường truyền”\ntrong Phần 10H (Trang\n10H-13).",
+        "Chuyển sang “Khắc\nphục sự cố đường\ntruyền bị ngắt” trong\nPhần 10H (Trang 10H-23) hoặc “Khắc phục sự\ncố mất đường truyền”\ntrong Phần 10H (Trang\n10H-13).",
         "Thay bộ thủy lực / cụm\nchi tiết điều khiển ABS\nvà kiểm tra lại DTC. (Trang 4E-38)"
       ]
     ]

@@ -13,7 +13,7 @@
       [
         "5",
         "Kiểm tra DTC\n1) Thay cảm biến áp suất lốp phát hiện DTC. (Trang\n10D-29)\n2) Xóa DTC. (Trang 10D-8)\n3) Tiến hành “Quy trình xác nhận DTC” (Trang 10D-23) rồi\nkiểm tra lại DTC.\nVẫn phát hiện DTC B1A30, B1A31, B1A32 hoặc B1A33?",
-        "Thay cụm điều khiển hệ\nthống TPMS và kiểm tra lại DTC. (Trang 10D-\n30)",
+        "Thay cụm điều khiển hệ\nthống TPMS và kiểm tra lại DTC. (Trang 10D-30)",
         "Kết thúc."
       ]
     ]
@@ -43,7 +43,7 @@
       [
         "2",
         "Kiểm tra DTC\n1) Thay cảm biến áp suất lốp phát hiện DTC. (Trang\n10D-29)\n2) Xóa DTC. (Trang 10D-8)\n3) Tiến hành “Quy trình xác nhận DTC” (Trang 10D-24) rồi\nkiểm tra lại DTC.\nVẫn phát hiện DTC B1A34, B1A35, B1A36 hoặc B1A37?",
-        "Thay cụm điều khiển hệ\nthống TPMS và kiểm tra lại DTC. (Trang 10D-\n30)",
+        "Thay cụm điều khiển hệ\nthống TPMS và kiểm tra lại DTC. (Trang 10D-30)",
         "Kết thúc."
       ]
     ]
@@ -73,7 +73,7 @@
       [
         "2",
         "Đăng ký mã ID cảm biến áp suất lốp\n1) Đăng ký mã ID cảm biến áp suất lốp trong cụm điều\nkhiển hệ thống TPMS. (Trang 10D-31)\n2) Kiểm tra lại DTC.\nVẫn phát hiện mã DTC B1A40?",
-        "Thay cụm điều khiển hệ\nthống TPMS và kiểm tra lại DTC. (Trang 10D-\n30)",
+        "Thay cụm điều khiển hệ\nthống TPMS và kiểm tra lại DTC. (Trang 10D-30)",
         "Kết thúc."
       ]
     ]

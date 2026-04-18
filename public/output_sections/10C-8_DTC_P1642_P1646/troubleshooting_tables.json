@@ -18,7 +18,7 @@
       [
         "1",
         "Đăng ký ECM\n1) Tiến hành “Đăng ký ECM” (Trang 10C-16).\n2) Kiểm tra lại DTC.\nVẫn phát hiện mã DTC P1611?",
-        "Thay ECM và kiểm tra lại DTC. Nếu vẫn phát\nhiện mã DTC P1611,\nhãy thay BCM và kiểm\ntra lại DTC.\n• ECM: (Trang 1C-2)\n• BCM: (Trang 10B-\n43)",
+        "Thay ECM và kiểm tra lại DTC. Nếu vẫn phát\nhiện mã DTC P1611,\nhãy thay BCM và kiểm\ntra lại DTC.\n• ECM: (Trang 1C-2)\n• BCM: (Trang 10B-43)",
         "Kết thúc."
       ]
     ]
@@ -81,7 +81,7 @@
       ],
       [
         "4",
-        "Kiểm tra mạch giao tiếp CAN\n1) Kiểm tra mạch giao tiếp CAN, tham khảo “Khắc phục sự\ncố đường truyền bị ngắt” trong Phần 10H (Trang 10H-\n23).\nKết quả kiểm tra có ỔN không?",
+        "Kiểm tra mạch giao tiếp CAN\n1) Kiểm tra mạch giao tiếp CAN, tham khảo “Khắc phục sự\ncố đường truyền bị ngắt” trong Phần 10H (Trang 10H-23).\nKết quả kiểm tra có ỔN không?",
         "Chuyển sang Bước 5.",
         "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
       ],
@@ -89,7 +89,7 @@
         "5",
         "Kiểm tra DTC\n1) Kiểm tra DTC trong BCM. (Trang 10C-6)\nCó phát hiện thấy DTC B1173, B1175 hoặc B1176 không?",
         "Chuyển sang khắc phục\nsự cố DTC thích hợp.",
-        "Thay ECM và kiểm tra lại DTC. Nếu vẫn phát\nhiện mã DTC P1642\nhoặc P1646, hãy thay\nBCM và kiểm tra lại DTC.\n• ECM: (Trang 1C-2)\n• BCM: (Trang 10B-\n43)"
+        "Thay ECM và kiểm tra lại DTC. Nếu vẫn phát\nhiện mã DTC P1642\nhoặc P1646, hãy thay\nBCM và kiểm tra lại DTC.\n• ECM: (Trang 1C-2)\n• BCM: (Trang 10B-43)"
       ]
     ]
   },

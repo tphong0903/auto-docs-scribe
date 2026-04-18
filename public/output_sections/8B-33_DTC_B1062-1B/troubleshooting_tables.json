@@ -30,7 +30,7 @@
       [
         "3",
         "Kiểm tra mạch điện cụm túi khí hành khách\n1) Xoay công tắc máy về vị trí “OFF”.\n2) Kiểm tra xem kết nối tới giắc cắm “G11” có chính xác\nkhông.\n3) Rút giắc cắm “G11”. (Trang 8B-45)\n4) Tháo thanh nối tắt trong giắc cắm SDM. (Trang 8B-45)\n5) Kiểm tra những điểm sau.\n• Điện trở giữa các cực “G11-24” và “G259-1”:\nnhỏ hơn hoặc bằng 1 Ω\n• Điện trở giữa các cực “G11-23” và “G259-2”:\nnhỏ hơn hoặc bằng 1 Ω\nDụng cụ chuyên dụng\n: 09932-76010\nKết quả kiểm tra có ỔN không?",
-        "Thay SDM và kiểm tra lại DTC. (Trang 8B-\n45)",
+        "Thay SDM và kiểm tra lại DTC. (Trang 8B-45)",
         "Chuyển sang Bước 4."
       ]
     ]
@@ -83,7 +83,7 @@
       [
         "3",
         "Kiểm tra cảm biến va chạm phía trước\n1) Kiểm tra để đảm bảo công tắc máy đang ở vị trí “OFF”.\n2) Thay cảm biến va chạm phía trước. (Trang 8B-50)\n3) Xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra DTC. (Trang 8B-9)\nCó phát hiện thấy DTC không?",
-        "Thay SDM và kiểm tra lại DTC. (Trang 8B-\n45)",
+        "Thay SDM và kiểm tra lại DTC. (Trang 8B-45)",
         "Kết thúc."
       ]
     ]

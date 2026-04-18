@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Menu, X, Wrench } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const links = [
   { id: "hero", label: "Trang chủ" },
@@ -13,6 +14,7 @@ const links = [
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -28,12 +30,18 @@ export const Navbar = () => {
   return (
     <header
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
-        scrolled ? "glass py-2" : "bg-transparent py-5",
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        // FIX: Bỏ bg-transparent, dùng nền solid kết hợp kính mờ để luôn dễ đọc
+        scrolled
+          ? "bg-background/95 backdrop-blur-md shadow-sm border-b py-2"
+          : "bg-background border-b border-transparent py-4",
       )}
     >
       <nav className="container flex items-center justify-between">
-        <button onClick={() => scrollTo("hero")} className="flex items-center gap-2">
+        <button
+          onClick={() => scrollTo("hero")}
+          className="flex items-center gap-2"
+        >
           <div className="flex h-9 w-9 items-center justify-center rounded-md bg-gradient-to-br from-teal to-teal-light glow-primary">
             <Wrench className="h-5 w-5 text-primary-foreground" />
           </div>
@@ -54,30 +62,47 @@ export const Navbar = () => {
             </button>
           ))}
           <Button
-            onClick={() => scrollTo("specs")}
+            onClick={() => navigate("/dtc-explorer")}
             className="ml-4 bg-gradient-to-r from-teal to-teal-light hover:opacity-90 text-primary-foreground"
           >
-            Khám phá ngay
+            DTC Explorer
           </Button>
         </div>
 
-        <button className="md:hidden text-foreground" onClick={() => setOpen(!open)} aria-label="Menu">
+        <button
+          className="md:hidden text-foreground"
+          onClick={() => setOpen(!open)}
+          aria-label="Menu"
+        >
           {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
       </nav>
 
+      {/* Menu Mobile */}
       {open && (
-        <div className="md:hidden glass mt-2 py-4 animate-fade-in">
+        // FIX: Đổi class "glass" thành nền màu đồng nhất (bg-background) để mobile menu không bị nhiễu
+        <div className="md:hidden bg-background border-b shadow-lg mt-2 py-4 animate-fade-in absolute w-full left-0">
           <div className="container flex flex-col gap-2">
             {links.map((l) => (
               <button
                 key={l.id}
                 onClick={() => scrollTo(l.id)}
-                className="px-4 py-3 text-left text-foreground/80 hover:text-teal-light hover:bg-secondary rounded-md transition-colors"
+                className="px-4 py-3 text-left font-medium text-foreground/80 hover:text-teal-light hover:bg-secondary rounded-md transition-colors"
               >
                 {l.label}
               </button>
             ))}
+            <div className="px-4 mt-2 pt-2 border-t border-border">
+              <Button
+                onClick={() => {
+                  navigate("/dtc-explorer");
+                  setOpen(false);
+                }}
+                className="w-full bg-gradient-to-r from-teal to-teal-light hover:opacity-90 text-primary-foreground"
+              >
+                DTC Explorer
+              </Button>
+            </div>
           </div>
         </div>
       )}

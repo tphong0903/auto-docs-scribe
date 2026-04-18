@@ -35,8 +35,8 @@
       ],
       [
         "4",
-        "Kiểm tra mạch giao tiếp CAN\n1) Kiểm tra mạch giao tiếp CAN, tham khảo “Khắc phục sự\ncố đường truyền bị ngắt” trong Phần 10H (Trang 10H-\n23).\nKết quả kiểm tra có ỔN không?",
-        "Thay ECM và kiểm tra lại DTC. Nếu vẫn phát\nhiện mã DTC P1610,\nhãy thay BCM và kiểm\ntra lại DTC.\n• ECM: (Trang 1C-2)\n• BCM: (Trang 10B-\n43)",
+        "Kiểm tra mạch giao tiếp CAN\n1) Kiểm tra mạch giao tiếp CAN, tham khảo “Khắc phục sự\ncố đường truyền bị ngắt” trong Phần 10H (Trang 10H-23).\nKết quả kiểm tra có ỔN không?",
+        "Thay ECM và kiểm tra lại DTC. Nếu vẫn phát\nhiện mã DTC P1610,\nhãy thay BCM và kiểm\ntra lại DTC.\n• ECM: (Trang 1C-2)\n• BCM: (Trang 10B-43)",
         "Sửa chữa hoặc thay thế bộ dây điện bị hỏng."
       ]
     ]

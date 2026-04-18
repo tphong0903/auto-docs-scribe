@@ -1,8 +1,4 @@
 {
   "name": "Tháo và lắp bộ bàn đạp ga (tích hợp cảm biến APP)",
-  "refs": [
-    "1C-\n5",
-    "1C-6",
-    "1C-7"
-  ]
+  "refs": ["1C-5", "1C-6", "1C-7"]
 }

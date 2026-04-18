@@ -12,7 +12,7 @@
         "Đèn\ncảnh\nbáo\nESP®"
       ],
       [
-        "C1031 (Trang 4F-\n32)",
+        "C1031 (Trang 4F-32)",
         "Điện áp mạch cảm biến tốc\nđộ bánh sau bên phải",
         "Tín hiệu cảm biến tốc độ bánh xe nằm\nngoài phạm vi quy định.",
         "Đèn sáng",
@@ -20,7 +20,7 @@
         "Đèn sáng"
       ],
       [
-        "C1032 (Trang 4F-\n32)",
+        "C1032 (Trang 4F-32)",
         "Hoạt động truyền nhận tín\nhiệu của bộ đếm xung hoặc\ncảm biến tốc độ bánh sau\nbên phải",
         "Liên tục phát hiện tín hiệu cảm biến tốc độ\nbánh xe bất thường.",
         "Đèn sáng",
@@ -28,7 +28,7 @@
         "Đèn sáng"
       ],
       [
-        "C1034 (Trang 4F-\n39)",
+        "C1034 (Trang 4F-39)",
         "Lỗi bộ cấp nguồn bộ cảm\nbiến xoay quanh trục đứng/\ncảm biến G",
         "Điện áp bộ cấp nguồn của bộ cảm biến\nxoay quanh trục đứng/cảm biến G quá\nthấp khi công tắc máy ON.",
         "Đèn sáng",
@@ -36,7 +36,7 @@
         "Đèn sáng"
       ],
       [
-        "C1035 (Trang 4F-\n32)",
+        "C1035 (Trang 4F-32)",
         "Điện áp mạch cảm biến tốc\nđộ bánh sau bên trái",
         "Tín hiệu cảm biến tốc độ bánh xe nằm\nngoài phạm vi quy định.",
         "Đèn sáng",
@@ -44,7 +44,7 @@
         "Đèn sáng"
       ],
       [
-        "C1036 (Trang 4F-\n32)",
+        "C1036 (Trang 4F-32)",
         "Hoạt động truyền nhận tín\nhiệu của bộ đếm xung hoặc\ncảm biến tốc độ bánh sau\nbên trái",
         "Liên tục phát hiện tín hiệu cảm biến tốc độ\nbánh xe bất thường.",
         "Đèn sáng",
@@ -52,7 +52,7 @@
         "Đèn sáng"
       ],
       [
-        "C1037 (Trang 4F-\n39)",
+        "C1037 (Trang 4F-39)",
         "Điện áp bộ cấp nguồn cảm\nbiến góc lái",
         "Điện áp bộ cấp nguồn cảm biến góc lái\nnằm ngoài phạm vi quy định.",
         "OFF",
@@ -60,7 +60,7 @@
         "Đèn sáng"
       ],
       [
-        "C1038 (Trang 4F-\n42)",
+        "C1038 (Trang 4F-42)",
         "Cảm biến góc lái phát hiện\nlỗi cảm biến tốc độ",
         "Cảm biến góc lái (model không trang bị\nhệ thống điều khiển đèn pha/cos tự động)\nhoặc công tắc đèn và công tắc xi nhan\n(model có trang bị hệ thống điều khiển\nđèn pha/cos tự động) phát hiện dữ liệu\nCAN không hợp lệ từ cụm điều khiển\nESP®.",
         "OFF",
@@ -68,7 +68,7 @@
         "Đèn sáng"
       ],
       [
-        "C1039 (Trang 4F-\n43)",
+        "C1039 (Trang 4F-43)",
         "Lỗi bên trong bộ cảm biến\nxoay quanh trục đứng/cảm\nbiến G",
         "Phát hiện lỗi bên trong cảm biến xoay\nquanh trục đứng/cảm biến G.",
         "Đèn sáng",
@@ -76,7 +76,7 @@
         "Đèn sáng"
       ],
       [
-        "C1041 (Trang 4F-\n43)",
+        "C1041 (Trang 4F-43)",
         "Tương quan mạch van\nsolenoid nạp phía trước bên\nphải",
         "Sự cố điện van solenoid.",
         "Đèn sáng",
@@ -84,7 +84,7 @@
         "Đèn sáng"
       ],
       [
-        "C1042 (Trang 4F-\n43)",
+        "C1042 (Trang 4F-43)",
         "Tương quan mạch van\nsolenoid xả phía trước bên\nphải",
         "Sự cố điện van solenoid.",
         "Đèn sáng",
@@ -92,7 +92,7 @@
         "Đèn sáng"
       ],
       [
-        "C1043 (Trang 4F-\n43)",
+        "C1043 (Trang 4F-43)",
         "Tương quan mạch van\nsolenoid cắt thủy lực số 1",
         "Sự cố điện van solenoid.",
         "Đèn sáng",
@@ -100,7 +100,7 @@
         "Đèn sáng"
       ],
       [
-        "C1044 (Trang 4F-\n43)",
+        "C1044 (Trang 4F-43)",
         "Tương quan mạch van\nsolenoid cắt thủy lực số 2",
         "Sự cố điện van solenoid.",
         "Đèn sáng",
@@ -108,7 +108,7 @@
         "Đèn sáng"
       ],
       [
-        "C1045 (Trang 4F-\n43)",
+        "C1045 (Trang 4F-43)",
         "Tương quan mạch van\nsolenoid nạp phía trước bên\ntrái",
         "Sự cố điện van solenoid.",
         "Đèn sáng",
@@ -116,7 +116,7 @@
         "Đèn sáng"
       ],
       [
-        "C1046 (Trang 4F-\n43)",
+        "C1046 (Trang 4F-43)",
         "Tương quan mạch van\nsolenoid xả phía trước bên\ntrái",
         "Sự cố điện van solenoid.",
         "Đèn sáng",
@@ -124,7 +124,7 @@
         "Đèn sáng"
       ],
       [
-        "C1051 (Trang 4F-\n43)",
+        "C1051 (Trang 4F-43)",
         "Tương quan mạch van\nsolenoid nạp phía sau bên\nphải",
         "Sự cố điện van solenoid.",
         "Đèn sáng",
@@ -146,7 +146,7 @@
         "Đèn\ncảnh\nbáo\nESP®"
       ],
       [
-        "C1052 (Trang 4F-\n43)",
+        "C1052 (Trang 4F-43)",
         "Tương quan mạch van\nsolenoid xả phía sau bên\nphải",
         "Sự cố điện van solenoid.",
         "Đèn sáng",
@@ -154,7 +154,7 @@
         "Đèn sáng"
       ],
       [
-        "C1055 (Trang 4F-\n43)",
+        "C1055 (Trang 4F-43)",
         "Tương quan mạch van\nsolenoid nạp phía sau bên\ntrái",
         "Sự cố điện van solenoid.",
         "Đèn sáng",
@@ -162,7 +162,7 @@
         "Đèn sáng"
       ],
       [
-        "C1056 (Trang 4F-\n43)",
+        "C1056 (Trang 4F-43)",
         "Tương quan mạch van\nsolenoid xả phía sau bên trái",
         "Sự cố điện van solenoid.",
         "Đèn sáng",
@@ -170,7 +170,7 @@
         "Đèn sáng"
       ],
       [
-        "C1057 (Trang 4F-\n44)",
+        "C1057 (Trang 4F-44)",
         "Điện áp bộ cấp nguồn",
         "Điện áp bộ cấp nguồn cụm điều khiển\nESP® cao hơn giá trị quy định.",
         "Đèn sáng",
@@ -186,7 +186,7 @@
         null
       ],
       [
-        "C1061 (Trang 4F-\n45)",
+        "C1061 (Trang 4F-45)",
         "Hoạt động mạch mô-tơ bơm",
         "Điện áp bộ cấp nguồn mô-tơ bơm nằm\nngoài phạm vi quy định.",
         "Đèn sáng",
@@ -210,7 +210,7 @@
         null
       ],
       [
-        "C1063 (Trang 4F-\n46)",
+        "C1063 (Trang 4F-46)",
         "Hoạt động mạch điều khiển\ncấp nguồn van solenoid",
         "Tín hiệu đầu ra rơ-le cấp nguồn van\nsolenoid “ON” mặc dù tín hiệu đầu ra\nđược theo dõi “OFF”.",
         "Đèn sáng",
@@ -226,7 +226,7 @@
         null
       ],
       [
-        "C1068 (Trang 4F-\n35)",
+        "C1068 (Trang 4F-35)",
         "Hoạt động mạch cảm biến G",
         "CPU trong bộ cảm biến xoay quanh trục\nđứng/cảm biến G phát hiện lỗi bên trong.",
         "Đèn sáng",
@@ -242,7 +242,7 @@
         null
       ],
       [
-        "C1069 *1 (Trang 4F-\n47)",
+        "C1069 *1 (Trang 4F-47)",
         "Thông số kỹ thuật của cảm\nbiến góc lái chưa được đăng\nký",
         "Cảm biến góc lái phát hiện lỗi chưa được\nxác nhận.",
         "OFF",
@@ -250,7 +250,7 @@
         "Đèn sáng"
       ],
       [
-        "C1071 (Trang 4F-\n43)",
+        "C1071 (Trang 4F-43)",
         "Lỗi bên trong cụm điều khiển\nESP®",
         "Phát hiện lỗi bên trong cụm điều khiển\nESP®.",
         "Đèn sáng",
@@ -258,7 +258,7 @@
         "Đèn sáng"
       ],
       [
-        "C1074 *1 (Trang 4F-\n47)",
+        "C1074 *1 (Trang 4F-47)",
         "Hiệu chuẩn cảm biến G",
         "Hiệu chuẩn cảm biến xoay quanh trục\nđứng/cảm biến G chưa hoàn tất.",
         "Đèn sáng",
@@ -266,7 +266,7 @@
         "Đèn sáng"
       ],
       [
-        "C1075 *1, *2 (Trang 4F-\n47)",
+        "C1075 *1, *2 (Trang 4F-47)",
         "Hiệu chuẩn cảm biến góc lái",
         "Hiệu chuẩn cảm biến góc lái chưa hoàn\ntất.",
         "OFF",
@@ -274,7 +274,7 @@
         "Đèn sáng"
       ],
       [
-        "C107A (Trang 4F-\n47)",
+        "C107A (Trang 4F-47)",
         "Hiệu chuẩn cảm biến xoay\nquanh trục đứng",
         "Hiệu chuẩn bộ cảm biến xoay quanh trục\nđứng/cảm biến G chưa hoàn tất.",
         "OFF",
@@ -282,7 +282,7 @@
         "Đèn sáng"
       ],
       [
-        "C1090 (Trang 4F-\n48)",
+        "C1090 (Trang 4F-48)",
         "ECM phát hiện lỗi cảm biến\ntốc độ từ cụm điều khiển\nESP®",
         "Cụm điều khiển ESP® gửi dữ liệu CAN\nkhông hợp lệ đến ECM.",
         "OFF",
@@ -290,7 +290,7 @@
         "Đèn sáng"
       ],
       [
-        "C1091 (Trang 4F-\n49)",
+        "C1091 (Trang 4F-49)",
         "Dữ liệu CAN không hợp lệ\ntừ ECM",
         "Phát hiện DTC liên quan đến ECM.",
         "OFF",

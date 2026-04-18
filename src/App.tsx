@@ -16,7 +16,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="/viewer" element={<Viewer />} />
+          <Route path="/dtc-explorer" element={<Viewer />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

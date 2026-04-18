@@ -1,7 +1,4 @@
 {
   "name": "Kiểm tra chức năng của bộ trợ lực phanh",
-  "refs": [
-    "4A-\n26",
-    "4A-24"
-  ]
+  "refs": ["4A-26", "4A-24"]
 }

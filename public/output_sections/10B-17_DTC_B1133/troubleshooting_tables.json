@@ -19,7 +19,7 @@
       [
         "3",
         "Kiểm tra DTC\n1) Kiểm tra xem kết nối tới giắc cắm BCM và giắc cắm J/B\ncó chính xác không.\n2) Nếu kết nối ỔN, thực hiện “Quy trình xác nhận DTC” (Trang 10B-17), sau đó kiểm tra lại DTC.\nVẫn phát hiện mã DTC B1123?",
-        "Thay BCM và kiểm tra lại DTC. (Trang 10B-\n43)",
+        "Thay BCM và kiểm tra lại DTC. (Trang 10B-43)",
         "Kết thúc."
       ]
     ]
@@ -49,7 +49,7 @@
       [
         "2",
         "Kiểm tra hệ thống sạc\n1) Kiểm tra hệ thống sạc. (Trang 1J-5)\nKết quả kiểm tra có ỔN không?",
-        "Thay BCM và kiểm tra lại DTC. (Trang 10B-\n43)",
+        "Thay BCM và kiểm tra lại DTC. (Trang 10B-43)",
         "Sửa chữa hệ thống sạc."
       ]
     ]

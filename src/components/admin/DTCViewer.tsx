@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
   Loader,
   AlertCircle,
@@ -8,6 +8,9 @@ import {
   FileSearch,
   BookOpen,
   ChevronRight,
+  Link as LinkIcon,
+  FileText,
+  Home,
 } from "lucide-react";
 import { toast } from "sonner";
 import DTCSidebar from "./DTCSidebar";
@@ -21,7 +24,10 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { Navbar } from "../landing/Navbar";
+import { useNavigate } from "react-router-dom";
 const API_URL = import.meta.env.VITE_API_URL || "";
+
 export interface DTCItem {
   code: string;
   name: string;
@@ -43,13 +49,14 @@ const DTCViewer: React.FC = () => {
   const [selected, setSelected] = useState<DTCItem | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [error, setError] = useState<string | null>(null);
-
+  const navigate = useNavigate();
   const [refDialogOpen, setRefDialogOpen] = useState(false);
   const [refDialogData, setRefDialogData] = useState<{
     code: string;
     foundDTCs: DTCItem[];
   } | null>(null);
 
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     fetchDTCList();
@@ -99,6 +106,15 @@ const DTCViewer: React.FC = () => {
     window.addEventListener("popstate", handlePopState);
     return () => window.removeEventListener("popstate", handlePopState);
   }, [dtcList]);
+
+  useEffect(() => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  }, [selected]);
 
   const selectDTC = (
     dtc: DTCItem,
@@ -198,22 +214,36 @@ const DTCViewer: React.FC = () => {
 
   // ================= UI =================
   return (
-    <div className="flex bg-slate-50 overflow-hidden">
-      {/* Sidebar */}
-      <div className="w-80 bg-white border-r border-slate-200 shadow-[2px_0_8px_-4px_rgba(0,0,0,0.1)] flex flex-col z-10 shrink-0">
+    /* FIX: Thêm h-screen w-full để giới hạn khung hình, kích hoạt tính năng cuộn nội bộ */
+    <div className="flex h-screen w-full bg-slate-50 overflow-hidden">
+      <div className="w-80 bg-white border-r border-slate-200 shadow-[2px_0_8px_-4px_rgba(0,0,0,0.1)] flex flex-col z-10 shrink-0 h-full">
         <div className="p-5 border-b border-slate-100">
-          <div className="flex items-center gap-3">
-            <div className="p-2 bg-blue-50 rounded-lg">
-              <Cpu className="w-6 h-6 text-blue-600" />
+          {/* Header Title & Home Button */}
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-3">
+              <div className="p-2 bg-blue-50 rounded-lg">
+                <Cpu className="w-6 h-6 text-blue-600" />
+              </div>
+              <div>
+                <h1 className="text-xl font-bold text-slate-800">
+                  DTC Explorer
+                </h1>
+                <p className="text-xs font-medium text-slate-500 uppercase tracking-wider mt-0.5">
+                  Diagnostic System
+                </p>
+              </div>
             </div>
-            <div>
-              <h1 className="text-xl font-bold text-slate-800">DTC Explorer</h1>
-              <p className="text-xs font-medium text-slate-500 uppercase tracking-wider mt-0.5">
-                Diagnostic System
-              </p>
-            </div>
+
+            <button
+              onClick={() => navigate("/")}
+              className="p-2 text-slate-400 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition-colors flex items-center justify-center"
+              title="Về trang chủ"
+            >
+              <Home className="w-5 h-5" />
+            </button>
           </div>
 
+          {/* Search Box */}
           <div className="relative mt-5">
             <Search className="absolute left-3.5 top-3 w-4 h-4 text-slate-400" />
             <input
@@ -226,6 +256,7 @@ const DTCViewer: React.FC = () => {
           </div>
         </div>
 
+        {/* List Content */}
         <div className="flex-1 overflow-hidden">
           <DTCSidebar
             items={filteredDTC}
@@ -249,20 +280,76 @@ const DTCViewer: React.FC = () => {
               </h2>
             </div>
 
-            <div className="flex-1 flex flex-col gap-4">
-              <div className="bg-white border border-slate-200 rounded-2xl shadow-sm  ">
-                <DTCPDFViewer folder={selected.folder} />
+            <div
+              ref={scrollContainerRef}
+              className="flex-1 flex flex-col gap-4 overflow-y-auto pr-2 pb-10"
+            >
+              {/* FIX: Thêm min-h-[600px] để khung PDF không bị xẹp */}
+              <div className="flex flex-col xl:flex-row gap-4 shrink-0 min-h-[600px]">
+                {/* PDF Viewer - Chiếm 3 phần */}
+                <div className="flex-[3] bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden h-full">
+                  <DTCPDFViewer folder={selected.folder} />
+                </div>
+
+                {/* References Sidebar - Chiếm 1 phần */}
+                <div className="flex-[1] bg-white border border-slate-200 rounded-2xl shadow-sm flex flex-col min-w-[280px] xl:max-w-sm h-full max-h-[600px]">
+                  <div className="px-5 py-4 border-b border-slate-100 bg-slate-50/50 flex items-center justify-between shrink-0">
+                    <div className="flex items-center gap-2">
+                      <LinkIcon className="w-5 h-5 text-blue-600" />
+                      <h3 className="font-bold text-slate-800">
+                        Tài liệu liên quan
+                      </h3>
+                    </div>
+                    <span className="bg-blue-100 text-blue-700 text-xs font-bold px-2.5 py-1 rounded-full">
+                      {selected.refs?.length || 0}
+                    </span>
+                  </div>
+
+                  <div className="flex-1 overflow-y-auto p-4 space-y-2">
+                    {selected.refs && selected.refs.length > 0 ? (
+                      selected.refs.map((refCode, idx) => (
+                        <button
+                          key={idx}
+                          onClick={() => handleRefClick(refCode)}
+                          className="w-full text-left p-3 rounded-xl border border-slate-200 hover:border-blue-400 hover:bg-blue-50 hover:shadow-sm transition-all group flex items-center justify-between"
+                        >
+                          <div className="flex items-center gap-3">
+                            <div className="p-1.5 bg-slate-100 rounded-md group-hover:bg-blue-100 transition-colors">
+                              <FileText className="w-4 h-4 text-slate-500 group-hover:text-blue-600" />
+                            </div>
+                            <span className="font-semibold text-slate-700 group-hover:text-blue-700">
+                              {refCode}
+                            </span>
+                          </div>
+                          <ChevronRight className="w-4 h-4 text-slate-300 group-hover:text-blue-500 shrink-0" />
+                        </button>
+                      ))
+                    ) : (
+                      <div className="h-full flex flex-col items-center justify-center text-center p-4">
+                        <div className="w-12 h-12 bg-slate-50 rounded-full flex items-center justify-center mb-3">
+                          <FileSearch className="w-6 h-6 text-slate-300" />
+                        </div>
+                        <p className="text-sm font-medium text-slate-600">
+                          Không có liên kết
+                        </p>
+                        <p className="text-xs text-slate-400 mt-1">
+                          Tài liệu này không chứa mã tham chiếu nào.
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                </div>
               </div>
 
-              <div className="bg-white border border-slate-200 rounded-2xl shadow-sm shrink-0  flex flex-col ">
+              {/* Khu vực dưới: Troubleshooting Wizard */}
+              <div className="bg-white border border-slate-200 rounded-2xl shadow-sm shrink-0 flex flex-col mb-4 min-h-[400px]">
                 <div className="px-5 py-4 border-b border-slate-100 bg-slate-50/50 flex items-center gap-2">
                   <ListChecks className="w-5 h-5 text-blue-600" />
                   <h3 className="font-bold text-slate-800">
                     Quy trình chẩn đoán & Khắc phục
                   </h3>
                 </div>
-                {/* Cuộn nếu nội dung Wizard quá dài */}
-                <div className="p-5 overflow-y-auto">
+                <div className="p-5 flex-1 flex flex-col">
                   <DTCTroubleshootingWizard
                     folder={selected.folder}
                     onRefClick={handleRefClick}
@@ -272,7 +359,7 @@ const DTCViewer: React.FC = () => {
             </div>
           </>
         ) : (
-          /* Empty State Chuyên nghiệp */
+          /* Empty State */
           <div className="flex-1 flex flex-col items-center justify-center text-center">
             <div className="w-24 h-24 bg-blue-50 rounded-full flex items-center justify-center mb-6">
               <FileSearch className="w-12 h-12 text-blue-300" />

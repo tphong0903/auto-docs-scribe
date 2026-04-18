@@ -59,7 +59,7 @@
       [
         "6",
         "Kiểm tra DTC\n1) Cắm các giắc cắm của cảm biến đèn pha/cos tự động,\n“G04” và “G05”.\n2) Nối cáp âm (–) ở bình điện.\n3) Tiến hành “Quy trình xác nhận DTC” (Trang 10B-18) rồi\nkiểm tra lại DTC.\nCó phát hiện thấy DTC B1147 hoặc B1148 hiện tại không?",
-        "Thay BCM và kiểm tra lại DTC. (Trang 10B-\n43)",
+        "Thay BCM và kiểm tra lại DTC. (Trang 10B-43)",
         "Kết thúc. (Hỏng hóc\ngián đoạn.)"
       ]
     ]
@@ -80,7 +80,7 @@
       [
         "1",
         "Kiểm tra lại DTC\n1) Ngắt cáp âm (–) ở bình điện.\n2) Nối cáp âm (–) ở bình điện.\n3) Tiến hành “Quy trình xác nhận DTC” (Trang 10B-20) rồi\nkiểm tra lại DTC.\nVẫn phát hiện mã DTC B1170?",
-        "Thay BCM và kiểm tra lại DTC. (Trang 10B-\n43)",
+        "Thay BCM và kiểm tra lại DTC. (Trang 10B-43)",
         "Kết thúc."
       ]
     ]

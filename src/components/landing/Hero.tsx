@@ -8,10 +8,14 @@ interface HeroProps {
 }
 
 export const Hero = ({ onPlayVideo }: HeroProps) => {
-  const scrollTo = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  const scrollTo = (id: string) =>
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden hero-gradient">
+    <section
+      id="hero"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden hero-gradient"
+    >
       {/* Video / image background */}
       <div className="absolute inset-0">
         <video
@@ -56,10 +60,15 @@ export const Hero = ({ onPlayVideo }: HeroProps) => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="font-heading text-5xl md:text-7xl lg:text-8xl font-black tracking-tight leading-[1.05]"
+          className="font-heading text-5xl md:text-7xl lg:text-8xl font-black tracking-tight flex flex-col gap-2 md:gap-4"
         >
-          <span className="text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">SỨC MẠNH</span> <br />
-          <span className="bg-gradient-to-r from-teal-light via-cyan-300 to-teal-light bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(56,189,248,0.35)]">VƯỢT GIỚI HẠN</span>
+          <span className="text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">
+            SỨC MẠNH
+          </span>
+
+          <span className="bg-gradient-to-r from-teal-light via-cyan-300 to-teal-light bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(56,189,248,0.35)] pb-2">
+            VƯỢT GIỚI HẠN
+          </span>
         </motion.h1>
 
         <motion.p
@@ -68,8 +77,8 @@ export const Hero = ({ onPlayVideo }: HeroProps) => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-foreground/70 leading-relaxed"
         >
-          Động cơ V8 Twin-Turbo thế hệ mới — sự kết hợp hoàn hảo giữa kỹ thuật chính xác,
-          công suất bùng nổ và độ bền bỉ tuyệt đối.
+          Động cơ V8 Twin-Turbo thế hệ mới — sự kết hợp hoàn hảo giữa kỹ thuật
+          chính xác, công suất bùng nổ và độ bền bỉ tuyệt đối.
         </motion.p>
 
         <motion.div

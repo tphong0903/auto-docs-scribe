@@ -1,10 +1,4 @@
 {
   "name": "Điều chỉnh độ căng đai truyền động của bơm nước / máy phát điện",
-  "refs": [
-    "1J-6",
-    "1J-7",
-    "1J-8",
-    "7B-\n49",
-    "9H-47"
-  ]
+  "refs": ["1J-6", "1J-7", "1J-8", "7B-49", "9H-47"]
 }

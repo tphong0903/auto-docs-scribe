@@ -1,12 +1,4 @@
 {
   "name": "Kiểm tra hệ thống quạt làm mát két nước (Model có trang bị hệ thống điều hòa A/C)",
-  "refs": [
-    "1-1",
-    "1A-119",
-    "1A-22",
-    "1F-\n15",
-    "1F-14",
-    "1F-16",
-    "1F-2"
-  ]
+  "refs": ["1-1", "1A-119", "1A-22", "1F-15", "1F-14", "1F-16", "1F-2"]
 }

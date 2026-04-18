@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap');
+/* Đã fix: Gộp chung Roboto, thêm Montserrat cho tiêu đề và JetBrains Mono cho thông số */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Roboto:wght@400;500;600;700;900&family=JetBrains+Mono:wght@400;600&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -56,8 +57,6 @@
     --warning-foreground: 0 0% 100%;
     --success: 152 60% 40%;
     --success-foreground: 0 0% 100%;
-
-    font-family: 'Manrope', sans-serif;
   }
 
   .dark {
@@ -118,15 +117,24 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Manrope', sans-serif;
+    /* FIX: Đổi từ Manrope sang Roboto để khớp với link import */
+    font-family: "Roboto", sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Sora', sans-serif;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    /* FIX: Đổi từ Sora sang Montserrat để khớp với link import */
+    font-family: "Montserrat", sans-serif;
   }
 
-  code, pre, .font-mono {
-    font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  code,
+  pre,
+  .font-mono {
+    font-family: "JetBrains Mono", "Fira Code", monospace;
   }
 }
 
@@ -177,7 +185,9 @@
   }
 
   .glow-primary {
-    box-shadow: 0 0 40px hsl(var(--teal) / 0.4), 0 0 80px hsl(var(--teal) / 0.2);
+    box-shadow:
+      0 0 40px hsl(var(--teal) / 0.4),
+      0 0 80px hsl(var(--teal) / 0.2);
   }
 
   .card-glow {
@@ -186,16 +196,28 @@
 
   .card-glow:hover {
     transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 20px 60px hsl(var(--teal) / 0.3), 0 0 0 1px hsl(var(--teal) / 0.5);
+    box-shadow:
+      0 20px 60px hsl(var(--teal) / 0.3),
+      0 0 0 1px hsl(var(--teal) / 0.5);
   }
 
   .hero-gradient {
-    background: linear-gradient(135deg, hsl(200 50% 12%) 0%, hsl(195 45% 18%) 50%, hsl(200 50% 12%) 100%);
+    background: linear-gradient(
+      135deg,
+      hsl(200 50% 12%) 0%,
+      hsl(195 45% 18%) 50%,
+      hsl(200 50% 12%) 100%
+    );
   }
 
   @keyframes piston-stroke {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(20px); }
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(20px);
+    }
   }
 
   .animate-piston {
@@ -203,8 +225,13 @@
   }
 
   @keyframes pulse-glow {
-    0%, 100% { box-shadow: 0 0 20px hsl(var(--teal) / 0.5); }
-    50% { box-shadow: 0 0 50px hsl(var(--teal) / 0.8); }
+    0%,
+    100% {
+      box-shadow: 0 0 20px hsl(var(--teal) / 0.5);
+    }
+    50% {
+      box-shadow: 0 0 50px hsl(var(--teal) / 0.8);
+    }
   }
 
   .animate-pulse-glow {

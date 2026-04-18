@@ -30,7 +30,7 @@
       [
         "3",
         "Đăng ký chìa khóa công tắc máy\n1) Tiến hành “Đăng ký chìa khóa hệ thống chống trộm”. (Trang 10C-16)\n2) Xoay công tắc máy về vị trí “OFF” và để công tắc máy ở\nvị trí “OFF” trong ít nhất 5 giây.\n3) Xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra lại DTC.\nVẫn phát hiện mã DTC B1176?",
-        "Thay BCM và kiểm tra lại DTC. (Trang 10B-\n43)",
+        "Thay BCM và kiểm tra lại DTC. (Trang 10B-43)",
         "Kết thúc. (Chìa khóa\ncông tắc máy chưa\nđược đăng ký)"
       ]
     ]
@@ -60,7 +60,7 @@
       [
         "2",
         "Đăng ký chìa khóa công tắc máy\n1) Tiến hành “Đăng ký chìa khóa hệ thống chống trộm”. (Trang 10C-16)\n2) Kiểm tra để đảm bảo công tắc máy đang ở vị trí “OFF”.\n3) Xoay công tắc máy về vị trí “ON”.\n4) Kiểm tra lại DTC.\nVẫn phát hiện mã DTC B1188?",
-        "Thay BCM và kiểm tra lại DTC. (Trang 10B-\n43)",
+        "Thay BCM và kiểm tra lại DTC. (Trang 10B-43)",
         "Kết thúc. (Chìa khóa\ncông tắc máy chưa\nđược đăng ký)"
       ]
     ]
