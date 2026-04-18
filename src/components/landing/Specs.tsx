@@ -36,7 +36,7 @@ export const Specs = () => {
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-teal-light mb-4">
             // Thông số kỹ thuật
           </p>
-          <h2 className="font-heading text-4xl md:text-6xl font-bold text-foreground">
+          <h2 className="font-heading text-4xl md:text-6xl font-extrabold text-foreground tracking-tight heading-shadow">
             Hiệu năng <span className="text-gradient">đỉnh cao</span>
           </h2>
           <p className="mt-4 text-foreground/70 text-lg">

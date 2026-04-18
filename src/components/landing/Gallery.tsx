@@ -34,7 +34,7 @@ export const Gallery = ({ onPlayVideo }: GalleryProps) => {
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-teal-light mb-4">
             // Thư viện đa phương tiện
           </p>
-          <h2 className="font-heading text-4xl md:text-6xl font-bold text-foreground">
+          <h2 className="font-heading text-4xl md:text-6xl font-extrabold text-foreground tracking-tight heading-shadow">
             Khám phá <span className="text-gradient">từng góc cạnh</span>
           </h2>
           <p className="mt-4 text-foreground/70 text-lg">
@@ -59,7 +59,7 @@ export const Gallery = ({ onPlayVideo }: GalleryProps) => {
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent opacity-90 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/60 to-navy-deep/10 opacity-95 group-hover:opacity-100 transition-opacity" />
 
               {it.isVideo && (
                 <div className="absolute inset-0 flex items-center justify-center">
@@ -79,7 +79,7 @@ export const Gallery = ({ onPlayVideo }: GalleryProps) => {
                 <span className="inline-block px-2.5 py-1 rounded-md bg-teal/20 border border-teal/40 text-teal-light text-[10px] font-mono uppercase tracking-widest mb-3">
                   {it.tag}
                 </span>
-                <h3 className="font-heading text-xl md:text-2xl font-bold text-foreground">{it.title}</h3>
+                <h3 className="font-heading text-xl md:text-2xl font-extrabold text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]">{it.title}</h3>
               </div>
             </motion.button>
           ))}
