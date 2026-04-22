@@ -11,7 +11,8 @@ import {
   Link as LinkIcon,
   FileText,
   Home,
-  PanelLeft, // Import thêm icon PanelLeft
+  PanelLeft,
+  Bug, // Import thêm icon PanelLeft
 } from "lucide-react";
 import { toast } from "sonner";
 import DTCSidebar from "./DTCSidebar";
@@ -232,7 +233,7 @@ const DTCViewer: React.FC = () => {
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-3">
                 <div className="p-2 bg-blue-50 rounded-lg">
-                  <Cpu className="w-6 h-6 text-blue-600" />
+                  <Bug className="w-6 h-6 text-blue-600" />
                 </div>
                 <div>
                   <h1 className="text-xl font-bold text-slate-800">

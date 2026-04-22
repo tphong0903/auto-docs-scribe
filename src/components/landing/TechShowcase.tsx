@@ -150,7 +150,7 @@ export const TechShowcase = () => {
             </p>
 
             {/* Đã Fix: Dùng flex-col thay cho <br/>, chỉnh font-black cho khỏe khoắn */}
-            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-black text-foreground tracking-tight flex flex-col gap-2">
+            <h2 className="font-[Be Vietnam Pro] text-4xl md:text-5xl lg:text-6xl font-black text-foreground tracking-tight flex flex-col gap-2">
               <span className="drop-shadow-md">Kỹ thuật chính xác</span>
               <span className="pb-2 bg-clip-text text-transparent bg-gradient-to-r from-teal-700 to-cyan-600 dark:from-teal-300 dark:to-cyan-200">
                 trong từng chi tiết

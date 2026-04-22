@@ -1,54 +1,53 @@
 import { motion } from "framer-motion";
 import { Play, Maximize2 } from "lucide-react";
-
+import ClipDongCo from "@/assets/clip_dongco.mp4";
 import injection from "@/assets/engine-injection.jpg";
 
 interface GalleryProps {
-  onPlayVideo: () => void;
+  onPlayVideo: (video: string) => void;
 }
-
 const items = [
   {
-    img: injection,
-    title: "Twin Turbocharger",
-    tag: "Hệ thống nạp",
+    img: ClipDongCo,
+    title: "",
+    tag: "Động cơ Suzuki K15B",
     isVideo: true,
-    span: "lg:col-span-2 lg:row-span-2",
-  },
-  {
-    img: injection,
-    title: "Pít-tông Forged",
-    tag: "Buồng đốt",
-    isVideo: true,
-    span: "",
-  },
-  {
-    img: injection,
-    title: "Trục khuỷu CNC",
-    tag: "Truyền động",
-    isVideo: true,
-    span: "",
-  },
-  {
-    img: injection,
-    title: "Hệ xả Titanium",
-    tag: "Khí thải",
-    isVideo: true,
-    span: "",
-  },
-  {
-    img: injection,
-    title: "Thân máy hợp kim",
-    tag: "Cấu trúc",
-    isVideo: true,
-    span: "",
-  },
-  {
-    img: injection,
-    title: "Phun nhiên liệu trực tiếp",
-    tag: "Nhiên liệu",
-    isVideo: true,
-    span: "lg:col-span-2",
+    span: "lg:col-span-4 lg:row-span-2",
+    // },
+    // {
+    //   img: injection,
+    //   title: "Pít-tông Forged",
+    //   tag: "Buồng đốt",
+    //   isVideo: true,
+    //   span: "",
+    // },
+    // {
+    //   img: injection,
+    //   title: "Trục khuỷu CNC",
+    //   tag: "Truyền động",
+    //   isVideo: true,
+    //   span: "",
+    // },
+    // {
+    //   img: injection,
+    //   title: "Hệ xả Titanium",
+    //   tag: "Khí thải",
+    //   isVideo: true,
+    //   span: "",
+    // },
+    // {
+    //   img: injection,
+    //   title: "Thân máy hợp kim",
+    //   tag: "Cấu trúc",
+    //   isVideo: true,
+    //   span: "",
+    // },
+    // {
+    //   img: injection,
+    //   title: "Phun nhiên liệu trực tiếp",
+    //   tag: "Nhiên liệu",
+    //   isVideo: true,
+    //   span: "lg:col-span-2",
   },
 ];
 
@@ -73,8 +72,8 @@ export const Gallery = ({ onPlayVideo }: GalleryProps) => {
             // Thư viện đa phương tiện
           </p>
 
-          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-black text-foreground tracking-tight flex flex-col md:flex-row justify-center items-center gap-2 md:gap-4">
-            <span className="drop-shadow-md">Khám phá</span>
+          <h2 className="font-[Be_Vietnam_Pro] text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground tracking-tight text-center whitespace-nowrap">
+            <span className="drop-shadow-md">Khám phá </span>
             <span className="pb-2 bg-clip-text text-transparent bg-gradient-to-r from-teal-700 to-cyan-600 dark:from-teal-300 dark:to-cyan-200">
               từng góc cạnh
             </span>
@@ -99,17 +98,25 @@ export const Gallery = ({ onPlayVideo }: GalleryProps) => {
                 type: "spring",
                 bounce: 0.3,
               }}
-              onClick={it.isVideo ? onPlayVideo : undefined}
-              // ĐÃ FIX QUAN TRỌNG: Thêm `min-h-[280px] lg:min-h-[320px] w-full h-full` để thẻ không bao giờ bị xẹp
+              onClick={() => it.isVideo && onPlayVideo(it.img)}
               className={`group relative overflow-hidden rounded-[2rem] border border-white/5 hover:border-teal/30 shadow-lg hover:shadow-[0_0_40px_rgba(56,189,248,0.2)] bg-card/20 text-left transition-all duration-500 min-h-[280px] lg:min-h-[320px] w-full h-full ${it.span}`}
             >
-              <img
-                src={it.img}
-                alt={it.title}
-                loading="lazy"
-                // Đã Fix: Đảm bảo object-cover hoạt động tốt trên mọi kích thước
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-110"
-              />
+              {it.isVideo ? (
+                <video
+                  src={it.img}
+                  preload="metadata"
+                  muted
+                  playsInline
+                  className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+                />
+              ) : (
+                <img
+                  src={it.img}
+                  alt={it.title}
+                  loading="lazy"
+                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-110"
+                />
+              )}
 
               <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-500" />
 

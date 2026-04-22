@@ -9,7 +9,7 @@ import { LandingFooter } from "@/components/landing/LandingFooter";
 
 const Landing = () => {
   const [videoOpen, setVideoOpen] = useState(false);
-
+  const [videoSrc, setVideoSrc] = useState<string | null>(null);
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
       <Navbar />
@@ -17,10 +17,22 @@ const Landing = () => {
         <Hero onPlayVideo={() => setVideoOpen(true)} />
         <Specs />
         <TechShowcase />
-        <Gallery onPlayVideo={() => setVideoOpen(true)} />
+        <Gallery
+          onPlayVideo={(src) => {
+            setVideoSrc(src);
+            setVideoOpen(true);
+          }}
+        />
       </main>
       <LandingFooter />
-      <VideoModal open={videoOpen} onClose={() => setVideoOpen(false)} />
+      <VideoModal
+        open={videoOpen}
+        videoSrc={videoSrc}
+        onClose={() => {
+          setVideoOpen(false);
+          setVideoSrc(null); 
+        }}
+      />
     </div>
   );
 };

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "CẢM BIẾN NHIỆT ĐỘ NUÓC LÀM MÁT ECT"
+  },
+  {
+    "id": 2,
+    "name": "CẢM BIẾN VỊ TRÍ TRỤC KHUỶU CKP"
+  },
+  {
+    "id": 3,
+    "name": "CẢM BIẾN VỊ TRÍ TRỤC CAM CMP"
+  },
+  {
+    "id": 4,
+    "name": "CẢM BIẾN VAN ĐIỀU KHIỂN NHỚT OCV (OIL CONTROL VALVE)"
+  },
+  {
+    "id": 5,
+    "name": "CẢM BIẾN OXY HO2S-1 (O2F)"
+  },
+  {
+    "id": 6,
+    "name": "CẢM BIẾN OXY HO2S-2 (O2R)"
+  },
+  {
+    "id": 7,
+    "name": "CẢM BIẾN NHIỆT ĐỘ KHÔNG KHÍ NẠP IAT"
+  },
+  {
+    "id": 8,
+    "name": "CẢM BIẾN ÁP SUẤT ĐƯỜNG NẠP MAP"
+  },
+  {
+    "id": 9,
+    "name": "GIẮC KIM PHUN (INJECTOR CONNECTOR)"
+  },
+  {
+    "id": 10,
+    "name": "BÔ BIN (IGNITION COIL) VÀ GIẮC BÔ BIN"
+  }
+]

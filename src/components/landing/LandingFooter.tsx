@@ -10,10 +10,15 @@ export const LandingFooter = () => {
               <Wrench className="h-5 w-5 text-primary-foreground" />
             </div>
             <div>
-              <p className="font-heading font-bold text-foreground">
-                TORQUE<span className="text-gradient">X</span>
+              <span className="font-heading text-lg font-extrabold tracking-tight text-slate-900 dark:text-white">
+                TORQUE
+                <span className="ml-1 bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-cyan-500">
+                  X
+                </span>
+              </span>
+              <p className="text-xs text-foreground/50 font-mono">
+                High-Performance Engineering
               </p>
-              <p className="text-xs text-foreground/50 font-mono">High-Performance Engineering</p>
             </div>
           </div>
 
@@ -22,9 +27,15 @@ export const LandingFooter = () => {
           </p>
 
           <div className="flex gap-6 text-sm text-foreground/60">
-            <a href="#" className="hover:text-teal-light transition-colors">Liên hệ</a>
-            <a href="#" className="hover:text-teal-light transition-colors">Bảo hành</a>
-            <a href="#" className="hover:text-teal-light transition-colors">Tài liệu</a>
+            <a href="#" className="hover:text-teal-light transition-colors">
+              Liên hệ
+            </a>
+            <a href="#" className="hover:text-teal-light transition-colors">
+              Bảo hành
+            </a>
+            <a href="#" className="hover:text-teal-light transition-colors">
+              Tài liệu
+            </a>
           </div>
         </div>
       </div>

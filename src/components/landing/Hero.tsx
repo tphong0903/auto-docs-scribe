@@ -53,7 +53,7 @@ export const Hero = ({ onPlayVideo }: HeroProps) => {
           className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-teal/40 bg-teal/10 text-teal-light text-xs font-mono uppercase tracking-widest mb-8"
         >
           <span className="w-2 h-2 rounded-full bg-teal-light animate-pulse" />
-          Next-Gen Performance Engine
+          Suzuki K15B Engine
         </motion.div>
 
         <motion.h1
@@ -71,7 +71,7 @@ export const Hero = ({ onPlayVideo }: HeroProps) => {
           </span>
         </motion.h1>
 
-        <motion.p
+        {/* <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
@@ -79,7 +79,7 @@ export const Hero = ({ onPlayVideo }: HeroProps) => {
         >
           Động cơ V8 Twin-Turbo thế hệ mới — sự kết hợp hoàn hảo giữa kỹ thuật
           chính xác, công suất bùng nổ và độ bền bỉ tuyệt đối.
-        </motion.p>
+        </motion.p> */}
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}

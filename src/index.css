@@ -119,6 +119,7 @@
     @apply bg-background text-foreground antialiased;
     /* FIX: Đổi từ Manrope sang Roboto để khớp với link import */
     font-family: "Roboto", sans-serif;
+    font-family: "Be Vietnam Pro", sans-serif;
   }
 
   h1,

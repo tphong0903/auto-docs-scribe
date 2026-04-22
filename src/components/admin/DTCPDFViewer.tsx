@@ -67,7 +67,7 @@ const DTCPDFViewer: React.FC<DTCPDFViewerProps> = ({ folder }) => {
 
         {/* Nhãn hiển thị 120% cố định */}
         <span className="px-3 py-1 bg-slate-100 rounded-lg text-sm font-medium text-slate-700 min-w-[4rem] text-center cursor-default select-none">
-          120%
+          Page {currentPage} of {numPages}
         </span>
 
         <button

@@ -5,9 +5,10 @@ import { useEffect } from "react";
 interface VideoModalProps {
   open: boolean;
   onClose: () => void;
+  videoSrc: string | null;
 }
 
-export const VideoModal = ({ open, onClose }: VideoModalProps) => {
+export const VideoModal = ({ open, onClose, videoSrc }: VideoModalProps) => {
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
     if (open) {
@@ -72,16 +73,11 @@ export const VideoModal = ({ open, onClose }: VideoModalProps) => {
             />
 
             {/* Video Player */}
-            <video
-              autoPlay
-              controls
-              className="relative z-0 w-full h-full object-cover bg-black"
-            >
-              <source
-                src="https://cdn.pixabay.com/video/2020/03/04/33194-396290271_large.mp4"
-                type="video/mp4"
-              />
-            </video>
+            {videoSrc && (
+              <video autoPlay controls className="w-full h-full">
+                <source src={videoSrc} type="video/mp4" />
+              </video>
+            )}
 
             {/* Khung ngắm (Crosshairs) ở 4 góc để trông giống camera */}
             <div className="absolute top-4 left-4 w-8 h-8 border-t-2 border-l-2 border-teal-light/50 z-20 pointer-events-none"></div>

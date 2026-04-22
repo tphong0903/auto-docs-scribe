@@ -7,6 +7,7 @@ import NotFound from "./pages/NotFound.tsx";
 import Viewer from "./components/admin/Viewer.tsx";
 import Landing from "./pages/Landing.tsx";
 import Canva from "./components/canva/Canva.tsx";
+import SensorViewer from "./components/admin/SensorViewer.tsx";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -18,6 +19,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/dtc-explorer" element={<Viewer />} />
+          <Route path="/sensor-explorer" element={<SensorViewer />} />
           <Route path="/diagram" element={<Canva />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
