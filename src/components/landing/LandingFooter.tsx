@@ -11,7 +11,7 @@ export const LandingFooter = () => {
             </div>
             <div>
               <span className="font-heading text-lg font-extrabold tracking-tight text-slate-900 dark:text-white">
-                TORQUE
+                DIAGNOSIS
                 <span className="ml-1 bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-cyan-500">
                   X
                 </span>
@@ -23,7 +23,7 @@ export const LandingFooter = () => {
           </div>
 
           <p className="text-sm text-foreground/60 text-center">
-            © {new Date().getFullYear()} TorqueX Engines. Built for performance.
+            © {new Date().getFullYear()} DIAGNOSISX Engines. Built for performance.
           </p>
 
           <div className="flex gap-6 text-sm text-foreground/60">

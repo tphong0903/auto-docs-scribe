@@ -1,0 +1,88 @@
+{
+  "sensor_data": {
+    "thong_tin_chung": {
+      "ten_cum": "Cảm biến oxy có sấy HO2S-1 (O2F – cảm biến oxy trước)",
+      "thuoc_he_thong": "Hệ thống kiểm soát khí thải / điều khiển hoà khí",
+      "chuc_nang": "Đo nồng độ oxy trong khí thải trước bộ xúc tác để ECM hiệu chỉnh A/F theo chu trình đóng; cảm biến có bộ sấy tích hợp.",
+      "vi_tri_lap": "Phía trước bộ xúc tác trong đường ống xả/ trên bộ chuyển đổi xúc tác",
+      "loai_cam_bien": "Cảm biến zirconia 4 chân, có mạch sấy"
+    },
+    "anh_thuc_te": [],
+    "so_do_chan_giac": {
+      "mo_ta_chung": "",
+      "danh_sach_chan": []
+    },
+    "so_do_dien_rut_gon": {
+      "mach_dien_image_url": null,
+      "nguyen_ly_hoat_dong": "",
+      "do_thi_dac_tinh_image_url": null,
+      "thong_so_chuan": []
+    },
+    "quy_trinh_kiem_tra_tai_giac": [
+      {
+        "ten_buoc": "Kiểm tra ngoại quan",
+        "hanh_dong": [
+          "Kiểm tra ngoại quan giắc, chân cắm, lớp cách điện, nhiệt cháy và dầu bẩn do cảm biến nằm gần hệ thống xả."
+        ]
+      },
+      {
+        "ten_buoc": "Đo nguồn cấp",
+        "hanh_dong": [
+          "Đo nguồn cấp B+ tại chân 3 khi khoá ON; phải có nguồn 12V từ mạch cấp chung."
+        ]
+      },
+      {
+        "ten_buoc": "Đo điện trở bộ sấy",
+        "hanh_dong": [
+          "Đo điện trở bộ sấy trên cặp chân heater theo đúng hường nhìn giắc thực tế; nếu hở mạch/ chập mạch thì nghi hỏng heater."
+        ]
+      },
+      {
+        "ten_buoc": "Kiểm tra thông mạch",
+        "hanh_dong": [
+          "Kiểm tra continuity chân 1 và chân 2 về ECM; tín hiệu HO2S-1 đi về ECM C01-7 và mass tín hiệu đi về C01-6."
+        ]
+      },
+      {
+        "ten_buoc": "Kiểm tra tín hiệu Live / Oscilloscope",
+        "hanh_dong": [
+          "Theo dõi live data điện áp O2 trước xúc tác khi động cơ đã nóng; tín hiệu phải phản ánh chuyển đổi giàu – nghèo khi ECM làm việc chu trình đóng.",
+          "Nếu có oscilloscope, quan sát tín hiệu O2FL và đánh giá độ cao dao động theo hoà khí."
+        ]
+      }
+    ],
+    "dtc_lien_quan": [
+      {
+        "ma_dtc": "P0030",
+        "ten_loi": "Mạch điều khiển sấy cảm biến HO2S hở mạch",
+        "mo_ta_loi": "Bank 1 cảm biến 1 hở mạch."
+      },
+      {
+        "ma_dtc": "P0031",
+        "ten_loi": "Mạch điều khiển sấy cảm biến HO2S thấp",
+        "mo_ta_loi": "Bank 1 cảm biến 1, thường ngắn mạch với mass."
+      },
+      {
+        "ma_dtc": "P0032",
+        "ten_loi": "Mạch điều khiển sấy cảm biến HO2S cao",
+        "mo_ta_loi": "Bank 1 cảm biến 1, thường ngắn mạch với nguồn."
+      },
+      {
+        "ma_dtc": "P0131",
+        "ten_loi": "Điện áp mạch cảm biến O2 thấp",
+        "mo_ta_loi": "Bank 1 cảm biến 1, ECM ngừng điều khiển phản hồi A/F."
+      }
+    ],
+    "trieu_chung_thuc_te": [
+      "Hoà khí hiệu chỉnh sai, hao nhiên liệu hoặc khí thải bất thường.",
+      "MIL sáng; phản hồi hoà khí châm sau khởi động nguội.",
+      "Có thể gây khói đen, mùi xăng hoặc tăng tiêu hao nhiên liệu khi điều khiển A/F bị sai."
+    ],
+    "huong_xu_ly_xac_nhan": [
+      "Vệ sinh và siết lại giắc cảm biến.",
+      "Sửa dây tín hiệu, dây mass tín hiệu hoặc mạch heater nếu có hở chập.",
+      "Thay cảm biến HO2S-1 khi điện trở heater sai hoặc tín hiệu phản hồi không đạt.",
+      "Xoá DTC và xác nhận lại điều kiện đóng vòng A/F sau sửa chữa."
+    ]
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "sensor_data": {
+    "thong_tin_chung": {
+      "ten_cum": "Bô bin đánh lửa (Ignition coil) loại 4 chân (cho động cơ 4 xi lanh, mỗi bô bin độc lập trên từng bugi)",
+      "thuoc_he_thong": "Hệ thống đánh lửa / tín hiệu đầu ra từ ECM",
+      "chuc_nang": "Biến đổi điện áp 12V thành điện áp cao (20-40 kV) để tạo tia lửa ở bugi đánh lửa đúng thời điểm.",
+      "vi_tri_lap": "Trên nắp máy, cắm trực tiếp lên bugi.",
+      "loai_cam_bien": "Loại 2 dây (điều khiển bằng tín hiệu 5V từ ECM) hoặc 3-4 chân (có mạch phản hồi IGT/IGF). Phổ biến hiện nay: bô bin 4 chân (nguồn, mass, tín hiệu IGT, phản hồi IGF)."
+    },
+    "anh_thuc_te": [
+      {
+        "mo_ta": "Vị trí bô bin trên động cơ",
+        "image_url": "[IMAGE_PLACEHOLDER: Hình: Vị trí bô bin trên động cơ]"
+      },
+      {
+        "mo_ta": "Giắc bô bin phía dây dẫn",
+        "image_url": "[IMAGE_PLACEHOLDER: Hình: Giắc bô bin phía dây dẫn]"
+      },
+      {
+        "mo_ta": "Chân giắc bô bin (nhìn từ phía bô bin)",
+        "image_url": "[IMAGE_PLACEHOLDER: Hình: Chân giắc bô bin (nhìn từ phía bô bin)]"
+      }
+    ],
+    "so_do_chan_giac": {
+      "mo_ta_chung": "Cảm biến (bô bin): Nhìn từ phía chân giắc bô bin",
+      "danh_sach_chan": [
+        {
+          "so_chan": "1",
+          "ky_hieu": "B+",
+          "chuc_nang": "Nguồn cấp 12V"
+        },
+        {
+          "so_chan": "2",
+          "ky_hieu": "IGT",
+          "chuc_nang": "Tín hiệu điều khiển đánh lửa từ ECM"
+        },
+        {
+          "so_chan": "3",
+          "ky_hieu": "E",
+          "chuc_nang": "Chân nối đất"
+        }
+      ]
+    },
+    "so_do_dien_rut_gon": {
+      "mach_dien_image_url": "[IMAGE_PLACEHOLDER: Hình: Sơ đồ điện mạch bô bin đánh lửa]",
+      "nguyen_ly_hoat_dong": "ECM gửi tín hiệu IGT (Ignition Timing) dạng xung vuông 5V để báo thời điểm đánh lửa. Bô bin nhận tín hiệu IGT, đóng cắt dòng sơ cấp, tạo điện áp cao thứ cấp đánh lửa. Sau khi đánh lửa, bô bin gửi tín hiệu IGF (Ignition Feedback) 5V về ECM để xác nhận đã có tia lửa. Nếu không có IGF, ECM sẽ ngắt phun nhiên liệu (bảo vệ).",
+      "do_thi_dac_tinh_image_url": null,
+      "thong_so_chuan": [
+        {
+          "loai_thong_so": "Điện áp nguồn và mass",
+          "gia_tri": [
+            "Bật khóa ON: Đo giữa chân B+ (1) và mass thân xe: phải có 12V.",
+            "Đo thông mạch chân E về mass: điện trở < 1Ω."
+          ]
+        },
+        {
+          "loai_thong_so": "Tín hiệu IGT",
+          "gia_tri": [
+            "Khi đề máy hoặc nổ máy, dùng oscilloscope đo chân IGT so với mass: xung vuông 0-5V, tần số thay đổi theo vòng quay."
+          ]
+        }
+      ]
+    },
+    "quy_trinh_kiem_tra_tai_giac": [
+      {
+        "ten_buoc": "Kiểm tra 1: Ngoại quan",
+        "hanh_dong": [
+          "Giắc bô bin có khóa chặt, chân có oxy hóa, nóng chảy không.",
+          "Thân bô bin có nứt vỡ, dấu hiệu phóng điện (vệt đen) không."
+        ]
+      },
+      {
+        "ten_buoc": "Kiểm tra 2: Kiểm tra nguồn và mass",
+        "hanh_dong": [
+          "Rút giắc bô bin, bật khóa ON.",
+          "Đo giữa chân B+ và mass thân: 12V.",
+          "Đo thông mạch chân mass (E) về thân: tốt."
+        ]
+      },
+      {
+        "ten_buoc": "Kiểm tra 3: Kiểm tra tín hiệu IGT",
+        "hanh_dong": [
+          "Cắm lại giắc, dùng oscilloscope hoặc đèn LED (nối từ chân IGT sang nguồn 5V giả) để kiểm tra xung khi đề máy.",
+          "Nếu không có IGT → hỏng ECM, đứt dây hoặc lỗi cảm biến vị trí trục khuỷu/cam."
+        ]
+      },
+      {
+        "ten_buoc": "Kiểm tra 4: Kiểm tra điện trở bô bin (đã tháo)",
+        "hanh_dong": [
+          "Đo sơ cấp và thứ cấp, so sánh với thông số.",
+          "Nếu sai lệch nhiều hoặc hở chập → thay bô bin."
+        ]
+      }
+    ],
+    "dtc_lien_quan": [
+      {
+        "ma_dtc": "P0351, P0352, P0353, P0354",
+        "ten_loi": "Mạch sơ cấp/thứ cấp bô-bin",
+        "mo_ta_loi": "Tương ứng bô-bin A, B, C, D."
+      },
+      {
+        "ma_dtc": "P2300, P2303, P2306, P2309",
+        "ten_loi": "Mạch điều khiển sơ cấp bô-bin thấp",
+        "mo_ta_loi": "Tương ứng bô-bin A, B, C, D."
+      },
+      {
+        "ma_dtc": "P2301, P2304, P2307, P2310",
+        "ten_loi": "Mạch điều khiển sơ cấp bô-bin cao",
+        "mo_ta_loi": "Tương ứng bô-bin A, B, C, D."
+      }
+    ],
+    "trieu_chung_thuc_te": [
+      "Mất 1 xi lanh, động cơ rung, yếu.",
+      "Khó nổ, không nổ máy nếu hỏng nặng.",
+      "Tăng tiêu hao nhiên liệu, xe ì.",
+      "MIL sáng.",
+      "Có thể kèm theo mùi xăng sống ở ống xả."
+    ],
+    "huong_xu_ly_xac_nhan": [
+      "Vệ sinh và siết chặt giắc bô bin.",
+      "Kiểm tra dây nguồn, mass, dây IGT về ECM.",
+      "Đo điện trở bô bin, nếu sai thay bô bin mới.",
+      "Nếu mất IGT hết các xi lanh → kiểm tra CKP, CMP, nguồn ECM.",
+      "Xóa DTC, kiểm tra bằng oscilloscope và live data sau sửa chữa."
+    ]
+  }
+}

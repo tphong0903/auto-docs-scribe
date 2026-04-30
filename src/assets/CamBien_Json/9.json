@@ -1,0 +1,163 @@
+{
+  "sensor_data": {
+    "thong_tin_chung": {
+      "ten_cum": "Giắc kim phun nhiên liệu (Injector connector)",
+      "thuoc_he_thong": "Hệ thống nhiên liệu / tín hiệu đầu ra từ ECM",
+      "chuc_nang": "Cấp nguồn và tín hiệu điều khiển (mass xung) từ ECM để kim phun mở/đóng theo đúng thời điểm và độ rộng xung.",
+      "vi_tri_lap": "Trên thân kim phun, gần đường ống nạp.",
+      "loai_cam_bien": "Loại giắc: 2 chân"
+    },
+    "anh_thuc_te": [
+      {
+        "mo_ta": "Giắc kim phun trên động cơ",
+        "image_url": "[IMAGE_PLACEHOLDER: Hình: Giắc kim phun trên động cơ]"
+      },
+      {
+        "mo_ta": "Đầu phía dây dẫn của giắc kim phun",
+        "image_url": "[IMAGE_PLACEHOLDER: Hình: Đầu phía dây dẫn của giắc kim phun]"
+      }
+    ],
+    "so_do_chan_giac": {
+      "mo_ta_chung": "Giắc kim phun: Nhìn từ phía chân giắc (phía dây hoặc phía kim phun)",
+      "danh_sach_chan": [
+        {
+          "so_chan": "1",
+          "ky_hieu": "B+",
+          "chuc_nang": "Nguồn cấp 12V từ rơ-le chính"
+        },
+        {
+          "so_chan": "2",
+          "ky_hieu": "INJ",
+          "chuc_nang": "Tín hiệu điều khiển từ ECM"
+        }
+      ]
+    },
+    "so_do_dien_rut_gon": {
+      "mach_dien_image_url": "[IMAGE_PLACEHOLDER: Hình: Sơ đồ điện mạch kim phun]",
+      "nguyen_ly_hoat_dong": "Khi khóa ON, một chân của giắc luôn có 12V (từ rơ-le chính). ECM điều khiển chân còn lại bằng cách nối mass (bóng bán dẫn công suất) theo xung PWM. Thời gian mở kim phun (độ rộng xung) thay đổi tùy tải trọng, nhiệt độ, vòng quay...",
+      "do_thi_dac_tinh_image_url": null,
+      "thong_so_chuan": [
+        {
+          "loai_thong_so": "Điện áp và tín hiệu (Bật khóa ON, rút giắc kim phun: đo phía dây dẫn)",
+          "gia_tri": [
+            "Chân 1 phải có điện áp ≈12V (so với mass thân xe).",
+            "Chân còn lại không có điện áp (đi về ECM)."
+          ]
+        },
+        {
+          "loai_thong_so": "Điện trở cuộn kim phun (đo trực tiếp trên hai chân của kim phun khi đã rút giắc)",
+          "gia_tri": ["11,8 – 12,6 Ω ở 25°C (77°F)"]
+        }
+      ]
+    },
+    "quy_trinh_kiem_tra_tai_giac": [
+      {
+        "ten_buoc": "Kiểm tra 1: Quan sát ngoại quan",
+        "hanh_dong": [
+          "Ngàm khóa giắc có gãy không, chân có bị oxy hóa, cháy, nóng chảy không.",
+          "Dây dẫn gần giắc có bị cứng, gãy không."
+        ]
+      },
+      {
+        "ten_buoc": "Kiểm tra 2: Kiểm tra nguồn cấp",
+        "hanh_dong": [
+          "Rút giắc kim phun.",
+          "Bật khóa ON.",
+          "Đo giữa chân nguồn (xác định theo sơ đồ) và mass thân xe: phải có 12V.",
+          "Nếu không có 12V → kiểm tra cầu chì, rơ-le chính hoặc đứt dây."
+        ]
+      },
+      {
+        "ten_buoc": "Kiểm tra 3: Kiểm tra mạch điều khiển (phía ECM)",
+        "hanh_dong": [
+          "Rút giắc kim phun, bật khóa OFF.",
+          "Đo thông mạch từ chân điều khiển (chân còn lại) về chân tương ứng trên ECM.",
+          "Đo xem chân điều khiển có bị chạm mass hoặc chạm nguồn không.",
+          "Dùng oscilloscope hoặc đèn LED nối giữa hai chân giắc phía dây (sau khi đã cắm lại giắc) khi đề máy: đèn LED phải nhấp nháy (mass xung)."
+        ]
+      },
+      {
+        "ten_buoc": "Kiểm tra 4: Đo điện trở kim phun",
+        "hanh_dong": [
+          "Tháo giắc, đo trực tiếp trên hai chân của kim phun.",
+          "So sánh với thông số chuẩn (11,8 – 12,6 Ω ở 25°C (77 °F)).",
+          "Nếu hở mạch hoặc chập → hỏng kim phun."
+        ]
+      }
+    ],
+    "dtc_lien_quan": [
+      {
+        "ma_dtc": "P0201",
+        "ten_loi": "Mạch kim phun nhiên liệu/Hở mạch",
+        "mo_ta_loi": "Xi-lanh 1"
+      },
+      {
+        "ma_dtc": "P0202",
+        "ten_loi": "Mạch kim phun nhiên liệu/Hở mạch",
+        "mo_ta_loi": "Xi-lanh 2"
+      },
+      {
+        "ma_dtc": "P0203",
+        "ten_loi": "Mạch kim phun nhiên liệu/Hở mạch",
+        "mo_ta_loi": "Xi-lanh 3"
+      },
+      {
+        "ma_dtc": "P0204",
+        "ten_loi": "Mạch kim phun nhiên liệu/Hở mạch",
+        "mo_ta_loi": "Xi-lanh 4"
+      },
+      {
+        "ma_dtc": "P0261",
+        "ten_loi": "Mạch kim phun nhiên liệu xi-lanh 1 thấp",
+        "mo_ta_loi": ""
+      },
+      {
+        "ma_dtc": "P0262",
+        "ten_loi": "Mạch kim phun nhiên liệu xi-lanh 1 cao",
+        "mo_ta_loi": ""
+      },
+      {
+        "ma_dtc": "P0264",
+        "ten_loi": "Mạch kim phun nhiên liệu xi-lanh 2 thấp",
+        "mo_ta_loi": ""
+      },
+      {
+        "ma_dtc": "P0265",
+        "ten_loi": "Mạch kim phun nhiên liệu xi-lanh 2 cao",
+        "mo_ta_loi": ""
+      },
+      {
+        "ma_dtc": "P0267",
+        "ten_loi": "Mạch kim phun nhiên liệu xi-lanh 3 thấp",
+        "mo_ta_loi": ""
+      },
+      {
+        "ma_dtc": "P0268",
+        "ten_loi": "Mạch kim phun nhiên liệu xi-lanh 3 cao",
+        "mo_ta_loi": ""
+      },
+      {
+        "ma_dtc": "P0270",
+        "ten_loi": "Mạch kim phun nhiên liệu xi-lanh 4 thấp",
+        "mo_ta_loi": ""
+      },
+      {
+        "ma_dtc": "P0271",
+        "ten_loi": "Mạch kim phun nhiên liệu xi-lanh 4 cao",
+        "mo_ta_loi": ""
+      }
+    ],
+    "trieu_chung_thuc_te": [
+      "Mất 1 hoặc nhiều xi lanh, động cơ chạy không đều, rung.",
+      "Không nổ máy nếu hỏng toàn bộ mạch kim phun (mất nguồn chung).",
+      "Hao nhiên liệu, khói đen (nếu kim phun bị kẹt mở).",
+      "MIL sáng."
+    ],
+    "huong_xu_ly_xac_nhan": [
+      "Xóa DTC.",
+      "Khởi động động cơ, kiểm tra độ mượt khi cầm chừng.",
+      "Kiểm tra live data short trim và long trim, cân bằng công suất các xi lanh.",
+      "Kiểm tra bằng oscilloscope dạng xung kim phun."
+    ]
+  }
+}

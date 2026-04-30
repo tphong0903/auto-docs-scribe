@@ -1,0 +1,125 @@
+{
+  "sensor_data": {
+    "thong_tin_chung": {
+      "ten_cum": "Cảm biến nhiệt độ không khí nạp IAT (Intake Air Temperature)",
+      "thuoc_he_thong": "Hệ thống nạp / tín hiệu đầu vào ECM",
+      "chuc_nang": "Đo nhiệt độ không khí nạp vào động cơ, giúp ECM hiệu chỉnh lượng phun nhiên liệu và góc đánh lửa phù hợp.",
+      "vi_tri_lap": "Trên đường ống nạp, riêng rẽ trên thân ống nạp.",
+      "loai_cam_bien": "Nhiệt điện trở NTC, 2 chân."
+    },
+    "anh_thuc_te": [
+      {
+        "mo_ta": "Vị trí cảm biến IAT trên đường ống nạp",
+        "image_url": "[IMAGE_PLACEHOLDER: Hình: Vị trí cảm biến IAT trên đường ống nạp]"
+      },
+      {
+        "mo_ta": "Đầu phía dây dẫn của giắc IAT",
+        "image_url": "[IMAGE_PLACEHOLDER: Hình: Đầu phía dây dẫn của giắc IAT]"
+      },
+      {
+        "mo_ta": "Chân giắc cảm biến IAT",
+        "image_url": "[IMAGE_PLACEHOLDER: Hình: Chân giắc cảm biến IAT]"
+      }
+    ],
+    "so_do_chan_giac": {
+      "mo_ta_chung": "Cảm biến IAT: Nhìn từ phía chân giắc cảm biến",
+      "danh_sach_chan": [
+        {
+          "so_chan": "1",
+          "ky_hieu": "K/S",
+          "chuc_nang": "Tín hiệu điện áp cảm biến IAT"
+        },
+        {
+          "so_chan": "2",
+          "ky_hieu": "K/SE",
+          "chuc_nang": "Chân nối đất cảm biến IAT"
+        }
+      ]
+    },
+    "so_do_dien_rut_gon": {
+      "mach_dien_image_url": "[IMAGE_PLACEHOLDER: Hình: Sơ đồ điện của IAT]",
+      "nguyen_ly_hoat_dong": "Không khí nạp lạnh -> điện trở cảm biến cao -> điện áp tín hiệu cao. Không khí nạp nóng -> điện trở cảm biến thấp -> điện áp tín hiệu thấp.",
+      "do_thi_dac_tinh_image_url": "[IMAGE_PLACEHOLDER: Hình: Đồ thị điện trở - nhiệt độ của IAT]",
+      "thong_so_chuan": [
+        {
+          "loai_thong_so": "Điện trở cảm biến",
+          "gia_tri": ["20°C: khoảng 2,21-2,69 kΩ", "80°C: khoảng 0,322 kΩ"]
+        },
+        {
+          "loai_thong_so": "Điện áp tín hiệu (Bật khoá ON, đo phía dây dẫn)",
+          "gia_tri": [
+            "Một chân phải có khoảng 5V (nguồn tham chiếu từ ECM)",
+            "Chân còn lại gần 0V (mass)",
+            "Khi nổ máy, nhiệt độ không khí nạp thấp (máy nguội): điện áp khoảng 3-4V",
+            "Khi máy nóng, nhiệt độ nạp tăng: điện áp giảm xuống khoảng 1-2V"
+          ]
+        }
+      ]
+    },
+    "quy_trinh_kiem_tra_tai_giac": [
+      {
+        "ten_buoc": "Kiểm tra 1: Quan sát ngoại quan",
+        "hanh_dong": [
+          "Kiểm tra chốt khóa giắc, chân cắm có bị oxy hóa, bẩn, ẩm không.",
+          "Lắc nhẹ dây xem data IAT trên máy chẩn đoán có thay đổi đột ngột không."
+        ]
+      },
+      {
+        "ten_buoc": "Kiểm tra 2: Đo nguồn và mass tại giắc phía dây",
+        "hanh_dong": [
+          "Tắt máy, rút giắc cảm biến.",
+          "Bật khóa ON.",
+          "Đo hai chân ở phía dây: Một chân khoảng 5V. Một chân khoảng 0V (nối mass tốt).",
+          "Nếu không có 5V → nghi đứt dây nguồn tham chiếu hoặc lỗi ECM.",
+          "Nếu không có 0V → nghi đứt dây mass."
+        ]
+      },
+      {
+        "ten_buoc": "Kiểm tra 3: Đo điện trở cảm biến",
+        "hanh_dong": [
+          "Đo trực tiếp trên hai chân cảm biến khi đã rút giắc.",
+          "So sánh với bảng chuẩn ở nhiệt độ phòng.",
+          "Dùng máy sấy hoặc nước nóng để thay đổi nhiệt độ, điện trở phải giảm dần."
+        ]
+      },
+      {
+        "ten_buoc": "Kiểm tra 4: Đo tín hiệu live",
+        "hanh_dong": [
+          "Nổ máy, theo dõi IAT trên máy chẩn đoán.",
+          "Giá trị phải thay đổi hợp lý theo nhiệt độ thực tế."
+        ]
+      },
+      {
+        "ten_buoc": "Kiểm tra 5: Kiểm tra dây dẫn",
+        "hanh_dong": [
+          "Đo thông mạch từ chân tín hiệu IAT về ECM.",
+          "Kiểm tra dây tín hiệu có bị chạm mass hoặc hở không."
+        ]
+      }
+    ],
+    "dtc_lien_quan": [
+      {
+        "ma_dtc": "P0112",
+        "ten_loi": "Mạch cảm biến nhiệt độ khí nạp 1 thấp",
+        "mo_ta_loi": "Bank 1."
+      },
+      {
+        "ma_dtc": "P0113",
+        "ten_loi": "Mạch cảm biến nhiệt độ khí nạp 1 cao",
+        "mo_ta_loi": "Bank 1."
+      }
+    ],
+    "trieu_chung_thuc_te": [
+      "Khó khởi động khi máy nguội (nếu IAT báo sai nhiệt độ cao).",
+      "Hao nhiên liệu, phun không chính xác.",
+      "Cầm chừng không ổn định.",
+      "MIL sáng."
+    ],
+    "huong_xu_ly_xac_nhan": [
+      "Xóa mã lỗi.",
+      "Khởi động động cơ.",
+      "Theo dõi IAT tăng dần từ nhiệt độ môi trường lên nhiệt độ làm việc bình thường.",
+      "Kiểm tra điện áp tín hiệu giảm dần tương ứng."
+    ]
+  }
+}

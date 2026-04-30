@@ -1,0 +1,91 @@
+{
+  "sensor_data": {
+    "thong_tin_chung": {
+      "ten_cum": "Cảm biến oxy có sấy HO2S-2 (O2R cảm biến oxy sau)",
+      "thuoc_he_thong": "Hệ thống kiểm soát khí thải/ giám sát hiệu quả bộ xúc tác.",
+      "chuc_nang": "Đo nồng độ oxy trong khí thải sau bộ xúc tác để ECM đánh giá tình trạng làm việc của bộ xúc tác; cảm biến có bộ sấy thích hợp.",
+      "vi_tri_lap": "Phía sau bộ xúc tác trong đường ống xả/ trên bộ chuyển đổi xúc tác.",
+      "loai_cam_bien": "Cảm biến zirconia 4 chân, có mạch sấy."
+    },
+    "anh_thuc_te": [],
+    "so_do_chan_giac": {
+      "mo_ta_chung": "",
+      "danh_sach_chan": []
+    },
+    "so_do_dien_rut_gon": {
+      "mach_dien_image_url": null,
+      "nguyen_ly_hoat_dong": "",
+      "do_thi_dac_tinh_image_url": null,
+      "thong_so_chuan": [
+        {
+          "loai_thong_so": "Điện trở heater",
+          "gia_tri": ["Điện trở heater HO2S-2 là 5,0-6,4 Ω ở 20°C."]
+        }
+      ]
+    },
+    "quy_trinh_kiem_tra_tai_giac": [
+      {
+        "ten_buoc": "Kiểm tra ngoại quan giắc HO2S-2",
+        "hanh_dong": ["Chú ý vùng gần hệ thống xả và bộ xúc tác."]
+      },
+      {
+        "ten_buoc": "Đo nguồn cấp B+",
+        "hanh_dong": [
+          "Đo nguồn cấp B+ tại chân 2 khi khoá ON; phải có nguồn 12V từ mạch cấp chung."
+        ]
+      },
+      {
+        "ten_buoc": "Đo điện trở heater",
+        "hanh_dong": [
+          "Đo điện trở heater theo đúng cặp chân heater và hướng nhìn chân giắc thực tế; điện trở heater HO2S-2 là 5,0-6,4 Ω ở 20°C."
+        ]
+      },
+      {
+        "ten_buoc": "Kiểm tra continuity tín hiệu và mass",
+        "hanh_dong": [
+          "Kiểm tra continuity tín hiệu và mass tín hiệu về ECM; theo sơ đồ, HO2S-2 signal về C01-19 và mass tín hiệu về C01-8."
+        ]
+      },
+      {
+        "ten_buoc": "Theo dõi live data O2 sau xúc tác",
+        "hanh_dong": [
+          "Theo dõi live data O2 sau xúc tác khi động cơ đã nóng; tín hiệu dùng để đánh giá hiệu quả làm việc của bộ xúc tác.",
+          "Nếu có oscilloscope, quan sát độ ổn định tín hiệu O2RL và so sánh tương quan với HO2S-1."
+        ]
+      }
+    ],
+    "dtc_lien_quan": [
+      {
+        "ma_dtc": "P0036",
+        "ten_loi": "Mạch điều khiển sấy cảm biến HO2S hở mạch",
+        "mo_ta_loi": "Bank 1 cảm biến 2 hở mạch."
+      },
+      {
+        "ma_dtc": "P0037",
+        "ten_loi": "Mạch điều khiển sấy cảm biến HO2S thấp",
+        "mo_ta_loi": "Bank 1 cảm biến 2, thường ngắn mạch với mass."
+      },
+      {
+        "ma_dtc": "P0038",
+        "ten_loi": "Mạch điều khiển sấy cảm biến HO2S cao",
+        "mo_ta_loi": "Bank 1 cảm biến 2, thường ngắn mạch với nguồn."
+      },
+      {
+        "ma_dtc": "Các mã tín hiệu O2",
+        "ten_loi": "Tín hiệu O2 sau xúc tác",
+        "mo_ta_loi": "Có thể xuất hiện khi cảm biến sau hoặc bộ xúc tác làm việc bất thường."
+      }
+    ],
+    "trieu_chung_thuc_te": [
+      "MIL sáng: đánh giá hiệu quả bộ xúc tác sai.",
+      "Khả năng giám sát khí thải sau xúc tác không chính xác.",
+      "Nếu heater hỏng, cảm biến nóng chậm và dữ liệu sau xúc tác lên chậm."
+    ],
+    "huong_xu_ly_xac_nhan": [
+      "Vệ sinh và siết lại giắc cảm biến.",
+      "Sửa dây nguồn, dây heater, dây tín hiệu và dây mass nếu phát hiện hở chập.",
+      "Thay cảm biến HO2S-2 khi điện trở heater sai hoặc phản hồi tín hiệu không đạt.",
+      "Sau sửa chữa, xoá DTC và kiểm tra lại hoạt động hệ thống xả cảm biến bằng live data."
+    ]
+  }
+}

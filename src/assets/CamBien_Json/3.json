@@ -1,0 +1,114 @@
+{
+  "sensor_data": {
+    "thong_tin_chung": {
+      "ten_cum": "Cảm biến vị trí trục cam CMP",
+      "thuoc_he_thong": "Hệ thống đánh lửa/phun nhiêu liệu/phân phối khí",
+      "chuc_nang": "Xác định góc quay trục cam, kết hợp với CKP để nhận biết kỳ cuối nén – đầu nổ hay cuối xả - đầu hút; đồng thời phục vụ điều khiển phản hồi VVT.",
+      "vi_tri_lap": "",
+      "loai_cam_bien": "3 chân, tín hiệu xung 5V"
+    },
+    "anh_thuc_te": [
+      {
+        "mo_ta": "Vị trí cảm biến vị trí trục cam trên động cơ",
+        "image_url": "[IMAGE_PLACEHOLDER: Hình: Vị trí cảm biến vị trí trục cam trên động cơ]"
+      },
+      {
+        "mo_ta": "Đầu phía dây dẫn của giắc",
+        "image_url": "[IMAGE_PLACEHOLDER: Hình: Đầu phía dây dẫn của giắc]"
+      },
+      {
+        "mo_ta": "Chân giắc cảm biến",
+        "image_url": "[IMAGE_PLACEHOLDER: Hình: Chân giắc cảm biến]"
+      }
+    ],
+    "so_do_chan_giac": {
+      "mo_ta_chung": "Cảm biến CMP: nhìn từ phía chân giắc",
+      "danh_sach_chan": [
+        {
+          "so_chan": "1",
+          "ky_hieu": "DGND",
+          "chuc_nang": "Chân nối đất"
+        },
+        {
+          "so_chan": "2",
+          "ky_hieu": "SGT",
+          "chuc_nang": "Tín hiệu điện áp cảm biến CMP"
+        },
+        {
+          "so_chan": "3",
+          "ky_hieu": "5V",
+          "chuc_nang": "Nguồn 5V cấp cho cảm biến"
+        }
+      ]
+    },
+    "so_do_dien_rut_gon": {
+      "mach_dien_image_url": "[IMAGE_PLACEHOLDER: Hình: Sơ đồ rút gọn cảm biến CMP]",
+      "nguyen_ly_hoat_dong": "Khi răng của vòng cảm biến vị trí trục cam đi qua mặt trước của phần tử từ trở, từ thông của nam châm xuyên qua phần tử từ trở. Do đó, điện trở của nó tăng lên. Khi răng của vòng cảm biến không đi qua mặt trước của phần tử từ trở, từ thông của nam châm không vượt qua phần tử từ trở và điện trở giảm. Cảm biến vị trí trục cam chuyển đổi sự thay đổi này trong điện trở của phần tử từ trở thành tín hiệu xung 5V và xuất tín hiệu đến ECU động cơ.",
+      "do_thi_dac_tinh_image_url": null,
+      "thong_so_chuan": [
+        {
+          "loai_thong_so": "Dạng tín hiệu và ý nghĩa",
+          "gia_tri": [
+            "Tín hiệu CMP là xung vuông 5V.",
+            "Các vấu răng của CMP có độ rộng khác nhau, giúp ECM nhận biết xy-lanh đang ở cuối nén hay cuối xả.",
+            "Khi so sánh đồng thời CKP và CMP trên oscilloscope, hai tín hiệu phải đồng bộ đúng pha; nếu lệch pha dù sóng vẫn đẹp thì phải nghi lỗi cơ khí cam/xích hoặc tương quan pha."
+          ]
+        }
+      ]
+    },
+    "quy_trinh_kiem_tra_tai_giac": [
+      {
+        "ten_buoc": "Kiểm tra ngoại quan",
+        "hanh_dong": ["Lòng giắc", "Oxy hoá chân", "Đứt dây sát giắc"]
+      },
+      {
+        "ten_buoc": "Kiểm tra nguồn",
+        "hanh_dong": ["Khoá ON", "Chân 3 phải có khoảng 5V"]
+      },
+      {
+        "ten_buoc": "Kiểm tra mass",
+        "hanh_dong": ["Chân 1 phải thông mạch tốt"]
+      },
+      {
+        "ten_buoc": "Kiểm tra tín hiệu",
+        "hanh_dong": [
+          "Back-probe chân 2",
+          "Khi đề máy hoặc cầm chừng, quan sát xung 0-5V"
+        ]
+      },
+      {
+        "ten_buoc": "Kiểm tra tương quan CKP/CMP",
+        "hanh_dong": [
+          "Đo 2 kênh đồng thời",
+          "Nếu tín hiệu CMP mất hoàn toàn, sai biên độ, méo sóng hoặc lệch pha với CKP thì nghi lỗi cảm biến, dây, rô-to tín hiệu hoặc sai cam."
+        ]
+      }
+    ],
+    "dtc_lien_quan": [
+      {
+        "ma_dtc": "P0340",
+        "ten_loi": "Mạch cảm biến vị trí trục cam “A”",
+        "mo_ta_loi": "Điều kiện phát hiện là tín hiệu CMP không được nhân trong khi CKP vẫn được nhập, hoặc dạng tín hiệu CMP không như mong muốn."
+      },
+      {
+        "ma_dtc": "P0016",
+        "ten_loi": "Sai tương quan CKP-CMP",
+        "mo_ta_loi": "Sai tương quan giữa vị trí trục khuỷu và vị trí trục cam."
+      }
+    ],
+    "trieu_chung_thuc_te": [
+      "Khó khởi động",
+      "Rung mạnh",
+      "Mất công suất",
+      "Sai điều khiển VVT",
+      "MIL sáng"
+    ],
+    "huong_xu_ly_xac_nhan": [
+      "Kiểm tra dây giắc CMP",
+      "Thay cảm biến CMP khi tín hiệu sai",
+      "Kiểm tra rô-to tín hiệu",
+      "Đối chiếu đồng bộ với CKP",
+      "Kiểm tra dấu cam khi nghi lỗi cơ khí"
+    ]
+  }
+}

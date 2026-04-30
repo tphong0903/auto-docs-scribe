@@ -1,0 +1,117 @@
+{
+  "sensor_data": {
+    "thong_tin_chung": {
+      "ten_cum": "Cảm biến áp suất đường nạp MAP (Manifold Absolute Pressure)",
+      "thuoc_he_thong": "Hệ thống nạp / tín hiệu đầu vào ECM",
+      "chuc_nang": "Đo áp suất tuyệt đối trong đường ống nạp, từ đó ECM tính toán mật độ khí nạp, lưu lượng khí và điều khiển phun nhiên liệu, đánh lửa.",
+      "vi_tri_lap": "Trên đường ống nạp sau bướm ga.",
+      "loai_cam_bien": "Áp điện trở (piezoresistive) 3 chân."
+    },
+    "anh_thuc_te": [
+      {
+        "mo_ta": "Vị trí cảm biến MAP trên đường ống nạp",
+        "image_url": "[IMAGE_PLACEHOLDER: Hình: Vị trí cảm biến MAP trên đường ống nạp]"
+      },
+      {
+        "mo_ta": "Đầu phía dây dẫn của giắc MAP",
+        "image_url": "[IMAGE_PLACEHOLDER: Hình: Đầu phía dây dẫn của giắc MAP]"
+      },
+      {
+        "mo_ta": "Chân giắc cảm biến MAP",
+        "image_url": "[IMAGE_PLACEHOLDER: Hình: Chân giắc cảm biến MAP]"
+      }
+    ],
+    "so_do_chan_giac": {
+      "mo_ta_chung": "Cảm biến MAP: Nhìn từ phía chân giắc cảm biến",
+      "danh_sach_chan": [
+        {
+          "so_chan": "1",
+          "ky_hieu": "DGND",
+          "chuc_nang": "Chân nối đất"
+        },
+        {
+          "so_chan": "2",
+          "ky_hieu": "SGT",
+          "chuc_nang": "Tín hiệu điện áp cảm biến"
+        },
+        {
+          "so_chan": "3",
+          "ky_hieu": "5V",
+          "chuc_nang": "Nguồn 5V cấp cho cảm biến"
+        }
+      ]
+    },
+    "so_do_dien_rut_gon": {
+      "mach_dien_image_url": "[IMAGE_PLACEHOLDER: Hình: Sơ đồ điện của MAP]",
+      "nguyen_ly_hoat_dong": "",
+      "do_thi_dac_tinh_image_url": null,
+      "thong_so_chuan": [
+        {
+          "loai_thong_so": "Giá trị điện áp tham khảo của cảm biến MAP",
+          "gia_tri": [
+            "Áp suất khí quyển: Khoảng 4,1 V",
+            "Áp suất âm -30 kPa (-0,3 kgf/cm2, -4,35 psi, -0,3 bar): Khoảng 2,9 V",
+            "Áp suất âm -60 kPa (-0.6 kgf/cm2, -8,70 psi, -0,6 bar): Khoảng 1,7 V"
+          ]
+        }
+      ]
+    },
+    "quy_trinh_kiem_tra_tai_giac": [
+      {
+        "ten_buoc": "Kiểm tra 1: Ngoại quan",
+        "hanh_dong": [
+          "Giắc có khóa chặt không, chân có oxy hóa, gãy không.",
+          "Ông dẫn áp suất (nếu có) không bị tắc, rò rỉ."
+        ]
+      },
+      {
+        "ten_buoc": "Kiểm tra 2: Nguồn và mass",
+        "hanh_dong": [
+          "Rút giắc MAP, bật khóa ON.",
+          "Đo giữa chân 5V và mass thân xe: phải có 5V.",
+          "Đo thông mạch chân mass về ECM hoặc mass thân."
+        ]
+      },
+      {
+        "ten_buoc": "Kiểm tra 3: Điện áp tín hiệu",
+        "hanh_dong": [
+          "Cắm lại giắc, dùng que dò back-probe chân tín hiệu.",
+          "Bật khóa ON (không nổ): điện áp tương ứng áp suất khí quyển.",
+          "Nổ máy cầm chừng: điện áp giảm xuống.",
+          "Tăng ga đột ngột: điện áp tăng mượt."
+        ]
+      },
+      {
+        "ten_buoc": "Kiểm tra 4: Kiểm tra dây dẫn về ECM",
+        "hanh_dong": [
+          "Đo thông mạch từ chân tín hiệu MAP đến chân ECM tương ứng.",
+          "Kiểm tra không bị chạm mass hoặc hở."
+        ]
+      }
+    ],
+    "dtc_lien_quan": [
+      {
+        "ma_dtc": "P0107",
+        "ten_loi": "Mạch áp suất tuyệt đối trong cổ góp/áp suất khí quyển thấp",
+        "mo_ta_loi": ""
+      },
+      {
+        "ma_dtc": "P0108",
+        "ten_loi": "Mạch áp suất tuyệt đối trong cổ góp/áp suất khí quyển cao",
+        "mo_ta_loi": ""
+      }
+    ],
+    "trieu_chung_thuc_te": [
+      "Cầm chừng không ổn định, rung hoặc chết máy.",
+      "Tăng tốc kém, phản hồi bướm ga chậm.",
+      "Hao nhiên liệu hoặc hòa khí sai.",
+      "MIL sáng."
+    ],
+    "huong_xu_ly_xac_nhan": [
+      "Vệ sinh và siết chặt giắc, kiểm tra đường ống chân không (nếu có).",
+      "Sửa dây nguồn, dây tín hiệu hoặc mass.",
+      "Thay cảm biến MAP nếu tín hiệu sai sau khi đã kiểm tra nguồn, mass và dây dẫn.",
+      "Xóa DTC, chạy xe và kiểm tra live data."
+    ]
+  }
+}

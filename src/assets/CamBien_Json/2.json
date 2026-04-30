@@ -1,0 +1,119 @@
+{
+  "sensor_data": {
+    "thong_tin_chung": {
+      "ten_cum": "Cảm biến vị trí trục khuỷu CKP",
+      "thuoc_he_thong": "Hệ thống đánh lửa/động bộ phun – đánh lửa",
+      "chuc_nang": "Xác định góc quay trục khuỷu và tốc độ động cơ; tín hiệu CKP có các vị trí mất xung để ECM tham chiếu góc quay trục khuỷu.",
+      "vi_tri_lap": "Trên thân máy, gần puly trục khuỷu.",
+      "loai_cam_bien": "Cảm biến 3 chân, tín hiệu xung 5V kiểu Hall"
+    },
+    "anh_thuc_te": [
+      {
+        "mo_ta": "Vị trí cảm biến trục khuỷu CKP trên động cơ",
+        "image_url": "[IMAGE_PLACEHOLDER: Ảnh vị trí cảm biến CKP]"
+      }
+    ],
+    "so_do_chan_giac": {
+      "mo_ta_chung": "Cảm biến CKP: Nhìn từ phía chân giắc cảm biến",
+      "danh_sach_chan": [
+        {
+          "so_chan": "1",
+          "ky_hieu": "DGND",
+          "chuc_nang": "Chân nối đất"
+        },
+        {
+          "so_chan": "2",
+          "ky_hieu": "SGT",
+          "chuc_nang": "Tín hiệu điện áp cảm biến CKP"
+        },
+        {
+          "so_chan": "3",
+          "ky_hieu": "5V",
+          "chuc_nang": "Nguồn 5V cấp cho cảm biến"
+        }
+      ]
+    },
+    "so_do_dien_rut_gon": {
+      "mach_dien_image_url": "[IMAGE_PLACEHOLDER: Hình Sơ đồ điện rút gọn cảm biến CKP]",
+      "nguyen_ly_hoat_dong": "Khi răng của vòng cảm biến trục khuỷu đi qua mặt trước của phần tử từ trở, từ thông xuyên qua phần tử từ trở. Do đó, điện trở của nó tăng lên. Khi răng của vòng cảm biến trục khuỷu không vượt qua mặt trước của phần tử từ trở thì từ thông của nam châm không vượt qua phần tử từ trở và điện trở giảm. Cảm biến vị trí trục khuỷu chuyển đổi sự thay đổi điện trở này của phần tử từ trở thành tín hiệu xung 5V và xuất tín hiệu đó tới ECU động cơ. Ở cảm biến CKP sẽ thường có một vài vị trí răng khuyết để tham chiếu xác định góc quay trục khu.",
+      "do_thi_dac_tinh_image_url": null,
+      "thong_so_chuan": [
+        {
+          "loai_thong_so": "Giá trị và dạng tín hiệu cần kiểm tra",
+          "gia_tri": [
+            "Bật khoá ON: phải có nguồn 5V cấp cho cảm biến.",
+            "Khi quay khởi động/nổ máy: chân tín hiệu phải tạo xung vuông khoảng 0-5V.",
+            "Tín hiệu CKP có các vị trí mất xung để làm mốc tham chiếu góc quay trục khuỷu.",
+            "Kiểm tra CKP bằng cách cấp nguồn và đưa vật liệu sắt từ qua đầu cảm biến để quan sát sự thay đổi tín hiệu/điện trở."
+          ]
+        }
+      ]
+    },
+    "quy_trinh_kiem_tra_tai_giac": [
+      {
+        "ten_buoc": "Kiểm tra ngoại quan giắc",
+        "hanh_dong": [
+          "Gãy ngàm",
+          "Oxy hoá chân",
+          "Bám dầu",
+          "Đứt gãy dây gần giắc"
+        ]
+      },
+      {
+        "ten_buoc": "Đo nguồn cấp",
+        "hanh_dong": [
+          "Rút giắc",
+          "Bật khoá ON",
+          "Đo giữa chân 3 và mass thân xe → phải có khoảng 5V"
+        ]
+      },
+      {
+        "ten_buoc": "Đo mass",
+        "hanh_dong": ["Đo thông mạch chân 1 về mass chuẩn/sensor ground"]
+      },
+      {
+        "ten_buoc": "Đo tín hiệu",
+        "hanh_dong": [
+          "Cắm giắc",
+          "Back-probe chân 2 khi đề máy",
+          "Dùng oscilloscope quan sát dạng sóng xung vuông 0-5V"
+        ]
+      },
+      {
+        "ten_buoc": "Đối chiếu CKP và CMP",
+        "hanh_dong": [
+          "Nếu nghi lỗi đồng bộ, đo đồng thời CKP và CMP để xem lệch pha."
+        ]
+      }
+    ],
+    "dtc_lien_quan": [
+      {
+        "ma_dtc": "P0335",
+        "ten_loi": "Mạch cảm biến vị trí trục khuỷu “A”",
+        "mo_ta_loi": "Khi lỗi này ECM có thể tính CKP dựa trên tín hiệu CMP."
+      },
+      {
+        "ma_dtc": "P0336",
+        "ten_loi": "Phạm vi hoạt động",
+        "mo_ta_loi": "Phạm vi hoạt động của mạch CKP bất thường."
+      },
+      {
+        "ma_dtc": "P0016",
+        "ten_loi": "Sai tương quan CKP-CMP",
+        "mo_ta_loi": "Ảnh hưởng động bộ phun và đánh lửa."
+      }
+    ],
+    "trieu_chung_thuc_te": [
+      "Khó nổ hoặc không nổ",
+      "Rung mạnh",
+      "Mất công suất",
+      "Sai đồng bộ phun – đánh lửa"
+    ],
+    "huong_xu_ly_xac_nhan": [
+      "Vệ sinh và siết lại giắc",
+      "Sửa dây nguồn/tín hiệu/mass",
+      "Thay cảm biến CKP nếu tín hiệu sai",
+      "Đối chiếu lại đồng bộ CKP/CMP khi nghi lỗi cơ khí cam xích."
+    ]
+  }
+}

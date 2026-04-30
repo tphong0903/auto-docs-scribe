@@ -45,7 +45,7 @@ export const VideoModal = ({ open, onClose, videoSrc }: VideoModalProps) => {
               <div className="flex items-center gap-2">
                 <MonitorPlay className="w-5 h-5 text-teal-light" />
                 <span className="font-mono text-xs uppercase tracking-[0.2em] text-teal-light font-semibold drop-shadow-md">
-                  TORQUEX // LIVE FEED
+                  DIAGNOSISX // LIVE FEED
                 </span>
               </div>
               <div className="flex items-center gap-2">

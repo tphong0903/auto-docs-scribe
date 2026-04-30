@@ -2,6 +2,7 @@ import React, { useMemo, useState } from "react";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useNavigate } from "react-router-dom";
 import { Home } from "lucide-react";
+
 export interface SensorItem {
   id: number;
   name: string;
@@ -20,6 +21,7 @@ const SensorSidebar: React.FC<SensorSidebarProps> = ({
 }) => {
   const [search, setSearch] = useState("");
   const navigate = useNavigate();
+
   // 🔍 Filter search
   const filteredItems = useMemo(() => {
     return items.filter((item) =>
@@ -29,18 +31,19 @@ const SensorSidebar: React.FC<SensorSidebarProps> = ({
 
   if (items.length === 0) {
     return (
-      <div className="flex-1 flex items-center justify-center text-gray-500">
+      <div className="flex-1 flex items-center justify-center text-gray-500 h-full">
         <p>Không có dữ liệu</p>
       </div>
     );
   }
 
   return (
-    <div className="flex flex-col h-full">
+    // FIX 1: Thêm overflow-hidden vào container ngoài cùng
+    <div className="flex flex-col h-full overflow-hidden">
       {/* 🔍 Search */}
-      <div className="p-3 border-b">
+      {/* FIX 2: Thêm flex-shrink-0 để phần Header/Search luôn giữ nguyên kích thước */}
+      <div className="p-3 border-b flex-shrink-0">
         <div className="flex gap-2">
-          {/* Search */}
           <input
             type="text"
             placeholder="Tìm cảm biến..."
@@ -52,29 +55,32 @@ const SensorSidebar: React.FC<SensorSidebarProps> = ({
       </div>
 
       {/* 📜 List */}
-      <ScrollArea className="flex-1">
-        <div className="space-y-1 p-4">
-          {filteredItems.length === 0 ? (
-            <p className="text-gray-500 text-sm">Không tìm thấy</p>
-          ) : (
-            filteredItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => onSelect(item)}
-                className={`w-full text-left px-4 py-3 rounded-lg transition-all duration-200 ${
-                  selected?.id === item.id
-                    ? "bg-blue-600 text-white shadow-md"
-                    : "bg-gray-100 text-gray-800 hover:bg-gray-200"
-                }`}
-              >
-                <div className="font-semibold text-sm break-words whitespace-normal">
-                  {item.name}
-                </div>
-              </button>
-            ))
-          )}
-        </div>
-      </ScrollArea>
+      {/* FIX 3: Bọc ScrollArea trong 1 div có flex-1 và overflow-hidden. ScrollArea set h-full */}
+      <div className="flex-1 overflow-hidden">
+        <ScrollArea className="h-full w-full">
+          <div className="space-y-1 p-4">
+            {filteredItems.length === 0 ? (
+              <p className="text-gray-500 text-sm">Không tìm thấy</p>
+            ) : (
+              filteredItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => onSelect(item)}
+                  className={`w-full text-left px-4 py-3 rounded-lg transition-all duration-200 ${
+                    selected?.id === item.id
+                      ? "bg-blue-600 text-white shadow-md"
+                      : "bg-gray-100 text-gray-800 hover:bg-gray-200"
+                  }`}
+                >
+                  <div className="font-semibold text-sm break-words whitespace-normal">
+                    {item.name}
+                  </div>
+                </button>
+              ))
+            )}
+          </div>
+        </ScrollArea>
+      </div>
     </div>
   );
 };

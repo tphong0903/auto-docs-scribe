@@ -80,7 +80,7 @@ export const Navbar = () => {
             <Wrench className="h-5 w-5 text-primary-foreground" />
           </div>
           <span className="font-heading text-lg font-extrabold tracking-tight text-slate-900 dark:text-white">
-            TORQUE
+            DIAGNOSIS
             <span className="ml-1 bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-cyan-500">
               X
             </span>

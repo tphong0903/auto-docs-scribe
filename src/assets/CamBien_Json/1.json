@@ -1,0 +1,146 @@
+{
+  "sensor_data": {
+    "thong_tin_chung": {
+      "ten_cum": "Giắc cảm biến nhiệt độ nước làm mát ECT",
+      "thuoc_he_thong": "Hệ thống làm mát / tín hiệu đầu vào ECM",
+      "chuc_nang": "Gửi tín hiệu nhiệt độ nước làm mát về ECM để điều khiển lượng phun, cầm chừng, thời điểm đánh lửa và quạt làm mát.",
+      "vi_tri_lap": "Trên đường nước làm mát/đuôi máy, gần thân van hằng nhiệt hoặc áo nước động cơ.",
+      "loai_cam_bien": "Nhiệt điện trở NTC, 2 chân."
+    },
+    "anh_thuc_te": [
+      {
+        "mo_ta": "Vị trí cảm biến ECT trên động cơ",
+        "image_url": "[IMAGE_PLACEHOLDER: Ảnh vị trí cảm biến ECT trên động cơ]"
+      },
+      {
+        "mo_ta": "Đầu phía dây dẫn của giắc",
+        "image_url": "[IMAGE_PLACEHOLDER: Ảnh đầu phía dây dẫn của giắc]"
+      },
+      {
+        "mo_ta": "Chân giắc cảm biến",
+        "image_url": "[IMAGE_PLACEHOLDER: Ảnh chân giắc cảm biến]"
+      }
+    ],
+    "so_do_chan_giac": {
+      "mo_ta_chung": "Cảm biến ECT: Nhìn từ phía chân giắc cảm biến",
+      "danh_sach_chan": [
+        {
+          "so_chan": "1",
+          "ky_hieu": "WTS",
+          "chuc_nang": "Tín hiệu điện áp cảm biến ECT"
+        },
+        {
+          "so_chan": "2",
+          "ky_hieu": "E",
+          "chuc_nang": "Chân nối đất"
+        }
+      ]
+    },
+    "so_do_dien_rut_gon": {
+      "mach_dien_image_url": "[IMAGE_PLACEHOLDER: Hình Sơ đồ điện của ECT]",
+      "nguyen_ly_hoat_dong": "Cảm biến ECT hoạt động theo nguyên lý nhiệt điện trở NTC: nhiệt độ nước làm mát càng tăng thì điện trở cảm biến càng giảm, làm điện áp tín hiệu gửi về ECM giảm theo. Khi động cơ nguội, điện trở lớn nên điện áp tín hiệu cao; khi động cơ nóng, điện trở nhỏ nên điện áp tín hiệu thấp. ECM dựa vào tín hiệu này để xác định nhiệt độ nước làm mát và điều khiển phun xăng, cầm chừng, đánh lửa và quạt làm mát.",
+      "do_thi_dac_tinh_image_url": "[IMAGE_PLACEHOLDER: Hình Đồ thị điện trở - nhiệt độ]",
+      "thong_so_chuan": [
+        {
+          "loai_thong_so": "Điện trở cảm biến",
+          "gia_tri": ["20°C khoảng 2,29-2,62 ΚΩ", "80°C khoảng 0,31-0,33 ΚΩ"]
+        },
+        {
+          "loai_thong_so": "Điện áp tín hiệu (Đo phía dây dẫn, bật ON)",
+          "gia_tri": [
+            "Một chân phải có khoảng 5V",
+            "Chân còn lại phải gần 0V nếu đường mass tốt",
+            "Máy nguội: điện áp cao, khoảng 3-4V",
+            "Máy nóng: điện áp thấp, khoảng 1,0-1,4V ở 100°C"
+          ]
+        },
+        {
+          "loai_thong_so": "Data list",
+          "gia_tri": [
+            "Khi nguội: giá trị ECT gần nhiệt độ môi trường",
+            "Khi nóng: giá trị ECT tăng dần lên khoảng 80-95°C",
+            "Nếu báo -40°C hoặc rất thấp bất thường → nghi hở mạch/P0118",
+            "Nếu báo 120°C trở lên ngay khi máy nguội → nghi chập mạch/P0117"
+          ]
+        }
+      ]
+    },
+    "quy_trinh_kiem_tra_tai_giac": [
+      {
+        "ten_buoc": "Kiểm tra 1: Quan sát ngoại quan",
+        "hanh_dong": [
+          "Kiểm tra chốt khóa giắc",
+          "Kiểm tra chân giắc có cong, oxy hóa, ẩm, bẩn không",
+          "Lắc nhẹ dây xem data live có thay đổi đột ngột không"
+        ]
+      },
+      {
+        "ten_buoc": "Kiểm tra 2: Đo nguồn tại giắc phía dây",
+        "hanh_dong": [
+          "Tắt máy, rút giắc cảm biến",
+          "Bật khóa ON",
+          "Đo hai chân ở phía dây: một chân khoảng 5V, một chân khoảng 0V",
+          "Nếu không có 5V → nghi đứt dây nguồn tham chiếu hoặc ECM",
+          "Nếu không có 0V → nghi đứt dây mass/return"
+        ]
+      },
+      {
+        "ten_buoc": "Kiểm tra 3: Đo điện trở cảm biến",
+        "hanh_dong": [
+          "Tháo cảm biến hoặc đo trực tiếp trên hai chân cảm biến khi rút giắc",
+          "So sánh với bảng chuẩn tại nhiệt độ phòng",
+          "Nhúng đầu cảm biến vào nước nóng, điện trở phải giảm mượt theo nhiệt độ"
+        ]
+      },
+      {
+        "ten_buoc": "Kiểm tra 4: Đo tín hiệu live",
+        "hanh_dong": [
+          "Nổ máy, theo dõi ECT trên máy chẩn đoán",
+          "Giá trị phải tăng dần theo nhiệt độ thực",
+          "Điện áp tín hiệu phải giảm dần khi máy nóng lên"
+        ]
+      },
+      {
+        "ten_buoc": "Kiểm tra 5: Kiểm tra dây dẫn",
+        "hanh_dong": [
+          "Đo thông mạch từ chân tín hiệu giắc ECT về chân tương ứng trên ECM",
+          "Đo xem dây tín hiệu có chạm mass không",
+          "Đo xem mass cảm biến có bị hở không"
+        ]
+      }
+    ],
+    "dtc_lien_quan": [
+      {
+        "ma_dtc": "P0117",
+        "ten_loi": "ECT Circuit Low Input",
+        "mo_ta_loi": "ECM hiểu động cơ quá nóng. Thường do chập mạch, dây tín hiệu chạm mass hoặc giắc ẩm/bẩn. Điện áp tín hiệu thường < 0,2V."
+      },
+      {
+        "ma_dtc": "P0118",
+        "ten_loi": "ECT Circuit High Input",
+        "mo_ta_loi": "ECM hiểu động cơ rất lạnh. Thường do hở mạch, đứt dây hoặc giắc lỏng tuột. Điện áp tín hiệu thường gần 5V."
+      },
+      {
+        "ma_dtc": "P0480 / P0692",
+        "ten_loi": "Lỗi mạch quạt làm mát",
+        "mo_ta_loi": "Có thể xuất hiện ở mạch quạt khi chiến lược điều khiển nhiệt bị ảnh hưởng hoặc mạch điều khiển quạt có vấn đề."
+      }
+    ],
+    "trieu_chung_thuc_te": [
+      "Quạt làm mát chạy liên tục khi máy nguội",
+      "Quạt không bật đúng thời điểm",
+      "Khó khởi động nguội",
+      "Phun giàu kéo dài, hao nhiên liệu",
+      "Cầm chừng không ổn định",
+      "Động cơ yếu khi nguội",
+      "MIL sáng"
+    ],
+    "huong_xu_ly_xac_nhan": [
+      "Xóa mã lỗi",
+      "Khởi động động cơ",
+      "Theo dõi ECT tăng dần từ nhiệt độ môi trường lên nhiệt độ làm việc",
+      "Điện áp tín hiệu giảm dần tương ứng",
+      "Quạt làm mát bật đúng ngưỡng nhiệt độ"
+    ]
+  }
+}

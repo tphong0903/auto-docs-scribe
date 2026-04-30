@@ -1,0 +1,100 @@
+{
+  "sensor_data": {
+    "thong_tin_chung": {
+      "ten_cum": "Cảm biến van điều khiển nhớt OCV (oil control valve)",
+      "thuoc_he_thong": "Hệ thống phân phối khí biến thiên VVT",
+      "chuc_nang": "ECM điều khiển OCV để phân phối dầu thuỷ lực và bộ chấp hành VVT, qua đó thay đổi pha cam nạp theo điều kiện vận hành.",
+      "vi_tri_lap": "Trên đầu máy/ gần cụm chấp hành VVT ở trục cam nạp.",
+      "loai_cam_bien": "Van điện từ 2 chân (actuator)."
+    },
+    "anh_thuc_te": [],
+    "so_do_chan_giac": {
+      "mo_ta_chung": "",
+      "danh_sach_chan": []
+    },
+    "so_do_dien_rut_gon": {
+      "mach_dien_image_url": null,
+      "nguyen_ly_hoat_dong": "",
+      "do_thi_dac_tinh_image_url": null,
+      "thong_so_chuan": []
+    },
+    "quy_trinh_kiem_tra_tai_giac": [
+      {
+        "ten_buoc": "Kiểm tra ngoại quan giắc OCV",
+        "hanh_dong": [
+          "Kiểm tra ngàm khoá, chân cắm, dầu bẩn, oxy hoá, dây bị gãy hoặc cọ xát."
+        ]
+      },
+      {
+        "ten_buoc": "Đo điện áp/nguồn",
+        "hanh_dong": [
+          "Rút giắc OCV, bật khoá ON, đo điện áp giữa chân nguồn Al và mass thân xe; phải có nguồn cấp từ rơ-le chính."
+        ]
+      },
+      {
+        "ten_buoc": "Kiểm tra mạch điều khiển",
+        "hanh_dong": [
+          "Kiểm tra continuity chân điều khiển B1 về ECM; mạch điều khiển OCV đi về ECM tại chân C01-42."
+        ]
+      },
+      {
+        "ten_buoc": "Đo điện trở",
+        "hanh_dong": [
+          "Đo điện trở cuộn van OCV giữa hai chân của van; nếu hở mạch hoặc chập mạch thì nghi hỏng van."
+        ]
+      },
+      {
+        "ten_buoc": "Active test và theo dõi Datalist",
+        "hanh_dong": [
+          "Nếu có máy chẩn đoán, thực hiện active test OCV và theo dỗi Datalist: VVT advance, so sánh VVT Command và VVT actual."
+        ]
+      },
+      {
+        "ten_buoc": "Kiểm tra bổ trợ hệ dầu bôi trơn",
+        "hanh_dong": [
+          "Kiểm tra mức dầu, chất lượng dầu, lọc nhớt và khả năng tắc đường dầu vì OCV/VVT phụ thuộc trực tiếp vào áp suất dầu."
+        ]
+      }
+    ],
+    "dtc_lien_quan": [
+      {
+        "ma_dtc": "P0100",
+        "ten_loi": "Mạch bộ chấp hành vị trí trục cam “A”",
+        "mo_ta_loi": "Hở mạch (Bank 1)."
+      },
+      {
+        "ma_dtc": "P2088",
+        "ten_loi": "Mạch điều khiển OCV thấp",
+        "mo_ta_loi": "Ngắn mạch với mass."
+      },
+      {
+        "ma_dtc": "P2089",
+        "ten_loi": "Mạch điều khiển OCV cao",
+        "mo_ta_loi": "Ngắn mạch với nguồn cấp."
+      },
+      {
+        "ma_dtc": "P0011",
+        "ten_loi": "Vị trí trục cam “A” quá sớm",
+        "mo_ta_loi": "Hoặc lỗi hoạt động hệ thống VVT."
+      },
+      {
+        "ma_dtc": "P0016",
+        "ten_loi": "Sai tương quan vị trí",
+        "mo_ta_loi": "Sai tương quan vị trí trục khuỷu – vị trí trục cam (liên đới khi pha cam sai nặng)."
+      }
+    ],
+    "trieu_chung_thuc_te": [
+      "Động cơ rung giật hoặc chết máy ở cầm chừng khi pha cam bị kẹt sớm.",
+      "Mất công suất, ì máy, tăng tốc kém.",
+      "Hao nhiên liệu, mùi xăng sống hoặc MIL sáng.",
+      "VVT Command và VVT actual lệch nhau bất thường."
+    ],
+    "huong_xu_ly_xac_nhan": [
+      "Vệ sinh và siết lại giắc OCV; xử lý chân giắc bị oxy hoá hoặc lỏng.",
+      "Sửa dây nguồn hoặc dây điều khiển nếu phát hiện hở chập.",
+      "Thay van OCV nếu cuộn van hở mạch, chập mạch hoặc kẹt cơ khí.",
+      "Kiểm tra dầu bôi trơn, lọc nhớt, đường dầu và bộ chấp hành VVT khi nghi lỗi thuỷ lực/ cơ khí.",
+      "Xoá DTC và xác nhận lại bằng datalist sau sửa chữa."
+    ]
+  }
+}
