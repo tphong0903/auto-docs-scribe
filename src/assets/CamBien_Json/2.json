@@ -10,7 +10,7 @@
     "anh_thuc_te": [
       {
         "mo_ta": "Vị trí cảm biến trục khuỷu CKP trên động cơ",
-        "image_url": "[IMAGE_PLACEHOLDER: Ảnh vị trí cảm biến CKP]"
+        "image_url": "/image_sensor/2/1.png"
       }
     ],
     "so_do_chan_giac": {
@@ -34,7 +34,7 @@
       ]
     },
     "so_do_dien_rut_gon": {
-      "mach_dien_image_url": "[IMAGE_PLACEHOLDER: Hình Sơ đồ điện rút gọn cảm biến CKP]",
+      "mach_dien_image_url": "/image_sensor/2/2.png",
       "nguyen_ly_hoat_dong": "Khi răng của vòng cảm biến trục khuỷu đi qua mặt trước của phần tử từ trở, từ thông xuyên qua phần tử từ trở. Do đó, điện trở của nó tăng lên. Khi răng của vòng cảm biến trục khuỷu không vượt qua mặt trước của phần tử từ trở thì từ thông của nam châm không vượt qua phần tử từ trở và điện trở giảm. Cảm biến vị trí trục khuỷu chuyển đổi sự thay đổi điện trở này của phần tử từ trở thành tín hiệu xung 5V và xuất tín hiệu đó tới ECU động cơ. Ở cảm biến CKP sẽ thường có một vài vị trí răng khuyết để tham chiếu xác định góc quay trục khu.",
       "do_thi_dac_tinh_image_url": null,
       "thong_so_chuan": [

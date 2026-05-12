@@ -10,15 +10,15 @@
     "anh_thuc_te": [
       {
         "mo_ta": "Vị trí cảm biến MAP trên đường ống nạp",
-        "image_url": "[IMAGE_PLACEHOLDER: Hình: Vị trí cảm biến MAP trên đường ống nạp]"
+        "image_url": "/image_sensor/8/1.png"
       },
       {
         "mo_ta": "Đầu phía dây dẫn của giắc MAP",
-        "image_url": "[IMAGE_PLACEHOLDER: Hình: Đầu phía dây dẫn của giắc MAP]"
+        "image_url": "/image_sensor/8/2.png"
       },
       {
         "mo_ta": "Chân giắc cảm biến MAP",
-        "image_url": "[IMAGE_PLACEHOLDER: Hình: Chân giắc cảm biến MAP]"
+        "image_url": "/image_sensor/8/3.png"
       }
     ],
     "so_do_chan_giac": {
@@ -42,7 +42,7 @@
       ]
     },
     "so_do_dien_rut_gon": {
-      "mach_dien_image_url": "[IMAGE_PLACEHOLDER: Hình: Sơ đồ điện của MAP]",
+      "mach_dien_image_url": "/image_sensor/8/5.png",
       "nguyen_ly_hoat_dong": "",
       "do_thi_dac_tinh_image_url": null,
       "thong_so_chuan": [

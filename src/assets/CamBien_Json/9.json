@@ -10,12 +10,16 @@
     "anh_thuc_te": [
       {
         "mo_ta": "Giắc kim phun trên động cơ",
-        "image_url": "[IMAGE_PLACEHOLDER: Hình: Giắc kim phun trên động cơ]"
+        "image_url": "/image_sensor/9/1.png"
       },
       {
         "mo_ta": "Đầu phía dây dẫn của giắc kim phun",
-        "image_url": "[IMAGE_PLACEHOLDER: Hình: Đầu phía dây dẫn của giắc kim phun]"
-      }
+        "image_url": "/image_sensor/9/2.png"
+      },
+       {
+         "mo_ta": "Chân giắc kim phun (nhìn từ phía giắc)",
+         "image_url": "/image_sensor/9/3.png"
+       }
     ],
     "so_do_chan_giac": {
       "mo_ta_chung": "Giắc kim phun: Nhìn từ phía chân giắc (phía dây hoặc phía kim phun)",
@@ -33,7 +37,7 @@
       ]
     },
     "so_do_dien_rut_gon": {
-      "mach_dien_image_url": "[IMAGE_PLACEHOLDER: Hình: Sơ đồ điện mạch kim phun]",
+      "mach_dien_image_url": "/image_sensor/9/4.png",
       "nguyen_ly_hoat_dong": "Khi khóa ON, một chân của giắc luôn có 12V (từ rơ-le chính). ECM điều khiển chân còn lại bằng cách nối mass (bóng bán dẫn công suất) theo xung PWM. Thời gian mở kim phun (độ rộng xung) thay đổi tùy tải trọng, nhiệt độ, vòng quay...",
       "do_thi_dac_tinh_image_url": null,
       "thong_so_chuan": [

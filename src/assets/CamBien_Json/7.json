@@ -37,9 +37,9 @@
       ]
     },
     "so_do_dien_rut_gon": {
-      "mach_dien_image_url": "[IMAGE_PLACEHOLDER: Hình: Sơ đồ điện của IAT]",
+      "mach_dien_image_url": "/image_sensor/7/1.png",
       "nguyen_ly_hoat_dong": "Không khí nạp lạnh -> điện trở cảm biến cao -> điện áp tín hiệu cao. Không khí nạp nóng -> điện trở cảm biến thấp -> điện áp tín hiệu thấp.",
-      "do_thi_dac_tinh_image_url": "[IMAGE_PLACEHOLDER: Hình: Đồ thị điện trở - nhiệt độ của IAT]",
+      "do_thi_dac_tinh_image_url": "/image_sensor/7/2.png",
       "thong_so_chuan": [
         {
           "loai_thong_so": "Điện trở cảm biến",

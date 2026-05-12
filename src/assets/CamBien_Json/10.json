@@ -10,15 +10,15 @@
     "anh_thuc_te": [
       {
         "mo_ta": "Vị trí bô bin trên động cơ",
-        "image_url": "[IMAGE_PLACEHOLDER: Hình: Vị trí bô bin trên động cơ]"
+        "image_url": "/image_sensor/10/1.png"
       },
       {
         "mo_ta": "Giắc bô bin phía dây dẫn",
-        "image_url": "[IMAGE_PLACEHOLDER: Hình: Giắc bô bin phía dây dẫn]"
+        "image_url": "/image_sensor/10/2.png"
       },
       {
         "mo_ta": "Chân giắc bô bin (nhìn từ phía bô bin)",
-        "image_url": "[IMAGE_PLACEHOLDER: Hình: Chân giắc bô bin (nhìn từ phía bô bin)]"
+        "image_url": "/image_sensor/10/3.png"
       }
     ],
     "so_do_chan_giac": {
@@ -42,7 +42,7 @@
       ]
     },
     "so_do_dien_rut_gon": {
-      "mach_dien_image_url": "[IMAGE_PLACEHOLDER: Hình: Sơ đồ điện mạch bô bin đánh lửa]",
+      "mach_dien_image_url": "/image_sensor/10/4.png",
       "nguyen_ly_hoat_dong": "ECM gửi tín hiệu IGT (Ignition Timing) dạng xung vuông 5V để báo thời điểm đánh lửa. Bô bin nhận tín hiệu IGT, đóng cắt dòng sơ cấp, tạo điện áp cao thứ cấp đánh lửa. Sau khi đánh lửa, bô bin gửi tín hiệu IGF (Ignition Feedback) 5V về ECM để xác nhận đã có tia lửa. Nếu không có IGF, ECM sẽ ngắt phun nhiên liệu (bảo vệ).",
       "do_thi_dac_tinh_image_url": null,
       "thong_so_chuan": [

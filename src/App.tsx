@@ -8,6 +8,7 @@ import Viewer from "./components/admin/Viewer.tsx";
 import Landing from "./pages/Landing.tsx";
 import Canva from "./components/canva/Canva.tsx";
 import SensorViewer from "./components/admin/SensorViewer.tsx";
+import { CreatePostWithYouTube } from "./components/Youtube.tsx";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -18,6 +19,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Landing />} />
+          <Route path="/youtube" element={<CreatePostWithYouTube />} />
           <Route path="/dtc-explorer" element={<Viewer />} />
           <Route path="/sensor-explorer" element={<SensorViewer />} />
           <Route path="/diagram" element={<Canva />} />

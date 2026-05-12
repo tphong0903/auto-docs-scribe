@@ -23,7 +23,7 @@ const SensorViewer = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex h-[700px] border rounded-xl overflow-hidden bg-white shadow-sm">
+    <div className="flex h-screen border rounded-xl overflow-hidden bg-white shadow-sm">
       {/* Cột trái: Header + Sidebar */}
       {/* FIX: Thêm w-80, flex-col và border-r cho cả cột trái */}
       <div className="w-80 flex flex-col border-r border-slate-200">

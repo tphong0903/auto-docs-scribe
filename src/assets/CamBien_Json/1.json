@@ -10,15 +10,15 @@
     "anh_thuc_te": [
       {
         "mo_ta": "Vị trí cảm biến ECT trên động cơ",
-        "image_url": "[IMAGE_PLACEHOLDER: Ảnh vị trí cảm biến ECT trên động cơ]"
+        "image_url": "/image_sensor/1/1.png"
       },
       {
         "mo_ta": "Đầu phía dây dẫn của giắc",
-        "image_url": "[IMAGE_PLACEHOLDER: Ảnh đầu phía dây dẫn của giắc]"
+        "image_url": "/image_sensor/1/2.png"
       },
       {
         "mo_ta": "Chân giắc cảm biến",
-        "image_url": "[IMAGE_PLACEHOLDER: Ảnh chân giắc cảm biến]"
+        "image_url": "/image_sensor/1/3.png"
       }
     ],
     "so_do_chan_giac": {
@@ -37,9 +37,9 @@
       ]
     },
     "so_do_dien_rut_gon": {
-      "mach_dien_image_url": "[IMAGE_PLACEHOLDER: Hình Sơ đồ điện của ECT]",
+      "mach_dien_image_url": "/image_sensor/1/4.png",
       "nguyen_ly_hoat_dong": "Cảm biến ECT hoạt động theo nguyên lý nhiệt điện trở NTC: nhiệt độ nước làm mát càng tăng thì điện trở cảm biến càng giảm, làm điện áp tín hiệu gửi về ECM giảm theo. Khi động cơ nguội, điện trở lớn nên điện áp tín hiệu cao; khi động cơ nóng, điện trở nhỏ nên điện áp tín hiệu thấp. ECM dựa vào tín hiệu này để xác định nhiệt độ nước làm mát và điều khiển phun xăng, cầm chừng, đánh lửa và quạt làm mát.",
-      "do_thi_dac_tinh_image_url": "[IMAGE_PLACEHOLDER: Hình Đồ thị điện trở - nhiệt độ]",
+      "do_thi_dac_tinh_image_url": "/image_sensor/1/5.png",
       "thong_so_chuan": [
         {
           "loai_thong_so": "Điện trở cảm biến",
