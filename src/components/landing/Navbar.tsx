@@ -101,7 +101,7 @@ export const Navbar = () => {
           ))}
 
           <div className="relative group font-semibold">
-            <button className="px-4 py-2 text-sm font-medium text-foreground/70 hover:text-teal-500 transition font-semibold">
+            <button className="px-4 py-2 text-sm font-semibold text-foreground/70 hover:text-teal-500 transition">
               Sơ đồ
             </button>
 
@@ -133,6 +133,14 @@ export const Navbar = () => {
             >
               <Cpu className="w-4 h-4" />
               Sensor
+            </Button>
+
+            <Button
+              onClick={() => navigate("/quiz")}
+              className="font-semibold bg-gradient-to-r from-purple-500 to-pink-600 text-white flex items-center gap-2 shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200"
+            >
+              <Activity className="w-4 h-4" />
+              Quiz
             </Button>
           </div>
         </div>
@@ -198,6 +206,17 @@ export const Navbar = () => {
             >
               <Cpu className="w-4 h-4 mr-2" />
               Sensor
+            </Button>
+
+            <Button
+              onClick={() => {
+                navigate("/quiz");
+                setOpen(false);
+              }}
+              className="w-full bg-gradient-to-r from-purple-500 to-pink-600 text-white"
+            >
+              <Activity className="w-4 h-4 mr-2" />
+              Quiz
             </Button>
           </div>
         </div>

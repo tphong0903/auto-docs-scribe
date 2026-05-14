@@ -17,6 +17,7 @@ import {
 import { toast } from "sonner";
 import DTCSidebar from "./DTCSidebar";
 import DTCPDFViewer from "./DTCPDFViewer";
+import DTCTroubleshootingImage from "./DTCTroubleshootingImage";
 import DTCTroubleshootingWizard from "./DTCTroubleshootingWizard";
 import {
   Dialog,
@@ -309,11 +310,11 @@ const DTCViewer: React.FC = () => {
               ref={scrollContainerRef}
               className="flex-1 flex flex-col gap-4 overflow-y-auto pr-2 pb-10"
             >
-              {/* CẬP NHẬT: Chiều cao PDF siêu lớn (h-[85vh]), Tài liệu liên quan thu hẹp (w-64) */}
+              {/* CẬP NHẬT: Chiều cao ảnh khắc phục siêu lớn (h-[85vh]), Tài liệu liên quan thu hẹp (w-64) */}
               <div className="flex flex-col xl:flex-row gap-4 shrink-0 h-[85vh] min-h-[700px]">
-                {/* PDF Viewer - Chiếm tối đa không gian còn lại bằng flex-1 */}
+                {/* Troubleshooting Image - Chiếm tối đa không gian còn lại bằng flex-1 */}
                 <div className="flex-1 bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden h-full">
-                  <DTCPDFViewer folder={selected.folder} />
+                  <DTCTroubleshootingImage folder={selected.folder} />
                 </div>
 
                 {/* References Sidebar - Nhỏ gọn lại với w-64 */}

@@ -1,31 +1,59 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
+
 import NotFound from "./pages/NotFound.tsx";
 import Viewer from "./components/admin/Viewer.tsx";
 import Landing from "./pages/Landing.tsx";
 import Canva from "./components/canva/Canva.tsx";
 import SensorViewer from "./components/admin/SensorViewer.tsx";
 import { CreatePostWithYouTube } from "./components/Youtube.tsx";
+import Quiz from "./components/Quiz.tsx";
+
 const queryClient = new QueryClient();
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Landing />,
+  },
+  {
+    path: "/youtube",
+    element: <CreatePostWithYouTube />,
+  },
+  {
+    path: "/dtc-explorer",
+    element: <Viewer />,
+  },
+  {
+    path: "/sensor-explorer",
+    element: <SensorViewer />,
+  },
+  {
+    path: "/quiz",
+    element: <Quiz />,
+  },
+  {
+    path: "/diagram",
+    element: <Canva />,
+  },
+  {
+    path: "*",
+    element: <NotFound />,
+  },
+]);
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Landing />} />
-          <Route path="/youtube" element={<CreatePostWithYouTube />} />
-          <Route path="/dtc-explorer" element={<Viewer />} />
-          <Route path="/sensor-explorer" element={<SensorViewer />} />
-          <Route path="/diagram" element={<Canva />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+
+      <RouterProvider router={router} />
     </TooltipProvider>
   </QueryClientProvider>
 );
