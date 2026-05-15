@@ -9,6 +9,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "./pages/NotFound.tsx";
 import Viewer from "./components/admin/Viewer.tsx";
 import Landing from "./pages/Landing.tsx";
+import Login from "./pages/Login.tsx";
 import Canva from "./components/canva/Canva.tsx";
 import SensorViewer from "./components/admin/SensorViewer.tsx";
 import { CreatePostWithYouTube } from "./components/Youtube.tsx";
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Landing />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
   },
   {
     path: "/youtube",
