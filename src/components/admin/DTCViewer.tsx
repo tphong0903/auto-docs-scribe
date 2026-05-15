@@ -50,6 +50,8 @@ const DTCViewer: React.FC = () => {
   const [dtcList, setDtcList] = useState<DTCItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [selected, setSelected] = useState<DTCItem | null>(null);
+  const [contentMode, setContentMode] = useState<"image" | "pdf">("image");
+  const [pdfTarget, setPdfTarget] = useState<DTCItem | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [error, setError] = useState<string | null>(null);
   const navigate = useNavigate();
@@ -128,6 +130,8 @@ const DTCViewer: React.FC = () => {
     historyMode: "push" | "replace" | "none" = "push",
   ) => {
     setSelected(dtc);
+    setContentMode("image");
+    setPdfTarget(null);
 
     if (historyMode !== "none") {
       const url = new URL(window.location.href);
@@ -152,7 +156,7 @@ const DTCViewer: React.FC = () => {
       const foundDTCs: DTCItem[] = result.data;
 
       if (foundDTCs.length === 1) {
-        handleSelectFromDialog(foundDTCs[0]);
+        openReferenceTarget(foundDTCs[0]);
         toast.success(`Đã chuyển đến tài liệu: ${code}`);
       } else if (foundDTCs.length > 1) {
         setRefDialogData({ code, foundDTCs });
@@ -165,17 +169,28 @@ const DTCViewer: React.FC = () => {
     }
   };
 
-  const handleSelectFromDialog = (dtc: DTCItem) => {
-    selectDTC(dtc, "push");
+  const isDTCReference = (dtc: DTCItem) => {
+    const text = `${dtc.code} ${dtc.name} ${dtc.displayName}`.toUpperCase();
+    return /\bDTC\b/.test(text);
+  };
+
+  const openReferenceTarget = (dtc: DTCItem) => {
     setRefDialogOpen(false);
     setRefDialogData(null);
-    setSearchQuery("");
 
-    setTimeout(() => {
-      document
-        .getElementById(`dtc-item-${dtc.code}`)
-        ?.scrollIntoView({ behavior: "smooth", block: "center" });
-    }, 100);
+    if (isDTCReference(dtc)) {
+      selectDTC(dtc, "push");
+      toast.success(`Da mo hinh anh DTC: ${dtc.code}`);
+      return;
+    }
+
+    setPdfTarget(dtc);
+    setContentMode("pdf");
+    toast.success(`Da mo PDF: ${dtc.code}`);
+  };
+
+  const handleSelectFromDialog = (dtc: DTCItem) => {
+    openReferenceTarget(dtc);
   };
 
   const filteredDTC = dtcList.filter(
@@ -299,10 +314,16 @@ const DTCViewer: React.FC = () => {
               <div className="w-px h-6 bg-slate-200 mx-1"></div>
 
               <div className="p-2 bg-blue-50 text-blue-600 rounded-lg">
-                <BookOpen className="w-5 h-5" />
+                {contentMode === "pdf" ? (
+                  <FileText className="w-5 h-5" />
+                ) : (
+                  <BookOpen className="w-5 h-5" />
+                )}
               </div>
               <h2 className="text-lg font-bold text-slate-800 truncate">
-                {selected.displayName}
+                {contentMode === "pdf" && pdfTarget
+                  ? `PDF: ${pdfTarget.displayName}`
+                  : selected.displayName}
               </h2>
             </div>
 
@@ -314,7 +335,11 @@ const DTCViewer: React.FC = () => {
               <div className="flex flex-col xl:flex-row gap-4 shrink-0 h-[85vh] min-h-[700px]">
                 {/* Troubleshooting Image - Chiếm tối đa không gian còn lại bằng flex-1 */}
                 <div className="flex-1 bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden h-full">
-                  <DTCTroubleshootingImage folder={selected.folder} />
+                  {contentMode === "pdf" ? (
+                    <DTCPDFViewer folder={pdfTarget?.folder ?? selected.folder} />
+                  ) : (
+                    <DTCTroubleshootingImage folder={selected.folder} />
+                  )}
                 </div>
 
                 {/* References Sidebar - Nhỏ gọn lại với w-64 */}
