@@ -14,6 +14,7 @@ import {
   PanelLeft,
   Bug, // Import thêm icon PanelLeft
 } from "lucide-react";
+import RelatedSymptomsSection from "../RelatedSymptoms/RelatedSymptomsSection";
 import { toast } from "sonner";
 import DTCSidebar from "./DTCSidebar";
 import DTCPDFViewer from "./DTCPDFViewer";
@@ -336,7 +337,9 @@ const DTCViewer: React.FC = () => {
                 {/* Troubleshooting Image - Chiếm tối đa không gian còn lại bằng flex-1 */}
                 <div className="flex-1 bg-white border border-slate-200 rounded-2xl shadow-sm overflow-hidden h-full">
                   {contentMode === "pdf" ? (
-                    <DTCPDFViewer folder={pdfTarget?.folder ?? selected.folder} />
+                    <DTCPDFViewer
+                      folder={pdfTarget?.folder ?? selected.folder}
+                    />
                   ) : (
                     <DTCTroubleshootingImage folder={selected.folder} />
                   )}
@@ -385,6 +388,11 @@ const DTCViewer: React.FC = () => {
                         </p>
                       </div>
                     )}
+
+                    {/* Related symptoms section inserted here */}
+                    <div className="mt-3 pt-3 border-t border-slate-100">
+                      <RelatedSymptomsSection />
+                    </div>
                   </div>
                 </div>
               </div>

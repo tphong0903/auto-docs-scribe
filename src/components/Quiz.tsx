@@ -9,7 +9,7 @@ import {
   ShieldAlert,
   Sparkles,
 } from "lucide-react";
-import { useBlocker, useNavigate } from "react-router-dom";
+import { useBlocker, useNavigate, useParams } from "react-router-dom";
 
 import {
   AlertDialog,
@@ -154,7 +154,10 @@ const Quiz = () => {
   const navigate = useNavigate();
   const { toast } = useToast();
 
-  const [questions] = useState<Question[]>(sampleQuestions);
+  const params = useParams();
+
+  const [questions, setQuestions] = useState<Question[]>(sampleQuestions);
+  const [quizTitle, setQuizTitle] = useState<string>("Bài Quiz");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<number, string | string[]>>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -285,6 +288,32 @@ const Quiz = () => {
     setIsSubmitted(false);
   };
 
+  // Load quiz data by symptomId (if provided)
+  useEffect(() => {
+    const load = async () => {
+      try {
+        const { getQuizBySymptomId } = await import("@/data");
+        const id = params.symptomId;
+        const bundle = getQuizBySymptomId(id ?? undefined);
+        if (bundle) {
+          setQuizTitle(bundle.title || "Bài Quiz");
+          setQuestions(bundle.questions as Question[]);
+          setCurrentIndex(0);
+        } else {
+          setQuizTitle("Bài Quiz");
+          setQuestions(sampleQuestions);
+        }
+      } catch (err) {
+        // fallback to sample
+        setQuizTitle("Bài Quiz");
+        setQuestions(sampleQuestions);
+      }
+    };
+
+    load();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [params.symptomId]);
+
   const handleStayOnQuiz = () => {
     setShowLeaveDialog(false);
 
@@ -407,7 +436,7 @@ const Quiz = () => {
                 <div className="space-y-4">
                   <div className="space-y-2">
                     <CardTitle className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-                      AI Quiz
+                      {quizTitle}
                     </CardTitle>
 
                     <CardDescription className="max-w-2xl text-sm leading-6 text-muted-foreground/90 sm:text-base">

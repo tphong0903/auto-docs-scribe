@@ -14,6 +14,7 @@ import Canva from "./components/canva/Canva.tsx";
 import SensorViewer from "./components/admin/SensorViewer.tsx";
 import { CreatePostWithYouTube } from "./components/Youtube.tsx";
 import Quiz from "./components/Quiz.tsx";
+import LessonViewer from "./pages/LessonViewer";
 
 const queryClient = new QueryClient();
 
@@ -39,8 +40,12 @@ const router = createBrowserRouter([
     element: <SensorViewer />,
   },
   {
-    path: "/quiz",
+    path: "/quiz/:symptomId?",
     element: <Quiz />,
+  },
+  {
+    path: "/lesson/:id?",
+    element: <LessonViewer />,
   },
   {
     path: "/diagram",
