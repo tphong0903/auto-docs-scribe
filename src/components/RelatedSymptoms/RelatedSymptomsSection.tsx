@@ -37,14 +37,14 @@ const mockSymptoms: Symptom[] = [
   },
   {
     id: "fuel-consumption",
-    title: "Hao nhiên liệu",
+    title: "Khói đen, dư xăng",
     lessonPdf: "/output_sections_CamBien/3.pdf",
     diagramId:
       "https://www.canva.com/design/DAHHNypNvnk/7H6SfcboER8wUQPMYUxbLA/view?embed",
   },
   {
     id: "unusual-noise",
-    title: "Tiếng ồn bất thường",
+    title: "Cầm chừng kém",
     lessonPdf: "/output_sections_CamBien/4.pdf",
     diagramId:
       "https://www.canva.com/design/DAHHN6JVuXI/u3CjgSYdHISXNNMQeegvTg/view?embed",
