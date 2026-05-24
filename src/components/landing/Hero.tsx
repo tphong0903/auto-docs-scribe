@@ -56,20 +56,20 @@ export const Hero = ({ onPlayVideo }: HeroProps) => {
           Suzuki K15B Engine
         </motion.div>
 
-<motion.h1
-    initial={{ opacity: 0, y: 30 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.8, delay: 0.1 }}
-    className="font-[Be_Vietnam_Pro] text-3xl md:text-5xl lg:text-6xl font-black tracking-tight flex flex-col gap-2 md:gap-3"
-  >
-    <span className="text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">
-      Quy trình chẩn đoán động cơ 
-    </span>
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          className="font-[Be_Vietnam_Pro] text-3xl md:text-5xl lg:text-6xl font-black tracking-tight flex flex-col gap-2 md:gap-3"
+        >
+          <span className="text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">
+            Quy trình chẩn đoán động cơ
+          </span>
 
-    <span className="bg-gradient-to-r from-teal-light via-cyan-300 to-teal-light bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(56,189,248,0.35)] pb-2">
-      Suzuki K15B
-    </span>
-  </motion.h1>
+          <span className="bg-gradient-to-r from-teal-light via-cyan-300 to-teal-light bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(56,189,248,0.35)] pb-2">
+            Suzuki K15B
+          </span>
+        </motion.h1>
 
         {/* <motion.p
           initial={{ opacity: 0, y: 30 }}
@@ -94,7 +94,7 @@ export const Hero = ({ onPlayVideo }: HeroProps) => {
           >
             Khám phá thông số
           </Button>
-          <Button
+          {/* <Button
             size="lg"
             variant="outline"
             onClick={onPlayVideo}
@@ -102,7 +102,7 @@ export const Hero = ({ onPlayVideo }: HeroProps) => {
           >
             <Play className="h-4 w-4 fill-current" />
             Xem demo
-          </Button>
+          </Button> */}
         </motion.div>
       </div>
 

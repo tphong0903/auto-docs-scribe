@@ -1,14 +1,63 @@
 import { useEffect, useState } from "react";
-import { Menu, X, Wrench, Cpu, Activity, Bug } from "lucide-react";
+import {
+  Menu,
+  X,
+  Wrench,
+  Cpu,
+  Activity,
+  Bug,
+  BookOpen,
+  ClipboardCheck,
+  Thermometer,
+  Zap,
+  Droplet,
+  Volume2,
+  Power,
+} from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { AlertTriangle } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+
 const links = [
   { id: "hero", label: "Trang chủ" },
   { id: "specs", label: "Thông số" },
   { id: "tech", label: "Công nghệ" },
   { id: "gallery", label: "Thư viện" },
+];
+
+const quizSymptoms = [
+  {
+    id: "engine-vibration",
+    title: "Rung giật động cơ",
+    lessonPdf: "/output_sections_CamBien/1.pdf",
+  },
+  {
+    id: "engine-overheat",
+    title: "Động cơ quá nhiệt",
+    lessonPdf: "/output_sections_CamBien/2.pdf",
+  },
+  {
+    id: "fuel-consumption",
+    title: "Khói đen, dư xăng",
+    lessonPdf: "/output_sections_CamBien/3.pdf",
+  },
+  {
+    id: "unusual-noise",
+    title: "Cầm chừng kém",
+    lessonPdf: "/output_sections_CamBien/4.pdf",
+  },
+  {
+    id: "hard-start",
+    title: "Khó khởi động",
+    lessonPdf: "/output_sections_CamBien/5.pdf",
+  },
+  {
+    id: "power-loss",
+    title: "Mất công suất",
+    lessonPdf: "/output_sections_CamBien/6.pdf",
+  },
 ];
 
 const diagrams = [
@@ -41,6 +90,7 @@ const diagrams = [
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [showQuizModal, setShowQuizModal] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -60,6 +110,23 @@ export const Navbar = () => {
     );
     setOpen(false);
   };
+
+  const handleQuizSelect = (symptom) => {
+    setShowQuizModal(false);
+    navigate(`/quiz/${symptom.id}`);
+  };
+
+  function getIconForSymptom(id: string) {
+    if (id.includes("overheat") || id.includes("engine"))
+      return <Thermometer className="w-6 h-6 text-amber-500" />;
+    if (id.includes("vibration"))
+      return <Zap className="w-6 h-6 text-emerald-500" />;
+    if (id.includes("fuel"))
+      return <Droplet className="w-6 h-6 text-blue-500" />;
+    if (id.includes("noise"))
+      return <Volume2 className="w-6 h-6 text-violet-500" />;
+    return <Power className="w-6 h-6 text-rose-500" />;
+  }
 
   return (
     <header
@@ -102,7 +169,7 @@ export const Navbar = () => {
 
           <div className="relative group font-semibold">
             <button className="px-4 py-2 text-sm font-semibold text-foreground/70 hover:text-teal-500 transition">
-              Sơ đồ
+              Sơ đồ triệu chứng
             </button>
 
             <div className="absolute top-full left-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 bg-white dark:bg-slate-900 shadow-xl border rounded-xl min-w-[240px] z-50 p-2">
@@ -136,7 +203,7 @@ export const Navbar = () => {
             </Button>
 
             <Button
-              onClick={() => navigate("/quiz")}
+              onClick={() => setShowQuizModal(true)}
               className="font-semibold bg-gradient-to-r from-purple-500 to-pink-600 text-white flex items-center gap-2 shadow-md hover:shadow-lg hover:scale-105 transition-all duration-200"
             >
               <Activity className="w-4 h-4" />
@@ -210,7 +277,7 @@ export const Navbar = () => {
 
             <Button
               onClick={() => {
-                navigate("/quiz");
+                setShowQuizModal(true);
                 setOpen(false);
               }}
               className="w-full bg-gradient-to-r from-purple-500 to-pink-600 text-white"
@@ -221,6 +288,75 @@ export const Navbar = () => {
           </div>
         </div>
       )}
+
+      <AnimatePresence>
+        {showQuizModal && (
+          <motion.div
+            className="fixed inset-0 z-50 flex items-center justify-center"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <div
+              className="absolute inset-0 bg-black/40"
+              onClick={() => setShowQuizModal(false)}
+            />
+
+            <motion.div
+              initial={{ y: 20, scale: 0.98, opacity: 0 }}
+              animate={{ y: 0, scale: 1, opacity: 1 }}
+              exit={{ y: 20, scale: 0.98, opacity: 0 }}
+              transition={{ type: "spring", stiffness: 300, damping: 25 }}
+              className="relative w-full max-w-2xl rounded-2xl bg-white dark:bg-slate-950 p-6 shadow-2xl z-10 mx-4"
+            >
+              <div className="flex items-start justify-between gap-4 mb-6">
+                <div>
+                  <h3 className="text-lg font-bold text-slate-800 dark:text-white">
+                    Chọn triệu chứng để kiểm tra
+                  </h3>
+                  <p className="text-sm text-slate-500 dark:text-slate-400 mt-1">
+                    Làm quiz về triệu chứng bạn chọn
+                  </p>
+                </div>
+                <button
+                  onClick={() => setShowQuizModal(false)}
+                  className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-300"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+
+              <div className="grid grid-cols-1 gap-3 max-h-[60vh] overflow-y-auto">
+                {quizSymptoms.map((symptom) => (
+                  <motion.button
+                    key={symptom.id}
+                    whileHover={{ x: 4 }}
+                    onClick={() => handleQuizSelect(symptom)}
+                    className="group relative rounded-xl p-3 flex items-start gap-3 bg-gradient-to-br from-white via-slate-50 to-white dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 border border-slate-200 dark:border-slate-700 hover:scale-[1.02] transition-transform shadow-sm hover:shadow-md text-left"
+                  >
+                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-slate-100 to-white dark:from-slate-800 dark:to-slate-700 flex-shrink-0">
+                      {getIconForSymptom(symptom.id)}
+                    </div>
+
+                    <div className="flex-1">
+                      <div className="text-sm font-medium text-slate-800 dark:text-white">
+                        {symptom.title}
+                      </div>
+                      <div className="text-xs text-slate-500 dark:text-slate-400 mt-1">
+                        Kiểm tra kiến thức về triệu chứng này
+                      </div>
+                    </div>
+
+                    <div className="text-slate-400 group-hover:text-slate-600 dark:group-hover:text-slate-300 flex-shrink-0">
+                      →
+                    </div>
+                  </motion.button>
+                ))}
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 };
