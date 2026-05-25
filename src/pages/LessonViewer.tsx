@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { BookOpen, Download, ExternalLink } from "lucide-react";
 import { Document, Page, pdfjs } from "react-pdf";
+import workerSrc from "pdfjs-dist/build/pdf.worker.min.mjs?url";
 
-// Configure worker - use unpkg as fallback with .js extension
-pdfjs.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.js`;
+// Configure worker
+pdfjs.GlobalWorkerOptions.workerSrc = workerSrc;
 
 interface LessonItem {
   id: number;

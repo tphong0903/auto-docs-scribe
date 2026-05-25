@@ -24,42 +24,42 @@ const mockSymptoms: Symptom[] = [
   {
     id: "engine-vibration",
     title: "Rung giật động cơ",
-    lessonPdf: "/output_sections_CamBien/1.pdf",
+    lessonPdf: "/lesson/RungGiatDongCo.pdf",
     diagramId:
       "https://www.canva.com/design/DAHHNrdJRs0/L0Zucq5O3Nwzy8tlUmVNWA/view?embed",
   },
   {
     id: "engine-overheat",
     title: "Động cơ quá nhiệt",
-    lessonPdf: "/output_sections_CamBien/2.pdf",
+    lessonPdf: "/lesson/DongCoQuaNhiet.pdf",
     diagramId:
       "https://www.canva.com/design/DAHHN5GL54Q/oJhB1mCwfihmW4VjCwA5qg/view?embed",
   },
   {
     id: "fuel-consumption",
     title: "Khói đen, dư xăng",
-    lessonPdf: "/output_sections_CamBien/3.pdf",
+    lessonPdf: "/lesson/KhoiDen.pdf",
     diagramId:
       "https://www.canva.com/design/DAHHNypNvnk/7H6SfcboER8wUQPMYUxbLA/view?embed",
   },
   {
     id: "unusual-noise",
     title: "Cầm chừng kém",
-    lessonPdf: "/output_sections_CamBien/4.pdf",
+    lessonPdf: "/lesson/CamChungKem.pdf",
     diagramId:
       "https://www.canva.com/design/DAHHN6JVuXI/u3CjgSYdHISXNNMQeegvTg/view?embed",
   },
   {
     id: "hard-start",
     title: "Khó khởi động",
-    lessonPdf: "/output_sections_CamBien/5.pdf",
+    lessonPdf: "/lesson/KhoKhoiDong.pdf",
     diagramId:
       "https://www.canva.com/design/DAHHN6JVuXI/u3CjgSYdHISXNNMQeegvTg/view?embed",
   },
   {
     id: "power-loss",
     title: "Mất công suất",
-    lessonPdf: "/output_sections_CamBien/6.pdf",
+    lessonPdf: "/lesson/MatCongSuat.pdf",
     diagramId:
       "https://www.canva.com/design/DAHHN3DBZZI/ShHQ0Gvosb3I9HJsLEDvag/view?embed",
   },
