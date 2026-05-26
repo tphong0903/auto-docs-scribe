@@ -172,7 +172,8 @@ const DTCViewer: React.FC = () => {
 
   const isDTCReference = (dtc: DTCItem) => {
     const text = `${dtc.code} ${dtc.name} ${dtc.displayName}`.toUpperCase();
-    return /\bDTC\b/.test(text);
+    // Kiểm tra DTC code thực sự: "DTC P1234" hoặc "DTC_P1234"
+    return /DTC[\s_][A-Z]\d/.test(text);
   };
 
   const openReferenceTarget = (dtc: DTCItem) => {
