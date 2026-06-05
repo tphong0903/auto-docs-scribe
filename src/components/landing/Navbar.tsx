@@ -19,6 +19,7 @@ import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { AlertTriangle } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { SYMPTOMS } from "@/data/symptomsConfig";
 
 const links = [
   { id: "hero", label: "Trang chủ" },
@@ -27,65 +28,17 @@ const links = [
   { id: "gallery", label: "Thư viện" },
 ];
 
-const quizSymptoms = [
-  {
-    id: "engine-vibration",
-    title: "Rung giật động cơ",
-    lessonPdf: "/output_sections_CamBien/1.pdf",
-  },
-  {
-    id: "engine-overheat",
-    title: "Động cơ quá nhiệt",
-    lessonPdf: "/output_sections_CamBien/2.pdf",
-  },
-  {
-    id: "fuel-consumption",
-    title: "Khói đen, dư xăng",
-    lessonPdf: "/output_sections_CamBien/3.pdf",
-  },
-  {
-    id: "unusual-noise",
-    title: "Cầm chừng kém",
-    lessonPdf: "/output_sections_CamBien/4.pdf",
-  },
-  {
-    id: "hard-start",
-    title: "Khó khởi động",
-    lessonPdf: "/output_sections_CamBien/5.pdf",
-  },
-  {
-    id: "power-loss",
-    title: "Mất công suất",
-    lessonPdf: "/output_sections_CamBien/6.pdf",
-  },
-];
+const quizSymptoms = SYMPTOMS.map((symptom, index) => ({
+  id: symptom.id,
+  title: symptom.title,
+  lessonPdf: `/output_sections_CamBien/${index + 1}.pdf`,
+}));
 
-const diagrams = [
-  {
-    name: "Rung giật động cơ",
-    url: "https://www.canva.com/design/DAHHNrdJRs0/L0Zucq5O3Nwzy8tlUmVNWA/view?embed",
-  },
-  {
-    name: "Động cơ quá nhiệt",
-    url: "https://www.canva.com/design/DAHHN5GL54Q/oJhB1mCwfihmW4VjCwA5qg/view?embed",
-  },
-  {
-    name: "Khói đen, hôi xăng",
-    url: "https://www.canva.com/design/DAHHNypNvnk/7H6SfcboER8wUQPMYUxbLA/view?embed",
-  },
-  {
-    name: "Khó khởi động",
-    url: "https://www.canva.com/design/DAHHN6JVuXI/u3CjgSYdHISXNNMQeegvTg/view?embed",
-  },
-  {
-    name: "Cầm chừng kém/ mất cầm chừng",
-    url: "https://www.canva.com/design/DAHHNyuPqCw/8uieCILjE-zozFKV42nfSw/view?embed",
-  },
-  {
-    name: "Mất công suất",
-    url: "https://www.canva.com/design/DAHHN3DBZZI/ShHQ0Gvosb3I9HJsLEDvag/view?embed",
-  },
-];
+const diagrams = SYMPTOMS.map((symptom) => ({
+  name: symptom.title,
+  folder: symptom.folder,
+  imageCount: symptom.imageCount || 0,
+}));
 
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -106,7 +59,7 @@ export const Navbar = () => {
 
   const goToDiagram = (diagram) => {
     navigate(
-      `/diagram?src=${encodeURIComponent(diagram.url)}&name=${encodeURIComponent(diagram.name)}`,
+      `/diagram?folder=${encodeURIComponent(diagram.folder)}&title=${encodeURIComponent(diagram.name)}`,
     );
     setOpen(false);
   };
@@ -247,7 +200,12 @@ export const Navbar = () => {
               onClick={() => goToDiagram(d)}
               className="px-4 py-2 text-left rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition"
             >
-              {d.name}
+              <div className="flex items-center justify-between">
+                <span>{d.name}</span>
+                <span className="text-xs text-slate-500">
+                  ({d.imageCount} ảnh)
+                </span>
+              </div>
             </button>
           ))}
 

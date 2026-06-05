@@ -10,7 +10,7 @@ import NotFound from "./pages/NotFound.tsx";
 import Viewer from "./components/admin/Viewer.tsx";
 import Landing from "./pages/Landing.tsx";
 import Login from "./pages/Login.tsx";
-import Canva from "./components/canva/Canva.tsx";
+import DiagramViewer from "./components/canva/DiagramViewer.tsx";
 import SensorViewer from "./components/admin/SensorViewer.tsx";
 import { CreatePostWithYouTube } from "./components/Youtube.tsx";
 import Quiz from "./components/Quiz.tsx";
@@ -49,7 +49,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/diagram",
-    element: <Canva />,
+    element: <DiagramViewer folder="" title="" />,
   },
   {
     path: "*",
