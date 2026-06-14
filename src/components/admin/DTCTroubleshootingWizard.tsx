@@ -9,7 +9,12 @@ import {
 } from "lucide-react";
 const API_URL = import.meta.env.VITE_API_URL || "";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+} from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 
 interface DTCTroubleshootingWizardProps {
@@ -44,6 +49,7 @@ interface ParsedOutcome {
 const TRANSITION_REGEX = /Chuyển sang Bước\s+(\d+)\.?/i;
 const PAGE_REF_TOKEN_REGEX = /(\(?Trang\s+[A-Z0-9]+-\d+\)?)/gi;
 const PAGE_REF_CODE_REGEX = /([A-Z0-9]+-\d+)/i;
+const EXCLUDED_PAGE_CODES = ["HO2S-1", "HO2S-2"];
 
 const parseStepNumber = (value?: string) => {
   const matched = value?.match(/\d+/);
@@ -100,8 +106,10 @@ const RichText: React.FC<{
       {tokens.map((token, index) => {
         const code = token.match(PAGE_REF_CODE_REGEX)?.[1];
 
-        if (!code) {
-          return <React.Fragment key={`${token}-${index}`}>{token}</React.Fragment>;
+        if (!code || EXCLUDED_PAGE_CODES.includes(code)) {
+          return (
+            <React.Fragment key={`${token}-${index}`}>{token}</React.Fragment>
+          );
         }
 
         return (
@@ -191,7 +199,10 @@ const DTCTroubleshootingWizard: React.FC<DTCTroubleshootingWizardProps> = ({
         setRows(nextRows);
         setCurrentStep(firstStep);
       } catch (fetchError) {
-        if (fetchError instanceof DOMException && fetchError.name === "AbortError") {
+        if (
+          fetchError instanceof DOMException &&
+          fetchError.name === "AbortError"
+        ) {
           return;
         }
 
@@ -262,7 +273,9 @@ const DTCTroubleshootingWizard: React.FC<DTCTroubleshootingWizardProps> = ({
       <div className="flex h-full items-center justify-center rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
         <div className="flex flex-col items-center gap-3 text-center">
           <Loader2 className="h-8 w-8 animate-spin text-blue-600" />
-          <p className="text-sm font-medium text-slate-600">Đang tải quy trình khắc phục sự cố...</p>
+          <p className="text-sm font-medium text-slate-600">
+            Đang tải quy trình khắc phục sự cố...
+          </p>
         </div>
       </div>
     );
@@ -273,7 +286,9 @@ const DTCTroubleshootingWizard: React.FC<DTCTroubleshootingWizardProps> = ({
       <div className="flex h-full items-center justify-center rounded-3xl border border-red-200 bg-white p-8 shadow-sm">
         <div className="max-w-sm space-y-3 text-center">
           <AlertCircle className="mx-auto h-10 w-10 text-red-500" />
-          <h3 className="text-lg font-semibold text-slate-900">Không thể tải wizard</h3>
+          <h3 className="text-lg font-semibold text-slate-900">
+            Không thể tải wizard
+          </h3>
           <p className="text-sm text-slate-600">{error}</p>
         </div>
       </div>
@@ -285,7 +300,9 @@ const DTCTroubleshootingWizard: React.FC<DTCTroubleshootingWizardProps> = ({
       <div className="flex h-full items-center justify-center rounded-3xl border border-dashed border-slate-300 bg-white/90 p-8 shadow-sm">
         <div className="max-w-sm space-y-3 text-center">
           <Wrench className="mx-auto h-10 w-10 text-slate-400" />
-          <h3 className="text-lg font-semibold text-slate-900">Chưa có bảng khắc phục sự cố</h3>
+          <h3 className="text-lg font-semibold text-slate-900">
+            Chưa có bảng khắc phục sự cố
+          </h3>
           <p className="text-sm text-slate-600">
             Không có bảng khắc phục sự cố cho mã lỗi này
           </p>
@@ -299,9 +316,12 @@ const DTCTroubleshootingWizard: React.FC<DTCTroubleshootingWizardProps> = ({
       <div className="flex h-full items-center justify-center rounded-3xl border border-amber-200 bg-white p-8 shadow-sm">
         <div className="max-w-sm space-y-3 text-center">
           <AlertCircle className="mx-auto h-10 w-10 text-amber-500" />
-          <h3 className="text-lg font-semibold text-slate-900">Thiếu dữ liệu bước</h3>
+          <h3 className="text-lg font-semibold text-slate-900">
+            Thiếu dữ liệu bước
+          </h3>
           <p className="text-sm text-slate-600">
-            Không tìm thấy nội dung cho bước hiện tại trong bảng khắc phục sự cố.
+            Không tìm thấy nội dung cho bước hiện tại trong bảng khắc phục sự
+            cố.
           </p>
         </div>
       </div>
@@ -373,14 +393,18 @@ const DTCTroubleshootingWizard: React.FC<DTCTroubleshootingWizardProps> = ({
               <ActionOption
                 label="Có"
                 tone="yes"
-                description={yesOutcome?.label || "Tiếp tục theo hướng xử lý này."}
+                description={
+                  yesOutcome?.label || "Tiếp tục theo hướng xử lý này."
+                }
                 onClick={() => moveToOutcome(yesOutcome)}
                 onRefClick={onRefClick}
               />
               <ActionOption
                 label="Không"
                 tone="no"
-                description={noOutcome?.label || "Tiếp tục theo hướng xử lý này."}
+                description={
+                  noOutcome?.label || "Tiếp tục theo hướng xử lý này."
+                }
                 onClick={() => moveToOutcome(noOutcome)}
                 onRefClick={onRefClick}
               />
@@ -392,7 +416,9 @@ const DTCTroubleshootingWizard: React.FC<DTCTroubleshootingWizardProps> = ({
       <CardFooter className="shrink-0 border-t border-slate-200 bg-slate-50 px-5 py-4">
         <div className="flex w-full items-center justify-between gap-3">
           <p className="text-sm text-slate-500">
-            {isFinished ? "Có thể quay lại hoặc bắt đầu lại quy trình." : "Chọn đáp án phù hợp để sang bước tiếp theo."}
+            {isFinished
+              ? "Có thể quay lại hoặc bắt đầu lại quy trình."
+              : "Chọn đáp án phù hợp để sang bước tiếp theo."}
           </p>
           <Button
             type="button"
