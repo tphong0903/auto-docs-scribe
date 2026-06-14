@@ -15,6 +15,7 @@ import {
   Bug, // Import thêm icon PanelLeft
 } from "lucide-react";
 import RelatedSymptomsSection from "../RelatedSymptoms/RelatedSymptomsSection";
+import { SYMPTOMS } from "@/data/symptomsConfig";
 import { toast } from "sonner";
 import DTCSidebar from "./DTCSidebar";
 import DTCPDFViewer from "./DTCPDFViewer";
@@ -392,7 +393,13 @@ const DTCViewer: React.FC = () => {
 
                     {/* Related symptoms section inserted here */}
                     <div className="mt-3 pt-3 border-t border-slate-100">
-                      <RelatedSymptomsSection />
+                      <RelatedSymptomsSection
+                        items={SYMPTOMS.map((s) => ({
+                          id: s.id,
+                          title: s.title,
+                          diagramId: s.folder,
+                        }))}
+                      />
                     </div>
                   </div>
                 </div>

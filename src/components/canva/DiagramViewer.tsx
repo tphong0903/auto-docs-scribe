@@ -5,9 +5,13 @@ import {
   ZoomIn,
   ZoomOut,
   RotateCcw,
+  BookOpen,
 } from "lucide-react";
 import React, { useState, useRef, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
+import { QuyTrinhChung } from "@/data/PhuLucQuyTrinhChung";
+import { X } from "lucide-react";
 
 interface ImageViewerProps {
   folder: string;
@@ -31,6 +35,7 @@ export default function DiagramViewer({ folder, title }: ImageViewerProps) {
   const [isDragging, setIsDragging] = useState(false);
   const [dragStart, setDragStart] = useState({ x: 0, y: 0 });
   const [loading, setLoading] = useState(true);
+  const [showTable, setShowTable] = useState(false);
   const imgRef = useRef<HTMLImageElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -189,21 +194,35 @@ export default function DiagramViewer({ folder, title }: ImageViewerProps) {
           </h2>
         </div>
 
-        {/* RIGHT - Image Counter */}
-        {images.length > 0 && (
-          <div
-            style={{
-              padding: "8px 16px",
-              borderRadius: "10px",
-              background: "linear-gradient(135deg,#0ea5e9,#22d3ee)",
-              color: "#fff",
-              fontSize: "14px",
-              fontWeight: 500,
-            }}
+        {/* RIGHT - Image Counter & Buttons */}
+        <div style={{ display: "flex", gap: "12px", alignItems: "center" }}>
+          <button
+            onClick={() => setShowTable(true)}
+            className="flex items-center gap-2 px-4 py-2 rounded-xl 
+             bg-gradient-to-r from-blue-500 to-indigo-600 
+             text-white shadow-md
+             hover:opacity-90 hover:scale-[1.02]
+             transition-all duration-200"
           >
-            {currentIndex + 1} / {images.length}
-          </div>
-        )}
+            <BookOpen className="w-4 h-4" />
+            <span className="text-sm font-medium">Quy trình chung</span>
+          </button>
+
+          {images.length > 0 && (
+            <div
+              style={{
+                padding: "8px 16px",
+                borderRadius: "10px",
+                background: "linear-gradient(135deg,#0ea5e9,#22d3ee)",
+                color: "#fff",
+                fontSize: "14px",
+                fontWeight: 500,
+              }}
+            >
+              {currentIndex + 1} / {images.length}
+            </div>
+          )}
+        </div>
       </div>
 
       {/* MAIN CONTAINER */}
@@ -497,6 +516,110 @@ export default function DiagramViewer({ folder, title }: ImageViewerProps) {
           </div>
         </div>
       </div>
+
+      <AnimatePresence>
+        {showTable && (
+          <QuyTrinhChungTable onClose={() => setShowTable(false)} />
+        )}
+      </AnimatePresence>
     </div>
+  );
+}
+
+function QuyTrinhChungTable({ onClose }: { onClose: () => void }) {
+  return (
+    <motion.div
+      className="fixed inset-0 z-50 flex items-center justify-center"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      <div className="absolute inset-0 bg-black/40" onClick={onClose} />
+
+      <motion.div
+        initial={{ y: 20, scale: 0.98, opacity: 0 }}
+        animate={{ y: 0, scale: 1, opacity: 1 }}
+        exit={{ y: 20, scale: 0.98, opacity: 0 }}
+        transition={{ type: "spring", stiffness: 300, damping: 25 }}
+        className="relative w-full max-w-6xl rounded-2xl bg-white p-8 shadow-2xl z-10 mx-4 max-h-[90vh] overflow-y-auto"
+      >
+        <div className="flex items-start justify-between gap-4 mb-8">
+          <div>
+            <h3 className="text-2xl font-bold text-slate-800">
+              Quy trình chung kiểm tra
+            </h3>
+            <p className="text-base text-slate-600 mt-2">
+              Danh sách các thông số và tiêu chuẩn cơ bản
+            </p>
+          </div>
+          <button
+            onClick={onClose}
+            className="text-slate-400 hover:text-slate-600 flex-shrink-0"
+          >
+            <X className="w-6 h-6" />
+          </button>
+        </div>
+
+        <div className="overflow-x-auto">
+          <table className="w-full border-collapse">
+            <thead>
+              <tr className="bg-slate-100 border-b-2 border-slate-300">
+                <th className="px-6 py-4 text-left text-base font-bold text-slate-800 w-1/5">
+                  Nhóm thông số
+                </th>
+                <th className="px-6 py-4 text-left text-base font-bold text-slate-800 w-1/5">
+                  Tham số
+                </th>
+                <th className="px-6 py-4 text-left text-base font-bold text-slate-800 w-1/5">
+                  Tiêu chuẩn
+                </th>
+                <th className="px-6 py-4 text-left text-base font-bold text-slate-800 w-1/5">
+                  Điều kiện kiểm tra
+                </th>
+                <th className="px-6 py-4 text-left text-base font-bold text-slate-800 w-1/5">
+                  Dụng cụ
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {QuyTrinhChung.map((item, idx) => (
+                <tr
+                  key={item.id}
+                  className={`border-b border-slate-200 hover:bg-slate-50 transition ${
+                    idx % 2 === 0 ? "bg-white" : "bg-slate-50/50"
+                  }`}
+                >
+                  <td className="px-6 py-4 text-base text-slate-700 font-semibold">
+                    {item.group_name}
+                  </td>
+                  <td className="px-6 py-4 text-base text-slate-600">
+                    {item.parameters}
+                  </td>
+                  <td className="px-6 py-4 text-base text-slate-600">
+                    <div className="max-h-32 overflow-y-auto text-sm leading-relaxed">
+                      {item.standards}
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 text-base text-slate-600">
+                    <div className="max-h-32 overflow-y-auto text-sm leading-relaxed">
+                      {item.conditions}
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 text-base text-slate-600">
+                    <div className="max-h-32 overflow-y-auto text-sm leading-relaxed">
+                      {item.tools}
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <div className="mt-6 text-sm text-slate-600 text-center font-medium">
+          Bảng này cung cấp hướng dẫn chung cho việc kiểm tra xe
+        </div>
+      </motion.div>
+    </motion.div>
   );
 }

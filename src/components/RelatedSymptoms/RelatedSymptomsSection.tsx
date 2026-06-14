@@ -11,6 +11,7 @@ import {
   ClipboardCheck,
   X,
 } from "lucide-react";
+import { SYMPTOMS } from "@/data/symptomsConfig";
 
 export interface Symptom {
   id: string;
@@ -20,50 +21,11 @@ export interface Symptom {
   diagramId?: string;
 }
 
-const mockSymptoms: Symptom[] = [
-  {
-    id: "engine-vibration",
-    title: "Rung giật động cơ",
-    lessonPdf: "/lesson/RungGiatDongCo.pdf",
-    diagramId:
-      "https://www.canva.com/design/DAHHNrdJRs0/L0Zucq5O3Nwzy8tlUmVNWA/view?embed",
-  },
-  {
-    id: "engine-overheat",
-    title: "Động cơ quá nhiệt",
-    lessonPdf: "/lesson/DongCoQuaNhiet.pdf",
-    diagramId:
-      "https://www.canva.com/design/DAHHN5GL54Q/oJhB1mCwfihmW4VjCwA5qg/view?embed",
-  },
-  {
-    id: "fuel-consumption",
-    title: "Khói đen, dư xăng",
-    lessonPdf: "/lesson/KhoiDen.pdf",
-    diagramId:
-      "https://www.canva.com/design/DAHHNypNvnk/7H6SfcboER8wUQPMYUxbLA/view?embed",
-  },
-  {
-    id: "unusual-noise",
-    title: "Cầm chừng kém",
-    lessonPdf: "/lesson/CamChungKem.pdf",
-    diagramId:
-      "https://www.canva.com/design/DAHHN6JVuXI/u3CjgSYdHISXNNMQeegvTg/view?embed",
-  },
-  {
-    id: "hard-start",
-    title: "Khó khởi động",
-    lessonPdf: "/lesson/KhoKhoiDong.pdf",
-    diagramId:
-      "https://www.canva.com/design/DAHHN6JVuXI/u3CjgSYdHISXNNMQeegvTg/view?embed",
-  },
-  {
-    id: "power-loss",
-    title: "Mất công suất",
-    lessonPdf: "/lesson/MatCongSuat.pdf",
-    diagramId:
-      "https://www.canva.com/design/DAHHN3DBZZI/ShHQ0Gvosb3I9HJsLEDvag/view?embed",
-  },
-];
+const defaultSymptoms: Symptom[] = SYMPTOMS.map((symptom) => ({
+  id: symptom.id,
+  title: symptom.title,
+  diagramId: symptom.folder,
+}));
 
 function IconForSymptom(id: string) {
   if (id.includes("overheat") || id.includes("engine"))
@@ -77,7 +39,7 @@ function IconForSymptom(id: string) {
 }
 
 export default function RelatedSymptomsSection({
-  items = mockSymptoms,
+  items = defaultSymptoms,
 }: {
   items?: Symptom[];
 }) {
@@ -205,7 +167,7 @@ function SymptomModal({
             onClick={() => {
               onClose();
               navigate(
-                `/diagram?src=${encodeURIComponent(symptom.diagramId)}&name=${encodeURIComponent(symptom.title)}`,
+                `/diagram?folder=${encodeURIComponent(symptom.diagramId)}&title=${encodeURIComponent(symptom.title)}`,
               );
             }}
           />
@@ -223,15 +185,17 @@ function SymptomModal({
             }}
           />
 
-          <ActionCard
-            title="Bài Quiz Test"
-            description="Kiểm tra kiến thức nhanh"
-            icon={<ClipboardCheck className="w-6 h-6 text-rose-600" />}
-            onClick={() => {
-              onClose();
-              navigate(`/quiz/${symptom.id}`);
-            }}
-          />
+          {symptom.id !== "general-process" && (
+            <ActionCard
+              title="Bài Quiz Test"
+              description="Kiểm tra kiến thức nhanh"
+              icon={<ClipboardCheck className="w-6 h-6 text-rose-600" />}
+              onClick={() => {
+                onClose();
+                navigate(`/quiz/${symptom.id}`);
+              }}
+            />
+          )}
         </div>
       </motion.div>
     </motion.div>

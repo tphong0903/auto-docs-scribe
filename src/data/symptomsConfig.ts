@@ -13,6 +13,13 @@ export interface SymptomConfig {
 
 export const SYMPTOMS: SymptomConfig[] = [
   {
+    id: "general-process",
+    title: "Quy trình chung",
+    folder: "QuyTrinhChung",
+    description: "",
+    imageCount: 2,
+  },
+  {
     id: "engine-vibration",
     title: "Rung giật động cơ",
     folder: "RungGiat",

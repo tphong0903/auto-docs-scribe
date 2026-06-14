@@ -28,7 +28,9 @@ const links = [
   { id: "gallery", label: "Thư viện" },
 ];
 
-const quizSymptoms = SYMPTOMS.map((symptom, index) => ({
+const quizSymptoms = SYMPTOMS.filter(
+  (symptom) => symptom.id !== "general-process",
+).map((symptom, index) => ({
   id: symptom.id,
   title: symptom.title,
   lessonPdf: `/output_sections_CamBien/${index + 1}.pdf`,
